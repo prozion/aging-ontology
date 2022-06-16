@@ -1,0 +1,12 @@
+/target
+/_export/*.ttl
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+nohup.out
+temp.edn
