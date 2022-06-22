@@ -1,5 +1,4 @@
 /target
-/_export/*.ttl
 /classes
 /checkouts
 pom.xml
@@ -9,4 +8,3 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 nohup.out
-temp.edn

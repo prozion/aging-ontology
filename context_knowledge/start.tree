@@ -2,16 +2,28 @@ start
 	tools
 		knowledge_graph_search_interface
 			Biomindmap url:biomindmap.com about-url:nestarenie.ru/biomindmap_1.html developer:Alex_Inside
-		pathway_editors
-			sbgn_editors
-				Newt
-				SBGN-ED
-			CellDesigner url:celldesigner.org platform:JRE
-			yEd
 		ontologies ref:ontologies.tree
-		ontology_editors
-			OBO-Edit platform:JRE developer:GO_Consortium
-			Protege
+		editors
+			pathway_editors
+				sbgn_editors
+					Newt
+					SBGN-ED
+				CellDesigner url:celldesigner.org platform:JRE
+				yEd
+			ontology_editors
+				Fluent_Editor url:cognitum.eu/Semantics/FluentEditor price:free
+				OBO-Edit platform:JRE developer:GO_Consortium
+				OntoStudio url:semafora-systems.com/ontobroker-and-ontostudio-x price:<?>
+				OWLGrEd url:owlgred.lumii.lv
+					OWLGrEd_online url:owlgred.lumii.lv/online_visualization
+				Protege url:protege.stanford.edu price:free
+					Web_Protege url:webprotege.stanford.edu price:free
+				TopBraid_Composer url:topquadrant.com/products/topbraid-composer developer:TopQuadrant price-y:3450$ price-academic-edition-y:695$
+				Vitro url:github.com/vivo-project/Vitro platform:Java/Tomcat
+				VocBench url:vocbench.uniroma2.it uses:Semantic_Turkey
+				Xturtle platform:Eclipse format:Turtle uses:XText2 price:free
+			annotation_editors
+				Amaya based-on:Annotea uses:redland last:01.2012 url:w3.org/Amaya
 		visualization
 			YFiles
 	people

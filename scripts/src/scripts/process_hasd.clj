@@ -5,45 +5,77 @@
             [org.clojars.prozion.odysseus.text :refer :all]
             [org.clojars.prozion.odysseus.debug :refer :all]
             [clojure.string :as s]
+            [clojure.java.io :as io]
             [jena.triplestore :as jts]
             [org.clojars.prozion.tabtree.tabtree :as tabtree]
             [org.clojars.prozion.tabtree.rdf :as rdf]
             [org.clojars.prozion.tabtree.output :as output]
-            [org.clojars.prozion.tabtree.utils :as utils :refer :all]))
+            [org.clojars.prozion.tabtree.utils :as utils :refer :all]
+            [clojure.data.csv :as csv]))
 
 (def DATABASE_PATH "/var/db/jena/aging-ontology")
 
-(defn get-ages [age]
-  (if (not age)
-    [nil nil]
-    (let [age-splitted (s/split age #"-")
-          several-ages? (> (count age-splitted) 1)
-          bottom-age (and several-ages? (first age-splitted))
-          top-age (and several-ages? (second age-splitted))]
-      [bottom-age top-age])))
+(defn read-csv [filepath]
+  (with-open [reader (io/reader filepath)]
+    (rest
+      (doall
+        (csv/read-csv reader :separator \tab)))))
 
-(defn hasd->tabtree []
-  (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd_nodes.tree")
-        tabtree (map-hash
-                  (fn [[id item]]
-                    (let [aname (:name item)
-                          age (some-> item :age name)
-                          [bottom-age top-age] (get-ages age)
-                          new-id (if aname
-                                     (-> aname tabtree/idify titlefy keyword)
-                                     (->> (:__id item) name (format "node_%s") keyword))
-                          _ (--- id new-id)
-                          node-number (->integer (name id))
-                          new-item (merge item {:__id new-id :hasd-node-number node-number :a :HASD_Node})
-                          new-item (if bottom-age (conj new-item {:bottom-age bottom-age}) new-item)
-                          new-item (if top-age (conj new-item {:top-age top-age}) new-item)
-                          new-item (if (or bottom-age top-age) (dissoc new-item :age) new-item)
-                          ]
-                    {new-id new-item}))
-                  tabtree)]
-    tabtree))
+(defn ao-id [id]
+  (keyword (format "AO%s" (-> id (subs 1)))))
 
-(defn generate-hasd-tabtree []
+(defn read-blocks []
+  (let [content (read-csv "../_import/hasd_67.3_blocks.csv")]
+    (reduce
+      (fn [acc line]
+        (let [[id name age-from age-to system] line
+              id (ao-id id)]
+          (merge acc {id {:__id id :name name :ageFrom age-from :ageTo age-to :system system}})))
+      {}
+      content)))
+
+(defn read-links [tabtree]
+  (let [content (read-csv "../_import/hasd_67.3_links.csv")]
+    (reduce
+      (fn [tabtree' line]
+        (let [[from-id _ _ to-id _] line
+              from-id (ao-id from-id)
+              to-id (ao-id to-id)
+              old-item (tabtree' from-id)
+              ; old-children (:__children old-item)
+              ; new-children (conj old-children to-id)
+              new-to-id (conj (:followsTo old-item) to-id)
+              new-item (merge
+                          old-item
+                          {
+                            :followsTo new-to-id
+                            ; :__children new-children
+                            })
+              ]
+          (merge tabtree' {from-id new-item})))
+      tabtree
+      content)))
+
+(defn generate-hasd-ontology []
   (write-to-file
-    "../hasd/ontology.tree"
-    (output/tabtree->string (hasd->tabtree))))
+    "../hasd/hasd_individuals.tree"
+    (output/tabtree->string
+      (-> (read-blocks) read-links)
+      :sorter (fn [a b] (compare (-> a name ->integer) (-> b name ->integer))))))
+
+(defn count-systems []
+  (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd_individuals.tree")]
+    (->> tabtree vals (map :system) flatten (remove nil?) distinct)))
+
+(defn generate-rdf []
+  (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd.tree")]
+    (write-to-file
+      "../hasd/hasd.ttl"
+      (rdf/tabtree->rdf tabtree))))
+
+
+
+; (defn generate-hasd-tabtree []
+;   (write-to-file
+;     "../hasd/ontology.tree"
+;     (output/tabtree->string (hasd->tabtree))))

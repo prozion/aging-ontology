@@ -6,6 +6,7 @@
   :dependencies [
                 [org.clojars.prozion/odysseus "0.1.5"]
                 [org.clojars.prozion/tabtree "0.6.2"]
+                [org.clojure/data.csv "1.0.1"]
                 ]
   :plugins [
             ; [lein-ancient "0.6.15"]

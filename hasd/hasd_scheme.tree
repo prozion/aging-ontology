@@ -1,0 +1,15 @@
+HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging System Diagram" rdfs/seeAlso:"http://sciencevsaging.org/en/diagram" ns:https://purl.org/agingontology/hasd#
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		xsd ns:http://www.w3.org/2001/XMLSchema#
+	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+		HASDNode
+	properties +a:rdfs/Property +section-hierarchy-inverse-relation:subproperty-of
+		name domain:HASDNode range:xsd/Literal
+		ageFrom domain:HASDNode range:xsd/Literal
+		ageTo domain:HASDNode range:xsd/Literal
+		followsTo domain:HASDNode range:HASDNode
+		system domain:HASDNode range:system_1
+			system_1 a:owl/DataRange owl/oneOf:`unknown,metabolism,cell,immune,intersystem,hormones,nervous,cardiovascular,respiratory,cancer,connective,death` ; owl/oneOf:`"UnknownSystem,MetabolismSystem,CellSystem,ImmuneSystem,Intersystem,HormonesSystem,NervousSystem,CardiovascularSystem,RespiratorySystem,Cancer,ConnectiveSystem,Death`
