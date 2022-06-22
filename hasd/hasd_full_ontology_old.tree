@@ -1,0 +1,329 @@
+node_nodes
+	P53-зависимая_необратимая_задержка_митоза system:cell name:"p53-зависимая необратимая задержка митоза" hasd-node-number:833 a:HASD_Node age-from:"25" age-to:"35"
+	Активирование_очагов_онкологических_клеток system:cancer name:"Активирование очагов онкологических клеток" hasd-node-number:225 a:HASD_Node age-from:"55" age-to:"65"
+	Аллергические_реакции system:immune name:"Аллергические реакции" hasd-node-number:1680 a:HASD_Node
+	Амплификация_днк system:unknown name:"Амплификация ДНК" hasd-node-number:1670 a:HASD_Node
+	Анемия system:respiratory name:"Анемия" hasd-node-number:197 a:HASD_Node age-from:"65" age-to:"75"
+	Артериальная_гипертония system:cardiovascular name:"Артериальная гипертония" hasd-node-number:205 a:HASD_Node age-from:"55" age-to:"65"
+	Артериальная_гипотония system:cardiovascular name:"Артериальная гипотония" hasd-node-number:1621 a:HASD_Node
+	Артриты system:intersystem name:"Артриты" hasd-node-number:367 a:HASD_Node age-from:"55" age-to:"65"
+	Атака_обкладочных_клеток_желудка_иммунной_системой system:cell name:"Атака обкладочных клеток желудка иммунной системой" hasd-node-number:819 a:HASD_Node age-from:"45" age-to:"55"
+	Атрофия_лёгочных_альвеол system:respiratory name:"Атрофия лёгочных альвеол" hasd-node-number:31 a:HASD_Node age-from:"55" age-to:"70"
+	Атрофия_мышц_(саркопения) system:unknown name:"Атрофия мышц (саркопения)" hasd-node-number:1693 a:HASD_Node
+	Атрофия_селезенки system:immune name:"Атрофия селезенки" hasd-node-number:75 a:HASD_Node age-from:"45" age-to:"50"
+	Аутоиммунные_заболевания system:immune name:"Аутоиммунные заболевания" hasd-node-number:965 a:HASD_Node age-from:"45" age-to:"55"
+	Блокирование_реакций_клетки_на_факторы_роста,_активирующие_ее_пролиферацию system:cell name:"Блокирование реакций клетки на факторы роста, активирующие ее пролиферацию" hasd-node-number:243 a:HASD_Node age-from:"40" age-to:"60"
+	Блокирование_репликационной_вилки system:intersystem name:"Блокирование репликационной вилки" hasd-node-number:553 a:HASD_Node age-from:"20" age-to:"30"
+	Болезнь_альцгеймера system:nervous name:"Болезнь Альцгеймера" hasd-node-number:193 a:HASD_Node age-from:"60" age-to:"70"
+	Болезнь_паркинсона system:nervous name:"Болезнь Паркинсона" hasd-node-number:437 a:HASD_Node age-from:"55" age-to:"65"
+	Брадикардия system:cardiovascular name:"Брадикардия" hasd-node-number:1623 a:HASD_Node
+	Бронхиальная_астма system:respiratory name:"Бронхиальная астма" hasd-node-number:1661 a:HASD_Node
+	Возрастное_переключение_активности_разных_субъединиц_протеасом system:intersystem name:"Возрастное переключение активности разных субъединиц протеасом" hasd-node-number:931 a:HASD_Node age-from:"15" age-to:"25"
+	Воспаление_сосудистой_стенки system:unknown name:"Воспаление сосудистой стенки" hasd-node-number:1678 a:HASD_Node
+	Воспалительные_реакции_в_тканях system:immune name:"Воспалительные реакции в тканях" hasd-node-number:281 a:HASD_Node age-from:"50" age-to:"100"
+	Временное_адаптивное_прекращение_митоза system:cell name:"Временное адаптивное прекращение митоза" hasd-node-number:1583 a:HASD_Node age-from:"25" age-to:"35"
+	Вторичный_иммунодефицит system:immune name:"Вторичный иммунодефицит" hasd-node-number:39 a:HASD_Node age-from:"50" age-to:"60"
+	Выделение_аминокислот_с_мочей system:metabolism name:"Выделение аминокислот с мочей" hasd-node-number:1635 a:HASD_Node
+	Вымывание_ca_из_костей system:metabolism name:"Вымывание Ca из костей" hasd-node-number:171 a:HASD_Node age-from:"45" age-to:"55"
+	Выработка_свободных_радикалов system:intersystem name:"Выработка свободных радикалов" hasd-node-number:353 a:HASD_Node age-from:"15" age-to:"25"
+	Выраженный_кальциноз_артерий system:cardiovascular name:"Выраженный кальциноз артерий" hasd-node-number:1667 a:HASD_Node age-from:"55" age-to:"65"
+	Геморрагический_инсульт system:cardiovascular name:"Геморрагический инсульт" hasd-node-number:1618 a:HASD_Node
+	Гипертрофия_простаты system:hormones name:"Гипертрофия простаты" hasd-node-number:391 a:HASD_Node age-from:"40" age-to:"50"
+	Гиповитаминоз_b12 system:metabolism name:"Гиповитаминоз B12" hasd-node-number:967 a:HASD_Node age-from:"50" age-to:"60"
+	Гиповолемия system:cell name:"Гиповолемия" hasd-node-number:1622 a:HASD_Node
+	Гипоксия_(разной_степени) system:respiratory name:"Гипоксия (разной степени)" hasd-node-number:345 a:HASD_Node age-from:"70" age-to:"100"
+	Гипоплазия_костного_мозга system:unknown name:"Гипоплазия костного мозга" hasd-node-number:1664 a:HASD_Node
+	Гипоплазия_мышечной_ткани system:intersystem name:"Гипоплазия мышечной ткани" hasd-node-number:693 a:HASD_Node age-from:"50" age-to:"60"
+	Гипоплазия_тканей system:connective name:"Гипоплазия тканей" hasd-node-number:729 a:HASD_Node age-from:"50" age-to:"80"
+	Гипотрофия_гладкой_мускулатуры_стенки_кишечника system:unknown name:"Гипотрофия гладкой мускулатуры стенки кишечника" hasd-node-number:1705 a:HASD_Node
+	Гипотрофия_мышц_грудной_клетки system:respiratory name:"Гипотрофия мышц грудной клетки" hasd-node-number:699 a:HASD_Node age-from:"55" age-to:"65"
+	Гипотрофия_надпочечников system:hormones name:"Гипотрофия надпочечников" hasd-node-number:51 a:HASD_Node age-from:"25" age-to:"35"
+	Гипотрофия_нейроэндокринных_узлов_(в_гипоталамусе_и_стволе_мозга) system:hormones name:"Гипотрофия нейроэндокринных узлов (в гипоталамусе и стволе мозга)" hasd-node-number:767 a:HASD_Node age-from:"20" age-to:"30"
+	Гипотрофия_передней_доли_гипофиза system:hormones name:"Гипотрофия передней доли гипофиза" hasd-node-number:885 a:HASD_Node age-from:"20" age-to:"35"
+	Гипотрофия_половых_желез system:hormones name:"Гипотрофия половых желез" hasd-node-number:383 a:HASD_Node age-from:"30" age-to:"40"
+	Гипотрофия_тканей,_вызванная_ухудшением_общего_кровообращения system:cardiovascular name:"Гипотрофия тканей, вызванная ухудшением общего кровообращения" hasd-node-number:56 a:HASD_Node age-from:"50" age-to:"60"
+	Гипотрофия_щитовидной_железы system:hormones name:"Гипотрофия щитовидной железы" hasd-node-number:347 a:HASD_Node age-from:"20" age-to:"40"
+	Гипотрофия_эндокринной_части_поджелудочной_железы system:hormones name:"Гипотрофия эндокринной части поджелудочной железы" hasd-node-number:161 a:HASD_Node age-from:"45" age-to:"55"
+	Гипотрофия_эпифиза system:hormones name:"Гипотрофия эпифиза" hasd-node-number:301 a:HASD_Node age-from:"30" age-to:"40"
+	Гиппоплазия_обкладочных_стенок_слизисток_желудка system:unknown name:"Гиппоплазия обкладочных стенок слизисток желудка" hasd-node-number:1712 a:HASD_Node
+	Гормональное_усиление_атрофии_ретикулярных_клеток_тимуса system:immune name:"Гормональное усиление атрофии ретикулярных клеток тимуса" hasd-node-number:1707 a:HASD_Node
+	Дальнейшее_ухудшение_функциональной_активности_печени system:unknown name:"Дальнейшее ухудшение функциональной активности печени" hasd-node-number:1702 a:HASD_Node
+	Депрессия system:nervous name:"Депрессия" hasd-node-number:909 a:HASD_Node age-from:"55" age-to:"60"
+	Деструкция_симпатических_окончаний system:nervous name:"Деструкция симпатических окончаний" hasd-node-number:927 a:HASD_Node age-from:"45" age-to:"60"
+	Дефицит_микроэлементов system:metabolism name:"Дефицит микроэлементов" hasd-node-number:945 a:HASD_Node age-from:"45" age-to:"85"
+	Дефицит_фактора_роста_нервов_(фрн) system:cell name:"Дефицит фактора роста нервов (ФРН)" hasd-node-number:1656 a:HASD_Node
+	Дисбактериоз system:metabolism name:"Дисбактериоз" hasd-node-number:1679 a:HASD_Node
+	Длительное_лежание_в_постели system:unknown name:"Длительное лежание в постели" hasd-node-number:1694 a:HASD_Node age-from:"65" age-to:"79"
+	Длительное_повышение_уровня_глюкозы_в_крови system:metabolism name:"Длительное повышение уровня глюкозы в крови" hasd-node-number:755 a:HASD_Node age-from:"35" age-to:"45"
+	Жировая_эмболия system:unknown name:"Жировая эмболия" hasd-node-number:1663 a:HASD_Node
+	Жировая_эмболия_сосудов_легких system:respiratory name:"Жировая эмболия сосудов легких" hasd-node-number:1676 a:HASD_Node
+	Задержка_эвакуации_непереваренной_пищи_(запор) system:unknown name:"Задержка эвакуации непереваренной пищи (запор)" hasd-node-number:1704 a:HASD_Node
+	Закупорка_сосудов_мозга system:cardiovascular name:"Закупорка сосудов мозга" hasd-node-number:1620 a:HASD_Node
+	Замедление_поступления_сигналов_в_центре_насыщения_гипоталамуса_о_насыщении system:unknown name:"Замедление поступления сигналов в центре насыщения гипоталамуса о насыщении" hasd-node-number:1685 a:HASD_Node
+	Замедление_процесса_синтеза_эластина_и_коллагена system:metabolism name:"Замедление процесса синтеза эластина и коллагена" hasd-node-number:29 a:HASD_Node age-from:"30" age-to:"40"
+	Замещение_свободного_пространства_соединительной_тканью system:connective name:"Замещение свободного пространства соединительной тканью" hasd-node-number:9 a:HASD_Node age-from:"40" age-to:"50"
+	Ибс system:cardiovascular name:"ИБС" hasd-node-number:495 a:HASD_Node age-from:"55" age-to:"65"
+	Изменение_порога_чувствительности_в_центре_аппетита_гипоталамуса system:hormones name:"Изменение порога чувствительности в центре аппетита гипоталамуса" hasd-node-number:919 a:HASD_Node age-from:"25" age-to:"35"
+	Изменение_проницаемости_альвеолярной_стенки system:cell name:"Изменение проницаемости альвеолярной стенки" hasd-node-number:279 a:HASD_Node age-from:"50" age-to:"75"
+	Изменение_рецепторной_чувствительности_клетки system:cell name:"Изменение рецепторной чувствительности клетки" hasd-node-number:237 a:HASD_Node age-from:"30" age-to:"40"
+	Изменение_структуры_аполипопротеина_(лпнп) system:cardiovascular name:"Изменение структуры аполипопротеина (ЛПНП)" hasd-node-number:865 a:HASD_Node age-from:"40" age-to:"50"
+	Изменение_физико-химических_свойств_мембранного_матрикса system:cell name:"Изменение физико-химических свойств мембранного матрикса" hasd-node-number:63 a:HASD_Node age-from:"25" age-to:"35"
+	Иммунная_система_воспринимает_эти_клетки_как_чужеродные system:cell name:"Иммунная система воспринимает эти клетки как чужеродные" hasd-node-number:877 a:HASD_Node age-from:"40" age-to:"50"
+	Ингибирование_протеосомы system:cell name:"Ингибирование протеосомы" hasd-node-number:101 a:HASD_Node age-from:"30" age-to:"40"
+	Инсулиннезависимый_сахарный_диабет_(ii_типа) system:metabolism name:"Инсулиннезависимый сахарный диабет (II типа)" hasd-node-number:1612 a:HASD_Node age-from:"55" age-to:"80"
+	Интеграция_ретровирусов_в_днк system:immune name:"Интеграция ретровирусов в ДНК" hasd-node-number:511 a:HASD_Node age-from:"40" age-to:"100"
+	Инфаркт_легких system:respiratory name:"Инфаркт легких" hasd-node-number:1692 a:HASD_Node age-from:"60" age-to:"70"
+	Инфаркт_миокарда system:cardiovascular name:"Инфаркт миокарда" hasd-node-number:131 a:HASD_Node age-from:"60" age-to:"70"
+	Истощение_запасов_нейромедиаторов system:nervous name:"Истощение запасов нейромедиаторов" hasd-node-number:1681 a:HASD_Node
+	Ишемический_инсульт system:cardiovascular name:"Ишемический инсульт" hasd-node-number:295 a:HASD_Node age-from:"60" age-to:"70"
+	Кальцификация_миоцитов system:cell name:"Кальцификация миоцитов" hasd-node-number:1657 a:HASD_Node
+	Кетонемия system:metabolism name:"Кетонемия" hasd-node-number:1631 a:HASD_Node
+	Кишечная_интоксикация system:metabolism name:"Кишечная интоксикация" hasd-node-number:589 a:HASD_Node age-from:"50" age-to:"85"
+	Костные_шипы system:intersystem name:"Костные шипы" hasd-node-number:137 a:HASD_Node age-from:"55" age-to:"65"
+	Легочная_недостаточность system:respiratory name:"Легочная недостаточность" hasd-node-number:505 a:HASD_Node age-from:"65" age-to:"75"
+	Межбелковые_сшивки system:unknown name:"Межбелковые сшивки" hasd-node-number:1669 a:HASD_Node
+	Менопауза_и_андропауза system:hormones name:"Менопауза и андропауза" hasd-node-number:601 a:HASD_Node age-from:"35" age-to:"45"
+	Метаболический_ацидоз system:metabolism name:"Метаболический ацидоз" hasd-node-number:1632 a:HASD_Node
+	Метаболический_синдром system:metabolism name:"Метаболический синдром" hasd-node-number:45 a:HASD_Node age-from:"55" age-to:"65"
+	Миграция_numt-псевдогенов_в_ядро system:unknown name:"Миграция NUMT-псевдогенов в ядро" hasd-node-number:1689 a:HASD_Node
+	Миокардиопатия system:cardiovascular name:"Миокардиопатия" hasd-node-number:659 a:HASD_Node age-from:"55" age-to:"65"
+	Мутации_мтднк system:intersystem name:"Мутации мтДНК" hasd-node-number:555 a:HASD_Node age-from:"20" age-to:"30"
+	Мышечная_слабость system:unknown name:"Мышечная слабость" hasd-node-number:1642 a:HASD_Node age-from:"50" age-to:"60"
+	Накопление_аммилоидных_фибрил_(бетта-амилоида) system:nervous name:"Накопление аммилоидных фибрил (бетта-амилоида)" hasd-node-number:37 a:HASD_Node age-from:"55" age-to:"65"
+	Накопление_белковых_агрегатов_(клеточного_мусора) system:intersystem name:"Накопление белковых агрегатов (клеточного мусора)" hasd-node-number:85 a:HASD_Node age-from:"25" age-to:"35"
+	Накопление_белковых_сшивок system:intersystem name:"Накопление белковых сшивок" hasd-node-number:859 a:HASD_Node age-from:"15" age-to:"20"
+	Накопление_внеклеточного_мусора system:cell name:"Накопление внеклеточного мусора" hasd-node-number:799 a:HASD_Node age-from:"45" age-to:"55"
+	Накопление_гликированных_белков system:metabolism name:"Накопление гликированных белков" hasd-node-number:15 a:HASD_Node age-from:"40" age-to:"50"
+	Накопление_денатурированных_белков system:intersystem name:"Накопление денатурированных белков" hasd-node-number:71 a:HASD_Node age-from:"15" age-to:"25"
+	Накопление_дефектного_коллагена system:intersystem name:"Накопление дефектного коллагена" hasd-node-number:325 a:HASD_Node age-from:"30" age-to:"40"
+	Накопление_жирных_кислот_в_крови system:cardiovascular name:"Накопление жирных кислот в крови" hasd-node-number:557 a:HASD_Node age-from:"35" age-to:"45"
+	Накопление_карбонилированных_белков system:intersystem name:"Накопление карбонилированных белков" hasd-node-number:641 a:HASD_Node age-from:"20" age-to:"30"
+	Накопление_клеточного_мусора_в_клетках_печени system:metabolism name:"Накопление клеточного мусора в клетках печени" hasd-node-number:47 a:HASD_Node age-from:"20" age-to:"30"
+	Накопление_липофусцина system:metabolism name:"Накопление липофусцина" hasd-node-number:187 a:HASD_Node age-from:"30" age-to:"40"
+	Накопление_нефункциональных_белков system:intersystem name:"Накопление нефункциональных белков" hasd-node-number:363 a:HASD_Node age-from:"20" age-to:"30"
+	Накопление_нефункциональных_белков,_входящих_в_состав_антиоксидантных_систем system:intersystem name:"Накопление нефункциональных белков, входящих в состав антиоксидантных систем" hasd-node-number:539 a:HASD_Node age-from:"20" age-to:"30"
+	Накопление_окисленных_белков system:intersystem name:"Накопление окисленных белков" hasd-node-number:525 a:HASD_Node age-from:"20" age-to:"30"
+	Накопление_повреждений_в_миоцитах system:cell name:"Накопление повреждений в миоцитах" hasd-node-number:217 a:HASD_Node age-from:"50" age-to:"60"
+	Накопление_сшивок_липид-белок system:intersystem name:"Накопление сшивок липид-белок" hasd-node-number:19 a:HASD_Node age-from:"20" age-to:"30"
+	Нарушение_взаимодействия_между_белками_хоминга_(l-селектинамии_адрессинами) system:unknown name:"Нарушение взаимодействия между белками хоминга (L-селектинамии адрессинами)" hasd-node-number:1674 a:HASD_Node
+	Нарушение_водно-солевого_обмена system:metabolism name:"Нарушение водно-солевого обмена" hasd-node-number:1698 a:HASD_Node
+	Нарушение_газообмена_co2_и_o2 system:respiratory name:"Нарушение газообмена CO2 и O2" hasd-node-number:917 a:HASD_Node age-from:"65" age-to:"75"
+	Нарушение_индуцибельной_экспрессии_генов_днк system:intersystem name:"Нарушение индуцибельной экспрессии генов ДНК" hasd-node-number:501 a:HASD_Node age-from:"25" age-to:"35"
+	Нарушение_межсинаптической_связи_между_нейронами system:cell name:"Нарушение межсинаптической связи между нейронами" hasd-node-number:1654 a:HASD_Node
+	Нарушение_метаболизма_клетки system:metabolism name:"Нарушение метаболизма клетки" hasd-node-number:871 a:HASD_Node age-from:"30" age-to:"40"
+	Нарушение_миграции_лимфоцитов_в_лимфоузлы system:unknown name:"Нарушение миграции лимфоцитов в лимфоузлы" hasd-node-number:1675 a:HASD_Node
+	Нарушение_мозгового_кровообращения system:cardiovascular name:"Нарушение мозгового кровообращения" hasd-node-number:951 a:HASD_Node age-from:"55" age-to:"65"
+	Нарушение_пула_стволовых_клеток_в_популяции,_в_результате_нарушения_ system:cell name:"Нарушение пула стволовых клеток в популяции, в результате нарушения " hasd-node-number:181 a:HASD_Node age-from:"30" age-to:"40"
+	Нарушение_регуляции_основных_систем_жизнеобеспечения system:nervous name:"Нарушение регуляции основных систем жизнеобеспечения" hasd-node-number:126 a:HASD_Node age-from:"60" age-to:"70"
+	Нарушение_структуры_хроматина system:immune name:"Нарушение структуры хроматина" hasd-node-number:270 a:HASD_Node age-from:"15" age-to:"25"
+	Нарушение_суточного_ритма_секреции_нейрпептида_y system:hormones name:"Нарушение суточного ритма секреции нейрпептида Y" hasd-node-number:509 a:HASD_Node age-from:"25" age-to:"35"
+	Нарушение_транспорта_метаболитов_через_мембрану system:cell name:"Нарушение транспорта метаболитов через мембрану" hasd-node-number:471 a:HASD_Node age-from:"30" age-to:"40"
+	Нарушение_усваиваемости_витаминов_групп_bdce system:metabolism name:"Нарушение усваиваемости витаминов групп BDCE" hasd-node-number:845 a:HASD_Node age-from:"45" age-to:"50"
+	Нарушение_функций_клетки system:cell name:"Нарушение функций клетки" hasd-node-number:319 a:HASD_Node age-from:"50" age-to:"60"
+	Нарушение_функционирования_головного_мозга system:cardiovascular name:"Нарушение функционирования головного мозга" hasd-node-number:1619 a:HASD_Node
+	Нарушения_хоминга system:cell name:"Нарушения хоминга" hasd-node-number:266 a:HASD_Node age-from:"35" age-to:"45"
+	Начало_атрофии_ретикулярных_клеток_тимуса system:cell name:"Начало атрофии ретикулярных клеток тимуса" hasd-node-number:727 a:HASD_Node age-from:"20" age-to:"50"
+	Начало_кальциноза_артерий system:cardiovascular name:"Начало кальциноза артерий" hasd-node-number:1666 a:HASD_Node age-from:"30" age-to:"40"
+	Негативное_изменение_конститутивной_экспрессии_генов system:intersystem name:"Негативное изменение конститутивной экспрессии генов" hasd-node-number:433 a:HASD_Node age-from:"20" age-to:"30"
+	Негативное_изменение_межклеточного_матрикса system:cell name:"Негативное изменение межклеточного матрикса" hasd-node-number:399 a:HASD_Node age-from:"30" age-to:"40"
+	Негомологичная_рекомбинация_хромосом system:intersystem name:"Негомологичная рекомбинация хромосом" hasd-node-number:21 a:HASD_Node age-from:"15" age-to:"25"
+	Недорепликация_днк_при_нормальной_пролиферации_клеток system:unknown name:"Недорепликация ДНК при нормальной пролиферации клеток" hasd-node-number:1690 a:HASD_Node age-from:"10" age-to:"15"
+	Нестабильность_генома system:intersystem name:"Нестабильность генома" hasd-node-number:239 a:HASD_Node age-from:"20" age-to:"30"
+	Неусвоение_витамина_b12 system:metabolism name:"Неусвоение витамина B12" hasd-node-number:115 a:HASD_Node age-from:"50" age-to:"60"
+	Нормальное_укорочение_теломер system:unknown name:"Нормальное укорочение теломер" hasd-node-number:1691 a:HASD_Node
+	Образование_8-оксо-2’деоксигуанозина_в_промоторных_и_энхансерных_участках_днк system:intersystem name:"Образование 8-оксо-2’деоксигуанозина в промоторных и энхансерных участках ДНК" hasd-node-number:375 a:HASD_Node age-from:"20" age-to:"30"
+	Образование_numt-псевдогенов_в_мтднк system:intersystem name:"Образование NUMT-псевдогенов в мтДНК" hasd-node-number:825 a:HASD_Node age-from:"20" age-to:"30"
+	Образование_алкилированных_оснований system:intersystem name:"Образование алкилированных оснований" hasd-node-number:575 a:HASD_Node age-from:"20" age-to:"30"
+	Образование_атеросклеротических_бляшек system:cardiovascular name:"Образование атеросклеротических бляшек" hasd-node-number:463 a:HASD_Node age-from:"50" age-to:"60"
+	Образование_дефектных_антигенов_в_клетках_организма system:cell name:"Образование дефектных антигенов в клетках организма" hasd-node-number:821 a:HASD_Node age-from:"40" age-to:"50"
+	Образование_малонового_альдегида system:metabolism name:"Образование малонового альдегида" hasd-node-number:159 a:HASD_Node age-from:"15" age-to:"85"
+	Образование_пенистых_клеток system:cell name:"Образование пенистых клеток" hasd-node-number:189 a:HASD_Node age-from:"45" age-to:"55"
+	Образование_пристеночных_тромбов_в_сердце system:cardiovascular name:"Образование пристеночных тромбов в сердце" hasd-node-number:1626 a:HASD_Node
+	Образование_сигнала_о_двухцепочечном_разрыве_днк system:intersystem name:"Образование сигнала о двухцепочечном разрыве ДНК" hasd-node-number:245 a:HASD_Node age-from:"20" age-to:"30"
+	Общая_дряхлость_организма system:intersystem name:"Общая дряхлость организма" hasd-node-number:145 a:HASD_Node age-from:"70" age-to:"80"
+	Общая_интоксикация_организма system:metabolism name:"Общая интоксикация организма" hasd-node-number:1640 a:HASD_Node age-from:"40" age-to:"50"
+	Ограничение_подвижности system:intersystem name:"Ограничение подвижности" hasd-node-number:95 a:HASD_Node age-from:"65" age-to:"75"
+	Ожирение system:metabolism name:"Ожирение" hasd-node-number:130 a:HASD_Node age-from:"50" age-to:"60"
+	Окисление_эластина system:metabolism name:"Окисление эластина" hasd-node-number:933 a:HASD_Node age-from:"30" age-to:"40"
+	Онкогенез_злокачественные_(и_доброкачественные)_опухоли system:cancer name:"Онкогенез злокачественные (и доброкачественные) опухоли" hasd-node-number:49 a:HASD_Node age-from:"55" age-to:"65"
+	Ослабление_мышечного_тонуса_стенки_кишечника system:unknown name:"Ослабление мышечного тонуса стенки кишечника" hasd-node-number:1706 a:HASD_Node
+	Остеопороз system:intersystem name:"Остеопороз" hasd-node-number:377 a:HASD_Node age-from:"55" age-to:"65"
+	Остеохондроз system:intersystem name:"Остеохондроз" hasd-node-number:203 a:HASD_Node age-from:"50" age-to:"60"
+	Отрицательный_азотный_баланс system:metabolism name:"Отрицательный азотный баланс" hasd-node-number:1636 a:HASD_Node
+	Патологическое_укорочение_теломер system:intersystem name:"Патологическое укорочение теломер" hasd-node-number:268 a:HASD_Node age-from:"20" age-to:"30"
+	Первично-прогрессирующая_форма_рассеянного_склероза age:50- system:immune name:"Первично-прогрессирующая форма рассеянного склероза" hasd-node-number:1641 a:HASD_Node
+	Первичное_ухудшение_микроциркуляции_крови_и_лимфы system:intersystem name:"Первичное ухудшение микроциркуляции крови и лимфы" hasd-node-number:841 a:HASD_Node age-from:"20" age-to:"60"
+	Переломы system:intersystem name:"Переломы" hasd-node-number:307 a:HASD_Node age-from:"65" age-to:"75"
+	Переполнение_лизосомы system:cell name:"Переполнение лизосомы" hasd-node-number:607 a:HASD_Node age-from:"35" age-to:"45"
+	Переполнение_макрофагов_окислами_липидов system:cell name:"Переполнение макрофагов окислами липидов" hasd-node-number:959 a:HASD_Node age-from:"45" age-to:"55"
+	Перикисное_окисление_липидов_в_мембранах system:metabolism name:"Перикисное окисление липидов в мембранах" hasd-node-number:629 a:HASD_Node age-from:"25" age-to:"35"
+	Пневмония system:respiratory name:"Пневмония" hasd-node-number:59 a:HASD_Node age-from:"70" age-to:"100"
+	Повреждение_мембран_митохондрий system:cell name:"Повреждение мембран митохондрий" hasd-node-number:165 a:HASD_Node age-from:"25" age-to:"35"
+	Повреждения_эндотелия system:cell name:"Повреждения эндотелия" hasd-node-number:247 a:HASD_Node age-from:"30" age-to:"40"
+	Повышение_активности_афк system:intersystem name:"Повышение активности АФК" hasd-node-number:593 a:HASD_Node age-from:"20" age-to:"30"
+	Повышение_активности_липазы system:metabolism name:"Повышение активности липазы" hasd-node-number:1638 a:HASD_Node
+	Повышение_активности_паратиреоидного_гормона system:hormones name:"Повышение активности паратиреоидного гормона" hasd-node-number:117 a:HASD_Node age-from:"45" age-to:"55"
+	Повышение_давления_в_альвеолах system:respiratory name:"Повышение давления в альвеолах" hasd-node-number:1660 a:HASD_Node
+	Повышение_онкориска_жкт system:cancer name:"Повышение онкориска ЖКТ" hasd-node-number:1696 a:HASD_Node
+	Повышение_порога_возбудимости_нервных_центров system:nervous name:"Повышение порога возбудимости нервных центров" hasd-node-number:1651 a:HASD_Node
+	Повышение_проницаемости_сосудистой_стенки system:cell name:"Повышение проницаемости сосудистой стенки" hasd-node-number:1616 a:HASD_Node
+	Повышение_секреции_вазопрессина system:hormones name:"Повышение секреции вазопрессина" hasd-node-number:315 a:HASD_Node age-from:"30" age-to:"40"
+	Повышение_секреции_глюкокортикоидов system:hormones name:"Повышение секреции глюкокортикоидов" hasd-node-number:915 a:HASD_Node age-from:"30" age-to:"40"
+	Повышение_секреции_пролактина system:hormones name:"Повышение секреции пролактина" hasd-node-number:123 a:HASD_Node age-from:"35" age-to:"45"
+	Повышение_содержания_аминокислот_в_крови system:metabolism name:"Повышение содержания аминокислот в крови" hasd-node-number:1634 a:HASD_Node
+	Повышение_уровня_глюкагона_в_крови system:hormones name:"Повышение уровня глюкагона в крови" hasd-node-number:1629 a:HASD_Node
+	Повышение_уровня_кортизола_в_крови system:unknown name:"Повышение уровня кортизола в крови" hasd-node-number:1646 a:HASD_Node
+	Подавление_аутофагии system:cell name:"Подавление аутофагии" hasd-node-number:603 a:HASD_Node age-from:"30" age-to:"40"
+	Подавление_секреции_паратиреоидного_гормона system:hormones name:"Подавление секреции паратиреоидного гормона" hasd-node-number:411 a:HASD_Node age-from:"50" age-to:"60"
+	Поздние_мутации system:unknown name:"Поздние мутации" hasd-node-number:1688 a:HASD_Node
+	Понижение_толерантности_к_глюкозе system:cell name:"Понижение толерантности к глюкозе" hasd-node-number:615 a:HASD_Node age-from:"35" age-to:"45"
+	Пороки_сердца system:cardiovascular name:"Пороки сердца" hasd-node-number:1627 a:HASD_Node
+	Постоянное_переедание system:metabolism name:"Постоянное переедание" hasd-node-number:687 a:HASD_Node age-from:"30" age-to:"40"
+	Потеря_белков,_покрывающих_теломеры_(trf2) system:intersystem name:"Потеря белков, покрывающих теломеры (TRF2)" hasd-node-number:253 a:HASD_Node age-from:"15" age-to:"25"
+	Потеря_т-петли_в_теломерах system:intersystem name:"Потеря Т-петли в теломерах" hasd-node-number:889 a:HASD_Node age-from:"20" age-to:"30"
+	Почечная_недостаточность system:metabolism name:"Почечная недостаточность" hasd-node-number:235 a:HASD_Node age-from:"50" age-to:"60"
+	Появление_аутоиммунной_реакции system:immune name:"Появление аутоиммунной реакции" hasd-node-number:565 a:HASD_Node age-from:"45" age-to:"55"
+	Появление_дефектных_клеток system:cell name:"Появление дефектных клеток" hasd-node-number:677 a:HASD_Node age-from:"50" age-to:"60"
+	Появление_дефектных_митохондрий system:cell name:"Появление дефектных митохондрий" hasd-node-number:357 a:HASD_Node age-from:"30" age-to:"40"
+	Превращение_протоонкогенов_в_онкогены system:unknown name:"Превращение протоонкогенов в онкогены" hasd-node-number:1687 a:HASD_Node
+	Продуцирование_воспалительных_цитокинов system:immune name:"Продуцирование воспалительных цитокинов" hasd-node-number:139 a:HASD_Node age-from:"50" age-to:"100"
+	Проникновение_окислов_липидов_и_фибринов_и_тромбоцитов_в_субэндотелиальное_пространство system:cardiovascular name:"Проникновение окислов липидов и фибринов и тромбоцитов в субэндотелиальное пространство" hasd-node-number:895 a:HASD_Node age-from:"30" age-to:"40"
+	Размножение_гладкомышечных_клеток system:cell name:"Размножение гладкомышечных клеток" hasd-node-number:93 a:HASD_Node age-from:"50" age-to:"60"
+	Разрастание_гнилостной_флоры system:cell name:"Разрастание гнилостной флоры" hasd-node-number:783 a:HASD_Node age-from:"40" age-to:"85"
+	Разрыв_сосудов_мозга system:cardiovascular name:"Разрыв сосудов мозга" hasd-node-number:1617 a:HASD_Node
+	Разрывы_хромосом system:unknown name:"Разрывы хромосом" hasd-node-number:1643 a:HASD_Node
+	Разрывы_цепей_днк system:intersystem name:"Разрывы цепей ДНК" hasd-node-number:891 a:HASD_Node age-from:"20" age-to:"30"
+	Рак_желудка system:cancer name:"Рак желудка" hasd-node-number:1709 a:HASD_Node
+	Рак_жкт system:cancer name:"Рак ЖКТ" hasd-node-number:1697 a:HASD_Node
+	Рак_легких system:cancer name:"Рак легких" hasd-node-number:191 a:HASD_Node age-from:"60" age-to:"70"
+	Рак_молочной_железы system:cancer name:"Рак молочной железы" hasd-node-number:73 a:HASD_Node age-from:"55" age-to:"65"
+	Рак_пищевода system:cancer name:"Рак пищевода" hasd-node-number:1708 a:HASD_Node
+	Рак_простаты system:cancer name:"Рак простаты" hasd-node-number:173 a:HASD_Node age-from:"55" age-to:"65"
+	Рак_толстого_кишечника system:cancer name:"Рак толстого кишечника" hasd-node-number:1711 a:HASD_Node
+	Рак_тонкого_кишечника system:cancer name:"Рак тонкого кишечника" hasd-node-number:1710 a:HASD_Node
+	Раковая_интоксикация system:cancer name:"Раковая интоксикация" hasd-node-number:1713 a:HASD_Node
+	Ревматизм system:intersystem name:"Ревматизм" hasd-node-number:257 a:HASD_Node age-from:"50" age-to:"60"
+	Репликативное_старение_(стойкое_прекращение_митоза) system:cell name:"Репликативное старение (стойкое прекращение митоза)" hasd-node-number:272 a:HASD_Node age-from:"60" age-to:"80"
+	Рост_доли_субъединиц_протеосом_с_пониженной_активностью system:intersystem name:"Рост доли субъединиц протеосом с пониженной активностью" hasd-node-number:1586 a:HASD_Node age-from:"15" age-to:"25"
+	Сахарный_диабет_пожилого_возраста system:metabolism name:"Сахарный диабет пожилого возраста" hasd-node-number:91 a:HASD_Node age-from:"50" age-to:"85"
+	Сверхактивация_протоонкогенов system:immune name:"Сверхактивация протоонкогенов" hasd-node-number:223 a:HASD_Node age-from:"15" age-to:"25"
+	Сердечная_недостаточность system:cardiovascular name:"Сердечная недостаточность" hasd-node-number:7 a:HASD_Node age-from:"60" age-to:"70"
+	Смерть_организма system:death name:"Смерть организма" hasd-node-number:543 a:HASD_Node age-from:"85" age-to:"90"
+	Снижение_активности_белков_теплового_шока system:intersystem name:"Снижение активности белков теплового шока" hasd-node-number:839 a:HASD_Node age-from:"20" age-to:"30"
+	Снижение_выработки_q10 system:metabolism name:"Снижение выработки Q10" hasd-node-number:679 a:HASD_Node age-from:"20" age-to:"30"
+	Снижение_выработки_актг_(аденекортикотропный_гормон) system:hormones name:"Снижение выработки АКТГ (Аденекортикотропный гормон)" hasd-node-number:475 a:HASD_Node age-from:"25" age-to:"35"
+	Снижение_выработки_атф_(в_отдельных_клетках) system:metabolism name:"Снижение выработки АТФ (в отдельных клетках)" hasd-node-number:617 a:HASD_Node age-from:"30" age-to:"40"
+	Снижение_выработки_ттг_(тиреотропный_гормон) system:hormones name:"Снижение выработки ТТГ (Тиреотропный гормон)" hasd-node-number:251 a:HASD_Node age-from:"20" age-to:"35"
+	Снижение_количества_активных_копий_днк,_кодирующей_рибосомальную_рнк_и_белки system:intersystem name:"Снижение количества активных копий ДНК, кодирующей рибосомальную РНК и белки" hasd-node-number:785 a:HASD_Node age-from:"15" age-to:"25"
+	Снижение_количества_и_качества_рибосом system:cell name:"Снижение количества и качества рибосом" hasd-node-number:453 a:HASD_Node age-from:"25" age-to:"35"
+	Снижение_количества_функционирующих_клеток system:cell name:"Снижение количества функционирующих клеток" hasd-node-number:163 a:HASD_Node age-from:"30" age-to:"40"
+	Снижение_проницаемости_мембраны system:cell name:"Снижение проницаемости мембраны" hasd-node-number:901 a:HASD_Node age-from:"25" age-to:"35"
+	Снижение_секреции_igf-1_(инсулиноподобного_фактора_роста-1)_в_гепатоцитах_печени system:metabolism name:"Снижение секреции IGF-1 (инсулиноподобного фактора роста-1) в гепатоцитах печени" hasd-node-number:175 a:HASD_Node age-from:"20" age-to:"30"
+	Снижение_секреции_дегидроэпиандростерона system:hormones name:"Снижение секреции Дегидроэпиандростерона" hasd-node-number:321 a:HASD_Node age-from:"30" age-to:"40"
+	Снижение_секреции_мелатонина system:hormones name:"Снижение секреции мелатонина" hasd-node-number:551 a:HASD_Node age-from:"30" age-to:"40"
+	Снижение_секреции_нейротрансмиттеров system:nervous name:"Снижение секреции нейротрансмиттеров" hasd-node-number:751 a:HASD_Node age-from:"50" age-to:"60"
+	Снижение_секреции_норадреналина system:hormones name:"Снижение секреции норадреналина" hasd-node-number:241 a:HASD_Node age-from:"30" age-to:"100"
+	Снижение_секреции_половых_гормонов_(тестостерон,_эстрадиол,_прогестерон) system:hormones name:"Снижение секреции половых гормонов (тестостерон, эстрадиол, прогестерон)" hasd-node-number:467 a:HASD_Node age-from:"30" age-to:"40"
+	Снижение_секреции_соматотропина_(гормон_роста) system:hormones name:"Снижение секреции соматотропина (гормон роста)" hasd-node-number:801 a:HASD_Node age-from:"40" age-to:"50"
+	Снижение_секреции_тиреоидных_гормонов system:hormones name:"Снижение секреции тиреоидных гормонов" hasd-node-number:151 a:HASD_Node age-from:"35" age-to:"45"
+	Снижение_синтеза_белка system:metabolism name:"Снижение синтеза белка" hasd-node-number:65 a:HASD_Node age-from:"20" age-to:"45"
+	Снижение_синтеза_белка_в_железистых_клетках_жкт system:metabolism name:"Снижение синтеза белка в железистых клетках ЖКТ" hasd-node-number:1695 a:HASD_Node
+	Снижение_синтеза_кальцийтриола system:metabolism name:"Снижение синтеза кальцийтриола" hasd-node-number:535 a:HASD_Node age-from:"50" age-to:"60"
+	Снижение_синтеза_мрнк system:intersystem name:"Снижение синтеза мРНК" hasd-node-number:665 a:HASD_Node age-from:"20" age-to:"30"
+	Снижение_синтеза_рибосомальной_рнк system:intersystem name:"Снижение синтеза рибосомальной РНК" hasd-node-number:635 a:HASD_Node age-from:"20" age-to:"30"
+	Снижение_синтеза_рибосомальных_белков system:intersystem name:"Снижение синтеза рибосомальных белков" hasd-node-number:531 a:HASD_Node age-from:"20" age-to:"30"
+	Снижение_скорости_деления_стволовых_мышечных_клеток system:cell name:"Снижение скорости деления стволовых мышечных клеток" hasd-node-number:1684 a:HASD_Node
+	Снижение_скорости_рефлексов system:nervous name:"Снижение скорости рефлексов" hasd-node-number:109 a:HASD_Node age-from:"50" age-to:"60"
+	Снижение_ферментной_активности_в_железистых_клетках_жкт system:metabolism name:"Снижение ферментной активности в железистых клетках ЖКТ" hasd-node-number:529 a:HASD_Node age-from:"40" age-to:"85"
+	Снижение_физической_работоспособности system:intersystem name:"Снижение физической работоспособности" hasd-node-number:77 a:HASD_Node age-from:"60" age-to:"70"
+	Снижение_функциональной_активности_(тканей,_органов,_систем) system:connective name:"Снижение функциональной активности (тканей, органов, систем)" hasd-node-number:143 a:HASD_Node age-from:"50" age-to:"60"
+	Снижение_экспрессии_компонентов_репаративных_систем system:intersystem name:"Снижение экспрессии компонентов репаративных систем" hasd-node-number:781 a:HASD_Node age-from:"20" age-to:"30"
+	Соединение_альвеол_между_собой system:respiratory name:"Соединение альвеол между собой" hasd-node-number:141 a:HASD_Node age-from:"50" age-to:"60"
+	Старческая_деменция system:nervous name:"Старческая деменция" hasd-node-number:1639 a:HASD_Node
+	Стойкое_понижение_уровня_инсулина_в_крови system:hormones name:"Стойкое понижение уровня инсулина в крови" hasd-node-number:155 a:HASD_Node age-from:"45" age-to:"55"
+	Стохастическое_повреждение_днк system:immune name:"Стохастическое повреждение ДНК" hasd-node-number:157 a:HASD_Node age-from:"10" age-to:"15"
+	Стрептококковая_и_стафилококковая_инфекция system:unknown name:"Стрептококковая и стафилококковая инфекция" hasd-node-number:1662 a:HASD_Node
+	Сужение_просвета_сосудов system:cardiovascular name:"Сужение просвета сосудов" hasd-node-number:1613 a:HASD_Node
+	Сшивки_(из-за_металлов_переменной_валентности,_диальдегидов) system:intersystem name:"Сшивки (из-за металлов переменной валентности, диальдегидов)" hasd-node-number:201 a:HASD_Node age-from:"40" age-to:"50"
+	Сшивки_днк-днк system:intersystem name:"Сшивки ДНК-ДНК" hasd-node-number:427 a:HASD_Node age-from:"20" age-to:"30"
+	Тепловое_движение_молекул system:unknown name:"Тепловое движение молекул" hasd-node-number:1672 a:HASD_Node
+	Точковые_(ядерные)_мутации system:intersystem name:"Точковые (ядерные) мутации" hasd-node-number:97 a:HASD_Node age-from:"20" age-to:"30"
+	Транспозиция_мобильных_элементов_генома system:intersystem name:"Транспозиция мобильных элементов генома" hasd-node-number:373 a:HASD_Node age-from:"20" age-to:"30"
+	Тромбоз_сосудов_мозга system:cardiovascular name:"Тромбоз сосудов мозга" hasd-node-number:1624 a:HASD_Node
+	Тромботическая_эмболия_сосудов_мозга system:cardiovascular name:"Тромботическая эмболия сосудов мозга" hasd-node-number:1625 a:HASD_Node
+	Увеличение_количества_альдегидов system:metabolism name:"Увеличение количества альдегидов" hasd-node-number:519 a:HASD_Node age-from:"40" age-to:"50"
+	Увеличение_количества_амилоидных_бляшек system:nervous name:"Увеличение количества амилоидных бляшек" hasd-node-number:177 a:HASD_Node age-from:"55" age-to:"65"
+	Увеличение_количества_жировой_ткани system:metabolism name:"Увеличение количества жировой ткани" hasd-node-number:623 a:HASD_Node age-from:"40" age-to:"50"
+	Увеличение_количества_коллагенных_волокон_(между_клеток) system:cell name:"Увеличение количества коллагенных волокон (между клеток)" hasd-node-number:169 a:HASD_Node age-from:"25" age-to:"35"
+	Увеличение_количества_непереваренной_пищи_в_жкт system:metabolism name:"Увеличение количества непереваренной пищи в ЖКТ" hasd-node-number:61 a:HASD_Node age-from:"40" age-to:"85"
+	Увеличение_количества_соединительной_ткани system:respiratory name:"Увеличение количества соединительной ткани" hasd-node-number:907 a:HASD_Node age-from:"43" age-to:"50"
+	Увеличение_периферического_сопротивления system:cardiovascular name:"Увеличение периферического сопротивления" hasd-node-number:647 a:HASD_Node age-from:"50" age-to:"60"
+	Увеличение_уровня_ca_в_крови system:metabolism name:"Увеличение уровня Ca в крови" hasd-node-number:675 a:HASD_Node age-from:"50" age-to:"60"
+	Уменьшается_эластичность_легочной_ткани system:respiratory name:"Уменьшается эластичность легочной ткани" hasd-node-number:53 a:HASD_Node age-from:"55" age-to:"65"
+	Уменьшение_адаптивной_реакции system:nervous name:"Уменьшение адаптивной реакции" hasd-node-number:733 a:HASD_Node age-from:"50" age-to:"60"
+	Уменьшение_активности_холинацетилазы system:metabolism name:"Уменьшение активности холинацетилазы" hasd-node-number:1652 a:HASD_Node
+	Уменьшение_влияния_на_сердце_симпатической_нервной_системы system:nervous name:"Уменьшение влияния на сердце симпатической нервной системы" hasd-node-number:23 a:HASD_Node age-from:"50" age-to:"60"
+	Уменьшение_выработки_эстрогена system:hormones name:"Уменьшение выработки эстрогена" hasd-node-number:195 a:HASD_Node age-from:"35" age-to:"45"
+	Уменьшение_жизненной_емкости_легких system:respiratory name:"Уменьшение жизненной емкости легких" hasd-node-number:283 a:HASD_Node age-from:"60" age-to:"70"
+	Уменьшение_кол-ва_в-лимфоцитов_которые_отвечают_за_специфические_реакции system:cell name:"Уменьшение кол-ва В-лимфоцитов которые отвечают за специфические реакции" hasd-node-number:99 a:HASD_Node age-from:"40" age-to:"50"
+	Уменьшение_количества_(и_ухудшение_качества)_адгезивных_рецепторов system:cell name:"Уменьшение количества (и ухудшение качества) адгезивных рецепторов" hasd-node-number:447 a:HASD_Node age-from:"30" age-to:"40"
+	Уменьшение_количества_внутриклеточных_элементов_(митохондрии,_рибосомы) system:cell name:"Уменьшение количества внутриклеточных элементов (митохондрии, рибосомы)" hasd-node-number:883 a:HASD_Node age-from:"35" age-to:"50"
+	Уменьшение_количества_информационных_молекул system:connective name:"Уменьшение количества информационных молекул" hasd-node-number:795 a:HASD_Node age-from:"35" age-to:"45"
+	Уменьшение_количества_миоцитов system:cell name:"Уменьшение количества миоцитов" hasd-node-number:249 a:HASD_Node age-from:"50" age-to:"60"
+	Уменьшение_количества_нейронов system:cell name:"Уменьшение количества нейронов" hasd-node-number:563 a:HASD_Node age-from:"55" age-to:"65"
+	Уменьшение_количества_нервных_рецепторов system:cell name:"Уменьшение количества нервных рецепторов" hasd-node-number:1655 a:HASD_Node
+	Уменьшение_количества_серотонина system:nervous name:"Уменьшение количества серотонина" hasd-node-number:153 a:HASD_Node age-from:"50" age-to:"60"
+	Уменьшение_количества_стволовых_мышечных_клеток system:cell name:"Уменьшение количества стволовых мышечных клеток" hasd-node-number:1648 a:HASD_Node age-from:"30" age-to:"40"
+	Уменьшение_концентрации_цитокина_il7_в_тимусе system:metabolism name:"Уменьшение концентрации цитокина IL7 в тимусе" hasd-node-number:1649 a:HASD_Node
+	Уменьшение_кровотока system:cardiovascular name:"Уменьшение кровотока" hasd-node-number:1668 a:HASD_Node
+	Уменьшение_объёма_клетки system:cell name:"Уменьшение объёма клетки" hasd-node-number:431 a:HASD_Node age-from:"35" age-to:"50"
+	Уменьшение_поглощения_кислорода_клеткой system:cell name:"Уменьшение поглощения кислорода клеткой" hasd-node-number:1683 a:HASD_Node
+	Уменьшение_проводимости_нервных_волокон system:nervous name:"Уменьшение проводимости нервных волокон" hasd-node-number:649 a:HASD_Node age-from:"45" age-to:"50"
+	Уменьшение_пролифирации_клеток system:cell name:"Уменьшение пролифирации клеток" hasd-node-number:209 a:HASD_Node age-from:"30" age-to:"40"
+	Уменьшение_проницаемости_межклеточного_пространства system:cell name:"Уменьшение проницаемости межклеточного пространства" hasd-node-number:939 a:HASD_Node age-from:"20" age-to:"45"
+	Уменьшение_синтеза_ацетилхолина system:unknown name:"Уменьшение синтеза ацетилхолина" hasd-node-number:1653 a:HASD_Node
+	Уменьшение_синтеза_белка_в_кардиомиоцитах system:metabolism name:"Уменьшение синтеза белка в кардиомиоцитах" hasd-node-number:1699 a:HASD_Node
+	Уменьшение_синтеза_с-комплемента system:metabolism name:"Уменьшение синтеза С-комплемента" hasd-node-number:276 a:HASD_Node age-from:"25" age-to:"35"
+	Уменьшение_синтеза_селектинов_и_адрессинов system:unknown name:"Уменьшение синтеза селектинов и адрессинов" hasd-node-number:1673 a:HASD_Node
+	Уменьшение_скорости_физиологической_регенерации_тканей system:cell name:"Уменьшение скорости физиологической регенерации тканей" hasd-node-number:288 a:HASD_Node age-from:"30" age-to:"40"
+	Уменьшение_содержания_эластина_в_стенках_артерий_(на_5–10%) system:cardiovascular name:"Уменьшение содержания эластина в стенках артерий (на 5–10%)" hasd-node-number:1665 a:HASD_Node age-from:"30" age-to:"40"
+	Уменьшение_транспорта_аминокислот_в_клетки system:cell name:"Уменьшение транспорта аминокислот в клетки" hasd-node-number:1633 a:HASD_Node
+	Уменьшение_функциональной_активности_кардиомиоцитов system:cell name:"Уменьшение функциональной активности кардиомиоцитов" hasd-node-number:1700 a:HASD_Node
+	Уменьшение_функциональной_активности_клеток system:cell name:"Уменьшение функциональной активности клеток" hasd-node-number:27 a:HASD_Node age-from:"40" age-to:"40"
+	Уменьшение_функциональной_активности_клеток_почек system:unknown name:"Уменьшение функциональной активности клеток почек" hasd-node-number:1703 a:HASD_Node
+	Уменьшение_функциональной_активности_миокарда age:45- system:cardiovascular name:"Уменьшение функциональной активности миокарда" hasd-node-number:1701 a:HASD_Node
+	Уменьшение_функциональной_активности_почек system:metabolism name:"Уменьшение функциональной активности почек" hasd-node-number:133 a:HASD_Node age-from:"50" age-to:"60"
+	Уменьшение_функциональной_активности_рецепторов system:cell name:"Уменьшение функциональной активности рецепторов" hasd-node-number:1645 a:HASD_Node
+	Уменьшение_числа_связей_между_клетками system:cell name:"Уменьшение числа связей между клетками" hasd-node-number:389 a:HASD_Node age-from:"20" age-to:"40"
+	Уменьшение_эластичности_сосудов system:cardiovascular name:"Уменьшение эластичности сосудов" hasd-node-number:489 a:HASD_Node age-from:"45" age-to:"60"
+	Уменьшение_эластичности_стенок_легочных_альвеол system:respiratory name:"Уменьшение эластичности стенок легочных альвеол" hasd-node-number:737 a:HASD_Node age-from:"35" age-to:"45"
+	Уплотнение_клеточной_мемраны system:cell name:"Уплотнение клеточной мемраны" hasd-node-number:311 a:HASD_Node age-from:"25" age-to:"35"
+	Усиление_атрофии_мышц system:intersystem name:"Усиление атрофии мышц" hasd-node-number:103 a:HASD_Node age-from:"65" age-to:"75"
+	Усиление_липолиза_(расщепления_триглицеридов) system:metabolism name:"Усиление липолиза (расщепления триглицеридов)" hasd-node-number:1630 a:HASD_Node
+	Усиление_продуцирование_металлопротеиназ system:unknown name:"Усиление продуцирование металлопротеиназ" hasd-node-number:1644 a:HASD_Node
+	Устойчивое_прекращение_митоза system:cell name:"Устойчивое прекращение митоза" hasd-node-number:407 a:HASD_Node age-from:"35" age-to:"45"
+	Утомление_синапсов system:nervous name:"Утомление синапсов" hasd-node-number:1682 a:HASD_Node
+	Ухудшение_ансамблевой_работы_клеток system:cell name:"Ухудшение ансамблевой работы клеток" hasd-node-number:333 a:HASD_Node age-from:"40" age-to:"50"
+	Ухудшение_когнитивных_способностей_мозга system:nervous name:"Ухудшение когнитивных способностей мозга" hasd-node-number:385 a:HASD_Node age-from:"70" age-to:"80"
+	Ухудшение_коронарного_кровообращения system:cardiovascular name:"Ухудшение коронарного кровообращения" hasd-node-number:1614 a:HASD_Node
+	Ухудшение_микроциркуляции_в_поджелудочной_железе system:intersystem name:"Ухудшение микроциркуляции в поджелудочной железе" hasd-node-number:273 a:HASD_Node age-from:"45" age-to:"55"
+	Ухудшение_общего_кровообращения system:cardiovascular name:"Ухудшение общего кровообращения" hasd-node-number:837 a:HASD_Node age-from:"50" age-to:"60"
+	Ухудшение_передачи_сигнальной_информации system:connective name:"Ухудшение передачи сигнальной информации" hasd-node-number:793 a:HASD_Node age-from:"40" age-to:"50"
+	Ухудшение_питания_клеток system:cell name:"Ухудшение питания клеток" hasd-node-number:13 a:HASD_Node age-from:"20" age-to:"50"
+	Ухудшение_питания_тканей system:connective name:"Ухудшение питания тканей" hasd-node-number:401 a:HASD_Node age-from:"20" age-to:"50"
+	Ухудшение_снабжения_тканей_кислородом system:respiratory name:"Ухудшение снабжения тканей кислородом" hasd-node-number:67 a:HASD_Node age-from:"65" age-to:"75"
+	Ухудшение_состояния_межклеточного_матрикса_в_сухожилиях system:cell name:"Ухудшение состояния межклеточного матрикса в сухожилиях" hasd-node-number:599 a:HASD_Node age-from:"35" age-to:"45"
+	Ухудшение_состояния_межклеточного_матрикса_в_хрящах system:cell name:"Ухудшение состояния межклеточного матрикса в хрящах" hasd-node-number:231 a:HASD_Node age-from:"45" age-to:"55"
+	Ухудшение_удаления_токсинов system:connective name:"Ухудшение удаления токсинов" hasd-node-number:25 a:HASD_Node age-from:"35" age-to:"45"
+	Ухудшение_усвоения_кальция_и_витамина_d_в_кишечнике system:metabolism name:"Ухудшение усвоения кальция и витамина D в кишечнике" hasd-node-number:523 a:HASD_Node age-from:"50" age-to:"60"
+	Ухудшение_функций_миоцитов system:cell name:"Ухудшение функций миоцитов" hasd-node-number:207 a:HASD_Node age-from:"50" age-to:"60"
+	Функциональная_недостаточность_органов system:unknown name:"Функциональная недостаточность органов" hasd-node-number:1686 a:HASD_Node
+	Хромосомные_аберрации system:intersystem name:"Хромосомные аберрации" hasd-node-number:185 a:HASD_Node age-from:"20" age-to:"30"
+	Хронические_генерализованные_вялотекущие_воспаления system:immune name:"Хронические генерализованные вялотекущие воспаления" hasd-node-number:33 a:HASD_Node age-from:"50" age-to:"60"
+	Хронические_инфекции system:immune name:"Хронические инфекции" hasd-node-number:861 a:HASD_Node age-from:"35" age-to:"100"
+	Хронический_кашель system:respiratory name:"Хронический кашель" hasd-node-number:1659 a:HASD_Node
+	Хронический_обструктивный_бронхит system:respiratory name:"Хронический обструктивный бронхит" hasd-node-number:1658 a:HASD_Node
+	Экзогенные_химические_и_физические_факторы system:unknown name:"Экзогенные химические и физические факторы" hasd-node-number:1647 a:HASD_Node age-from:"10" age-to:"15"
+	Эмфизема_лёгких system:respiratory name:"Эмфизема лёгких" hasd-node-number:831 a:HASD_Node age-from:"68" age-to:"75"
+	Эндокардит system:cardiovascular name:"Эндокардит" hasd-node-number:1628 a:HASD_Node
+	Эпигенетические_нарушения_(сшивки_днк-белок,_деметилирование_днк) system:intersystem name:"Эпигенетические нарушения (сшивки ДНК-белок, деметилирование ДНК)" hasd-node-number:359 a:HASD_Node age-from:"20" age-to:"30"

@@ -1,0 +1,29 @@
+ontologies_catalogues
+	AberOWL url:aber-owl.net uni:KAUST,UBirmingham,UCambridge
+	BioData url:bioportal.bioontology.org uni:UStanford
+	OBOFoundry url:obofoundry.org org:EBI?
+	OLS url:ebi.ac.uk/ols org:EBI
+	Ontobee url:ontobee.org uni:UMichigan
+ontologies_and_taxonomies
+	BE deabbr:"Bioentities" url:bioportal.bioontology.org/ontologies/BE start:21.08.2017 classes:442 max-visits:18
+	CCO deabbr:"Cell Cycle Ontology" url:bioportal.bioontology.org/ontologies/CCO start:14.04.2009 last:26.06.2014 classes:265K max-visits:18
+	ChEBI deabbr:"Chemical Entities of Biological Interest" url:ebi.ac.uk/chebi compounds:59K
+	ChEMBL url:ebi.ac.uk/chembl d:"database of bioactive molecules with drug-like properties" compounds:2.1M
+	DO deabbr:"Disease Ontology" url:disease-ontology.org d:"open source ontology for the integration of biomedical data that is associated with human disease"
+	EC deabbr:"Enzyme Classification" url:enzyme.expasy.org
+	ECO deabbr:"Evidence and Conclusion Ontology" d:"community resource for describing the various types of evidence that are generated during the course of a scientific study and which are typically used to support assertions made by researchers"
+	EHDAA2 deabbr:"Human Developmental Anatomy Ontology, abstract version 2" url:bioportal.bioontology.org/ontologies/EHDAA2 start:25.06.2012 classes:2.7K max-visits:55
+	EMTREE deabbr:"EMbase TREE" url:embase.com d:"internal thesaurus for Embrace"
+	FMA deabbr:"Foundational Model of Anatomy" url:bioportal.bioontology.org/ontologies/FMA start:01.03.2007 classes:105K max-visits:4600
+	GO deabbr:"Gene Ontology" url:bioportal.bioontology.org/ontologies/GO,geneontology.org browser-url:ebi.ac.uk/QuickGO start:26.06.2008 format:OBO classes:50K max-visits:~10000
+	HO deabbr:"Histological Ontology" url:bioportal.bioontology.org/ontologies/HO start:25.09.2017 lang:it classes:213 max-visits:90
+	IOBS deabbr:"Interlinking Ontology for Biological Concepts" start:06.07.2018 classes:127K max-visits:640
+	MeSH deabbr:"Medical Subject Headings" url:bioportal.bioontology.org/ontologies/MESH start:13.02.2009 classes:? max-visits:3500
+	NCIT deabbr:"National Cancer Institute Thesaurus" url:bioportal.bioontology.org/ontologies/NCIT start:22.08.2007 classes:163K max-visits:>5000
+	ORDO deabbr:"The Orphanet Rare Disease Ontology" url:orphadata.org/cgi-bin/sparql.html
+	PLOSTHES deabbr:"PLOS Thesaurus" url:bioportal.bioontology.org/ontologies/PLOSTHES start:13.02.2015 format:SKOS individuals:11K
+	PR deabbr:"Protein Ontology" url:bioportal.bioontology.org/ontologies/PR start:24.09.2008 classes:332K max-visits:1200
+	SBO deabbr:"System Biology Ontology" url:github.com/EBI-BioModels/SBO start:2006 
+	Terminologia_Anatomica
+	Terminologia_Histologica
+	UMLS deabbr:"Unified Medical Language System" start:1986

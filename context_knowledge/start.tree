@@ -1,0 +1,18 @@
+start
+	tools
+		knowledge_graph_search_interface
+			Biomindmap url:biomindmap.com about-url:nestarenie.ru/biomindmap_1.html developer:Alex_Inside
+		pathway_editors
+			sbgn_editors
+				Newt
+				SBGN-ED
+			CellDesigner url:celldesigner.org platform:JRE
+			yEd
+		ontologies ref:ontologies.tree
+		ontology_editors
+			OBO-Edit platform:JRE developer:GO_Consortium
+			Protege
+		visualization
+			YFiles
+	people
+		Alex_Inside fb:facebook.com/alex.inside

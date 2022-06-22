@@ -23,7 +23,7 @@
       [bottom-age top-age])))
 
 (defn hasd->tabtree []
-  (let [tabtree (tabtree/parse-tab-tree "../системная_схема_старения/hasd_nodes.tree")
+  (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd_nodes.tree")
         tabtree (map-hash
                   (fn [[id item]]
                     (let [aname (:name item)
@@ -45,5 +45,5 @@
 
 (defn generate-hasd-tabtree []
   (write-to-file
-    "../системная_схема_старения/ontology.tree"
+    "../hasd/ontology.tree"
     (output/tabtree->string (hasd->tabtree))))

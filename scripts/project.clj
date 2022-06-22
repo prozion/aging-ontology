@@ -4,8 +4,8 @@
   :license {:name "MIT License"
             :url  "https://github.com/aws/mit-0"}
   :dependencies [
-                [org.clojars.prozion/odysseus "0.1.4"]
-                [org.clojars.prozion/tabtree "0.5.4"]
+                [org.clojars.prozion/odysseus "0.1.5"]
+                [org.clojars.prozion/tabtree "0.6.2"]
                 ]
   :plugins [
             ; [lein-ancient "0.6.15"]
