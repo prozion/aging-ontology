@@ -6,7 +6,7 @@
 
 
 :AO101
-  :name "Ингибирование протеосомы" ;
+  rdfs:label "Ингибирование протеосомы" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -14,7 +14,7 @@
   rdf:type :HASDNode .
 
 :AO103
-  :name "Усиление атрофии мышц" ;
+  rdfs:label "Усиление атрофии мышц" ;
   :ageFrom "65" ;
   :ageTo "75" ;
   :system "intersystem" ;
@@ -22,7 +22,7 @@
   rdf:type :HASDNode .
 
 :AO109
-  :name "Снижение скорости рефлексов" ;
+  rdfs:label "Снижение скорости рефлексов" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "nervous" ;
@@ -30,7 +30,7 @@
   rdf:type :HASDNode .
 
 :AO115
-  :name "Неусвоение витамина B12" ;
+  rdfs:label "Неусвоение витамина B12" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -38,7 +38,7 @@
   rdf:type :HASDNode .
 
 :AO117
-  :name "Повышение активности паратиреоидного гормона" ;
+  rdfs:label "Повышение активности паратиреоидного гормона" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "hormones" ;
@@ -46,7 +46,7 @@
   rdf:type :HASDNode .
 
 :AO123
-  :name "Повышение секреции пролактина" ;
+  rdfs:label "Повышение секреции пролактина" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "hormones" ;
@@ -54,7 +54,7 @@
   rdf:type :HASDNode .
 
 :AO126
-  :name "Нарушение регуляции основных систем жизнеобеспечения" ;
+  rdfs:label "Нарушение регуляции основных систем жизнеобеспечения" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "nervous" ;
@@ -62,7 +62,7 @@
   rdf:type :HASDNode .
 
 :AO13
-  :name "Ухудшение питания клеток" ;
+  rdfs:label "Ухудшение питания клеток" ;
   :ageFrom "20" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -70,7 +70,7 @@
   rdf:type :HASDNode .
 
 :AO130
-  :name "Ожирение" ;
+  rdfs:label "Ожирение" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -78,7 +78,7 @@
   rdf:type :HASDNode .
 
 :AO131
-  :name "Инфаркт миокарда" ;
+  rdfs:label "Инфаркт миокарда" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "cardiovascular" ;
@@ -86,7 +86,7 @@
   rdf:type :HASDNode .
 
 :AO133
-  :name "Уменьшение функциональной активности почек" ;
+  rdfs:label "Уменьшение функциональной активности почек" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -94,7 +94,7 @@
   rdf:type :HASDNode .
 
 :AO137
-  :name "Костные шипы" ;
+  rdfs:label "Костные шипы" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "intersystem" ;
@@ -102,7 +102,7 @@
   rdf:type :HASDNode .
 
 :AO139
-  :name "Продуцирование воспалительных цитокинов" ;
+  rdfs:label "Продуцирование воспалительных цитокинов" ;
   :ageFrom "50" ;
   :ageTo "100" ;
   :system "immune" ;
@@ -110,7 +110,7 @@
   rdf:type :HASDNode .
 
 :AO141
-  :name "Соединение альвеол между собой" ;
+  rdfs:label "Соединение альвеол между собой" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "respiratory" ;
@@ -118,7 +118,7 @@
   rdf:type :HASDNode .
 
 :AO143
-  :name "Снижение функциональной активности (тканей, органов, систем)" ;
+  rdfs:label "Снижение функциональной активности (тканей, органов, систем)" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "connective" ;
@@ -126,7 +126,7 @@
   rdf:type :HASDNode .
 
 :AO145
-  :name "Общая дряхлость организма" ;
+  rdfs:label "Общая дряхлость организма" ;
   :ageFrom "70" ;
   :ageTo "80" ;
   :system "intersystem" ;
@@ -134,7 +134,7 @@
   rdf:type :HASDNode .
 
 :AO147
-  :name "Накопление нефункциональных белков" ;
+  rdfs:label "Накопление нефункциональных белков" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "intersystem" ;
@@ -142,7 +142,7 @@
   rdf:type :HASDNode .
 
 :AO15
-  :name "Накопление гликированных белков" ;
+  rdfs:label "Накопление гликированных белков" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "metabolism" ;
@@ -150,7 +150,7 @@
   rdf:type :HASDNode .
 
 :AO151
-  :name "Снижение секреции тиреоидных гормонов" ;
+  rdfs:label "Снижение секреции тиреоидных гормонов" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "hormones" ;
@@ -158,7 +158,7 @@
   rdf:type :HASDNode .
 
 :AO153
-  :name "Уменьшение количества серотонина" ;
+  rdfs:label "Уменьшение количества серотонина" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "nervous" ;
@@ -166,7 +166,7 @@
   rdf:type :HASDNode .
 
 :AO155
-  :name "Стойкое понижение уровня инсулина в крови" ;
+  rdfs:label "Стойкое понижение уровня инсулина в крови" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "hormones" ;
@@ -174,7 +174,7 @@
   rdf:type :HASDNode .
 
 :AO157
-  :name "Стохастическое повреждение ДНК" ;
+  rdfs:label "Стохастическое повреждение ДНК" ;
   :ageFrom "10" ;
   :ageTo "15" ;
   :system "immune" ;
@@ -182,7 +182,7 @@
   rdf:type :HASDNode .
 
 :AO1583
-  :name "Временное адаптивное прекращение пролиферации клеток" ;
+  rdfs:label "Временное адаптивное прекращение пролиферации клеток" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -190,7 +190,7 @@
   rdf:type :HASDNode .
 
 :AO1586
-  :name "Рост доли субъединиц протеосом с пониженной активностью" ;
+  rdfs:label "Рост доли субъединиц протеосом с пониженной активностью" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "intersystem" ;
@@ -198,7 +198,7 @@
   rdf:type :HASDNode .
 
 :AO159
-  :name "Образование малонового альдегида" ;
+  rdfs:label "Образование малонового альдегида" ;
   :ageFrom "15" ;
   :ageTo "85" ;
   :system "metabolism" ;
@@ -206,7 +206,7 @@
   rdf:type :HASDNode .
 
 :AO161
-  :name "Гипотрофия эндокринной части поджелудочной железы" ;
+  rdfs:label "Гипотрофия эндокринной части поджелудочной железы" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "hormones" ;
@@ -214,7 +214,7 @@
   rdf:type :HASDNode .
 
 :AO1612
-  :name "Инсулиннезависимый сахарный диабет (II типа)" ;
+  rdfs:label "Инсулиннезависимый сахарный диабет (II типа)" ;
   :ageFrom "55" ;
   :ageTo "80" ;
   :system "metabolism" ;
@@ -222,7 +222,7 @@
   rdf:type :HASDNode .
 
 :AO1613
-  :name "Сужение просвета сосудов" ;
+  rdfs:label "Сужение просвета сосудов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -230,7 +230,7 @@
   rdf:type :HASDNode .
 
 :AO1614
-  :name "Ухудшение коронарного кровообращения" ;
+  rdfs:label "Ухудшение коронарного кровообращения" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -238,7 +238,7 @@
   rdf:type :HASDNode .
 
 :AO1616
-  :name "Повышение проницаемости сосудистой стенки" ;
+  rdfs:label "Повышение проницаемости сосудистой стенки" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -246,7 +246,7 @@
   rdf:type :HASDNode .
 
 :AO1617
-  :name "Разрыв сосудов мозга" ;
+  rdfs:label "Разрыв сосудов мозга" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -254,7 +254,7 @@
   rdf:type :HASDNode .
 
 :AO1618
-  :name "Геморрагический инсульт" ;
+  rdfs:label "Геморрагический инсульт" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -262,7 +262,7 @@
   rdf:type :HASDNode .
 
 :AO1619
-  :name "Нарушение функционирования головного мозга" ;
+  rdfs:label "Нарушение функционирования головного мозга" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -270,7 +270,7 @@
   rdf:type :HASDNode .
 
 :AO1620
-  :name "Закупорка сосудов мозга" ;
+  rdfs:label "Закупорка сосудов мозга" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -278,7 +278,7 @@
   rdf:type :HASDNode .
 
 :AO1621
-  :name "Артериальная гипотония" ;
+  rdfs:label "Артериальная гипотония" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -286,7 +286,7 @@
   rdf:type :HASDNode .
 
 :AO1622
-  :name "Гиповолемия" ;
+  rdfs:label "Гиповолемия" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -294,7 +294,7 @@
   rdf:type :HASDNode .
 
 :AO1623
-  :name "Брадикардия" ;
+  rdfs:label "Брадикардия" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -302,7 +302,7 @@
   rdf:type :HASDNode .
 
 :AO1624
-  :name "Тромбоз сосудов мозга" ;
+  rdfs:label "Тромбоз сосудов мозга" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -310,7 +310,7 @@
   rdf:type :HASDNode .
 
 :AO1625
-  :name "Тромботическая эмболия сосудов мозга" ;
+  rdfs:label "Тромботическая эмболия сосудов мозга" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -318,7 +318,7 @@
   rdf:type :HASDNode .
 
 :AO1626
-  :name "Образование пристеночных тромбов в сердце" ;
+  rdfs:label "Образование пристеночных тромбов в сердце" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -326,7 +326,7 @@
   rdf:type :HASDNode .
 
 :AO1627
-  :name "Пороки сердца" ;
+  rdfs:label "Пороки сердца" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -334,7 +334,7 @@
   rdf:type :HASDNode .
 
 :AO1628
-  :name "Эндокардит" ;
+  rdfs:label "Эндокардит" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -342,7 +342,7 @@
   rdf:type :HASDNode .
 
 :AO1629
-  :name "Повышение уровня глюкагона в крови" ;
+  rdfs:label "Повышение уровня глюкагона в крови" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "hormones" ;
@@ -350,7 +350,7 @@
   rdf:type :HASDNode .
 
 :AO163
-  :name "Снижение количества функционирующих клеток" ;
+  rdfs:label "Снижение количества функционирующих клеток" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -358,7 +358,7 @@
   rdf:type :HASDNode .
 
 :AO1630
-  :name "Усиление липолиза (расщепления триглицеридов)" ;
+  rdfs:label "Усиление липолиза (расщепления триглицеридов)" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -366,7 +366,7 @@
   rdf:type :HASDNode .
 
 :AO1631
-  :name "Кетонемия" ;
+  rdfs:label "Кетонемия" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -374,7 +374,7 @@
   rdf:type :HASDNode .
 
 :AO1632
-  :name "Метаболический ацидоз" ;
+  rdfs:label "Метаболический ацидоз" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -382,7 +382,7 @@
   rdf:type :HASDNode .
 
 :AO1633
-  :name "Уменьшение транспорта аминокислот в клетки" ;
+  rdfs:label "Уменьшение транспорта аминокислот в клетки" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -390,7 +390,7 @@
   rdf:type :HASDNode .
 
 :AO1634
-  :name "Повышение содержания аминокислот в крови" ;
+  rdfs:label "Повышение содержания аминокислот в крови" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -398,7 +398,7 @@
   rdf:type :HASDNode .
 
 :AO1635
-  :name "Выделение аминокислот с мочей" ;
+  rdfs:label "Выделение аминокислот с мочей" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -406,7 +406,7 @@
   rdf:type :HASDNode .
 
 :AO1636
-  :name "Отрицательный азотный баланс" ;
+  rdfs:label "Отрицательный азотный баланс" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -414,7 +414,7 @@
   rdf:type :HASDNode .
 
 :AO1638
-  :name "Повышение активности липазы" ;
+  rdfs:label "Повышение активности липазы" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -422,7 +422,7 @@
   rdf:type :HASDNode .
 
 :AO1639
-  :name "Старческая деменция" ;
+  rdfs:label "Старческая деменция" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "nervous" ;
@@ -430,7 +430,7 @@
   rdf:type :HASDNode .
 
 :AO1640
-  :name "Общая интоксикация организма" ;
+  rdfs:label "Общая интоксикация организма" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "metabolism" ;
@@ -438,7 +438,7 @@
   rdf:type :HASDNode .
 
 :AO1641
-  :name "Рассеянный склероз: первично-прогрессирующая форма" ;
+  rdfs:label "Рассеянный склероз: первично-прогрессирующая форма" ;
   :ageFrom "50" ;
   :ageTo "" ;
   :system "immune" ;
@@ -446,7 +446,7 @@
   rdf:type :HASDNode .
 
 :AO1642
-  :name "Мышечная слабость" ;
+  rdfs:label "Мышечная слабость" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "unknown" ;
@@ -454,7 +454,7 @@
   rdf:type :HASDNode .
 
 :AO1643
-  :name "Разрывы хромосом" ;
+  rdfs:label "Разрывы хромосом" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -462,7 +462,7 @@
   rdf:type :HASDNode .
 
 :AO1644
-  :name "Усиление продуцирование металлопротеиназ" ;
+  rdfs:label "Усиление продуцирование металлопротеиназ" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -470,7 +470,7 @@
   rdf:type :HASDNode .
 
 :AO1645
-  :name "Уменьшение функциональной активности рецепторов" ;
+  rdfs:label "Уменьшение функциональной активности рецепторов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -478,7 +478,7 @@
   rdf:type :HASDNode .
 
 :AO1646
-  :name "Повышение уровня кортизола в крови" ;
+  rdfs:label "Повышение уровня кортизола в крови" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "hormones" ;
@@ -486,7 +486,7 @@
   rdf:type :HASDNode .
 
 :AO1647
-  :name "Экзогенные химические и физические факторы" ;
+  rdfs:label "Экзогенные химические и физические факторы" ;
   :ageFrom "10" ;
   :ageTo "15" ;
   :system "unknown" ;
@@ -494,7 +494,7 @@
   rdf:type :HASDNode .
 
 :AO1648
-  :name "Уменьшение количества стволовых мышечных клеток" ;
+  rdfs:label "Уменьшение количества стволовых мышечных клеток" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -502,7 +502,7 @@
   rdf:type :HASDNode .
 
 :AO1649
-  :name "Уменьшение концентрации цитокина IL7 в тимусе" ;
+  rdfs:label "Уменьшение концентрации цитокина IL7 в тимусе" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -510,7 +510,7 @@
   rdf:type :HASDNode .
 
 :AO165
-  :name "Повреждение мембран митохондрий" ;
+  rdfs:label "Повреждение мембран митохондрий" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -518,7 +518,7 @@
   rdf:type :HASDNode .
 
 :AO1651
-  :name "Повышение порога возбудимости нервных центров" ;
+  rdfs:label "Повышение порога возбудимости нервных центров" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "nervous" ;
@@ -526,7 +526,7 @@
   rdf:type :HASDNode .
 
 :AO1652
-  :name "Уменьшение активности холинацетилазы" ;
+  rdfs:label "Уменьшение активности холинацетилазы" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -534,7 +534,7 @@
   rdf:type :HASDNode .
 
 :AO1653
-  :name "Уменьшение синтеза ацетилхолина" ;
+  rdfs:label "Уменьшение синтеза ацетилхолина" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -542,7 +542,7 @@
   rdf:type :HASDNode .
 
 :AO1654
-  :name "Нарушение межсинаптической связи между нейронами" ;
+  rdfs:label "Нарушение межсинаптической связи между нейронами" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -550,7 +550,7 @@
   rdf:type :HASDNode .
 
 :AO1655
-  :name "Уменьшение количества нервных рецепторов" ;
+  rdfs:label "Уменьшение количества нервных рецепторов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -558,7 +558,7 @@
   rdf:type :HASDNode .
 
 :AO1656
-  :name "Дефицит фактора роста нервов (ФРН)" ;
+  rdfs:label "Дефицит фактора роста нервов (ФРН)" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -566,7 +566,7 @@
   rdf:type :HASDNode .
 
 :AO1657
-  :name "Кальцификация миоцитов" ;
+  rdfs:label "Кальцификация миоцитов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -574,7 +574,7 @@
   rdf:type :HASDNode .
 
 :AO1658
-  :name "Хронический обструктивный бронхит" ;
+  rdfs:label "Хронический обструктивный бронхит" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "respiratory" ;
@@ -582,7 +582,7 @@
   rdf:type :HASDNode .
 
 :AO1659
-  :name "Хронический кашель" ;
+  rdfs:label "Хронический кашель" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "respiratory" ;
@@ -590,7 +590,7 @@
   rdf:type :HASDNode .
 
 :AO1660
-  :name "Повышение давления в альвеолах" ;
+  rdfs:label "Повышение давления в альвеолах" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "respiratory" ;
@@ -598,7 +598,7 @@
   rdf:type :HASDNode .
 
 :AO1661
-  :name "Бронхиальная астма" ;
+  rdfs:label "Бронхиальная астма" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "respiratory" ;
@@ -606,7 +606,7 @@
   rdf:type :HASDNode .
 
 :AO1662
-  :name "Стрептококковая и стафилококковая инфекция" ;
+  rdfs:label "Стрептококковая и стафилококковая инфекция" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -614,7 +614,7 @@
   rdf:type :HASDNode .
 
 :AO1663
-  :name "Жировая эмболия" ;
+  rdfs:label "Жировая эмболия" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -622,7 +622,7 @@
   rdf:type :HASDNode .
 
 :AO1664
-  :name "Гипоплазия костного мозга" ;
+  rdfs:label "Гипоплазия костного мозга" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -630,7 +630,7 @@
   rdf:type :HASDNode .
 
 :AO1665
-  :name "Уменьшение содержания эластина в стенках артерий (на 5–10%)" ;
+  rdfs:label "Уменьшение содержания эластина в стенках артерий (на 5–10%)" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cardiovascular" ;
@@ -638,7 +638,7 @@
   rdf:type :HASDNode .
 
 :AO1666
-  :name "Начало кальциноза артерий" ;
+  rdfs:label "Начало кальциноза артерий" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cardiovascular" ;
@@ -646,7 +646,7 @@
   rdf:type :HASDNode .
 
 :AO1667
-  :name "Выраженный кальциноз артерий" ;
+  rdfs:label "Выраженный кальциноз артерий" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cardiovascular" ;
@@ -654,7 +654,7 @@
   rdf:type :HASDNode .
 
 :AO1668
-  :name "Уменьшение кровотока" ;
+  rdfs:label "Уменьшение кровотока" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -662,7 +662,7 @@
   rdf:type :HASDNode .
 
 :AO1669
-  :name "Межбелковые сшивки" ;
+  rdfs:label "Межбелковые сшивки" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -670,7 +670,7 @@
   rdf:type :HASDNode .
 
 :AO1670
-  :name "Амплификация ДНК" ;
+  rdfs:label "Амплификация ДНК" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -678,7 +678,7 @@
   rdf:type :HASDNode .
 
 :AO1672
-  :name "Тепловое движение молекул" ;
+  rdfs:label "Тепловое движение молекул" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -686,7 +686,7 @@
   rdf:type :HASDNode .
 
 :AO1673
-  :name "Уменьшение синтеза селектинов и адрессинов" ;
+  rdfs:label "Уменьшение синтеза селектинов и адрессинов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -694,7 +694,7 @@
   rdf:type :HASDNode .
 
 :AO1674
-  :name "Нарушение взаимодействия между белками хоминга (L-селектинамии адрессинами)" ;
+  rdfs:label "Нарушение взаимодействия между белками хоминга (L-селектинамии адрессинами)" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -702,7 +702,7 @@
   rdf:type :HASDNode .
 
 :AO1675
-  :name "Нарушение миграции лимфоцитов в лимфоузлы" ;
+  rdfs:label "Нарушение миграции лимфоцитов в лимфоузлы" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -710,7 +710,7 @@
   rdf:type :HASDNode .
 
 :AO1676
-  :name "Жировая эмболия сосудов легких" ;
+  rdfs:label "Жировая эмболия сосудов легких" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "respiratory" ;
@@ -718,7 +718,7 @@
   rdf:type :HASDNode .
 
 :AO1678
-  :name "Воспаление сосудистой стенки" ;
+  rdfs:label "Воспаление сосудистой стенки" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -726,7 +726,7 @@
   rdf:type :HASDNode .
 
 :AO1679
-  :name "Дисбактериоз" ;
+  rdfs:label "Дисбактериоз" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -734,7 +734,7 @@
   rdf:type :HASDNode .
 
 :AO1680
-  :name "Аллергические реакции" ;
+  rdfs:label "Аллергические реакции" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "immune" ;
@@ -742,7 +742,7 @@
   rdf:type :HASDNode .
 
 :AO1681
-  :name "Истощение запасов нейромедиаторов" ;
+  rdfs:label "Истощение запасов нейромедиаторов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "nervous" ;
@@ -750,7 +750,7 @@
   rdf:type :HASDNode .
 
 :AO1682
-  :name "Утомление синапсов" ;
+  rdfs:label "Утомление синапсов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "nervous" ;
@@ -758,7 +758,7 @@
   rdf:type :HASDNode .
 
 :AO1683
-  :name "Уменьшение поглощения кислорода клеткой" ;
+  rdfs:label "Уменьшение поглощения кислорода клеткой" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -766,7 +766,7 @@
   rdf:type :HASDNode .
 
 :AO1684
-  :name "Снижение скорости деления стволовых мышечных клеток" ;
+  rdfs:label "Снижение скорости деления стволовых мышечных клеток" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -774,7 +774,7 @@
   rdf:type :HASDNode .
 
 :AO1685
-  :name "Замедление поступления сигналов в центре насыщения гипоталамуса о насыщении" ;
+  rdfs:label "Замедление поступления сигналов в центре насыщения гипоталамуса о насыщении" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -782,7 +782,7 @@
   rdf:type :HASDNode .
 
 :AO1686
-  :name "Функциональная недостаточность органов" ;
+  rdfs:label "Функциональная недостаточность органов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -790,7 +790,7 @@
   rdf:type :HASDNode .
 
 :AO1687
-  :name "Превращение протоонкогенов в онкогены" ;
+  rdfs:label "Превращение протоонкогенов в онкогены" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -798,7 +798,7 @@
   rdf:type :HASDNode .
 
 :AO1688
-  :name "Поздние мутации" ;
+  rdfs:label "Поздние мутации" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -806,7 +806,7 @@
   rdf:type :HASDNode .
 
 :AO1689
-  :name "Миграция NUMT-псевдогенов в ядро" ;
+  rdfs:label "Миграция NUMT-псевдогенов в ядро" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -814,7 +814,7 @@
   rdf:type :HASDNode .
 
 :AO169
-  :name "Увеличение количества коллагенных волокон (между клеток)" ;
+  rdfs:label "Увеличение количества коллагенных волокон (между клеток)" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -822,7 +822,7 @@
   rdf:type :HASDNode .
 
 :AO1690
-  :name "Недорепликация ДНК при нормальной пролиферации клеток" ;
+  rdfs:label "Недорепликация ДНК при нормальной пролиферации клеток" ;
   :ageFrom "10" ;
   :ageTo "15" ;
   :system "unknown" ;
@@ -830,7 +830,7 @@
   rdf:type :HASDNode .
 
 :AO1691
-  :name "Нормальное укорочение теломер" ;
+  rdfs:label "Нормальное укорочение теломер" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -838,7 +838,7 @@
   rdf:type :HASDNode .
 
 :AO1692
-  :name "Инфаркт легких" ;
+  rdfs:label "Инфаркт легких" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "respiratory" ;
@@ -846,7 +846,7 @@
   rdf:type :HASDNode .
 
 :AO1693
-  :name "Атрофия мышц (саркопения)" ;
+  rdfs:label "Атрофия мышц (саркопения)" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -854,7 +854,7 @@
   rdf:type :HASDNode .
 
 :AO1694
-  :name "Длительное лежание в постели" ;
+  rdfs:label "Длительное лежание в постели" ;
   :ageFrom "65" ;
   :ageTo "79" ;
   :system "unknown" ;
@@ -862,7 +862,7 @@
   rdf:type :HASDNode .
 
 :AO1695
-  :name "Снижение синтеза белка в железистых клетках ЖКТ" ;
+  rdfs:label "Снижение синтеза белка в железистых клетках ЖКТ" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -870,7 +870,7 @@
   rdf:type :HASDNode .
 
 :AO1696
-  :name "Повышение онкориска кишечника" ;
+  rdfs:label "Повышение онкориска кишечника" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -878,7 +878,7 @@
   rdf:type :HASDNode .
 
 :AO1698
-  :name "Нарушение водно-солевого обмена" ;
+  rdfs:label "Нарушение водно-солевого обмена" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -886,7 +886,7 @@
   rdf:type :HASDNode .
 
 :AO1699
-  :name "Уменьшение синтеза белка в кардиомиоцитах" ;
+  rdfs:label "Уменьшение синтеза белка в кардиомиоцитах" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -894,7 +894,7 @@
   rdf:type :HASDNode .
 
 :AO1700
-  :name "Уменьшение функциональной активности кардиомиоцитов" ;
+  rdfs:label "Уменьшение функциональной активности кардиомиоцитов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -902,7 +902,7 @@
   rdf:type :HASDNode .
 
 :AO1701
-  :name "Уменьшение функциональной активности миокарда" ;
+  rdfs:label "Уменьшение функциональной активности миокарда" ;
   :ageFrom "45" ;
   :ageTo "" ;
   :system "cardiovascular" ;
@@ -910,7 +910,7 @@
   rdf:type :HASDNode .
 
 :AO1702
-  :name "Дальнейшее ухудшение функциональной активности печени" ;
+  rdfs:label "Дальнейшее ухудшение функциональной активности печени" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -918,7 +918,7 @@
   rdf:type :HASDNode .
 
 :AO1703
-  :name "Уменьшение функциональной активности клеток почек" ;
+  rdfs:label "Уменьшение функциональной активности клеток почек" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -926,7 +926,7 @@
   rdf:type :HASDNode .
 
 :AO1704
-  :name "Задержка эвакуации непереваренной пищи (запор)" ;
+  rdfs:label "Задержка эвакуации непереваренной пищи (запор)" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -934,7 +934,7 @@
   rdf:type :HASDNode .
 
 :AO1705
-  :name "Гипотрофия гладкой мускулатуры стенки кишечника" ;
+  rdfs:label "Гипотрофия гладкой мускулатуры стенки кишечника" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -942,7 +942,7 @@
   rdf:type :HASDNode .
 
 :AO1706
-  :name "Ослабление мышечного тонуса стенки кишечника" ;
+  rdfs:label "Ослабление мышечного тонуса стенки кишечника" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -950,7 +950,7 @@
   rdf:type :HASDNode .
 
 :AO1707
-  :name "Гормональное усиление атрофии ретикулярных клеток тимуса" ;
+  rdfs:label "Гормональное усиление атрофии ретикулярных клеток тимуса" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "immune" ;
@@ -958,7 +958,7 @@
   rdf:type :HASDNode .
 
 :AO1708
-  :name "Рак пищевода" ;
+  rdfs:label "Рак пищевода" ;
   :ageFrom "65" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -966,7 +966,7 @@
   rdf:type :HASDNode .
 
 :AO1709
-  :name "Рак желудка" ;
+  rdfs:label "Рак желудка" ;
   :ageFrom "65" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -974,7 +974,7 @@
   rdf:type :HASDNode .
 
 :AO171
-  :name "Вымывание Ca из костей" ;
+  rdfs:label "Вымывание Ca из костей" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "metabolism" ;
@@ -982,7 +982,7 @@
   rdf:type :HASDNode .
 
 :AO1710
-  :name "Рак тонкого кишечника" ;
+  rdfs:label "Рак тонкого кишечника" ;
   :ageFrom "65" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -990,7 +990,7 @@
   rdf:type :HASDNode .
 
 :AO1711
-  :name "Рак толстого кишечника" ;
+  rdfs:label "Рак толстого кишечника" ;
   :ageFrom "65" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -998,7 +998,7 @@
   rdf:type :HASDNode .
 
 :AO1712
-  :name "Гипоплазия обкладочных стенок слизистой желудка" ;
+  rdfs:label "Гипоплазия обкладочных стенок слизистой желудка" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -1006,7 +1006,7 @@
   rdf:type :HASDNode .
 
 :AO1713
-  :name "Раковая интоксикация" ;
+  rdfs:label "Раковая интоксикация" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -1014,7 +1014,7 @@
   rdf:type :HASDNode .
 
 :AO1714
-  :name "Выраженное уменьшение кислотности желудочного сока" ;
+  rdfs:label "Выраженное уменьшение кислотности желудочного сока" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -1022,7 +1022,7 @@
   rdf:type :HASDNode .
 
 :AO1715
-  :name "Гипоцидный гастрит" ;
+  rdfs:label "Гипоцидный гастрит" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "cell" ;
@@ -1030,7 +1030,7 @@
   rdf:type :HASDNode .
 
 :AO1716
-  :name "Стимуляция желчеобразования" ;
+  rdfs:label "Стимуляция желчеобразования" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -1038,7 +1038,7 @@
   rdf:type :HASDNode .
 
 :AO1717
-  :name "Избыточная концентрация желчных кислот и продуктов из распада в кишечнике" ;
+  rdfs:label "Избыточная концентрация желчных кислот и продуктов из распада в кишечнике" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -1046,7 +1046,7 @@
   rdf:type :HASDNode .
 
 :AO1718
-  :name "Превращение тестостерона в эстрогены (в жировой ткани мужчин)" ;
+  rdfs:label "Превращение тестостерона в эстрогены (в жировой ткани мужчин)" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "hormones" ;
@@ -1054,7 +1054,7 @@
   rdf:type :HASDNode .
 
 :AO1719
-  :name "Отрыжка" ;
+  rdfs:label "Отрыжка" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -1062,7 +1062,7 @@
   rdf:type :HASDNode .
 
 :AO1720
-  :name "Выброс желудочных кислот в пищевод" ;
+  rdfs:label "Выброс желудочных кислот в пищевод" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -1070,7 +1070,7 @@
   rdf:type :HASDNode .
 
 :AO1721
-  :name "Избыток инсулина" ;
+  rdfs:label "Избыток инсулина" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "hormones" ;
@@ -1078,7 +1078,7 @@
   rdf:type :HASDNode .
 
 :AO1722
-  :name "Избыток холестерина" ;
+  rdfs:label "Избыток холестерина" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "metabolism" ;
@@ -1086,7 +1086,7 @@
   rdf:type :HASDNode .
 
 :AO1723
-  :name "Рак эндокринных желез" ;
+  rdfs:label "Рак эндокринных желез" ;
   :ageFrom "65" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -1094,7 +1094,7 @@
   rdf:type :HASDNode .
 
 :AO1724
-  :name "Рак женских половых органов" ;
+  rdfs:label "Рак женских половых органов" ;
   :ageFrom "65" ;
   :ageTo "" ;
   :system "cancer" ;
@@ -1102,7 +1102,7 @@
   rdf:type :HASDNode .
 
 :AO1725
-  :name "Избыток половых стероидных гормонов (эстрогены)" ;
+  rdfs:label "Избыток половых стероидных гормонов (эстрогены)" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "hormones" ;
@@ -1110,7 +1110,7 @@
   rdf:type :HASDNode .
 
 :AO1726
-  :name "Аденома простаты" ;
+  rdfs:label "Аденома простаты" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -1118,7 +1118,7 @@
   rdf:type :HASDNode .
 
 :AO1727
-  :name "Уменьшение количества T-хелперов" ;
+  rdfs:label "Уменьшение количества T-хелперов" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -1126,7 +1126,7 @@
   rdf:type :HASDNode .
 
 :AO1728
-  :name "Нарушение микрофлоры ЖКТ" ;
+  rdfs:label "Нарушение микрофлоры ЖКТ" ;
   :ageFrom "" ;
   :ageTo "" ;
   :system "unknown" ;
@@ -1134,7 +1134,7 @@
   rdf:type :HASDNode .
 
 :AO173
-  :name "Рак простаты" ;
+  rdfs:label "Рак простаты" ;
   :ageFrom "65" ;
   :ageTo "65" ;
   :system "cancer" ;
@@ -1142,7 +1142,7 @@
   rdf:type :HASDNode .
 
 :AO175
-  :name "Снижение секреции IGF-1 (инсулиноподобного фактора роста-1) в гепатоцитах печени" ;
+  rdfs:label "Снижение секреции IGF-1 (инсулиноподобного фактора роста-1) в гепатоцитах печени" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "metabolism" ;
@@ -1150,7 +1150,7 @@
   rdf:type :HASDNode .
 
 :AO177
-  :name "Увеличение количества амилоидных бляшек" ;
+  rdfs:label "Увеличение количества амилоидных бляшек" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "nervous" ;
@@ -1158,7 +1158,7 @@
   rdf:type :HASDNode .
 
 :AO181
-  :name "Нарушение пула стволовых клеток в популяции, в результате нарушения 'Хоминга'" ;
+  rdfs:label "Нарушение пула стволовых клеток в популяции, в результате нарушения 'Хоминга'" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1166,7 +1166,7 @@
   rdf:type :HASDNode .
 
 :AO185
-  :name "Хромосомные аберрации" ;
+  rdfs:label "Хромосомные аберрации" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1174,7 +1174,7 @@
   rdf:type :HASDNode .
 
 :AO187
-  :name "Накопление липофусцина" ;
+  rdfs:label "Накопление липофусцина" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "metabolism" ;
@@ -1182,7 +1182,7 @@
   rdf:type :HASDNode .
 
 :AO189
-  :name "Образование пенистых клеток" ;
+  rdfs:label "Образование пенистых клеток" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "cell" ;
@@ -1190,7 +1190,7 @@
   rdf:type :HASDNode .
 
 :AO19
-  :name "Накопление сшивок липид-белок" ;
+  rdfs:label "Накопление сшивок липид-белок" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1198,7 +1198,7 @@
   rdf:type :HASDNode .
 
 :AO191
-  :name "Рак легких" ;
+  rdfs:label "Рак легких" ;
   :ageFrom "65" ;
   :ageTo "70" ;
   :system "cancer" ;
@@ -1206,7 +1206,7 @@
   rdf:type :HASDNode .
 
 :AO193
-  :name "Болезнь Альцгеймера" ;
+  rdfs:label "Болезнь Альцгеймера" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "nervous" ;
@@ -1214,7 +1214,7 @@
   rdf:type :HASDNode .
 
 :AO195
-  :name "Уменьшение выработки эстрогена" ;
+  rdfs:label "Уменьшение выработки эстрогена" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "hormones" ;
@@ -1222,7 +1222,7 @@
   rdf:type :HASDNode .
 
 :AO197
-  :name "Анемия" ;
+  rdfs:label "Анемия" ;
   :ageFrom "65" ;
   :ageTo "75" ;
   :system "respiratory" ;
@@ -1230,7 +1230,7 @@
   rdf:type :HASDNode .
 
 :AO201
-  :name "Сшивки (из-за металлов переменной валентности, диальдегидов)" ;
+  rdfs:label "Сшивки (из-за металлов переменной валентности, диальдегидов)" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "intersystem" ;
@@ -1238,7 +1238,7 @@
   rdf:type :HASDNode .
 
 :AO203
-  :name "Остеохондроз" ;
+  rdfs:label "Остеохондроз" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "intersystem" ;
@@ -1246,7 +1246,7 @@
   rdf:type :HASDNode .
 
 :AO205
-  :name "Артериальная гипертония" ;
+  rdfs:label "Артериальная гипертония" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cardiovascular" ;
@@ -1254,7 +1254,7 @@
   rdf:type :HASDNode .
 
 :AO207
-  :name "Ухудшение функций миоцитов" ;
+  rdfs:label "Ухудшение функций миоцитов" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cell" ;
@@ -1262,7 +1262,7 @@
   rdf:type :HASDNode .
 
 :AO209
-  :name "Уменьшение пролиферации клеток" ;
+  rdfs:label "Уменьшение пролиферации клеток" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1270,7 +1270,7 @@
   rdf:type :HASDNode .
 
 :AO21
-  :name "Негомологичная рекомбинация хромосом" ;
+  rdfs:label "Негомологичная рекомбинация хромосом" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "intersystem" ;
@@ -1278,7 +1278,7 @@
   rdf:type :HASDNode .
 
 :AO217
-  :name "Накопление повреждений в миоцитах" ;
+  rdfs:label "Накопление повреждений в миоцитах" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cell" ;
@@ -1286,7 +1286,7 @@
   rdf:type :HASDNode .
 
 :AO223
-  :name "Сверхактивация протоонкогенов" ;
+  rdfs:label "Сверхактивация протоонкогенов" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "immune" ;
@@ -1294,7 +1294,7 @@
   rdf:type :HASDNode .
 
 :AO225
-  :name "Активирование очагов онкологических клеток" ;
+  rdfs:label "Активирование очагов онкологических клеток" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cancer" ;
@@ -1302,7 +1302,7 @@
   rdf:type :HASDNode .
 
 :AO23
-  :name "Уменьшение влияния на сердце симпатической нервной системы" ;
+  rdfs:label "Уменьшение влияния на сердце симпатической нервной системы" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "nervous" ;
@@ -1310,7 +1310,7 @@
   rdf:type :HASDNode .
 
 :AO231
-  :name "Ухудшение состояния межклеточного матрикса в хрящах" ;
+  rdfs:label "Ухудшение состояния межклеточного матрикса в хрящах" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "cell" ;
@@ -1318,7 +1318,7 @@
   rdf:type :HASDNode .
 
 :AO235
-  :name "Почечная недостаточность" ;
+  rdfs:label "Почечная недостаточность" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -1326,7 +1326,7 @@
   rdf:type :HASDNode .
 
 :AO237
-  :name "Изменение рецепторной чувствительности клетки" ;
+  rdfs:label "Изменение рецепторной чувствительности клетки" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1334,7 +1334,7 @@
   rdf:type :HASDNode .
 
 :AO239
-  :name "Нестабильность генома" ;
+  rdfs:label "Нестабильность генома" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1342,7 +1342,7 @@
   rdf:type :HASDNode .
 
 :AO241
-  :name "Снижение секреции норадреналина" ;
+  rdfs:label "Снижение секреции норадреналина" ;
   :ageFrom "30" ;
   :ageTo "100" ;
   :system "hormones" ;
@@ -1350,7 +1350,7 @@
   rdf:type :HASDNode .
 
 :AO243
-  :name "Блокирование реакций клетки на факторы роста, активирующие ее пролиферацию" ;
+  rdfs:label "Блокирование реакций клетки на факторы роста, активирующие ее пролиферацию" ;
   :ageFrom "40" ;
   :ageTo "60" ;
   :system "cell" ;
@@ -1358,7 +1358,7 @@
   rdf:type :HASDNode .
 
 :AO245
-  :name "Образование сигнала о двухцепочечном разрыве ДНК" ;
+  rdfs:label "Образование сигнала о двухцепочечном разрыве ДНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1366,7 +1366,7 @@
   rdf:type :HASDNode .
 
 :AO247
-  :name "Повреждения эндотелия" ;
+  rdfs:label "Повреждения эндотелия" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1374,7 +1374,7 @@
   rdf:type :HASDNode .
 
 :AO249
-  :name "Уменьшение количества миоцитов" ;
+  rdfs:label "Уменьшение количества миоцитов" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cell" ;
@@ -1382,7 +1382,7 @@
   rdf:type :HASDNode .
 
 :AO25
-  :name "Ухудшение удаления токсинов" ;
+  rdfs:label "Ухудшение удаления токсинов" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "connective" ;
@@ -1390,7 +1390,7 @@
   rdf:type :HASDNode .
 
 :AO251
-  :name "Снижение выработки ТТГ (Тиреотропный гормон)" ;
+  rdfs:label "Снижение выработки ТТГ (Тиреотропный гормон)" ;
   :ageFrom "20" ;
   :ageTo "35" ;
   :system "hormones" ;
@@ -1398,7 +1398,7 @@
   rdf:type :HASDNode .
 
 :AO253
-  :name "Потеря белков, покрывающих теломеры (TRF2)" ;
+  rdfs:label "Потеря белков, покрывающих теломеры (TRF2)" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "intersystem" ;
@@ -1406,7 +1406,7 @@
   rdf:type :HASDNode .
 
 :AO257
-  :name "Ревматизм" ;
+  rdfs:label "Ревматизм" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "intersystem" ;
@@ -1414,7 +1414,7 @@
   rdf:type :HASDNode .
 
 :AO266
-  :name "Нарушения хоминга" ;
+  rdfs:label "Нарушения хоминга" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "cell" ;
@@ -1422,7 +1422,7 @@
   rdf:type :HASDNode .
 
 :AO268
-  :name "Патологическое укорочение теломер" ;
+  rdfs:label "Патологическое укорочение теломер" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1430,7 +1430,7 @@
   rdf:type :HASDNode .
 
 :AO27
-  :name "Уменьшение функциональной активности клеток" ;
+  rdfs:label "Уменьшение функциональной активности клеток" ;
   :ageFrom "40" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1438,7 +1438,7 @@
   rdf:type :HASDNode .
 
 :AO270
-  :name "Нарушение структуры хроматина" ;
+  rdfs:label "Нарушение структуры хроматина" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "immune" ;
@@ -1446,7 +1446,7 @@
   rdf:type :HASDNode .
 
 :AO272
-  :name "Репликативное старение (стойкое прекращение пролиферации клеток)" ;
+  rdfs:label "Репликативное старение (стойкое прекращение пролиферации клеток)" ;
   :ageFrom "60" ;
   :ageTo "80" ;
   :system "cell" ;
@@ -1454,7 +1454,7 @@
   rdf:type :HASDNode .
 
 :AO273
-  :name "Ухудшение микроциркуляции в поджелудочной железе" ;
+  rdfs:label "Ухудшение микроциркуляции в поджелудочной железе" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "intersystem" ;
@@ -1462,7 +1462,7 @@
   rdf:type :HASDNode .
 
 :AO276
-  :name "Уменьшение синтеза С-комплемента" ;
+  rdfs:label "Уменьшение синтеза С-комплемента" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "metabolism" ;
@@ -1470,7 +1470,7 @@
   rdf:type :HASDNode .
 
 :AO279
-  :name "Изменение проницаемости альвеолярной стенки" ;
+  rdfs:label "Изменение проницаемости альвеолярной стенки" ;
   :ageFrom "50" ;
   :ageTo "75" ;
   :system "cell" ;
@@ -1478,7 +1478,7 @@
   rdf:type :HASDNode .
 
 :AO281
-  :name "Воспалительные реакции в тканях" ;
+  rdfs:label "Воспалительные реакции в тканях" ;
   :ageFrom "50" ;
   :ageTo "100" ;
   :system "immune" ;
@@ -1486,7 +1486,7 @@
   rdf:type :HASDNode .
 
 :AO283
-  :name "Уменьшение жизненной емкости легких" ;
+  rdfs:label "Уменьшение жизненной емкости легких" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "respiratory" ;
@@ -1494,7 +1494,7 @@
   rdf:type :HASDNode .
 
 :AO288
-  :name "Уменьшение скорости физиологической регенерации тканей" ;
+  rdfs:label "Уменьшение скорости физиологической регенерации тканей" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1502,7 +1502,7 @@
   rdf:type :HASDNode .
 
 :AO29
-  :name "Замедление процесса синтеза эластина и коллагена" ;
+  rdfs:label "Замедление процесса синтеза эластина и коллагена" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "metabolism" ;
@@ -1510,7 +1510,7 @@
   rdf:type :HASDNode .
 
 :AO295
-  :name "Ишемический инсульт" ;
+  rdfs:label "Ишемический инсульт" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "cardiovascular" ;
@@ -1518,7 +1518,7 @@
   rdf:type :HASDNode .
 
 :AO301
-  :name "Гипотрофия эпифиза" ;
+  rdfs:label "Гипотрофия эпифиза" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -1526,7 +1526,7 @@
   rdf:type :HASDNode .
 
 :AO307
-  :name "Переломы" ;
+  rdfs:label "Переломы" ;
   :ageFrom "65" ;
   :ageTo "75" ;
   :system "intersystem" ;
@@ -1534,7 +1534,7 @@
   rdf:type :HASDNode .
 
 :AO31
-  :name "Атрофия лёгочных альвеол" ;
+  rdfs:label "Атрофия лёгочных альвеол" ;
   :ageFrom "55" ;
   :ageTo "70" ;
   :system "respiratory" ;
@@ -1542,7 +1542,7 @@
   rdf:type :HASDNode .
 
 :AO311
-  :name "Уплотнение клеточной мемраны" ;
+  rdfs:label "Уплотнение клеточной мемраны" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -1550,7 +1550,7 @@
   rdf:type :HASDNode .
 
 :AO315
-  :name "Повышение секреции вазопрессина" ;
+  rdfs:label "Повышение секреции вазопрессина" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -1558,7 +1558,7 @@
   rdf:type :HASDNode .
 
 :AO319
-  :name "Нарушение функций клетки" ;
+  rdfs:label "Нарушение функций клетки" ;
   :ageFrom "20" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1566,7 +1566,7 @@
   rdf:type :HASDNode .
 
 :AO321
-  :name "Снижение секреции Дегидроэпиандростерона" ;
+  rdfs:label "Снижение секреции Дегидроэпиандростерона" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -1574,7 +1574,7 @@
   rdf:type :HASDNode .
 
 :AO325
-  :name "Накопление дефектного коллагена" ;
+  rdfs:label "Накопление дефектного коллагена" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "intersystem" ;
@@ -1582,7 +1582,7 @@
   rdf:type :HASDNode .
 
 :AO33
-  :name "Хронические генерализованные вялотекущие воспаления" ;
+  rdfs:label "Хронические генерализованные вялотекущие воспаления" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "immune" ;
@@ -1590,14 +1590,14 @@
   rdf:type :HASDNode .
 
 :AO333
-  :name "Ухудшение ансамблевой работы клеток" ;
+  rdfs:label "Ухудшение ансамблевой работы клеток" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "cell" ;
   rdf:type :HASDNode .
 
 :AO345
-  :name "Гипоксия (разной степени)" ;
+  rdfs:label "Гипоксия (разной степени)" ;
   :ageFrom "70" ;
   :ageTo "100" ;
   :system "respiratory" ;
@@ -1605,7 +1605,7 @@
   rdf:type :HASDNode .
 
 :AO347
-  :name "Гипотрофия щитовидной железы" ;
+  rdfs:label "Гипотрофия щитовидной железы" ;
   :ageFrom "20" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -1613,7 +1613,7 @@
   rdf:type :HASDNode .
 
 :AO353
-  :name "Выработка свободных радикалов" ;
+  rdfs:label "Выработка свободных радикалов" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "intersystem" ;
@@ -1621,7 +1621,7 @@
   rdf:type :HASDNode .
 
 :AO357
-  :name "Появление дефектных митохондрий" ;
+  rdfs:label "Появление дефектных митохондрий" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1629,7 +1629,7 @@
   rdf:type :HASDNode .
 
 :AO359
-  :name "Эпигенетические нарушения (сшивки ДНК-белок, деметилирование ДНК)" ;
+  rdfs:label "Эпигенетические нарушения (сшивки ДНК-белок, деметилирование ДНК)" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1637,7 +1637,7 @@
   rdf:type :HASDNode .
 
 :AO363
-  :name "Накопление нефункциональных белков" ;
+  rdfs:label "Накопление нефункциональных белков" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1645,7 +1645,7 @@
   rdf:type :HASDNode .
 
 :AO367
-  :name "Артриты" ;
+  rdfs:label "Артриты" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "intersystem" ;
@@ -1653,7 +1653,7 @@
   rdf:type :HASDNode .
 
 :AO37
-  :name "Накопление аммилоидных фибрил (бетта-амилоида)" ;
+  rdfs:label "Накопление аммилоидных фибрил (бетта-амилоида)" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "nervous" ;
@@ -1661,7 +1661,7 @@
   rdf:type :HASDNode .
 
 :AO373
-  :name "Транспозиция мобильных элементов генома" ;
+  rdfs:label "Транспозиция мобильных элементов генома" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1669,7 +1669,7 @@
   rdf:type :HASDNode .
 
 :AO375
-  :name "Образование 8-оксо-2’деоксигуанозина в промоторных и энхансерных участках ДНК" ;
+  rdfs:label "Образование 8-оксо-2’деоксигуанозина в промоторных и энхансерных участках ДНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1677,7 +1677,7 @@
   rdf:type :HASDNode .
 
 :AO377
-  :name "Остеопороз" ;
+  rdfs:label "Остеопороз" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "intersystem" ;
@@ -1685,7 +1685,7 @@
   rdf:type :HASDNode .
 
 :AO383
-  :name "Гипотрофия половых желез" ;
+  rdfs:label "Гипотрофия половых желез" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -1693,7 +1693,7 @@
   rdf:type :HASDNode .
 
 :AO385
-  :name "Ухудшение когнитивных способностей мозга" ;
+  rdfs:label "Ухудшение когнитивных способностей мозга" ;
   :ageFrom "70" ;
   :ageTo "80" ;
   :system "nervous" ;
@@ -1701,7 +1701,7 @@
   rdf:type :HASDNode .
 
 :AO389
-  :name "Уменьшение числа связей между клетками" ;
+  rdfs:label "Уменьшение числа связей между клетками" ;
   :ageFrom "20" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1709,7 +1709,7 @@
   rdf:type :HASDNode .
 
 :AO39
-  :name "Вторичный иммунодефицит" ;
+  rdfs:label "Вторичный иммунодефицит" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "immune" ;
@@ -1717,7 +1717,7 @@
   rdf:type :HASDNode .
 
 :AO391
-  :name "Гипертрофия простаты" ;
+  rdfs:label "Гипертрофия простаты" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "hormones" ;
@@ -1725,7 +1725,7 @@
   rdf:type :HASDNode .
 
 :AO399
-  :name "Негативное изменение межклеточного матрикса" ;
+  rdfs:label "Негативное изменение межклеточного матрикса" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1733,7 +1733,7 @@
   rdf:type :HASDNode .
 
 :AO401
-  :name "Ухудшение питания тканей" ;
+  rdfs:label "Ухудшение питания тканей" ;
   :ageFrom "20" ;
   :ageTo "50" ;
   :system "connective" ;
@@ -1741,7 +1741,7 @@
   rdf:type :HASDNode .
 
 :AO407
-  :name "Устойчивое прекращение пролиферации клеток" ;
+  rdfs:label "Устойчивое прекращение пролиферации клеток" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "cell" ;
@@ -1749,7 +1749,7 @@
   rdf:type :HASDNode .
 
 :AO411
-  :name "Подавление секреции паратиреоидного гормона" ;
+  rdfs:label "Подавление секреции паратиреоидного гормона" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "hormones" ;
@@ -1757,7 +1757,7 @@
   rdf:type :HASDNode .
 
 :AO427
-  :name "Сшивки ДНК-ДНК" ;
+  rdfs:label "Сшивки ДНК-ДНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1765,7 +1765,7 @@
   rdf:type :HASDNode .
 
 :AO431
-  :name "Уменьшение объёма клетки" ;
+  rdfs:label "Уменьшение объёма клетки" ;
   :ageFrom "35" ;
   :ageTo "50" ;
   :system "cell" ;
@@ -1773,7 +1773,7 @@
   rdf:type :HASDNode .
 
 :AO433
-  :name "Негативное изменение конститутивной экспрессии генов" ;
+  rdfs:label "Негативное изменение конститутивной экспрессии генов" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1781,7 +1781,7 @@
   rdf:type :HASDNode .
 
 :AO437
-  :name "Болезнь Паркинсона" ;
+  rdfs:label "Болезнь Паркинсона" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "nervous" ;
@@ -1789,7 +1789,7 @@
   rdf:type :HASDNode .
 
 :AO447
-  :name "Уменьшение количества (и ухудшение качества) адгезивных рецепторов" ;
+  rdfs:label "Уменьшение количества (и ухудшение качества) адгезивных рецепторов" ;
   :ageFrom "20" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1797,7 +1797,7 @@
   rdf:type :HASDNode .
 
 :AO45
-  :name "Метаболический синдром" ;
+  rdfs:label "Метаболический синдром" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "metabolism" ;
@@ -1805,7 +1805,7 @@
   rdf:type :HASDNode .
 
 :AO453
-  :name "Снижение количества и качества рибосом" ;
+  rdfs:label "Снижение количества и качества рибосом" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -1813,7 +1813,7 @@
   rdf:type :HASDNode .
 
 :AO463
-  :name "Образование атеросклеротических бляшек" ;
+  rdfs:label "Образование атеросклеротических бляшек" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cardiovascular" ;
@@ -1821,7 +1821,7 @@
   rdf:type :HASDNode .
 
 :AO467
-  :name "Снижение секреции половых гормонов (тестостерон, эстрадиол, прогестерон)" ;
+  rdfs:label "Снижение секреции половых гормонов (тестостерон, эстрадиол, прогестерон)" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -1829,7 +1829,7 @@
   rdf:type :HASDNode .
 
 :AO47
-  :name "Накопление клеточного мусора в клетках печени" ;
+  rdfs:label "Накопление клеточного мусора в клетках печени" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "metabolism" ;
@@ -1837,7 +1837,7 @@
   rdf:type :HASDNode .
 
 :AO471
-  :name "Нарушение транспорта метаболитов через мембрану" ;
+  rdfs:label "Нарушение транспорта метаболитов через мембрану" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -1845,7 +1845,7 @@
   rdf:type :HASDNode .
 
 :AO475
-  :name "Снижение выработки АКТГ (Аденекортикотропный гормон)" ;
+  rdfs:label "Снижение выработки АКТГ (Аденекортикотропный гормон)" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "hormones" ;
@@ -1853,7 +1853,7 @@
   rdf:type :HASDNode .
 
 :AO489
-  :name "Уменьшение эластичности сосудов" ;
+  rdfs:label "Уменьшение эластичности сосудов" ;
   :ageFrom "45" ;
   :ageTo "60" ;
   :system "cardiovascular" ;
@@ -1861,7 +1861,7 @@
   rdf:type :HASDNode .
 
 :AO49
-  :name "Онкогенез: появление злокачественных и доброкачественных опухолей" ;
+  rdfs:label "Онкогенез: появление злокачественных и доброкачественных опухолей" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cancer" ;
@@ -1869,7 +1869,7 @@
   rdf:type :HASDNode .
 
 :AO495
-  :name "ИБС" ;
+  rdfs:label "ИБС" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cardiovascular" ;
@@ -1877,7 +1877,7 @@
   rdf:type :HASDNode .
 
 :AO501
-  :name "Нарушение индуцибельной экспрессии генов ДНК" ;
+  rdfs:label "Нарушение индуцибельной экспрессии генов ДНК" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "intersystem" ;
@@ -1885,7 +1885,7 @@
   rdf:type :HASDNode .
 
 :AO505
-  :name "Легочная недостаточность" ;
+  rdfs:label "Легочная недостаточность" ;
   :ageFrom "65" ;
   :ageTo "75" ;
   :system "respiratory" ;
@@ -1893,7 +1893,7 @@
   rdf:type :HASDNode .
 
 :AO509
-  :name "Нарушение суточного ритма секреции нейрпептида Y" ;
+  rdfs:label "Нарушение суточного ритма секреции нейрпептида Y" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "hormones" ;
@@ -1901,7 +1901,7 @@
   rdf:type :HASDNode .
 
 :AO51
-  :name "Гипотрофия надпочечников" ;
+  rdfs:label "Гипотрофия надпочечников" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "hormones" ;
@@ -1909,7 +1909,7 @@
   rdf:type :HASDNode .
 
 :AO511
-  :name "Интеграция ретровирусов в ДНК" ;
+  rdfs:label "Интеграция ретровирусов в ДНК" ;
   :ageFrom "40" ;
   :ageTo "100" ;
   :system "immune" ;
@@ -1917,7 +1917,7 @@
   rdf:type :HASDNode .
 
 :AO519
-  :name "Увеличение количества альдегидов" ;
+  rdfs:label "Увеличение количества альдегидов" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "metabolism" ;
@@ -1925,7 +1925,7 @@
   rdf:type :HASDNode .
 
 :AO523
-  :name "Ухудшение усвоения кальция и витамина D в кишечнике" ;
+  rdfs:label "Ухудшение усвоения кальция и витамина D в кишечнике" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -1933,7 +1933,7 @@
   rdf:type :HASDNode .
 
 :AO525
-  :name "Накопление окисленных белков" ;
+  rdfs:label "Накопление окисленных белков" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1941,7 +1941,7 @@
   rdf:type :HASDNode .
 
 :AO529
-  :name "Снижение ферментной активности в железистых клетках ЖКТ" ;
+  rdfs:label "Снижение ферментной активности в железистых клетках ЖКТ" ;
   :ageFrom "40" ;
   :ageTo "85" ;
   :system "metabolism" ;
@@ -1949,7 +1949,7 @@
   rdf:type :HASDNode .
 
 :AO53
-  :name "Уменьшается эластичность легочной ткани" ;
+  rdfs:label "Уменьшается эластичность легочной ткани" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "respiratory" ;
@@ -1957,7 +1957,7 @@
   rdf:type :HASDNode .
 
 :AO531
-  :name "Снижение синтеза рибосомальных белков" ;
+  rdfs:label "Снижение синтеза рибосомальных белков" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1965,7 +1965,7 @@
   rdf:type :HASDNode .
 
 :AO535
-  :name "Снижение синтеза кальцийтриола" ;
+  rdfs:label "Снижение синтеза кальцийтриола" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -1973,7 +1973,7 @@
   rdf:type :HASDNode .
 
 :AO539
-  :name "Накопление нефункциональных белков, входящих в состав антиоксидантных систем" ;
+  rdfs:label "Накопление нефункциональных белков, входящих в состав антиоксидантных систем" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -1981,14 +1981,14 @@
   rdf:type :HASDNode .
 
 :AO543
-  :name "Смерть организма" ;
+  rdfs:label "Смерть организма" ;
   :ageFrom "85" ;
   :ageTo "90" ;
   :system "death" ;
   rdf:type :HASDNode .
 
 :AO551
-  :name "Снижение секреции мелатонина" ;
+  rdfs:label "Снижение секреции мелатонина" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -1996,7 +1996,7 @@
   rdf:type :HASDNode .
 
 :AO553
-  :name "Блокирование репликационной вилки" ;
+  rdfs:label "Блокирование репликационной вилки" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2004,7 +2004,7 @@
   rdf:type :HASDNode .
 
 :AO555
-  :name "Мутации мтДНК" ;
+  rdfs:label "Мутации мтДНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2012,7 +2012,7 @@
   rdf:type :HASDNode .
 
 :AO557
-  :name "Накопление жирных кислот в крови" ;
+  rdfs:label "Накопление жирных кислот в крови" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "cardiovascular" ;
@@ -2020,7 +2020,7 @@
   rdf:type :HASDNode .
 
 :AO56
-  :name "Гипотрофия тканей, вызванная ухудшением общего кровообращения" ;
+  rdfs:label "Гипотрофия тканей, вызванная ухудшением общего кровообращения" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cardiovascular" ;
@@ -2028,7 +2028,7 @@
   rdf:type :HASDNode .
 
 :AO563
-  :name "Уменьшение количества нейронов" ;
+  rdfs:label "Уменьшение количества нейронов" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cell" ;
@@ -2036,7 +2036,7 @@
   rdf:type :HASDNode .
 
 :AO565
-  :name "Появление аутоиммунной реакции" ;
+  rdfs:label "Появление аутоиммунной реакции" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "immune" ;
@@ -2044,7 +2044,7 @@
   rdf:type :HASDNode .
 
 :AO575
-  :name "Образование алкилированных оснований" ;
+  rdfs:label "Образование алкилированных оснований" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2052,7 +2052,7 @@
   rdf:type :HASDNode .
 
 :AO589
-  :name "Кишечная интоксикация" ;
+  rdfs:label "Кишечная интоксикация" ;
   :ageFrom "50" ;
   :ageTo "85" ;
   :system "metabolism" ;
@@ -2060,7 +2060,7 @@
   rdf:type :HASDNode .
 
 :AO59
-  :name "Пневмония" ;
+  rdfs:label "Пневмония" ;
   :ageFrom "70" ;
   :ageTo "100" ;
   :system "respiratory" ;
@@ -2068,7 +2068,7 @@
   rdf:type :HASDNode .
 
 :AO593
-  :name "Повышение активности АФК" ;
+  rdfs:label "Повышение активности АФК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2076,7 +2076,7 @@
   rdf:type :HASDNode .
 
 :AO599
-  :name "Ухудшение состояния межклеточного матрикса в сухожилиях" ;
+  rdfs:label "Ухудшение состояния межклеточного матрикса в сухожилиях" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "cell" ;
@@ -2084,7 +2084,7 @@
   rdf:type :HASDNode .
 
 :AO601
-  :name "Менопауза и андропауза" ;
+  rdfs:label "Менопауза и андропауза" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "hormones" ;
@@ -2092,7 +2092,7 @@
   rdf:type :HASDNode .
 
 :AO603
-  :name "Подавление аутофагии" ;
+  rdfs:label "Подавление аутофагии" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cell" ;
@@ -2100,7 +2100,7 @@
   rdf:type :HASDNode .
 
 :AO607
-  :name "Переполнение лизосомы" ;
+  rdfs:label "Переполнение лизосомы" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "cell" ;
@@ -2108,7 +2108,7 @@
   rdf:type :HASDNode .
 
 :AO61
-  :name "Увеличение количества непереваренной пищи в ЖКТ" ;
+  rdfs:label "Увеличение количества непереваренной пищи в ЖКТ" ;
   :ageFrom "40" ;
   :ageTo "85" ;
   :system "metabolism" ;
@@ -2116,7 +2116,7 @@
   rdf:type :HASDNode .
 
 :AO615
-  :name "Понижение толерантности к глюкозе" ;
+  rdfs:label "Понижение толерантности к глюкозе" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "cell" ;
@@ -2124,7 +2124,7 @@
   rdf:type :HASDNode .
 
 :AO617
-  :name "Снижение выработки АТФ (в отдельных клетках)" ;
+  rdfs:label "Снижение выработки АТФ (в отдельных клетках)" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "metabolism" ;
@@ -2132,7 +2132,7 @@
   rdf:type :HASDNode .
 
 :AO623
-  :name "Увеличение количества жировой ткани" ;
+  rdfs:label "Увеличение количества жировой ткани" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "metabolism" ;
@@ -2140,7 +2140,7 @@
   rdf:type :HASDNode .
 
 :AO629
-  :name "Перикисное окисление липидов в мембранах" ;
+  rdfs:label "Перикисное окисление липидов в мембранах" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "metabolism" ;
@@ -2148,7 +2148,7 @@
   rdf:type :HASDNode .
 
 :AO63
-  :name "Изменение физико-химических свойств мембранного матрикса" ;
+  rdfs:label "Изменение физико-химических свойств мембранного матрикса" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -2156,7 +2156,7 @@
   rdf:type :HASDNode .
 
 :AO635
-  :name "Снижение синтеза рибосомальной РНК" ;
+  rdfs:label "Снижение синтеза рибосомальной РНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2164,7 +2164,7 @@
   rdf:type :HASDNode .
 
 :AO641
-  :name "Накопление карбонилированных белков" ;
+  rdfs:label "Накопление карбонилированных белков" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2172,7 +2172,7 @@
   rdf:type :HASDNode .
 
 :AO647
-  :name "Увеличение периферического сопротивления" ;
+  rdfs:label "Увеличение периферического сопротивления" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cardiovascular" ;
@@ -2180,7 +2180,7 @@
   rdf:type :HASDNode .
 
 :AO649
-  :name "Уменьшение проводимости нервных волокон" ;
+  rdfs:label "Уменьшение проводимости нервных волокон" ;
   :ageFrom "45" ;
   :ageTo "50" ;
   :system "nervous" ;
@@ -2188,7 +2188,7 @@
   rdf:type :HASDNode .
 
 :AO65
-  :name "Снижение синтеза белка" ;
+  rdfs:label "Снижение синтеза белка" ;
   :ageFrom "20" ;
   :ageTo "45" ;
   :system "metabolism" ;
@@ -2196,7 +2196,7 @@
   rdf:type :HASDNode .
 
 :AO659
-  :name "Миокардиопатия" ;
+  rdfs:label "Миокардиопатия" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cardiovascular" ;
@@ -2204,7 +2204,7 @@
   rdf:type :HASDNode .
 
 :AO665
-  :name "Снижение синтеза мРНК" ;
+  rdfs:label "Снижение синтеза мРНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2212,7 +2212,7 @@
   rdf:type :HASDNode .
 
 :AO67
-  :name "Ухудшение снабжения тканей кислородом" ;
+  rdfs:label "Ухудшение снабжения тканей кислородом" ;
   :ageFrom "65" ;
   :ageTo "75" ;
   :system "respiratory" ;
@@ -2220,7 +2220,7 @@
   rdf:type :HASDNode .
 
 :AO675
-  :name "Увеличение уровня Ca в крови" ;
+  rdfs:label "Увеличение уровня Ca в крови" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -2228,7 +2228,7 @@
   rdf:type :HASDNode .
 
 :AO677
-  :name "Появление дефектных клеток" ;
+  rdfs:label "Появление дефектных клеток" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cell" ;
@@ -2236,7 +2236,7 @@
   rdf:type :HASDNode .
 
 :AO679
-  :name "Снижение выработки Q10" ;
+  rdfs:label "Снижение выработки Q10" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "metabolism" ;
@@ -2244,7 +2244,7 @@
   rdf:type :HASDNode .
 
 :AO687
-  :name "Постоянное переедание" ;
+  rdfs:label "Постоянное переедание" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "metabolism" ;
@@ -2252,7 +2252,7 @@
   rdf:type :HASDNode .
 
 :AO693
-  :name "Гипоплазия мышечной ткани" ;
+  rdfs:label "Гипоплазия мышечной ткани" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "intersystem" ;
@@ -2260,7 +2260,7 @@
   rdf:type :HASDNode .
 
 :AO699
-  :name "Гипотрофия мышц грудной клетки" ;
+  rdfs:label "Гипотрофия мышц грудной клетки" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "respiratory" ;
@@ -2268,7 +2268,7 @@
   rdf:type :HASDNode .
 
 :AO7
-  :name "Сердечная недостаточность" ;
+  rdfs:label "Сердечная недостаточность" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "cardiovascular" ;
@@ -2276,7 +2276,7 @@
   rdf:type :HASDNode .
 
 :AO71
-  :name "Накопление денатурированных белков" ;
+  rdfs:label "Накопление денатурированных белков" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "intersystem" ;
@@ -2284,7 +2284,7 @@
   rdf:type :HASDNode .
 
 :AO727
-  :name "Начало атрофии ретикулярных клеток тимуса" ;
+  rdfs:label "Начало атрофии ретикулярных клеток тимуса" ;
   :ageFrom "20" ;
   :ageTo "50" ;
   :system "cell" ;
@@ -2292,7 +2292,7 @@
   rdf:type :HASDNode .
 
 :AO729
-  :name "Гипоплазия тканей" ;
+  rdfs:label "Гипоплазия тканей" ;
   :ageFrom "50" ;
   :ageTo "80" ;
   :system "connective" ;
@@ -2300,7 +2300,7 @@
   rdf:type :HASDNode .
 
 :AO73
-  :name "Рак молочной железы" ;
+  rdfs:label "Рак молочной железы" ;
   :ageFrom "65" ;
   :ageTo "65" ;
   :system "cancer" ;
@@ -2308,7 +2308,7 @@
   rdf:type :HASDNode .
 
 :AO733
-  :name "Уменьшение адаптивной реакции" ;
+  rdfs:label "Уменьшение адаптивной реакции" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "nervous" ;
@@ -2316,7 +2316,7 @@
   rdf:type :HASDNode .
 
 :AO737
-  :name "Уменьшение эластичности стенок легочных альвеол" ;
+  rdfs:label "Уменьшение эластичности стенок легочных альвеол" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "respiratory" ;
@@ -2324,7 +2324,7 @@
   rdf:type :HASDNode .
 
 :AO751
-  :name "Снижение секреции нейротрансмиттеров" ;
+  rdfs:label "Снижение секреции нейротрансмиттеров" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "nervous" ;
@@ -2332,7 +2332,7 @@
   rdf:type :HASDNode .
 
 :AO755
-  :name "Длительное повышение уровня глюкозы в крови" ;
+  rdfs:label "Длительное повышение уровня глюкозы в крови" ;
   :ageFrom "35" ;
   :ageTo "45" ;
   :system "metabolism" ;
@@ -2340,7 +2340,7 @@
   rdf:type :HASDNode .
 
 :AO767
-  :name "Гипотрофия нейроэндокринных узлов (в гипоталамусе и стволе мозга)" ;
+  rdfs:label "Гипотрофия нейроэндокринных узлов (в гипоталамусе и стволе мозга)" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "hormones" ;
@@ -2348,7 +2348,7 @@
   rdf:type :HASDNode .
 
 :AO77
-  :name "Снижение физической работоспособности" ;
+  rdfs:label "Снижение физической работоспособности" ;
   :ageFrom "60" ;
   :ageTo "70" ;
   :system "intersystem" ;
@@ -2356,7 +2356,7 @@
   rdf:type :HASDNode .
 
 :AO781
-  :name "Снижение экспрессии компонентов репаративных систем" ;
+  rdfs:label "Снижение экспрессии компонентов репаративных систем" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2364,7 +2364,7 @@
   rdf:type :HASDNode .
 
 :AO783
-  :name "Разрастание гнилостной флоры" ;
+  rdfs:label "Разрастание гнилостной флоры" ;
   :ageFrom "40" ;
   :ageTo "85" ;
   :system "cell" ;
@@ -2372,7 +2372,7 @@
   rdf:type :HASDNode .
 
 :AO785
-  :name "Снижение количества активных копий ДНК, кодирующей рибосомальную РНК и белки" ;
+  rdfs:label "Снижение количества активных копий ДНК, кодирующей рибосомальную РНК и белки" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "intersystem" ;
@@ -2380,7 +2380,7 @@
   rdf:type :HASDNode .
 
 :AO793
-  :name "Ухудшение передачи сигнальной информации" ;
+  rdfs:label "Ухудшение передачи сигнальной информации" ;
   :ageFrom "20" ;
   :ageTo "40" ;
   :system "connective" ;
@@ -2388,7 +2388,7 @@
   rdf:type :HASDNode .
 
 :AO795
-  :name "Уменьшение количества информационных молекул" ;
+  rdfs:label "Уменьшение количества информационных молекул" ;
   :ageFrom "20" ;
   :ageTo "40" ;
   :system "connective" ;
@@ -2396,7 +2396,7 @@
   rdf:type :HASDNode .
 
 :AO799
-  :name "Накопление внеклеточного мусора" ;
+  rdfs:label "Накопление внеклеточного мусора" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "cell" ;
@@ -2404,7 +2404,7 @@
   rdf:type :HASDNode .
 
 :AO801
-  :name "Снижение секреции соматотропина (гормон роста)" ;
+  rdfs:label "Снижение секреции соматотропина (гормон роста)" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "hormones" ;
@@ -2412,7 +2412,7 @@
   rdf:type :HASDNode .
 
 :AO819
-  :name "Атака обкладочных клеток желудка иммунной системой" ;
+  rdfs:label "Атака обкладочных клеток желудка иммунной системой" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "cell" ;
@@ -2420,7 +2420,7 @@
   rdf:type :HASDNode .
 
 :AO821
-  :name "Образование дефектных антигенов в клетках организма" ;
+  rdfs:label "Образование дефектных антигенов в клетках организма" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "cell" ;
@@ -2428,7 +2428,7 @@
   rdf:type :HASDNode .
 
 :AO825
-  :name "Образование NUMT-псевдогенов в мтДНК" ;
+  rdfs:label "Образование NUMT-псевдогенов в мтДНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2436,7 +2436,7 @@
   rdf:type :HASDNode .
 
 :AO831
-  :name "Эмфизема лёгких" ;
+  rdfs:label "Эмфизема лёгких" ;
   :ageFrom "68" ;
   :ageTo "75" ;
   :system "respiratory" ;
@@ -2444,7 +2444,7 @@
   rdf:type :HASDNode .
 
 :AO833
-  :name "p53-зависимая необратимая задержка пролиферации клеток" ;
+  rdfs:label "p53-зависимая необратимая задержка пролиферации клеток" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -2452,7 +2452,7 @@
   rdf:type :HASDNode .
 
 :AO837
-  :name "Ухудшение общего кровообращения" ;
+  rdfs:label "Ухудшение общего кровообращения" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cardiovascular" ;
@@ -2460,7 +2460,7 @@
   rdf:type :HASDNode .
 
 :AO839
-  :name "Снижение активности белков теплового шока" ;
+  rdfs:label "Снижение активности белков теплового шока" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2468,7 +2468,7 @@
   rdf:type :HASDNode .
 
 :AO841
-  :name "Первичное ухудшение микроциркуляции крови и лимфы" ;
+  rdfs:label "Первичное ухудшение микроциркуляции крови и лимфы" ;
   :ageFrom "20" ;
   :ageTo "60" ;
   :system "intersystem" ;
@@ -2476,7 +2476,7 @@
   rdf:type :HASDNode .
 
 :AO845
-  :name "Нарушение усваиваемости витаминов групп BDCE" ;
+  rdfs:label "Нарушение усваиваемости витаминов групп BDCE" ;
   :ageFrom "45" ;
   :ageTo "50" ;
   :system "metabolism" ;
@@ -2484,7 +2484,7 @@
   rdf:type :HASDNode .
 
 :AO85
-  :name "Накопление белковых агрегатов (клеточного мусора)" ;
+  rdfs:label "Накопление белковых агрегатов (клеточного мусора)" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "intersystem" ;
@@ -2492,7 +2492,7 @@
   rdf:type :HASDNode .
 
 :AO859
-  :name "Накопление белковых сшивок" ;
+  rdfs:label "Накопление белковых сшивок" ;
   :ageFrom "15" ;
   :ageTo "20" ;
   :system "intersystem" ;
@@ -2500,7 +2500,7 @@
   rdf:type :HASDNode .
 
 :AO861
-  :name "Хронические инфекции" ;
+  rdfs:label "Хронические инфекции" ;
   :ageFrom "35" ;
   :ageTo "100" ;
   :system "immune" ;
@@ -2508,7 +2508,7 @@
   rdf:type :HASDNode .
 
 :AO865
-  :name "Изменение структуры аполипопротеина (ЛПНП)" ;
+  rdfs:label "Изменение структуры аполипопротеина (ЛПНП)" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "cardiovascular" ;
@@ -2516,7 +2516,7 @@
   rdf:type :HASDNode .
 
 :AO871
-  :name "Нарушение метаболизма клетки" ;
+  rdfs:label "Нарушение метаболизма клетки" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "metabolism" ;
@@ -2524,7 +2524,7 @@
   rdf:type :HASDNode .
 
 :AO877
-  :name "Иммунная система воспринимает эти клетки как чужеродные" ;
+  rdfs:label "Иммунная система воспринимает эти клетки как чужеродные" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "cell" ;
@@ -2532,7 +2532,7 @@
   rdf:type :HASDNode .
 
 :AO883
-  :name "Уменьшение количества внутриклеточных элементов (митохондрии, рибосомы)" ;
+  rdfs:label "Уменьшение количества внутриклеточных элементов (митохондрии, рибосомы)" ;
   :ageFrom "35" ;
   :ageTo "50" ;
   :system "cell" ;
@@ -2540,7 +2540,7 @@
   rdf:type :HASDNode .
 
 :AO885
-  :name "Гипотрофия передней доли гипофиза" ;
+  rdfs:label "Гипотрофия передней доли гипофиза" ;
   :ageFrom "20" ;
   :ageTo "35" ;
   :system "hormones" ;
@@ -2548,7 +2548,7 @@
   rdf:type :HASDNode .
 
 :AO889
-  :name "Потеря Т-петли в теломерах" ;
+  rdfs:label "Потеря Т-петли в теломерах" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2556,7 +2556,7 @@
   rdf:type :HASDNode .
 
 :AO891
-  :name "Разрывы цепей ДНК" ;
+  rdfs:label "Разрывы цепей ДНК" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
@@ -2564,7 +2564,7 @@
   rdf:type :HASDNode .
 
 :AO895
-  :name "Проникновение окислов липидов и фибринов и тромбоцитов в субэндотелиальное пространство" ;
+  rdfs:label "Проникновение окислов липидов и фибринов и тромбоцитов в субэндотелиальное пространство" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "cardiovascular" ;
@@ -2572,7 +2572,7 @@
   rdf:type :HASDNode .
 
 :AO9
-  :name "Замещение свободного пространства соединительной тканью" ;
+  rdfs:label "Замещение свободного пространства соединительной тканью" ;
   :ageFrom "40" ;
   :ageTo "50" ;
   :system "connective" ;
@@ -2580,7 +2580,7 @@
   rdf:type :HASDNode .
 
 :AO901
-  :name "Снижение проницаемости мембраны" ;
+  rdfs:label "Снижение проницаемости мембраны" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "cell" ;
@@ -2588,7 +2588,7 @@
   rdf:type :HASDNode .
 
 :AO907
-  :name "Увеличение количества соединительной ткани" ;
+  rdfs:label "Увеличение количества соединительной ткани" ;
   :ageFrom "43" ;
   :ageTo "50" ;
   :system "respiratory" ;
@@ -2596,7 +2596,7 @@
   rdf:type :HASDNode .
 
 :AO909
-  :name "Депрессия" ;
+  rdfs:label "Депрессия" ;
   :ageFrom "55" ;
   :ageTo "60" ;
   :system "nervous" ;
@@ -2604,7 +2604,7 @@
   rdf:type :HASDNode .
 
 :AO91
-  :name "Сахарный диабет пожилого возраста" ;
+  rdfs:label "Сахарный диабет пожилого возраста" ;
   :ageFrom "50" ;
   :ageTo "85" ;
   :system "metabolism" ;
@@ -2612,7 +2612,7 @@
   rdf:type :HASDNode .
 
 :AO915
-  :name "Повышение секреции глюкокортикоидов" ;
+  rdfs:label "Повышение секреции глюкокортикоидов" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "hormones" ;
@@ -2620,7 +2620,7 @@
   rdf:type :HASDNode .
 
 :AO917
-  :name "Нарушение газообмена CO2 и O2" ;
+  rdfs:label "Нарушение газообмена CO2 и O2" ;
   :ageFrom "65" ;
   :ageTo "75" ;
   :system "respiratory" ;
@@ -2628,7 +2628,7 @@
   rdf:type :HASDNode .
 
 :AO919
-  :name "Изменение порога чувствительности в центре аппетита гипоталамуса" ;
+  rdfs:label "Изменение порога чувствительности в центре аппетита гипоталамуса" ;
   :ageFrom "25" ;
   :ageTo "35" ;
   :system "hormones" ;
@@ -2636,7 +2636,7 @@
   rdf:type :HASDNode .
 
 :AO927
-  :name "Деструкция симпатических окончаний" ;
+  rdfs:label "Деструкция симпатических окончаний" ;
   :ageFrom "45" ;
   :ageTo "60" ;
   :system "nervous" ;
@@ -2644,7 +2644,7 @@
   rdf:type :HASDNode .
 
 :AO93
-  :name "Размножение гладкомышечных клеток" ;
+  rdfs:label "Размножение гладкомышечных клеток" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "cell" ;
@@ -2652,7 +2652,7 @@
   rdf:type :HASDNode .
 
 :AO931
-  :name "Возрастное переключение активности разных субъединиц протеасом" ;
+  rdfs:label "Возрастное переключение активности разных субъединиц протеасом" ;
   :ageFrom "15" ;
   :ageTo "25" ;
   :system "intersystem" ;
@@ -2660,7 +2660,7 @@
   rdf:type :HASDNode .
 
 :AO933
-  :name "Окисление эластина" ;
+  rdfs:label "Окисление эластина" ;
   :ageFrom "30" ;
   :ageTo "40" ;
   :system "metabolism" ;
@@ -2668,7 +2668,7 @@
   rdf:type :HASDNode .
 
 :AO939
-  :name "Уменьшение проницаемости межклеточного пространства" ;
+  rdfs:label "Уменьшение проницаемости межклеточного пространства" ;
   :ageFrom "20" ;
   :ageTo "45" ;
   :system "cell" ;
@@ -2676,7 +2676,7 @@
   rdf:type :HASDNode .
 
 :AO945
-  :name "Дефицит микроэлементов" ;
+  rdfs:label "Дефицит микроэлементов" ;
   :ageFrom "45" ;
   :ageTo "85" ;
   :system "metabolism" ;
@@ -2684,7 +2684,7 @@
   rdf:type :HASDNode .
 
 :AO95
-  :name "Ограничение подвижности" ;
+  rdfs:label "Ограничение подвижности" ;
   :ageFrom "65" ;
   :ageTo "75" ;
   :system "intersystem" ;
@@ -2692,7 +2692,7 @@
   rdf:type :HASDNode .
 
 :AO951
-  :name "Нарушение мозгового кровообращения" ;
+  rdfs:label "Нарушение мозгового кровообращения" ;
   :ageFrom "55" ;
   :ageTo "65" ;
   :system "cardiovascular" ;
@@ -2700,7 +2700,7 @@
   rdf:type :HASDNode .
 
 :AO959
-  :name "Переполнение макрофагов окислами липидов" ;
+  rdfs:label "Переполнение макрофагов окислами липидов" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "cell" ;
@@ -2708,7 +2708,7 @@
   rdf:type :HASDNode .
 
 :AO965
-  :name "Аутоиммунные заболевания" ;
+  rdfs:label "Аутоиммунные заболевания" ;
   :ageFrom "45" ;
   :ageTo "55" ;
   :system "immune" ;
@@ -2716,7 +2716,7 @@
   rdf:type :HASDNode .
 
 :AO967
-  :name "Гиповитаминоз B12" ;
+  rdfs:label "Гиповитаминоз B12" ;
   :ageFrom "50" ;
   :ageTo "60" ;
   :system "metabolism" ;
@@ -2724,22 +2724,71 @@
   rdf:type :HASDNode .
 
 :AO97
-  :name "Точковые (ядерные) мутации" ;
+  rdfs:label "Точковые (ядерные) мутации" ;
   :ageFrom "20" ;
   :ageTo "30" ;
   :system "intersystem" ;
   :followsTo :AO1684, :AO785, :AO891, :AO501 ;
   rdf:type :HASDNode .
 
+:CardiovascularSystem
+  rdf:type :OrganismSystem .
+
+:CellSystem
+  rdf:type :OrganismSystem .
+
+:ConnectiveSystem
+  rdf:type :OrganismSystem .
+
 :HASDNode
   rdf:type owl:Class ;
-  rdfs:subClassOf :classes .
+  rdfs:subClassOf :HASDNode_1 .
+
+:HASDNode_1
+  owl:unionOf "OrganState,OrganismSystemState" ;
+  rdf:type owl:Class .
 
 :HASDOntology
   rdf:type owl:Ontology ;
   rdfs:comment "Aging Ontology based on Human Aging System Diagram" ;
   rdfs:seeAlso "http://sciencevsaging.org/en/diagram" ;
   :ns "https://purl.org/agingontology/hasd#" .
+
+:HormonesSystem
+  rdf:type :OrganismSystem .
+
+:ImmuneSystem
+  rdf:type :OrganismSystem .
+
+:Intersystem
+  rdf:type :OrganismSystem .
+
+:MetabolismSystem
+  rdf:type :OrganismSystem .
+
+:NervousSystem
+  rdf:type :OrganismSystem .
+
+:Organ
+  rdf:type owl:Class .
+
+:OrganState
+  rdf:type owl:Class .
+
+:OrganismState
+  rdf:type owl:Class .
+
+:OrganismSystem
+  rdf:type owl:Class .
+
+:OrganismSystemState
+  rdf:type owl:Class .
+
+:RespiratorySystem
+  rdf:type :OrganismSystem .
+
+:UnknownSystem
+  rdf:type :OrganismSystem .
 
 :ageFrom
   rdfs:domain :HASDNode ;
@@ -2756,11 +2805,6 @@
   rdfs:range :HASDNode ;
   rdf:type rdfs:Property .
 
-:name
-  rdfs:domain :HASDNode ;
-  rdfs:range xsd:Literal ;
-  rdf:type rdfs:Property .
-
 :system
   rdfs:domain :HASDNode ;
   rdfs:range :system_1 ;
@@ -2768,5 +2812,6 @@
 
 :system_1
   rdf:type rdfs:Property ;
-  owl:oneOf "`unknown,metabolism,cell,immune,intersystem,hormones,nervous,cardiovascular,respiratory,cancer,connective,death" .
+  owl:oneOf "unknown,metabolism,cell,immune,intersystem,hormones,nervous,cardiovascular,respiratory,cancer,connective,death" ;
+  rdfs:subPropertyOf :system .
 

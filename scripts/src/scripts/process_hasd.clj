@@ -30,7 +30,7 @@
       (fn [acc line]
         (let [[id name age-from age-to system] line
               id (ao-id id)]
-          (merge acc {id {:__id id :name name :ageFrom age-from :ageTo age-to :system system}})))
+          (merge acc {id {:__id id :rdfs/label name :ageFrom age-from :ageTo age-to :system system}})))
       {}
       content)))
 
@@ -56,26 +56,32 @@
       tabtree
       content)))
 
-(defn generate-hasd-ontology []
+(defn analyze []
+  (defn count-systems []
+    (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd_individuals.tree")]
+      (->> tabtree vals (map :system) flatten (remove nil?) distinct)))
+  true)
+
+(defn generate-hasd-individuals []
   (write-to-file
     "../hasd/hasd_individuals.tree"
     (output/tabtree->string
       (-> (read-blocks) read-links)
       :sorter (fn [a b] (compare (-> a name ->integer) (-> b name ->integer))))))
 
-(defn count-systems []
-  (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd_individuals.tree")]
-    (->> tabtree vals (map :system) flatten (remove nil?) distinct)))
+(defn glue-hasd-scheme-and-hasd-nodes []
+  (let [scheme (read-file "../hasd/hasd_scheme.tree")
+        individuals-lines (read-file-by-lines "../hasd/hasd_individuals.tree")
+        formatted-individuals (format "%s\n" (s/join "\n\t\t\t" individuals-lines))
+        filled-scheme (s/replace scheme "[HASDNode instances]" formatted-individuals)]
+    (write-to-file
+      "../hasd/hasd.tree"
+      filled-scheme)))
 
-(defn generate-rdf []
+
+(defn generate-hasd-rdf []
+  (glue-hasd-scheme-and-hasd-nodes)
   (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd.tree")]
     (write-to-file
       "../hasd/hasd.ttl"
       (rdf/tabtree->rdf tabtree))))
-
-
-
-; (defn generate-hasd-tabtree []
-;   (write-to-file
-;     "../hasd/ontology.tree"
-;     (output/tabtree->string (hasd->tabtree))))
