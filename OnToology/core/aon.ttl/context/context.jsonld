@@ -1,0 +1,224 @@
+{
+  "@context" : {
+    "PathologicalProcess" : {
+      "@id" : "https://purl.org/agingontology/core#PathologicalProcess"
+    },
+    "influencedBiomarkerGroup" : {
+      "@id" : "https://purl.org/agingontology/core#influencedBiomarkerGroup",
+      "@type" : "@id"
+    },
+    "Age" : {
+      "@id" : "https://purl.org/agingontology/core#Age"
+    },
+    "Anthropometric_biomarker" : {
+      "@id" : "https://purl.org/agingontology/core#Anthropometric_biomarker"
+    },
+    "ReferenceSource" : {
+      "@id" : "http://purl.org/ontology/bibo/ReferenceSource"
+    },
+    "ncit" : {
+      "@id" : "https://purl.org/agingontology/core#ncit"
+    },
+    "Death" : {
+      "@id" : "https://purl.org/agingontology/core#Death"
+    },
+    "AgingAssociatedPathology" : {
+      "@id" : "https://purl.org/agingontology/core#AgingAssociatedPathology"
+    },
+    "GeroprotectiveIntervention" : {
+      "@id" : "https://purl.org/agingontology/core#GeroprotectiveIntervention"
+    },
+    "BiomarkerLevelDecreaser" : {
+      "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+    },
+    "ProcessLevel" : {
+      "@id" : "https://purl.org/agingontology/core#ProcessLevel"
+    },
+    "Organization" : {
+      "@id" : "http://www.nature.com/ontologies/core/Organization"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "issue" : {
+      "@id" : "https://purl.org/tabtree/publication#issue"
+    },
+    "PulmonaryDisease" : {
+      "@id" : "https://purl.org/agingontology/core#PulmonaryDisease"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Class"
+    },
+    "ImmunosenescenceBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#ImmunosenescenceBiomarker"
+    },
+    "ogms" : {
+      "@id" : "https://purl.org/agingontology/core#ogms"
+    },
+    "DietComponent" : {
+      "@id" : "https://purl.org/agingontology/core#DietComponent"
+    },
+    "InflammationAgent" : {
+      "@id" : "https://purl.org/agingontology/core#InflammationAgent"
+    },
+    "author" : {
+      "@id" : "https://purl.org/tabtree/publication#author"
+    },
+    "doi" : {
+      "@id" : "http://purl.org/ontology/bibo/doi"
+    },
+    "InflammationBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+    },
+    "HealthIndex" : {
+      "@id" : "https://purl.org/agingontology/core#HealthIndex"
+    },
+    "BloodBasedInflammationBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"
+    },
+    "Disease" : {
+      "@id" : "https://purl.org/agingontology/core#Disease"
+    },
+    "AgingScore" : {
+      "@id" : "https://purl.org/agingontology/core#AgingScore"
+    },
+    "Drug" : {
+      "@id" : "https://purl.org/agingontology/core#Drug"
+    },
+    "fullName" : {
+      "@id" : "https://purl.org/agingontology/core#fullName"
+    },
+    "__source" : {
+      "@id" : "https://purl.org/agingontology/core#__source"
+    },
+    "Intervention" : {
+      "@id" : "https://purl.org/agingontology/core#Intervention"
+    },
+    "Article" : {
+      "@id" : "https://purl.org/tabtree/publication#Article"
+    },
+    "SerumInflammationBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#SerumInflammationBiomarker"
+    },
+    "BiologicalAge" : {
+      "@id" : "https://purl.org/agingontology/core#BiologicalAge"
+    },
+    "go" : {
+      "@id" : "https://purl.org/agingontology/core#go"
+    },
+    "LifespanStatisticalFeature" : {
+      "@id" : "https://purl.org/agingontology/core#LifespanStatisticalFeature"
+    },
+    "issuedBy" : {
+      "@id" : "https://purl.org/agingontology/core#issuedBy",
+      "@type" : "@id"
+    },
+    "start" : {
+      "@id" : "https://purl.org/tabtree/time#start"
+    },
+    "BodySystemDysfunctionSet" : {
+      "@id" : "https://purl.org/agingontology/core#BodySystemDysfunctionSet"
+    },
+    "influencedBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#influencedBiomarker",
+      "@type" : "@id"
+    },
+    "FrailtyIndex" : {
+      "@id" : "https://purl.org/agingontology/core#FrailtyIndex"
+    },
+    "AnthropometricBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+    },
+    "BiomarkerLevelIncreaser" : {
+      "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "biomarker" : {
+      "@id" : "https://purl.org/agingontology/core#biomarker"
+    },
+    "HematologicalBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#HematologicalBiomarker"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+    },
+    "Pathology" : {
+      "@id" : "https://purl.org/agingontology/core#Pathology"
+    },
+    "Metric" : {
+      "@id" : "https://purl.org/agingontology/core#Metric"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "EpigeneticAgingScore" : {
+      "@id" : "https://purl.org/agingontology/core#EpigeneticAgingScore"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher",
+      "@type" : "@id"
+    },
+    "ChronologicalAge" : {
+      "@id" : "https://purl.org/agingontology/core#ChronologicalAge"
+    },
+    "OrganismFunction" : {
+      "@id" : "https://purl.org/agingontology/core#OrganismFunction"
+    },
+    "BiomarkerLevelModulator" : {
+      "@id" : "https://purl.org/agingontology/core#BiomarkerLevelModulator"
+    },
+    "Biomarker" : {
+      "@id" : "https://purl.org/agingontology/core#Biomarker"
+    },
+    "FunctionalBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#FunctionalBiomarker"
+    },
+    "FrailtyPhenotypeCriteria" : {
+      "@id" : "https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader"
+    },
+    "BloodBasedBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#BloodBasedBiomarker"
+    },
+    "GeneticBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#GeneticBiomarker"
+    },
+    "BiologicalProcess" : {
+      "@id" : "https://purl.org/agingontology/core#BiologicalProcess"
+    },
+    "CausalMechanism" : {
+      "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+    },
+    "LipidBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#LipidBiomarker"
+    },
+    "BiologicalAgeIndex" : {
+      "@id" : "https://purl.org/agingontology/core#BiologicalAgeIndex"
+    },
+    "Journal" : {
+      "@id" : "https://purl.org/tabtree/publication#Journal"
+    },
+    "skos" : {
+      "@id" : "https://purl.org/agingontology/core#skos"
+    },
+    "ProInflammatoryCytokine" : {
+      "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine"
+    },
+    "GlucoseMetabolismBiomarker" : {
+      "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+    },
+    "journal" : {
+      "@id" : "https://purl.org/tabtree/publication#journal"
+    },
+    "ns" : {
+      "@id" : "https://purl.org/agingontology/core#ns"
+    },
+    "CauseOfDeath" : {
+      "@id" : "https://purl.org/agingontology/core#CauseOfDeath"
+    }
+  }
+}

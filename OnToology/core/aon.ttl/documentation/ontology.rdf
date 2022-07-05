@@ -1,0 +1,1772 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/agingontology/core#aon#"
+     xml:base="https://purl.org/agingontology/core#aon"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:core="https://purl.org/agingontology/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="https://purl.org/tabtree/time#"
+     xmlns:publication="https://purl.org/tabtree/publication#">
+    <owl:Ontology rdf:about="https://purl.org/agingontology/core#aon">
+        <dc:title>Aging ontology (AON)</dc:title>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#common.atxt"/>
+        <core:ns>https://purl.org/agingontology/core#</core:ns>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#__source -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#__source"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#biomarker -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#biomarker"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#fullName -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#fullName">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#common.atxt"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.org/agingontology/core#go -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#go"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ncit -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#ncit"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ns -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#ns"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ogms -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#ogms"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#skos -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/agingontology/core#skos"/>
+    
+
+
+    <!-- https://purl.org/tabtree/publication#author -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/tabtree/publication#author"/>
+    
+
+
+    <!-- https://purl.org/tabtree/publication#issue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/tabtree/publication#issue"/>
+    
+
+
+    <!-- https://purl.org/tabtree/publication#journal -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/tabtree/publication#journal"/>
+    
+
+
+    <!-- https://purl.org/tabtree/time#start -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/tabtree/time#start"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#influencedBiomarker -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/agingontology/core#influencedBiomarker">
+        <rdfs:domain rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelModulator"/>
+        <rdfs:range rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/agingontology/core#influencedBiomarkerGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/agingontology/core#influencedBiomarkerGroup">
+        <rdfs:domain rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelModulator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/agingontology/core#issuedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/agingontology/core#issuedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#common.atxt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/ontology/bibo/ReferenceSource -->
+
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/ReferenceSource"/>
+    
+
+
+    <!-- http://www.nature.com/ontologies/core/Organization -->
+
+
+    <owl:Class rdf:about="http://www.nature.com/ontologies/core/Organization"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Property -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Class -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Age -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Age">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#AgingAssociatedPathology -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#AgingAssociatedPathology">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Pathology"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#AgingScore -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#AgingScore">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#AnthropometricBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Anthropometric_biomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Anthropometric_biomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BiologicalAge -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BiologicalAge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Age"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BiologicalAgeIndex -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BiologicalAgeIndex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BiologicalProcess -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BiologicalProcess">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Biomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Biomarker">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BiomarkerLevelDecreaser -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BiomarkerLevelDecreaser">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelModulator"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BiomarkerLevelIncreaser -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BiomarkerLevelIncreaser">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelModulator"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BiomarkerLevelModulator -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BiomarkerLevelModulator"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BloodBasedBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BloodBasedBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BloodBasedInflammationBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BloodBasedInflammationBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#BloodBasedBiomarker"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BodySystemDysfunctionSet -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#BodySystemDysfunctionSet">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#CausalMechanism -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#CausalMechanism">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#CauseOfDeath -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#CauseOfDeath">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ChronologicalAge -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#ChronologicalAge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Age"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Death -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Death">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#DietComponent -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#DietComponent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Disease -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Disease">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#BodySystemDysfunctionSet"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+        <core:ogms rdf:resource="http://purl.obolibrary.org/obo/OGMS0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Drug -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Drug">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#EpigeneticAgingScore -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#EpigeneticAgingScore">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#AgingScore"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#FrailtyIndex -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#FrailtyIndex">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#FrailtyPhenotypeCriteria -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#FrailtyPhenotypeCriteria">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#FunctionalBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#FunctionalBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#GeneticBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#GeneticBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#GeroprotectiveIntervention -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#GeroprotectiveIntervention">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Intervention"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#GlucoseMetabolismBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#HealthIndex -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#HealthIndex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#HematologicalBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#HematologicalBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ImmunosenescenceBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#ImmunosenescenceBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#InflammationAgent -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#InflammationAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#InflammationBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#InflammationBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Intervention -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#LifespanStatisticalFeature -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#LifespanStatisticalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#LipidBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#LipidBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Metric -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Metric">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#OrganismFunction -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#OrganismFunction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#PathologicalProcess -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#PathologicalProcess">
+        <owl:equivalentClass rdf:resource="https://purl.org/agingontology/core#Pathology"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#BiologicalProcess"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Pathology -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#Pathology">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ProInflammatoryCytokine -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#ProInflammatoryCytokine">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ProcessLevel -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#ProcessLevel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.org/agingontology/core#Cell_level"/>
+                    <rdf:Description rdf:about="https://purl.org/agingontology/core#Gene_expression_level"/>
+                    <rdf:Description rdf:about="https://purl.org/agingontology/core#Intervention_level"/>
+                    <rdf:Description rdf:about="https://purl.org/agingontology/core#Organ_level"/>
+                    <rdf:Description rdf:about="https://purl.org/agingontology/core#Pathway_level"/>
+                    <rdf:Description rdf:about="https://purl.org/agingontology/core#Signaling_molecule_level"/>
+                    <rdf:Description rdf:about="https://purl.org/agingontology/core#Tissue_level"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#PulmonaryDisease -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#PulmonaryDisease">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#AgingAssociatedPathology"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/agingontology/core#SerumInflammationBiomarker -->
+
+
+    <owl:Class rdf:about="https://purl.org/agingontology/core#SerumInflammationBiomarker">
+        <rdfs:subClassOf rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/tabtree/publication#Article -->
+
+
+    <owl:Class rdf:about="https://purl.org/tabtree/publication#Article"/>
+    
+
+
+    <!-- https://purl.org/tabtree/publication#Journal -->
+
+
+    <owl:Class rdf:about="https://purl.org/tabtree/publication#Journal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/agingontology/core#Adaptability -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Adaptability">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#OrganismFunction"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Adipokines -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Adipokines">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Adiponectin -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Adiponectin">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Aging -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Aging">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiologicalProcess"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+        <core:go rdf:resource="http://purl.obolibrary.org/obo/GO0007568"/>
+        <core:ncit rdf:resource="http://purl.obolibrary.org/obo/NCITC16269"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#AgingRate -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#AgingRate">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#Metric"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Albumin -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Albumin">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Albumin_creatinine_ratio -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Albumin_creatinine_ratio">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Albumin/creatinine ratio</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#All_cause_mortality -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#All_cause_mortality">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#LifespanStatisticalFeature"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"/>
+        <core:skos>broader:Mortality</core:skos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Alzheimers_disease -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Alzheimers_disease">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AgingAssociatedPathology"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Aspirin -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Aspirin">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#Drug"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Atherosclerosis -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Atherosclerosis">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AgingAssociatedPathology"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#BMI -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#BMI">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Body mass index</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Biological_aging -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Biological_aging">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiologicalProcess"/>
+        <skos:broader rdf:resource="https://purl.org/agingontology/core#Aging"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Body_composition_change -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Body_composition_change">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#CausalMechanism"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#CRP -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#CRP">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>C-reactive protein</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Cardiovascular_mortality -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Cardiovascular_mortality">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#LifespanStatisticalFeature"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"/>
+        <core:skos>broader:Mortality</core:skos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Cell_level -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Cell_level"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Chair_standing -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Chair_standing">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Standing from a chair</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Change_of_microbiota -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Change_of_microbiota">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelIncreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#ProInflammatoryCytokine"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Chondroitin -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Chondroitin">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#Drug"/>
+        <core:influencedBiomarker rdf:resource="https://purl.org/agingontology/core#CRP"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Coffee -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Coffee">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#DietComponent"/>
+        <core:influencedBiomarker rdf:resource="https://purl.org/agingontology/core#CRP"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#DNAMethylation -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#DNAMethylation">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GeneticBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Damage_of_cells -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Damage_of_cells">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelIncreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#ProInflammatoryCytokine"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Damage_of_macromolecules -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Damage_of_macromolecules">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelIncreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#ProInflammatoryCytokine"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Decreasing_BMI -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Decreasing_BMI">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#SerumInflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Diabetes -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Diabetes">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AgingAssociatedPathology"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Epigenetic_clock_by_GrimAge -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Epigenetic_clock_by_GrimAge">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#EpigeneticAgingScore"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Epigenetic_clock_by_Hannum_etal -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Epigenetic_clock_by_Hannum_etal">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#EpigeneticAgingScore"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Exercise -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Exercise">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#SerumInflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#FI-B -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#FI-B">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#FrailtyIndex"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Biomarker-based frailty index</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#FI-C -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#FI-C">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#FrailtyIndex"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Clinical deficits frailty index</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Fibrotic_propensity -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Fibrotic_propensity">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#CausalMechanism"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Gene_expression_level -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Gene_expression_level"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Glucosamine -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Glucosamine">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#Drug"/>
+        <core:influencedBiomarker rdf:resource="https://purl.org/agingontology/core#CRP"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Grip_strength -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Grip_strength">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#HbA1c -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#HbA1c">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Glycated hemoglobin</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Hemoglobin -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Hemoglobin">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#HematologicalBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#High_sensitivity_CRP -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#High_sensitivity_CRP">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Homocysteine -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Homocysteine">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Hormon_aging -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Hormon_aging">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#CausalMechanism"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Horvath_epigenetic_clock -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Horvath_epigenetic_clock">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#EpigeneticAgingScore"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Human_biological_aging -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Human_biological_aging">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#Disease"/>
+        <skos:broader rdf:resource="https://purl.org/agingontology/core#BiologicalAging"/>
+        <skos:definition>A complex interrelated network of progressive functionally-deleterious phenotypic deviations (with respect to the young adult phenotype) underlying biological aging, leading to a decline in individuals’ adaptability, physiological and mental function, as well as resilience.</skos:definition>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ICD-11 -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#ICD-11">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/ReferenceSource"/>
+        <core:issuedBy rdf:resource="https://purl.org/agingontology/core#WHO"/>
+        <dc:title>11th revision of the International Classiﬁcation of Diseases</dc:title>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#IGFBP1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#IGFBP1">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Insulin-like growth factor-binding protein 1</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#IL-6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#IL-6">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Immune_senescence -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Immune_senescence">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#CausalMechanism"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Increased_body_fat_share -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Increased_body_fat_share">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelIncreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#ProInflammatoryCytokine"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Inflamm-aging -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Inflamm-aging">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#PathologicalProcess"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Chronic low-grade inﬂammation</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Inflammation -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Inflammation">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#CausalMechanism"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#InflammationBiomarker -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#InflammationBiomarker"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Interleukin-6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Interleukin-6">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BloodBasedBiomarker"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#InflammationAgent"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Intervention_level -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Intervention_level"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Khaltourina_2010 -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Khaltourina_2010">
+        <rdf:type rdf:resource="https://purl.org/tabtree/publication#Article"/>
+        <dc:title>Aging Fits the Disease Criteria of the International Classiﬁcation of Diseases</dc:title>
+        <bibo:doi>10.1016/j.mad.2020.111230</bibo:doi>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Appendix"/>
+        <publication:author rdf:resource="https://purl.org/agingontology/core#Aleksey_Alekseev"/>
+        <publication:author rdf:resource="https://purl.org/agingontology/core#Anca_Ioviţă"/>
+        <publication:author rdf:resource="https://purl.org/agingontology/core#Daria_Khaltourina"/>
+        <publication:author rdf:resource="https://purl.org/agingontology/core#Franco_Cortese"/>
+        <publication:author rdf:resource="https://purl.org/agingontology/core#Yuri_Matveyev"/>
+        <publication:issue>189</publication:issue>
+        <publication:journal rdf:resource="https://purl.org/agingontology/core#Mechanisms_of_Ageing_and_Development"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Klemera_and_Doubals_method_index -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Klemera_and_Doubals_method_index">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiologicalAgeIndex"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#LDL-C -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#LDL-C">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#LipidBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Low-density lipoprotein cholesterol</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Leptin -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Leptin">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Low_physical_activity -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Low_physical_activity">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Lymphocytes -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Lymphocytes">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#HematologicalBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Mechanisms_of_Ageing_and_Development -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Mechanisms_of_Ageing_and_Development">
+        <rdf:type rdf:resource="https://purl.org/tabtree/publication#Journal"/>
+        <dc:title>Mechanisms of Ageing and Development</dc:title>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#common.atxt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Mental_function -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Mental_function">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#OrganismFunction"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Mitochondrial_damage -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Mitochondrial_damage">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelIncreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#ProInflammatoryCytokine"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Mitochondrial_dysfunction -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Mitochondrial_dysfunction">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#CausalMechanism"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Mortality -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Mortality">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#LifespanStatisticalFeature"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Muscle_mass -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Muscle_mass">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#NT-proBNP -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#NT-proBNP">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Nterminal prohormone of brain natriuretic peptide</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Neutrophils -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Neutrophils">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#HematologicalBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Nuts -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Nuts">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#DietComponent"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Olive_oil -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Olive_oil">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#DietComponent"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#InflammationBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Organ_level -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Organ_level"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Pathway_level -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Pathway_level"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Physiological_function -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Physiological_function">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#OrganismFunction"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Plasma_glucose -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Plasma_glucose">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Platelets -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Platelets">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#HematologicalBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#ProInflammatoryCytokine -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#ProInflammatoryCytokine"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Proteostasis_failure -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Proteostasis_failure">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#CausalMechanism"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Replicative_cellular_senescence -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Replicative_cellular_senescence">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelIncreaser"/>
+        <core:influencedBiomarkerGroup rdf:resource="https://purl.org/agingontology/core#ProInflammatoryCytokine"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Resilience -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Resilience">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#OrganismFunction"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Introduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Self_reported_exhaustion -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Self_reported_exhaustion">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#SerumInflammationBiomarker -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#SerumInflammationBiomarker"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Signaling_molecule_level -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Signaling_molecule_level"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Slow_walking_speed -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Slow_walking_speed">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#TCellDNARearrangement -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#TCellDNARearrangement">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GeneticBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>T-cell DNA rearrangement</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#TGF-β -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#TGF-β">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#Biomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Transforming growth factor β</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#TGs -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#TGs">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#LipidBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Triglycerides</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#TNF-a -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#TNF-a">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BloodBasedBiomarker"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#InflammationAgent"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#TelomereLength -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#TelomereLength">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GeneticBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Thyroid_hormones -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Thyroid_hormones">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Tissue_level -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Tissue_level"/>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Troponin -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Troponin">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Unintentinal_weight_loss -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Unintentinal_weight_loss">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Vitamin_D -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Vitamin_D">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#BiomarkerLevelDecreaser"/>
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#DietComponent"/>
+        <core:influencedBiomarker rdf:resource="https://purl.org/agingontology/core#CRP"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#WHO -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#WHO">
+        <rdf:type rdf:resource="http://www.nature.com/ontologies/core/Organization"/>
+        <dc:title>World Health Organization</dc:title>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Abstract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Waist_circumference -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Waist_circumference">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Walking_balance -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Walking_balance">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Walking_speed -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Walking_speed">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#AnthropometricBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:fullName>Walking speed</core:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#Weakness -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#Weakness">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <core:biomarker rdf:resource="https://purl.org/agingontology/core#GripStrength"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#White_blood_cell_count -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#White_blood_cell_count">
+        <rdf:type rdf:resource="https://purl.org/agingontology/core#HematologicalBiomarker"/>
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#influencedBiomarker -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#influencedBiomarker">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/agingontology/core#influencedBiomarkerGroup -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/agingontology/core#influencedBiomarkerGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://purl.org/agingontology/core#InflammationBiomarker">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://purl.org/agingontology/core#ProInflammatoryCytokine">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://purl.org/agingontology/core#Rockwood_Frailty_Scale">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+        <time:start>2005</time:start>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://purl.org/agingontology/core#SerumInflammationBiomarker">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://purl.org/agingontology/core#influencedBiomarker">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://purl.org/agingontology/core#influencedBiomarkerGroup">
+        <core:__source rdf:resource="https://purl.org/agingontology/core#Khaltourina_2010__Results"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
