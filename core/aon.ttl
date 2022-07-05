@@ -1,0 +1,615 @@
+@prefix : <https://purl.org/agingontology/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix GO: <http://purl.obolibrary.org/obo/GO> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix npg: <http://www.nature.com/ontologies/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tt: <https://purl.org/tabtree/time#> .
+@prefix NCIT: <http://purl.obolibrary.org/obo/NCIT> .
+@prefix OGMS: <http://purl.obolibrary.org/obo/OGMS> .
+@prefix pub: <https://purl.org/tabtree/publication#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+:Adaptability
+  rdf:type :OrganismFunction ;
+  :__source :Khaltourina_2010__Introduction .
+
+:Adipokines
+  rdf:type :GlucoseMetabolismBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Adiponectin
+  rdf:type :BloodBasedInflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Age
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:Aging
+  rdf:type :BiologicalProcess ;
+  :ncit NCIT:C16269 ;
+  :go GO:0007568 ;
+  :__source :Khaltourina_2010__Abstract .
+
+:AgingAssociatedPathology
+  rdfs:subClassOf :Pathology ;
+  :__source :Khaltourina_2010__Results .
+
+:AgingRate
+  rdf:type :Metric ;
+  :__source :Khaltourina_2010__Results .
+
+:AgingScore
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:Albumin
+  rdf:type :BloodBasedInflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Albumin_creatinine_ratio
+  :fullName "Albumin/creatinine ratio" ;
+  rdf:type :GlucoseMetabolismBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:All_cause_mortality
+  rdf:type :LifespanStatisticalFeature ;
+  :skos "broader:Mortality" ;
+  :__source :Khaltourina_2010__Materials_and_methods .
+
+:Alzheimers_disease
+  rdf:type :AgingAssociatedPathology ;
+  :__source :Khaltourina_2010__Results .
+
+:Anthropometric_biomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Aspirin
+  rdf:type :BiomarkerLevelDecreaser, :Drug ;
+  :influencedBiomarkerGroup :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Atherosclerosis
+  rdf:type :AgingAssociatedPathology ;
+  :__source :Khaltourina_2010__Results .
+
+:BMI
+  :fullName "Body mass index" ;
+  rdf:type :AnthropometricBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:BiologicalAge
+  rdfs:subClassOf :Age ;
+  :__source :Khaltourina_2010__Results .
+
+:BiologicalAgeIndex
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:BiologicalProcess
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Abstract .
+
+:Biological_aging
+  rdf:type :BiologicalProcess ;
+  skos:broader :Aging ;
+  :__source :Khaltourina_2010__Abstract .
+
+:Biomarker
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Abstract .
+
+:BiomarkerLevelDecreaser
+  rdfs:subClassOf :BiomarkerLevelModulator ;
+  :__source :Khaltourina_2010__Results .
+
+:BiomarkerLevelIncreaser
+  rdfs:subClassOf :BiomarkerLevelModulator ;
+  :__source :Khaltourina_2010__Results .
+
+:BloodBasedBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Abstract .
+
+:BloodBasedInflammationBiomarker
+  rdfs:subClassOf :BloodBasedBiomarker, :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:BodySystemDysfunctionSet
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Introduction .
+
+:Body_composition_change
+  rdf:type :CausalMechanism ;
+  :__source :Khaltourina_2010__Abstract .
+
+:CRP
+  :fullName "C-reactive protein" ;
+  rdf:type :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Cardiovascular_mortality
+  rdf:type :LifespanStatisticalFeature ;
+  :skos "broader:Mortality" ;
+  :__source :Khaltourina_2010__Materials_and_methods .
+
+:CausalMechanism
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Abstract .
+
+:CauseOfDeath
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:Chair_standing
+  :fullName "Standing from a chair" ;
+  rdf:type :AnthropometricBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Change_of_microbiota
+  rdf:type :BiomarkerLevelIncreaser ;
+  :influencedBiomarkerGroup :ProInflammatoryCytokine ;
+  :__source :Khaltourina_2010__Results .
+
+:Chondroitin
+  rdf:type :BiomarkerLevelDecreaser, :Drug ;
+  :influencedBiomarker :CRP ;
+  :__source :Khaltourina_2010__Results .
+
+:ChronologicalAge
+  rdfs:subClassOf :Age ;
+  :__source :Khaltourina_2010__Results .
+
+:Coffee
+  rdf:type :BiomarkerLevelDecreaser, :DietComponent ;
+  :influencedBiomarker :CRP ;
+  :__source :Khaltourina_2010__Results .
+
+:DNAMethylation
+  rdf:type :GeneticBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Damage_of_cells
+  rdf:type :BiomarkerLevelIncreaser ;
+  :influencedBiomarkerGroup :ProInflammatoryCytokine ;
+  :__source :Khaltourina_2010__Results .
+
+:Damage_of_macromolecules
+  rdf:type :BiomarkerLevelIncreaser ;
+  :influencedBiomarkerGroup :ProInflammatoryCytokine ;
+  :__source :Khaltourina_2010__Results .
+
+:Death
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:Decreasing_BMI
+  rdf:type :BiomarkerLevelDecreaser ;
+  :influencedBiomarkerGroup :SerumInflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Diabetes
+  rdf:type :AgingAssociatedPathology ;
+  :__source :Khaltourina_2010__Results .
+
+:DietComponent
+  rdfs:subClassOf owl:Class ;
+  :__source :Khaltourina_2010__Results .
+
+:Disease
+  rdfs:subClassOf :BodySystemDysfunctionSet ;
+  :ogms OGMS:0000031 ;
+  :__source :Khaltourina_2010__Introduction .
+
+:Drug
+  rdfs:subClassOf owl:Class ;
+  :__source :Khaltourina_2010__Results .
+
+:EpigeneticAgingScore
+  rdfs:subClassOf :AgingScore ;
+  :__source :Khaltourina_2010__Results .
+
+:Epigenetic_clock_by_GrimAge
+  rdf:type :EpigeneticAgingScore ;
+  :__source :Khaltourina_2010__Results .
+
+:Epigenetic_clock_by_Hannum_etal
+  rdf:type :EpigeneticAgingScore ;
+  :__source :Khaltourina_2010__Results .
+
+:Exercise
+  rdf:type :BiomarkerLevelDecreaser ;
+  :influencedBiomarkerGroup :SerumInflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:FI-B
+  rdf:type :FrailtyIndex ;
+  :fullName "Biomarker-based frailty index" ;
+  :__source :Khaltourina_2010__Results .
+
+:FI-C
+  rdf:type :FrailtyIndex ;
+  :fullName "Clinical deficits frailty index" ;
+  :__source :Khaltourina_2010__Results .
+
+:Fibrotic_propensity
+  rdf:type :CausalMechanism ;
+  :__source :Khaltourina_2010__Abstract .
+
+:FrailtyIndex
+  :__source :Khaltourina_2010__Abstract .
+
+:FrailtyPhenotypeCriteria
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:FunctionalBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Abstract .
+
+:GeneticBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:GeroprotectiveIntervention
+  rdfs:subClassOf :Intervention ;
+  :__source :Khaltourina_2010__Materials_and_methods .
+
+:Glucosamine
+  rdf:type :BiomarkerLevelDecreaser, :Drug ;
+  :influencedBiomarker :CRP ;
+  :__source :Khaltourina_2010__Results .
+
+:GlucoseMetabolismBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Grip_strength
+  rdf:type :AnthropometricBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:HbA1c
+  :fullName "Glycated hemoglobin" ;
+  rdf:type :GlucoseMetabolismBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:HealthIndex
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Abstract .
+
+:HematologicalBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Hemoglobin
+  rdf:type :HematologicalBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:High_sensitivity_CRP
+  rdf:type :BloodBasedInflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Homocysteine
+  rdf:type :BloodBasedInflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Hormon_aging
+  rdf:type :CausalMechanism ;
+  :__source :Khaltourina_2010__Abstract .
+
+:Horvath_epigenetic_clock
+  rdf:type :EpigeneticAgingScore ;
+  :__source :Khaltourina_2010__Results .
+
+:Human_biological_aging
+  rdf:type :Disease ;
+  skos:broader :BiologicalAging ;
+  :__source :Khaltourina_2010__Introduction ;
+  skos:definition "A complex interrelated network of progressive functionally-deleterious phenotypic deviations (with respect to the young adult phenotype) underlying biological aging, leading to a decline in individuals’ adaptability, physiological and mental function, as well as resilience." .
+
+:ICD-11
+  rdf:type bibo:ReferenceSource ;
+  dc:title "11th revision of the International Classiﬁcation of Diseases" ;
+  :issuedBy :WHO ;
+  :__source :Khaltourina_2010__Abstract .
+
+:IGFBP1
+  rdf:type :Biomarker ;
+  :fullName "Insulin-like growth factor-binding protein 1" ;
+  :__source :Khaltourina_2010__Results .
+
+:IL-6
+  rdf:type :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Immune_senescence
+  rdf:type :CausalMechanism ;
+  :__source :Khaltourina_2010__Abstract .
+
+:ImmunosenescenceBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Increased_body_fat_share
+  rdf:type :BiomarkerLevelIncreaser ;
+  :influencedBiomarkerGroup :ProInflammatoryCytokine ;
+  :__source :Khaltourina_2010__Results .
+
+:Inflamm-aging
+  rdf:type :PathologicalProcess ;
+  :fullName "Chronic low-grade inﬂammation" ;
+  :__source :Khaltourina_2010__Results .
+
+:Inflammation
+  rdf:type :CausalMechanism ;
+  :__source :Khaltourina_2010__Abstract .
+
+:InflammationAgent
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:InflammationBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Interleukin-6
+  rdf:type :InflammationAgent, :BloodBasedBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Intervention
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Materials_and_methods .
+
+:Khaltourina_2010
+  dc:title "Aging Fits the Disease Criteria of the International Classiﬁcation of Diseases" ;
+  :__source :Khaltourina_2010__Appendix ;
+  pub:author :Daria_Khaltourina, :Yuri_Matveyev, :Aleksey_Alekseev, :Franco_Cortese, :Anca_Ioviţă ;
+  rdf:type pub:Article ;
+  pub:journal :Mechanisms_of_Ageing_and_Development ;
+  pub:issue "189" ;
+  bibo:doi "10.1016/j.mad.2020.111230" .
+
+:Klemera_and_Doubals_method_index
+  rdf:type :BiologicalAgeIndex ;
+  :__source :Khaltourina_2010__Results .
+
+:LDL-C
+  :fullName "Low-density lipoprotein cholesterol" ;
+  rdf:type :LipidBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Leptin
+  rdf:type :BloodBasedInflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:LifespanStatisticalFeature
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Materials_and_methods .
+
+:LipidBiomarker
+  rdfs:subClassOf :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Low_physical_activity
+  rdf:type :FrailtyPhenotypeCriteria ;
+  :__source :Khaltourina_2010__Results .
+
+:Lymphocytes
+  rdf:type :HematologicalBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Mechanisms_of_Ageing_and_Development
+  rdf:type pub:Journal ;
+  dc:title "Mechanisms of Ageing and Development" ;
+  :__source :common.atxt .
+
+:Mental_function
+  rdf:type :OrganismFunction ;
+  :__source :Khaltourina_2010__Introduction .
+
+:Metric
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Results .
+
+:Mitochondrial_damage
+  rdf:type :BiomarkerLevelIncreaser ;
+  :influencedBiomarkerGroup :ProInflammatoryCytokine ;
+  :__source :Khaltourina_2010__Results .
+
+:Mitochondrial_dysfunction
+  rdf:type :CausalMechanism ;
+  :__source :Khaltourina_2010__Abstract .
+
+:Mortality
+  rdf:type :LifespanStatisticalFeature ;
+  :__source :Khaltourina_2010__Materials_and_methods .
+
+:Muscle_mass
+  rdf:type :AnthropometricBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:NT-proBNP
+  :fullName "Nterminal prohormone of brain natriuretic peptide" ;
+  rdf:type :GlucoseMetabolismBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Neutrophils
+  rdf:type :HematologicalBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Nuts
+  rdf:type :BiomarkerLevelDecreaser, :DietComponent ;
+  :influencedBiomarkerGroup :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Olive_oil
+  rdf:type :BiomarkerLevelDecreaser, :DietComponent ;
+  :influencedBiomarkerGroup :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:OrganismFunction
+  rdfs:subClassOf owl:Thing ;
+  :__source :Khaltourina_2010__Introduction .
+
+:PathologicalProcess
+  rdfs:subClassOf :BiologicalProcess ;
+  :__source :Khaltourina_2010__Results .
+
+:Pathology
+  owl:equivalentClass :PathologicalProcess ;
+  :__source :Khaltourina_2010__Results .
+
+:Physiological_function
+  rdf:type :OrganismFunction ;
+  :__source :Khaltourina_2010__Introduction .
+
+:Plasma_glucose
+  rdf:type :GlucoseMetabolismBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Platelets
+  rdf:type :HematologicalBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:ProInflammatoryCytokine
+  rdfs:subClassOf :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:ProcessLevel
+  rdfs:subClassOf owl:Thing ;
+  owl:oneOf (:Organ_level :Tissue_level :Cell_level :Signaling_molecule_level :Pathway_level :Gene_expression_level :Intervention_level) ;
+  :__source :Khaltourina_2010__Materials_and_methods .
+
+:Proteostasis_failure
+  rdf:type :CausalMechanism ;
+  :__source :Khaltourina_2010__Abstract .
+
+:PulmonaryDisease
+  rdfs:subClassOf :AgingAssociatedPathology ;
+  :__source :Khaltourina_2010__Results .
+
+:Replicative_cellular_senescence
+  rdf:type :BiomarkerLevelIncreaser ;
+  :__source :Khaltourina_2010__Results ;
+  :influencedBiomarkerGroup :ProInflammatoryCytokine .
+
+:Resilience
+  rdf:type :OrganismFunction ;
+  :__source :Khaltourina_2010__Introduction .
+
+:Rockwood_Frailty_Scale
+  tt:start "2005" ;
+  :__source :Khaltourina_2010__Results .
+
+:Self_reported_exhaustion
+  rdf:type :FrailtyPhenotypeCriteria ;
+  :__source :Khaltourina_2010__Results .
+
+:SerumInflammationBiomarker
+  rdfs:subClassOf :InflammationBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Slow_walking_speed
+  rdf:type :FrailtyPhenotypeCriteria ;
+  :__source :Khaltourina_2010__Results .
+
+:TCellDNARearrangement
+  rdf:type :GeneticBiomarker ;
+  :fullName "T-cell DNA rearrangement" ;
+  :__source :Khaltourina_2010__Results .
+
+:TGF-β
+  rdf:type :Biomarker ;
+  :fullName "Transforming growth factor β" ;
+  :__source :Khaltourina_2010__Results .
+
+:TGs
+  :fullName "Triglycerides" ;
+  rdf:type :LipidBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:TNF-a
+  rdf:type :InflammationAgent, :BloodBasedBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:TelomereLength
+  rdf:type :GeneticBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Thyroid_hormones
+  rdf:type :GlucoseMetabolismBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Troponin
+  rdf:type :GlucoseMetabolismBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Unintentinal_weight_loss
+  rdf:type :FrailtyPhenotypeCriteria ;
+  :__source :Khaltourina_2010__Results .
+
+:Vitamin_D
+  rdf:type :BiomarkerLevelDecreaser, :DietComponent ;
+  :influencedBiomarker :CRP ;
+  :__source :Khaltourina_2010__Results .
+
+:WHO
+  rdf:type npg:Organization ;
+  dc:title "World Health Organization" ;
+  :__source :Khaltourina_2010__Abstract .
+
+:Waist_circumference
+  rdf:type :AnthropometricBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Walking_balance
+  rdf:type :AnthropometricBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Walking_speed
+  :fullName "Walking speed" ;
+  rdf:type :AnthropometricBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:Weakness
+  rdf:type :FrailtyPhenotypeCriteria ;
+  :biomarker :GripStrength ;
+  :__source :Khaltourina_2010__Results .
+
+:White_blood_cell_count
+  rdf:type :HematologicalBiomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:aon
+  rdf:type owl:Ontology ;
+  dc:title "Aging ontology (AON)" ;
+  :ns "https://purl.org/agingontology/core#" ;
+  :__source :common.atxt .
+
+:fullName
+  rdfs:subPropertyOf dc:title ;
+  :__source :common.atxt .
+
+:influencedBiomarker
+  rdf:type rdfs:Property ;
+  rdfs:domain :BiomarkerLevelModulator ;
+  rdfs:range :Biomarker ;
+  :__source :Khaltourina_2010__Results .
+
+:influencedBiomarkerGroup
+  rdf:type rdfs:Property ;
+  rdfs:domain :BiomarkerLevelModulator ;
+  rdfs:range owl:Class ;
+  :__source :Khaltourina_2010__Results .
+
+:issuedBy
+  rdf:type owl:ObjectProperty ;
+  owl:inverseOf dc:publisher ;
+  :__source :common.atxt .
+

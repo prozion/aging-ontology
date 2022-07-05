@@ -1,0 +1,39 @@
+disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxonomy" ns:https://purl.org/agingontology/disease#
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		tabtree ns:https://purl.org/tabtree/core#
+		doid ns:http://purl.obolibrary.org/obo/DOID_
+	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+		Disease ogms:0000031 d:"Сложная реакция организма на действие патологического агента, являющаяся новым процессом жизнедеятельности, возникающим в результате нарушений во взаимодействии организма и внешней среды, характеризующаяся нарушением регуляции функции, приспособляемости и уменьшением работоспособности, чувством боли и недомогания"
+		Pathology
+		PathologicalAgent
+		PathologicalProcess d:"Реакция организма на необычное раздражение, в основе которого лежит нарушение функции и структуры"
+		PathologyProduct
+		Symptom
+	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+		doid
+		hasSymptom owl/inverseOf:symptomFor
+		ogms
+		symptomFor a:rdfs/Property domain:Symptom range:Disease
+	individuals +a:Disease +section-hierarchy-inverse-relation:skos/broader
+		Atherosclerosis
+		Cancer a:Disease,PathologicalProcess
+		Cardiovascular_system_disease doid:1287
+		Dementia
+		Eye_disease
+			Cataract
+			Glaukoma
+		Glucose_metabolism_disease doid:4194
+			Diabetes doid:0081062
+		Kidney_disease
+		Liver_disease
+		Neurodegenerative_disease
+			Alzheimers_disease owl/sameAs:AD
+			Parkinson_disease owl/sameAs:PD
+		Osteoporosis
+		Osteoarthritis
+		Pulmonary_disease

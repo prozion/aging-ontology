@@ -78,7 +78,6 @@
       "../hasd/hasd.tree"
       filled-scheme)))
 
-
 (defn generate-hasd-rdf []
   (glue-hasd-scheme-and-hasd-nodes)
   (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd.tree")]

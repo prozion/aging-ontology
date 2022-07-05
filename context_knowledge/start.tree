@@ -4,27 +4,12 @@ start
 			Biomindmap url:biomindmap.com about-url:nestarenie.ru/biomindmap_1.html developer:Alex_Inside
 		ontologies ref:ontologies.tree
 		editors
-			pathway_editors
-				sbgn_editors
-					Newt
-					SBGN-ED
-				CellDesigner url:celldesigner.org platform:JRE
-				yEd
-			ontology_editors
-				Fluent_Editor url:cognitum.eu/Semantics/FluentEditor price:free
-				OBO-Edit platform:JRE developer:GO_Consortium
-				OntoStudio url:semafora-systems.com/ontobroker-and-ontostudio-x price:<?>
-				OWLGrEd url:owlgred.lumii.lv
-					OWLGrEd_online url:owlgred.lumii.lv/online_visualization
-				Protege url:protege.stanford.edu price:free
-					Web_Protege url:webprotege.stanford.edu price:free
-				TopBraid_Composer url:topquadrant.com/products/topbraid-composer developer:TopQuadrant price-y:3450$ price-academic-edition-y:695$
-				Vitro url:github.com/vivo-project/Vitro platform:Java/Tomcat
-				VocBench url:vocbench.uniroma2.it uses:Semantic_Turkey
-				Xturtle platform:Eclipse format:Turtle uses:XText2 price:free
+			ontology_viewers ref:semantic-tools-facts//ontology_viewers.tree
 			annotation_editors
 				Amaya based-on:Annotea uses:redland last:01.2012 url:w3.org/Amaya
 		visualization
 			YFiles
+	knowledge_bases
+		Gerontology_Explorer old-url:gerontology-explorer.narod.ru url:gerontology-explorer.narod.ru author-email:objMichail@mail.ru
 	people
 		Alex_Inside fb:facebook.com/alex.inside
