@@ -1,0 +1,75 @@
+{
+  "@context" : {
+    "OrganismSystemState" : {
+      "@id" : "https://purl.org/agingontology/hasd#OrganismSystemState"
+    },
+    "hasElement" : {
+      "@id" : "https://purl.org/agingontology/hasd#hasElement",
+      "@type" : "@id"
+    },
+    "ageFrom" : {
+      "@id" : "https://purl.org/agingontology/hasd#ageFrom",
+      "@type" : "@id"
+    },
+    "Organ" : {
+      "@id" : "https://purl.org/agingontology/hasd#Organ"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "followsTo" : {
+      "@id" : "https://purl.org/agingontology/hasd#followsTo",
+      "@type" : "@id"
+    },
+    "HASDNode" : {
+      "@id" : "https://purl.org/agingontology/hasd#HASDNode"
+    },
+    "OrganismState" : {
+      "@id" : "https://purl.org/agingontology/hasd#OrganismState"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+    },
+    "Diagram" : {
+      "@id" : "https://purl.org/agingontology/hasd#Diagram"
+    },
+    "ageTo" : {
+      "@id" : "https://purl.org/agingontology/hasd#ageTo",
+      "@type" : "@id"
+    },
+    "oneOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#oneOf"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "OrganState" : {
+      "@id" : "https://purl.org/agingontology/hasd#OrganState"
+    },
+    "system" : {
+      "@id" : "https://purl.org/agingontology/hasd#system",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "HASDNode_1" : {
+      "@id" : "https://purl.org/agingontology/hasd#HASDNode_1"
+    },
+    "Literal" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Literal"
+    },
+    "system_1" : {
+      "@id" : "https://purl.org/agingontology/hasd#system_1"
+    },
+    "ns" : {
+      "@id" : "https://purl.org/agingontology/hasd#ns"
+    },
+    "OrganismSystem" : {
+      "@id" : "https://purl.org/agingontology/hasd#OrganismSystem"
+    }
+  }
+}

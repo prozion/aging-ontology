@@ -1,0 +1,7 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:HASDNode_1" "base:HASDNode" ; /*classes style*/
+	"base:HASDNode" -> "base:HASDNode_1" [ label = "rdfs:subClassOf" ];
+
+}

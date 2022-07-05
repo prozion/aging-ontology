@@ -1,0 +1,47 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+	"base:BiomarkerLevelDecreaser" -> "base:BiomarkerLevelModulator" [ label = "rdfs:subClassOf" ];
+	"base:BiologicalProcess" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:CausalMechanism" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:ChronologicalAge" -> "base:Age" [ label = "rdfs:subClassOf" ];
+	"base:GlucoseMetabolismBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:FrailtyPhenotypeCriteria" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:EpigeneticAgingScore" -> "base:AgingScore" [ label = "rdfs:subClassOf" ];
+	"base:Metric" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:BiologicalAge" -> "base:Age" [ label = "rdfs:subClassOf" ];
+	"base:OrganismFunction" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Age" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Disease" -> "base:BodySystemDysfunctionSet" [ label = "rdfs:subClassOf" ];
+	"base:DietComponent" -> "owl:Class" [ label = "rdfs:subClassOf" ];
+	"base:PathologicalProcess" -> "base:BiologicalProcess" [ label = "rdfs:subClassOf" ];
+	"base:PulmonaryDisease" -> "base:AgingAssociatedPathology" [ label = "rdfs:subClassOf" ];
+	"base:Drug" -> "owl:Class" [ label = "rdfs:subClassOf" ];
+	"base:BloodBasedInflammationBiomarker" -> "base:InflammationBiomarker" [ label = "rdfs:subClassOf" ];
+	"base:BloodBasedInflammationBiomarker" -> "base:BloodBasedBiomarker" [ label = "rdfs:subClassOf" ];
+	"base:HematologicalBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:ProcessLevel" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:BloodBasedBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:Biomarker" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:AgingScore" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:HealthIndex" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:BiologicalAgeIndex" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:BiomarkerLevelIncreaser" -> "base:BiomarkerLevelModulator" [ label = "rdfs:subClassOf" ];
+	"base:LifespanStatisticalFeature" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:LipidBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:GeroprotectiveIntervention" -> "base:Intervention" [ label = "rdfs:subClassOf" ];
+	"base:BodySystemDysfunctionSet" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:FunctionalBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:InflammationAgent" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Death" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Intervention" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:GeneticBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:AgingAssociatedPathology" -> "base:Pathology" [ label = "rdfs:subClassOf" ];
+	"base:InflammationBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:SerumInflammationBiomarker" -> "base:InflammationBiomarker" [ label = "rdfs:subClassOf" ];
+	"base:ImmunosenescenceBiomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:ProInflammatoryCytokine" -> "base:InflammationBiomarker" [ label = "rdfs:subClassOf" ];
+	"base:Anthropometric_biomarker" -> "base:Biomarker" [ label = "rdfs:subClassOf" ];
+	"base:CauseOfDeath" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+
+}

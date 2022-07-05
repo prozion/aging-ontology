@@ -1,0 +1,1631 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/agingontology/core#Cell_level"
+    }, {
+      "@id" : "https://purl.org/agingontology/core#Gene_expression_level"
+    }, {
+      "@id" : "https://purl.org/agingontology/core#Intervention_level"
+    }, {
+      "@id" : "https://purl.org/agingontology/core#Organ_level"
+    }, {
+      "@id" : "https://purl.org/agingontology/core#Pathway_level"
+    }, {
+      "@id" : "https://purl.org/agingontology/core#Signaling_molecule_level"
+    }, {
+      "@id" : "https://purl.org/agingontology/core#Tissue_level"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/ReferenceSource",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.nature.com/ontologies/core/Organization",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Property",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Class",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Adaptability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#OrganismFunction"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Adipokines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Adiponectin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Age",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Aging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiologicalProcess"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ],
+  "https://purl.org/agingontology/core#go" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/GO0007568"
+  } ],
+  "https://purl.org/agingontology/core#ncit" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCITC16269"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#AgingAssociatedPathology",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Pathology"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#AgingRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#Metric"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#AgingScore",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Albumin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Albumin_creatinine_ratio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Albumin/creatinine ratio"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#All_cause_mortality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#LifespanStatisticalFeature"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"
+  } ],
+  "https://purl.org/agingontology/core#skos" : [ {
+    "@value" : "broader:Mortality"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Alzheimers_disease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AgingAssociatedPathology"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Anthropometric_biomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Aspirin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#Drug"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Atherosclerosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AgingAssociatedPathology"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BMI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Body mass index"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BiologicalAge",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Age"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BiologicalAgeIndex",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BiologicalProcess",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Biological_aging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiologicalProcess"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://purl.org/agingontology/core#Aging"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Biomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelModulator"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelModulator"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BiomarkerLevelModulator",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BloodBasedBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BloodBasedInflammationBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedBiomarker"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#BodySystemDysfunctionSet",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Body_composition_change",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#CRP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "C-reactive protein"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Cardiovascular_mortality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#LifespanStatisticalFeature"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"
+  } ],
+  "https://purl.org/agingontology/core#skos" : [ {
+    "@value" : "broader:Mortality"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#CausalMechanism",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#CauseOfDeath",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Cell_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Chair_standing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Standing from a chair"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Change_of_microbiota",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Chondroitin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#Drug"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarker" : [ {
+    "@id" : "https://purl.org/agingontology/core#CRP"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ChronologicalAge",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Age"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Coffee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#DietComponent"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarker" : [ {
+    "@id" : "https://purl.org/agingontology/core#CRP"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#DNAMethylation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GeneticBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Damage_of_cells",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Damage_of_macromolecules",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Death",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Decreasing_BMI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#SerumInflammationBiomarker"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Diabetes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AgingAssociatedPathology"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#DietComponent",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Disease",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#BodySystemDysfunctionSet"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ],
+  "https://purl.org/agingontology/core#ogms" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OGMS0000031"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Drug",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#EpigeneticAgingScore",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#AgingScore"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Epigenetic_clock_by_GrimAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#EpigeneticAgingScore"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Epigenetic_clock_by_Hannum_etal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#EpigeneticAgingScore"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Exercise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#SerumInflammationBiomarker"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#FI-B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#FrailtyIndex"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Biomarker-based frailty index"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#FI-C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#FrailtyIndex"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Clinical deficits frailty index"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Fibrotic_propensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#FrailtyIndex",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#FrailtyPhenotypeCriteria",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#FunctionalBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Gene_expression_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#GeneticBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#GeroprotectiveIntervention",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Intervention"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Glucosamine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#Drug"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarker" : [ {
+    "@id" : "https://purl.org/agingontology/core#CRP"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Grip_strength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#HbA1c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Glycated hemoglobin"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#HealthIndex",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#HematologicalBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Hemoglobin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#HematologicalBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#High_sensitivity_CRP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Homocysteine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Hormon_aging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Horvath_epigenetic_clock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#EpigeneticAgingScore"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Human_biological_aging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#Disease"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiologicalAging"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A complex interrelated network of progressive functionally-deleterious phenotypic deviations (with respect to the young adult phenotype) underlying biological aging, leading to a decline in individuals’ adaptability, physiological and mental function, as well as resilience."
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ICD-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "11th revision of the International Classiﬁcation of Diseases"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/ontology/bibo/ReferenceSource"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ],
+  "https://purl.org/agingontology/core#issuedBy" : [ {
+    "@id" : "https://purl.org/agingontology/core#WHO"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#IGFBP1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Insulin-like growth factor-binding protein 1"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#IL-6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Immune_senescence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ImmunosenescenceBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Increased_body_fat_share",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Inflamm-aging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#PathologicalProcess"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Chronic low-grade inﬂammation"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Inflammation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#InflammationAgent",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#InflammationBiomarker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Interleukin-6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedBiomarker"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#InflammationAgent"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Intervention",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Intervention_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Khaltourina_2010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Aging Fits the Disease Criteria of the International Classiﬁcation of Diseases"
+  } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@value" : "10.1016/j.mad.2020.111230"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/tabtree/publication#Article"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Appendix"
+  } ],
+  "https://purl.org/tabtree/publication#author" : [ {
+    "@id" : "https://purl.org/agingontology/core#Aleksey_Alekseev"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#Anca_Ioviţă"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#Daria_Khaltourina"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#Franco_Cortese"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#Yuri_Matveyev"
+  } ],
+  "https://purl.org/tabtree/publication#issue" : [ {
+    "@value" : "189"
+  } ],
+  "https://purl.org/tabtree/publication#journal" : [ {
+    "@id" : "https://purl.org/agingontology/core#Mechanisms_of_Ageing_and_Development"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Klemera_and_Doubals_method_index",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiologicalAgeIndex"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#LDL-C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#LipidBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Low-density lipoprotein cholesterol"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Leptin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedInflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#LifespanStatisticalFeature",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#LipidBiomarker",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Low_physical_activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Lymphocytes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#HematologicalBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Mechanisms_of_Ageing_and_Development",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Mechanisms of Ageing and Development"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/tabtree/publication#Journal"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#common.atxt"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Mental_function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#OrganismFunction"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Metric",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Mitochondrial_damage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Mitochondrial_dysfunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Mortality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#LifespanStatisticalFeature"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Muscle_mass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#NT-proBNP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Nterminal prohormone of brain natriuretic peptide"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Neutrophils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#HematologicalBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Nuts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#DietComponent"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Olive_oil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#DietComponent"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Organ_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#OrganismFunction",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#PathologicalProcess",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiologicalProcess"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://purl.org/agingontology/core#Pathology"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Pathology",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Pathway_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Physiological_function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#OrganismFunction"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Plasma_glucose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Platelets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#HematologicalBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ProcessLevel",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Materials_and_methods"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Proteostasis_failure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#CausalMechanism"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#PulmonaryDisease",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#AgingAssociatedPathology"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Replicative_cellular_senescence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelIncreaser"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarkerGroup" : [ {
+    "@id" : "https://purl.org/agingontology/core#ProInflammatoryCytokine"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Resilience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#OrganismFunction"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Introduction"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Rockwood_Frailty_Scale",
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/tabtree/time#start" : [ {
+    "@value" : "2005"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Self_reported_exhaustion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#SerumInflammationBiomarker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/agingontology/core#InflammationBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Signaling_molecule_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Slow_walking_speed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#TCellDNARearrangement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GeneticBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "T-cell DNA rearrangement"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#TGF-β",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Transforming growth factor β"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#TGs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#LipidBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Triglycerides"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#TNF-a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BloodBasedBiomarker"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#InflammationAgent"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#TelomereLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GeneticBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Thyroid_hormones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Tissue_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Troponin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#GlucoseMetabolismBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Unintentinal_weight_loss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Vitamin_D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelDecreaser"
+  }, {
+    "@id" : "https://purl.org/agingontology/core#DietComponent"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#influencedBiomarker" : [ {
+    "@id" : "https://purl.org/agingontology/core#CRP"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#WHO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "World Health Organization"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.nature.com/ontologies/core/Organization"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Abstract"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Waist_circumference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Walking_balance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Walking_speed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#AnthropometricBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#fullName" : [ {
+    "@value" : "Walking speed"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#Weakness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#FrailtyPhenotypeCriteria"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ],
+  "https://purl.org/agingontology/core#biomarker" : [ {
+    "@id" : "https://purl.org/agingontology/core#GripStrength"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#White_blood_cell_count",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/agingontology/core#HematologicalBiomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#__source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#aon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Aging ontology (AON)"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#common.atxt"
+  } ],
+  "https://purl.org/agingontology/core#ns" : [ {
+    "@value" : "https://purl.org/agingontology/core#"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#biomarker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#fullName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/title"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#common.atxt"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#go",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#influencedBiomarker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelModulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.org/agingontology/core#Biomarker"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#influencedBiomarkerGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/agingontology/core#BiomarkerLevelModulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#Khaltourina_2010__Results"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#issuedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/publisher"
+  } ],
+  "https://purl.org/agingontology/core#__source" : [ {
+    "@id" : "https://purl.org/agingontology/core#common.atxt"
+  } ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ncit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#ogms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/agingontology/core#skos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/tabtree/publication#Article",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "https://purl.org/tabtree/publication#Journal",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "https://purl.org/tabtree/publication#author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/tabtree/publication#issue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/tabtree/publication#journal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/tabtree/time#start",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
