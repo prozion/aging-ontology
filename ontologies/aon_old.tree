@@ -1,4 +1,4 @@
-aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingontology/core#
+aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:"https://purl.org/agingontology/core#"
 	namespaces
 		; Semantic "Saint Trinity":
 		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -38,21 +38,29 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 				OrganismProcess
 					do/PathologicalProcess
 						AgingPathogeneticProcess
-							BasicAgingMechanism rdfs/seeAlso:Khaltourina_2020_Mechanisms_of_ageing_and_development
+							BasicAgingMechanism
+			GeroprotectiveIntervention subclass-of:therapies/Intervention
+			OrganismFunction
 			Biomarker
 				MolecularBiomarker
 					BloodBasedBiomarker
 				FunctionalBiomarker
 				HardwareBiomarker
 				PhenotypicBiomarker
-			BiomarkerPanel rdfs/seeAlso:"https://docs.google.com/spreadsheets/d/1suMEVlMHKyTHwWzafBF0rmEAIPY0CowxxjEFvhO2TIA/edit#gid=853086944"
-				UntrustedBiomarkerPanel
+			HealthIndex
+				FrailtyIndex
+			CausalMechanism
+			StatisticalParameter
+				PopulationStatisticsParameter
+			MeasurableParameter
+				OrganismMeasurableParameter
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 		fullName subproperty-of:dc/title
-		panel domain:Biomarker range:BiomarkerPanel
-		partOfPanel domain:BiomarkerPanel range:BiomarkerPanel
-		substance domain:Biomarker range:biochem/ChemicalSubstance
+		correlatesTo domain:BiologicalProcess range:StatisticalParameter
 	individuals +section-hierarchy-inverse-relation:skos/broader
+		Aging
+			Biological_aging a:BiologicalProcess ncit:C16269 go:0007568
+				Human_biological_aging
 		; Basic aging mechanisms:
 		Fibrosis a:BasicAgingMechanism
 		Insulin_resistance a:BasicAgingMechanism
@@ -63,22 +71,7 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 		Cellular_senescence a:BasicAgingMechanism
 		Immunosenescence a:BasicAgingMechanism
 		Low-grade_inflammation a:BasicAgingMechanism
-		; Biomarker panels:
-		Horvath_Clock a:BiomarkerPanel
-		Hannum_Clock a:BiomarkerPanel
-		DNAm_PhenoAge a:BiomarkerPanel
-		Frailty_Index a:BiomarkerPanel
-		Singapore_Panel a:BiomarkerPanel
-		Chinese_Panel a:BiomarkerPanel
-		British_Panel a:BiomarkerPanel
-		SENS_Panel a:BiomarkerPanel
-		SASP_Panel deabbr:"Senescence-associated secretory phenotype" a:BiomarkerPanel
-		TAME_Panel a:BiomarkerPanel
-		GDF11_Panel a:UntrustedBiomarkerPanel
-		Open_Longevity_Panel_Basic a:BiomarkerPanel
-		Open_Longevity_Panel_Pro a:BiomarkerPanel
-		Open_Longevity_Panel_New a:BiomarkerPanel
-		Theranostic_Panel_Full a:BiomarkerPanel
-		Theranostic_Panel_Oncology a:BiomarkerPanel partOfPanel:Theranostic_Panel_Full
-		Theranostic_Panel_Brain_and_Depression a:BiomarkerPanel partOfPanel:Theranostic_Panel_Full
-		Theranostic_Panel_Heart_and_Vessels a:BiomarkerPanel partOfPanel:Theranostic_Panel_Full
+		
+		Morbidity a:PopulationStatisticsParameter
+		Mortality a:PopulationStatisticsParameter
+		Frailty a:OrganismMeasurableParameter

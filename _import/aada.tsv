@@ -1,0 +1,239 @@
+Маркер (Rus)	Marker (Eng)		Marker's characteristics					Aging Diagnostic Approach																			Маркер только в 1 панели	1	Пояснение про ✓: либо потому что данная панель — это подмножество другой панели, как для панелей Тераностики, где "рак", "мозг и депрессия" и "сердце и сосуды" — подмножества FULL, либо панель не вызывает пока доверие, как панель в КИ GDF11.
+		What's that in general?	Type of a marker	System, organ, process	Which of the 9 Hallmarks of Aging it tracks	Cytokine	Panel Inclusion ranking	Epigenetic			Frailty Index	Singapore Panel	Chinese Panel	British Panel	SENS	SASP	TAME (by Nir Barzilai)	GDF11 "trial"	Open Longevity								Маркер в 2 панелях	2
+								Horvath Clock (IEAA)	Hannum Clock	DNAm PhenoAge									OL 1.4			Theranostic 1.1					Маркер в 3 панелях	3
+								https://habr.com/ru/post/428377/			https://habr.com/ru/post/419721/	https://habr.com/ru/post/420259/	https://habr.com/ru/post/424399/	https://habr.com/ru/post/423979/	https://habr.com/ru/post/421225/	https://www.ncbi.nlm.nih.gov/pubmed/19053174		https://gdf11rejuvenation.com/doctors-biomarkers	Basic	Pro	New	FULL	Oncology	Brain & Depression	Heart & Vessels		Маркер в 4 панелях	4
+															https://habr.com/ru/post/421875/												Маркер в 5 панелях	5
+															https://habr.com/ru/post/422125/												Маркер в 6 панелях	6
+											https://habr.com/ru/post/419819/				https://habr.com/ru/post/423009/			https://gdf11rejuvenation.com/daily-trending-biomarkers				http://openlongevity.org/diagnostics					Маркер в 7 панелях	7
+					https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3836174/figure/F1/										https://habr.com/en/post/427029/				https://docs.google.com/spreadsheets/d/16oGboYHa7szNRtCs5ALVNWFBSAsUacKra9fBfKdByDE/edit#gid=0			https://dnkom.ru/analizy-i-tseny/diagnostika-stareniya-open-longevity/teranostika-1-1-full/	https://dnkom.ru/analizy-i-tseny/diagnostika-stareniya-open-longevity/teranostika-1-1-rak/	https://dnkom.ru/analizy-i-tseny/diagnostika-stareniya-open-longevity/teranostika-1-1-mozg-i-depressiya/	https://dnkom.ru/analizy-i-tseny/diagnostika-stareniya-open-longevity/teranostika-1-1-serdtse-i-sosudy/		Маркер просто есть в панели, панель не учитывается в подсчёте	✓
+			Total number of markers in a panel —>					353	71	9	41	26	36	56	32	27	10	21	41	49	14	51	19	25	28
+Фосфорилированный гистон γH2AX	Phosphorylated Histone γH2AX		Molecular	DNA			2						2		2
+Длина теломер	Telomere length		Molecular	DNA			1							1
+Длина теломер лейкоцитов	Leukocyte telomere length		Molecular	DNA			1						1
+Метилирование ДНК	DNA methylation		Molecular	DNA			3	353 CpG сайта метиллирования ДНК	71 CpG сайт метиллирования ДНК				3
+Внеклеточная циркулирующая ДНК (вкДНК)	Сell-free DNA (also known as circulating DNA)		Molecular	DNA			1								1
+Фенотип Т-клеток	T cell phenotype		Molecular	RNAi transcription			1							1
+Гетерогенность CD38 в CD4 +CD27 + Т-клетках	CD38 heterogeneity in CD4 + CD27 + T cells		Molecular	RNAi transcription			1						1
+Гетерогенность CD197 в CD4 +CD25 + T-клетках	CD197 heterogeneity in CD4 + CD25 + T cells		Molecular	RNAi transcription			1						1
+Циркулирующие микроРНК (miR-34a, miR-21, miR-126-3p, miR-151a-3p, miR-181a-5p, miR-1248)	Circulating miRNAs (miR-34a, miR-21, miR-126-3p, miR-151a-3p, miR-181a-5p, miR-1248)		Molecular	RNAi transcription			2				2		2
+Длинные некодирующие РНК (MIR31HG, AK156230, Meg3)	Long non-coding RNA (MIR31HG, AK156230, Meg3)		Molecular	RNAi transcription			1						1
+Гормон роста 	Growth factor (GF)		Molecular	Metabolism 			3				3		3	3
+Klotho	Klotho		Molecular	Metabolism 			1				1										✓
+Фактор роста фибробластов 21	Fibroblast growth factor 21 (FGF21)		Molecular	Metabolism 			1				1
+Резистин	Resistin (RETN)		Molecular	Metabolism 			2				2	2
+Адипонектин 	Adiponectin (ADIPOQ)		Molecular	Metabolism 			2				2			2
+mTOR	mTOR		Molecular	Metabolism 			2						2			2
+pS6RP	pS6RP		Molecular	Metabolism 			1						1
+NAD +, SIRT1, SIRT2, SIRT3, SIRT6	NAD +, SIRT1, SIRT2, SIRT3, SIRT6		Molecular	Metabolism 			1						1
+Карбамилирование белков	Protein carbamylation		Molecular	Metabolism 			1						1
+КПГ и N-гликаны	Glycation end products and N-glycans		Molecular	Metabolism 			1						1
+Гликированный гемоглобин	Glycosylated hemoglobin (HbAС1)		Molecular	Glucose metabolism			3							3			3	✓	✓	✓		3		✓	✓
+Глюкоза	Glucose		Molecular	Glucose metabolism			2			2							2
+Глюкоза натощак	Fasting plasma glucose		Molecular	Glucose metabolism			2							2				✓	✓	✓		2	✓	✓	✓
+Инсулин	Insulin		Molecular	Glucose metabolism			3						3				3	✓	✓	✓		3	✓	✓	✓
+Биохимические показатели	Biochemistry assay		Molecular	Glucose metabolism			1							1
+S100 кальций-связывающий белок B	S100 calcium binding protein B (S100B)		Molecular	Calcium homeostasis			1				1
+Регукальцин (Маркер старения protein-30)	Regucalcin (RGN) (Senescence marker protein-30, SMP30)		Molecular	Calcium homeostasis			1				1
+Кальретикулин	Calreticulin (CALR)		Molecular	Calcium homeostasis			1				1
+о-тирозин	o-tyrosine		Molecular	Oxidative stress, mitochondria and apoptosis			2						2		2
+3-хлортирозин	3-chlorothyrosine		Molecular	Oxidative stress, mitochondria and apoptosis			2						2		2
+3-нитротирозин	3-nitrotyrosine		Molecular	Oxidative stress, mitochondria and apoptosis			2						2		2
+8-изопростан	8-isoprostane (8-ISO)		Molecular	Oxidative stress, mitochondria and apoptosis			3						3		3						3
+8-гидрокси-2'-дезоксигуанозин	8-OHdG		Molecular	Oxidative stress, mitochondria and apoptosis			2						2		2
+8-гидроксигуанозин	8-OHG		Molecular	Oxidative stress, mitochondria and apoptosis			2						2		2
+Иризин	Fibronectin type III domain containing 5 (FNDC5) (Irisin)		Molecular	Oxidative stress, mitochondria and apoptosis			1				1
+Виментин	Vimentin (VIM)		Molecular	Oxidative stress, mitochondria and apoptosis			1				1
+Малоновый диальдегид	Malonic dialdehyde		Molecular	Oxidative stress, mitochondria and apoptosis			1								1
+Продукты окисления белков	Protein Oxidation Products (AOPP)		Molecular	Oxidative stress, mitochondria and apoptosis			1								1
+Клеточная мтДНК (её количество и наличие мутированных вариантов с делециями)	Cellular mtDNA (its number and the presence of mutated variants with deletions)		Molecular	Oxidative stress, mitochondria and apoptosis			1								1
+Глутатион	Glutathione		Molecular	Oxidative stress, mitochondria and apoptosis			1								1
+Цистеин	Cysteine		Molecular	Oxidative stress, mitochondria and apoptosis			1								1
+Мочевая кислота	Uric acid		Molecular	Oxidative stress, mitochondria and apoptosis			2								2				✓	✓		2			✓
+Убихинол	Ubiquinol		Molecular	Oxidative stress, mitochondria and apoptosis			1								1
+Карбоксиметил-лизин (КМЛ)	Carboxymethyl-lysine (CML)		Molecular	Protein glycation			1								1						✓
+Глюкозепан	Glucosepane		Molecular	Protein glycation			1								1
+DOGDIC	DOGDIC		Molecular	Protein glycation			1								1
+MODIC	MODIC		Molecular	Protein glycation			1								1
+GODIC	GODIC		Molecular	Protein glycation			1								1
+GOLD	GOLD		Molecular	Protein glycation			1								1
+MOLD	MOLD		Molecular	Protein glycation			1								1
+Амилоид Аβ-42	Amyloid Aβ-42		Molecular	Protein aggregates			1								1
+Общий τ-белок	Total τ-protein		Molecular	Protein aggregates			1								1
+Фосфорилированный  τ-белок	Phosphorylated τ-protein		Molecular	Protein aggregates			1								1
+Ассоциированная с клеточным старением β-галактозидаза	Associated with cellular aging β-galactosidase (SA-β-Gal)		Molecular	Cell senescence			2						2		2
+Ассоциированные с клеточным старением гетерохроматиновые фокусы	Heterochromatin foci associated with cellular aging (SAHF)		Molecular	Cell senescence			1								1
+Белок p16INK4A	p16INK4A		Molecular	Cell senescence			2						2		2
+Липофусцин	Lipofuscin		Molecular	Cell senescence			1								1
+Связанный со старением секреторный фенотип	Senescence associated secretory phenotype (SASP)		Molecular	Inflammation and intercellular communication			1						1
+CD14 антиген	CD14 antigen		Molecular	Inflammation and intercellular communication			1				1
+Фракталкин CX3CL1	Fractalquin (CX3CL1)		Molecular	Inflammation and intercellular communication			1				1
+Пентраксин	Pentraxin (PTX3)		Molecular	Inflammation and intercellular communication			1				1
+Молекулы адгезии sVCAM/sICAM	Adhesion molecules sVCAM/sICAM		Molecular	Inflammation and intercellular communication			2				2	2
+Интерлейкин 6	Interleukin 6 (IL-6)		Molecular	Inflammation and intercellular communication		pro-inflammatory	7				7	7		7	7	7	7		✓	✓		7		✓
+Интерферон гамма индуцибельный белок (IP-10) (он же CXCL10 C-X-C motif chemokine 10)	Interferon gamma inducible protein IP-10 (also known as CXCL10 C-X-C motif chemokine 10)		Molecular	Inflammation and intercellular communication			2				2	2
+Трансформирующий ростовой фактор бета	Transforming growth factor-β (TGF-β)		Molecular	Fibrosis		anti-inflammatory	2				2					2					✓
+Ингибитор активатора плазминогена 1	Plasminogen activator inhibitor 1 (PAI-1)(also known as Serpine E1)		Molecular	Fibrosis			2				2					2
+Урокиназный активатор плазминогена	Urokinase plasminogen activator (uPA)		Molecular	Fibrosis			2				2					2
+Тканевый активатор плазминогена	tPA						1									1
+Матриксная металлопротеиназа-1	Matrix metalloproteinases (MMP-1)						1									1
+Матриксная металлопротеиназа-3	Matrix metalloproteinases (MMP-3)						1									1
+Матрилизин, матриксная металлопротеиназа-7	Matrix metalloproteinases (MMP-7)		Molecular	Fibrosis			1				1
+Матриксная металлопротеиназа-9	Matrix metalloproteinases (MMP-9)		Molecular	Fibrosis			1														✓
+Матриксная металлопротеиназа-10	Matrix metalloproteinases (MMP-10)						1									1
+Трансглютаминаза 2 	Transglutaminase 2 (TGM2)		Molecular	Fibrosis			1				1
+Тромбоспондин-2	Thrombospondin-2 (THBS2)		Molecular	Fibrosis			1				1
+Ангиотензиноген	Angiotensinogen (AGT)		Molecular	Fibrosis			1				1
+Нейротрофический фактор мозга 	Brain neurotrophic factor (BDNF)		Molecular	Neurons and neuromuscular junction			1				1
+Агрин	Agrin (AGRN)		Molecular	Neurons and neuromuscular junction			1				1
+Програнулин	Progranulin (PGRN)		Molecular	Neurons and neuromuscular junction			1				1
+Компонент комплемента C3 и C1q	Complement factor 3 and 1Q (C3 и C1q) 		Molecular	Neurons and neuromuscular junction			1				1
+Рецептор AGER	Advanced glycosylation end-product specific receptor (AGER)		Molecular	Neurons and neuromuscular junction			1				1
+Белок HMGB1 (high mobility group box 1)	High mobility group box 1 (HMGB1)		Molecular	Neurons and neuromuscular junction			2				2				2
+Растворимый супрессор туморогенности ST2	Soluble suppression of tumorigenicity 2 (ST2) 		Molecular	Neurons and neuromuscular junction			1				1
+Интерлейкин-8 	Interleukin-8 (IL-8)		Molecular	All-cause mortality		pro-inflammatory	2					2				2
+Остеопротегерин 	Osteoprotegerin (OPG)		Molecular	All-cause mortality			1					1
+Фактор стволовых клеток 	Stem cell factor (SCF)		Molecular	All-cause mortality			1					1
+Глюкагоноподобный пептид-1	Glucagon-like peptide-1 (GLP-1)		Molecular	All-cause mortality			1					1
+Факто некроза опухолей ФНО-α	Facto necrosis of tumors (TNF-α-R)		Molecular	All-cause mortality			2					2					2
+Эотаксин	Eotaxin		Molecular	All-cause mortality			1					1
+Хемокин IP-10	Chemokine IP-10		Molecular	All-cause mortality			1					1
+Кожный хемокин, привлекающий Т-клетки (CTACK)	Cutaneous chemokine attracting T-cells (CTACK)		Molecular	All-cause mortality			1					1
+Глюкагон	Glucagon		Molecular	All-cause mortality			1					1
+Продукт ацетилирования гликопротеинов 	Serum glycoprotein acetylation (GlycA)		Molecular	All-cause mortality			1														✓
+Фактор дифференциации роста-15	Growth differentiation factor-15 (GDF-15) (also known as TGF-PL, MIC-1, PDF, PLAB, and PTGFB)		Molecular	Mortality related CVDs			2				2						2				✓
+OPG	OPG		Molecular	Mortality related CVDs			1					1
+Chikungunya	Chikungunya		Molecular	Mortality related CVDs			1					1
+Рост-регулируемый онкоген альфа	Growth-regulated oncogene-α (GRO-α)		Molecular	Mortality related CVDs			2					2				2
+Рост-регулируемый онкоген бета	Growth-regulated oncogene-β (GRO-β)						1									1
+Сосудистый эндотелиальный фактор роста 	Vascular endothelial growth factor (VEGF)		Molecular	Mortality related neoplasms			1					1
+Интерлейкин-1ra	Interleukin-1ra (IL-1ra)		Molecular	Mortality related neoplasms		pro-inflammatory	1					1
+Фактор роста тромбоцитов BB	Platelet Growth Factor BB (PDGF-BB)		Molecular	Mortality related neoplasms			1					1
+Фактор роста гепатоцитов	Hepatocyte growth factors (HGF)						1									1
+Способствует дифференцировке миофибробластов	PDGF-A						1									1
+Моноцитарный хемотаксический белок-1	Monocytic chemotactic protein-1 (MCP-1)		Molecular	Mortality related neoplasms			1					1
+Глюкозозависимый инсулинотропный полипептид 	Glucose-dependent insulinotropic polypeptide (GIP)		Molecular	Mortality related respiratory diseases 			1					1
+Фибриноген	Fibrinogen		Molecular	Mortality related respiratory diseases 			1					1
+Цитомегаловируса иммуноглобулина G	Cytomegalovirus immunoglobulin G (CMV IgG)		Molecular	Mortality related respiratory diseases 			1					1
+Helicobacter Pylori	Helicobacter Pylori		Molecular	Mortality related respiratory diseases 			1					1
+Ферритин	Ferritin		Molecular	Mortality related respiratory diseases 			2				? вроде во Frailty тоже есть	2							✓	✓		2	✓
+Спирометрия: объём форсированного выдоха за первую секунду (ОФВ1)	Spirometry: forced expiratory volume in the first second (FEV1)		Hardware 	Lung function			1							1				✓
+Плотность костной ткани: двойная рентгеновская абсорбциометрия	Bone density, bone mass hip: Dual X ray Absorptiometry		Hardware 	Bone health			1							1
+Широкополосное затухание ультразвука	Broadband ultrasound attenuation (BUA) at heel		Hardware 	Bone health			1							1
+Оценка мышечной массы ноги: двойная рентгеновская абсорбциометрия	Evaluation of leg muscle mass: dual x-ray absorptiometry		Hardware 	Skeletal muscle and body composition			1							1
+Оценка мышечной массы тела: биоэлектричекий импеданс	Muscle Body Mass Assessment: Bioelectrical Impedance		Hardware 	Skeletal muscle and body composition			2						2	2				✓
+Процент жира, рассчитываемый на основании обхвата талии, шеи, предплечья, запястья, голени, веса тела, роста, пола и возраста	The percentage of fat calculated based on the circumference of the waist, neck, forearm, wrist, lower leg, body weight, height, sex, and age		Hardware 	Skeletal muscle and body composition			1												✓	✓		1
+Индекс массы тела (ИМТ)	Body Mass Index (BMI)		Hardware 	Skeletal muscle and body composition			3						3	3					✓	✓		3
+Вес тела	Body weight		Hardware 	Skeletal muscle and body composition			2							2					✓	✓		2
+Брюшной жир: окружность талии	Waist circumference		Hardware diagnostics and biochemistry 	Skeletal muscle and body composition			3						3	3					✓	✓		3
+Систолическое артериальное давление	Systolic arterial blood pressure		Hardware 	Cardiovascular system			2							2				✓	✓	✓		2
+Диастолическое артериальное давление	Diastolic arterial blood pressure		Hardware 	Cardiovascular system			1											✓	✓	✓		1
+УЗИ комплекса интима-медиа сонных артерий 	IMT ultrasound, Carotid intima-media thickness		Hardware 	Cardiovascular system			1												✓	✓		1		✓	✓
+ЭКГ	ECG		Hardware 	Cardiovascular system			1												✓	✓		1	✓	✓	✓
+ЧСС в покое	Heart rate at rest		Hardware 	Cardiovascular system			1											✓	✓	✓		1
+Общий холестерин	Total cholesterol		Molecular	Cardiovascular system			2							2					✓	✓		2
+ЛПНП	HDL cholesterol		Molecular	Cardiovascular system			2							2					✓	✓		2	✓	✓	✓
+ЛПВП	LDL		Molecular	Cardiovascular system			2							2					✓	✓		2			✓
+Триглицериды	Triglycerides		Molecular	Cardiovascular system			2						2	2
+Мозговой натрийуретический гормон	Brain Natriuretic Hormone  NT-proBNP		Molecular	Cardiovascular system			1										1
+Биохимические показатели (без подробностей)	Biochemistry assay		Molecular	Cardiovascular system			1							1
+Коэффициент DHEAS: кортизол	DHEAS Ratio: Cortisol		Molecular	Hormonal system 			3							2								2		✓
+DHEAS	Dehydroepiandrosterone sulphate (DHEAS)		Molecular	Hormonal system 			1							1				✓
+Соматомедин-С, он же ИФР-1	Insulin-like growth factor 1 (IGF-1) (also known as Somatomedin C)		Molecular	Hormonal system 			4				4		4	4			4		✓	✓		4	✓	✓	✓
+Белки, связывающие инсулиноподобный фактор роста	IGFBP		Molecular				1									1
+Лептин	Leptin (LEP)		Molecular	Hormonal system 			3				3	3		3
+Грелин	Ghrelin (GHRL)		Molecular	Hormonal system 			2				2			2
+Мелатонин	Melatonin		Molecular	Hormonal system 			1							1
+Эстроген	Estrogen		Molecular	Hormonal system 			1							1
+Соматостотин	Somatostatin		Molecular	Hormonal system 			1							1
+Тестостерон	Testosterone		Molecular	Hormonal system 			1							1				✓
+Прогестерон (для женщин) и простат-специфический антиген (PSA) (для мужчин)	Progesterone (for females) and Prostate Specific Antigen (PSA) (for males)		Molecular	Hormonal system 														✓
+Эстрадиол	Estradiol (E2)		Molecular	Hormonal system 														✓
+Т3	Free triiodothyronine (FT3)		Molecular	Hormonal system 			2							2					✓	✓		2		✓	✓
+Т4	Thyroxine (Free T4)		Molecular	Hormonal system 			2							2					✓	✓		2		✓	✓
+Т3/Т4	Т3/Т4		Molecular	Hormonal system 			1							2					✓	✓		2		✓	✓
+ТТГ	Thyroid-stimulating Hormone  (TSH)		Molecular	Hormonal system 			2							2				✓	✓	✓		2	✓	✓	✓
+В-клетки	B cells		Molecular	Immune function			1							1
+Цитомегаловирус	Cytomegalovirus		Molecular	Immune function			1							1
+С-реактивный белок (СРБ)	C-reactive protein (CRP)		Molecular	Immune function			4			4				4			4	✓	✓	✓		4		✓	✓
+Дендритные клетки	Dendritic cells		Molecular	Immune function			1							1
+Натуральные киллеры	Natural killers (NK)		Molecular	Immune function			1							1
+Нейтрофилы	Neutrophils		Molecular	Immune function			1							1
+Скорость ходьбы	Gait (Walking) speed		Phenotypic biomarkers	Physical abilities			2						2	2
+Тест "Встать и пойти" на скорость	Timed Get Up and Go test		Phenotypic biomarkers	Physical abilities			1							1
+Вставание со стула	Chair rising		Phenotypic biomarkers	Physical abilities			2						2	2
+Баланс стоя	 Standing balance (One leg stand, tandem stands)		Phenotypic biomarkers	Physical abilities			2						2	2
+Сила сжатия кисти	Grip strength		Phenotypic biomarkers	Physical abilities			2						2	2				✓
+Ловкость	Pegboard test	Phenotypic biomarkers	Physical abilities			1							1
+Ширина полости рта	Mouth width		Phenotypic biomarkers	Facial features			1						1
+Ширина носа	Nose width		Phenotypic biomarkers	Facial features			1						1
+Расстояние от рта до носа	Distance from mouth to nose		Phenotypic biomarkers	Facial features			1						1
+Наклон угла глаза	Eye angle		Phenotypic biomarkers	Facial features			1						1
+Скорость речи	Verbal fluency		Questionnaires and tests	Cognitive function			1							1
+Скорость обработки: цифровое кодирование символов	Processing speed: Digit-Symbol Coding		Questionnaires and tests	Cognitive function			1							1
+Рабочая память: тест Digit Span backward	Working memory: Digit Span backward		Questionnaires and tests	Cognitive function			1							1
+Кристаллизованная способность: Бостонский тест на называние	Crystallised ability: Boston Naming Test (BNT)		Questionnaires and tests	Cognitive function			1							1
+Внимание: тест Струпа	Attention: Stroop		Questionnaires and tests	Cognitive function			1							1
+Зрительно-пространственные способности: тест складывания кубиков	Visuo-spatial ability: Block Design		Questionnaires and tests	Cognitive function			1							1
+Рассуждения: тест Рейвена	Reasoning: Raven’s Progressive Matrices		Questionnaires and tests	Cognitive function			1							1
+Словесная память и обучение: Тест Рея на слухоречевую память	Verbal Memory & Learning: Rey Auditory Verbal Learning Test		Questionnaires and tests	Cognitive function			1							1
+Зрительная память: тест зрительного удержания	Visual Memory: Benton Visual Retention Test		Questionnaires and tests	Cognitive function			1							1
+Процент лимфоцитов	Lymphocyte ratio		Molecular				1			1
+Доля наивных Т-лимфоцитов  (CD45RAhigh/CD27high)	CD45RA high/CD27 high		Molecular	Immune system																✓
+Наивные CD4 лимфоциты/клетки памяти (CD4/45RO, CD4/45RA, соотношение "наивных" клеток и клеток памяти).			Molecular	Immune system																		1	✓
+Средний объём эритроцитов	The average volume of red blood cells		Molecular				1			1								✓
+Ширина распределения эритроцитов	The width of the distribution of red blood cells		Molecular				1			1
+Количество лейкоцитов	Leukocyte number		Molecular				1			1								0
+Щелочная фосфотаза	Alkaline phosphatase		Molecular				1			1
+Белок промиелоцитарного лейкоза	Promyelocytic leukemia protein (PML)		Molecular				1								1
+Аденозилгомоцистеиназа	Adenosylhomocysteinase (AHCY)		Molecular				1				1
+Циркулирующие (внеклеточные) микровезикулы	Circulating (extracellular) microvesicles		Molecular				1				1
+Кератин 18 	Keratin 18 (KRT18)		Molecular				1				1
+Гликопротеиновая неметастатическая меланома B	Glycoprotein nonmetastatic melanoma B (GPNMB)		Molecular				1				1
+Лактоферрин 	Lactotransferrin (LTF)		Molecular				1				1
+Активный витамин В12  (голотранскобаламин)	Active vitamin B12 (holotranscobalamin)		Molecular				1												✓	✓		1		✓	✓
+Витамин В12  (цианокобаламин)	Vitamin B12 (cyanocobalamin)		Molecular				1													✓		1	✓	✓
+Гомоцистеин	Homocysteine		Molecular															✓
+Витамин D (25-ОН)  (кальциферол)	Vitamin D (25-ОН) (calciferol)		Molecular				1											✓	✓	✓		1
+Витамин К-2 (МК-7)	Vitamin K-2 (MK-7)		Molecular				1													✓		1
+Сульфорафан	Sulforaphane		Molecular				1													✓		1
+АЛТ  (Аланинаминотрансфераза)	Alanine aminotransferase (ALT)		Molecular				1												✓	✓		1	✓	✓	✓
+Альбумин	Albumin		Molecular				2			2									✓	✓		2			✓
+АФП (Альфа-фетопротеин)	Alpha-fetoprotein  (AFP)		Molecular				1												✓	✓		1	✓
+Креатинин	Creatinine		Molecular				2			2									✓	✓		2	✓	✓	✓
+СКФ (скорость клубочковой фильтрации)	GFR  (Glomerular Filtration Rate)		Molecular				2												✓	✓		1	✓	✓	✓
+Индекс HOMA-IR	HOMA-IR index "Glycosylated hemoglobin  (HbA1)"		Molecular				1												✓	✓		1	✓	✓	✓
+Железо	Iron (Fe)		Molecular				2												✓	✓		1	✓
+Уровень окисленных ЛПНП 	oxLDL		Molecular				1													✓		1			✓
+Индекс атерогенности	Athrogenic Index ((Total – HDL)/HDL)		Molecular				1												✓	✓		1			✓
+Калий (К+)	Potassium		Molecular				1												✓	✓		1	✓		✓
+Фолаты (измеряется фолиевая к-та, это отдно и то же)	Folates		Molecular				1												✓	✓		1			✓
+Фолиевая кислота в эритроцитах							1															1
+Гемоглобин (из общего анализа крови)	Hemoglobin (from a general blood test)		Molecular				1												✓	✓		1	✓	✓	✓
+Тромбоциты (из общего анализа крови)	Thrombocytes (from a general blood test)		Molecular				1											✓	✓	✓		1	✓	✓	✓
+Гематокрит (из общего анализа крови)	Hematocrit (from a general blood test)		Molecular				1												✓	✓		1	✓	✓	✓
+Литий	Lithium						1												✓	✓		1		✓	✓
+Магний	Magnesium						1												✓	✓		1
+Йод (в сыворотке крови)	Iodine (in blood serum)						1													✓		1
+Йод (в волосах)	Iodine (in hair)						—													✓
+Селен	Selenium						1													✓		1
+Цинк							1															1		✓
+Тканевые ингибиторы матричных  металлопротеиназ-1 	Tissue inhibitor-1 (TIMP-1)						1									1					✓
+Фактор роста соединительной ткани	Connective tissue growth factor (CTGF)						—														✓
+Фактор роста фибробластов	Fibroblast growth factor (FGF)						1									1
+Карбоксилированный MGP в плазме	Dephosphorylated and uncarboxylated matrix Gla protein (dp-ucMGP) 						—														✓
+Маркер прогениторных эндотелиальных клеток 	Antigenic profiles of EPCs: CD34(+)KDR(+) (EPC — endothelial progenitor cells))						—														✓
+Маркер деградации коллагена I типа 	Biomarker measuring type I collagen degradation (C1M)						—														✓
+Карбокситерминальный телопептид коллагена I типа	Carboxyl-terminal telopeptide of collagen type I (CITP)						—														✓
+Амино-терминальный пептид проколлагена III типа	Amino-terminal peptide of procollagen type III (PIIINP)						—														✓
+Цистатин С	Cystatin C						1										1
+Аполипопротеин В	Apolipoprotein B (ApoB)						—											✓
+	CCL-2	Сhemokine					1									1
+	CCL-5	Сhemokine					1									1
+	CCL-16	Сhemokine					1									1
+	CCL-26	Сhemokine					1									1
+	CCL-20	Сhemokine					1									1
+	GM-CSF	Growth factor					1									1
+	ATM	Gene?		Participate in DNA damage response			1									1
+	Chk2	Gene?		Participate in DNA damage response			1									1
+	NBS1	Gene?		Participate in DNA damage response			1									1
+	CCN1/CYR61	Protein					1									1

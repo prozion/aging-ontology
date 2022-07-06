@@ -4,15 +4,10 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
 		owl ns:http://www.w3.org/2002/07/owl#
 		xsd ns:http://www.w3.org/2001/XMLSchema#
+		aon ns:https://purl.org/agingontology/core#
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of	
-		HASDNode_1 owl/unionOf:`OrganState,OrganismSystemState`
-			HASDNode 
+		HASDNode subclass-of:aon/AgingPathogeneticProcess
 		Diagram
-		Organ
-		OrganState
-		OrganismState
-		OrganismSystem
-		OrganismSystemState
 	properties +a:rdfs/Property +section-hierarchy-inverse-relation:subproperty-of
 		; name domain:HASDNode range:xsd/Literal subproperty-of:rdfs/label
 		ageFrom domain:HASDNode range:xsd/Literal

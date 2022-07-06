@@ -23,6 +23,7 @@
                   ["vcs" "push"]]
   :repl-options {
     ; :init-ns scripts.process-hasd
-    :init-ns scripts.build-aging-ontology
+    ; :init-ns scripts.build-aging-ontology
+    :init-ns scripts.process-aada
   }
 )

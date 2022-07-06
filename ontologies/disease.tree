@@ -8,12 +8,14 @@ disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxo
 		tabtree ns:https://purl.org/tabtree/core#
 		doid ns:http://purl.obolibrary.org/obo/DOID_
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+		Bacteria
 		Disease ogms:0000031 d:"Сложная реакция организма на действие патологического агента, являющаяся новым процессом жизнедеятельности, возникающим в результате нарушений во взаимодействии организма и внешней среды, характеризующаяся нарушением регуляции функции, приспособляемости и уменьшением работоспособности, чувством боли и недомогания"
 		Pathology
 		PathologicalAgent
 		PathologicalProcess d:"Реакция организма на необычное раздражение, в основе которого лежит нарушение функции и структуры"
 		PathologyProduct
 		Symptom
+		Virus
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 		doid
 		hasSymptom owl/inverseOf:symptomFor
@@ -23,17 +25,30 @@ disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxo
 		Atherosclerosis
 		Cancer a:Disease,PathologicalProcess
 		Cardiovascular_system_disease doid:1287
+			Heart_disease
+			Vascular_disease
+		COPD deabbr:"Chronic obstructive lung disease"
 		Dementia
 		Eye_disease
 			Cataract
+				Secondary_cataract
+			Dry_eye_disease
 			Glaukoma
+			Retinopathy
 		Glucose_metabolism_disease doid:4194
 			Diabetes doid:0081062
+		Hepatitis
+		IPF deabbr:"Idiopathic lung ﬁbrosis"
 		Kidney_disease
 		Liver_disease
-		Neurodegenerative_disease
+		Neurodegenerative_disease doid:1289
 			Alzheimers_disease owl/sameAs:AD
 			Parkinson_disease owl/sameAs:PD
 		Osteoporosis
 		Osteoarthritis
+		Pancreatic_fibrosis
 		Pulmonary_disease
+		Reproductive_system_disease doid:15
+			Erectile_dysfunction
+			Infertility
+		Renal_disease

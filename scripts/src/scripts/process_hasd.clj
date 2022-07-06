@@ -30,7 +30,7 @@
       (fn [acc line]
         (let [[id name age-from age-to system] line
               id (ao-id id)]
-          (merge acc {id {:__id id :rdfs/label name :ageFrom age-from :ageTo age-to :system system}})))
+          (merge acc {id {:__id id :name name :ageFrom age-from :ageTo age-to :system system}})))
       {}
       content)))
 

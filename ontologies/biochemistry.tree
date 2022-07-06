@@ -10,10 +10,12 @@ biochemistry a:owl/Ontology dc/title:"Some biochemistry ontology, when possible,
 		tabtree ns:https://purl.org/tabtree/core#
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
 		Anomaly
-		Alkaloid
-		FunctionalChemicalCompound
-			Antioxidant
-		Protein subclass-of:biopax/Protein
-			MisfoldedProtein subclass-of:Anomaly
+		ChemicalSubstance
+			Alkaloid
+			FunctionalChemicalCompound
+				Antioxidant
+			Macromolecule
+				Protein subclass-of:biopax/Protein
+					MisfoldedProtein subclass-of:Anomaly
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 	individuals
