@@ -29,6 +29,20 @@
     (reduce
       (fn [acc line]
         (let [[id name age-from age-to system] line
+              system (case system
+                      "metabolism" :org/Metabolism_system
+                      "unknown" :org/Unknown_system
+                      "cell" :org/Cell_system
+                      "immune" :org/Immune_system
+                      "intersystem" :org/Intersystem
+                      "hormones" :org/Hormonal_system
+                      "nervous" :org/Nervous_system
+                      "cardiovascular" :org/Cardiovascular_system
+                      "respiratory" :org/Respiratory_system
+                      "connective" :org/Connective_system
+                      "cancer" :do/Cancer
+                      "death" :aon/Death
+                      :org/Unknown_system)
               id (ao-id id)]
           (merge acc {id {:__id id :name name :ageFrom age-from :ageTo age-to :system system}})))
       {}

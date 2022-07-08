@@ -1,0 +1,229 @@
+3-chlorothyrosine name:"3-chlorothyrosine" panel:Chinese_Panel
+3-nitrotyrosine name:"3-nitrotyrosine" panel:Chinese_Panel
+8-isoprostane_ name:"8-isoprostane (8-ISO)" panel:Chinese_Panel
+8-OHdG name:"8-OHdG" panel:Chinese_Panel
+8-OHG name:"8-OHG" panel:Chinese_Panel
+_Standing_balance_ name:" Standing balance (One leg stand, tandem stands)" panel:Chinese_Panel,British_Panel
+Active_vitamin_B12_ name:"Active vitamin B12 (holotranscobalamin)"
+Adenosylhomocysteinase_ name:"Adenosylhomocysteinase (AHCY)" panel:Frailty_Index
+Adhesion_molecules_sVCAM/sICAM name:"Adhesion molecules sVCAM/sICAM" panel:Frailty_Index,Singapore_Panel
+Adiponectin_ name:"Adiponectin (ADIPOQ)" panel:Frailty_Index,British_Panel
+Advanced_glycosylation_end-product_specific_receptor_ name:"Advanced glycosylation end-product specific receptor (AGER)" panel:Frailty_Index
+Agrin_ name:"Agrin (AGRN)" panel:Frailty_Index
+Alanine_aminotransferase_ name:"Alanine aminotransferase (ALT)"
+Albumin name:"Albumin" panel:DNAm_PhenoAge
+Alkaline_phosphatase name:"Alkaline phosphatase" panel:DNAm_PhenoAge
+Alpha-fetoprotein__ name:"Alpha-fetoprotein (AFP)"
+Amino-terminal_peptide_of_procollagen_type_III_ name:"Amino-terminal peptide of procollagen type III (PIIINP)"
+Amyloid_Aβ-42 name:"Amyloid Aβ-42"
+Angiotensinogen_ name:"Angiotensinogen (AGT)" panel:Frailty_Index
+Antigenic_profiles_of_EPCs:_CD34 name:"Antigenic profiles of EPCs: CD34(+)KDR(+) (EPC — endothelial progenitor cells))"
+Apolipoprotein_B_ name:"Apolipoprotein B (ApoB)"
+Associated_with_cellular_aging_β-galactosidase_ name:"Associated with cellular aging β-galactosidase (SA-β-Gal)" panel:Chinese_Panel
+Athrogenic_Index_ name:"Athrogenic Index ((Total – HDL)/HDL)"
+ATM name:"ATM"
+Attention:_Stroop name:"Attention: Stroop" panel:British_Panel
+B_cells name:"B cells" panel:British_Panel
+Biochemistry_assay name:"Biochemistry assay" panel:British_Panel
+Biomarker_measuring_type_I_collagen_degradation_ name:"Biomarker measuring type I collagen degradation (C1M)"
+Body_Mass_Index_ name:"Body Mass Index (BMI)" panel:Chinese_Panel,British_Panel
+Body_weight name:"Body weight" panel:British_Panel
+Bone_density,_bone_mass_hip:_Dual_X_ray_Absorptiometry name:"Bone density, bone mass hip: Dual X ray Absorptiometry" panel:British_Panel
+Brain_Natriuretic_Hormone__NT-proBNP name:"Brain Natriuretic Hormone NT-proBNP"
+Brain_neurotrophic_factor_ name:"Brain neurotrophic factor (BDNF)" panel:Frailty_Index
+Broadband_ultrasound_attenuation__at_heel name:"Broadband ultrasound attenuation (BUA) at heel" panel:British_Panel
+C-reactive_protein_ name:"C-reactive protein (CRP)" panel:DNAm_PhenoAge,British_Panel
+Calreticulin_ name:"Calreticulin (CALR)" panel:Frailty_Index
+Carboxyl-terminal_telopeptide_of_collagen_type_I_ name:"Carboxyl-terminal telopeptide of collagen type I (CITP)"
+Carboxymethyl-lysine_ name:"Carboxymethyl-lysine (CML)"
+CCL-16 name:"CCL-16"
+CCL-2 name:"CCL-2"
+CCL-20 name:"CCL-20"
+CCL-26 name:"CCL-26"
+CCL-5 name:"CCL-5"
+CCN1/CYR61 name:"CCN1/CYR61"
+CD14_antigen name:"CD14 antigen" panel:Frailty_Index
+CD197_heterogeneity_in_CD4_+_CD25_+_T_cells name:"CD197 heterogeneity in CD4 + CD25 + T cells" panel:Chinese_Panel
+CD38_heterogeneity_in_CD4_+_CD27_+_T_cells name:"CD38 heterogeneity in CD4 + CD27 + T cells" panel:Chinese_Panel
+CD45RA_high/CD27_high name:"CD45RA high/CD27 high"
+Cellular_mtDNA_ name:"Cellular mtDNA (its number and the presence of mutated variants with deletions)"
+Chair_rising name:"Chair rising" panel:Chinese_Panel,British_Panel
+Chemokine_IP-10 name:"Chemokine IP-10" panel:Singapore_Panel
+Chikungunya name:"Chikungunya" panel:Singapore_Panel
+Chk2 name:"Chk2"
+Circulating__microvesicles name:"Circulating (extracellular) microvesicles" panel:Frailty_Index
+Circulating_miRNAs_ name:"Circulating miRNAs (miR-34a, miR-21, miR-126-3p, miR-151a-3p, miR-181a-5p, miR-1248)" panel:Frailty_Index,Chinese_Panel
+Complement_factor_3_and_1Q__ name:"Complement factor 3 and 1Q (C3 и C1q) " panel:Frailty_Index
+Connective_tissue_growth_factor_ name:"Connective tissue growth factor (CTGF)"
+Creatinine name:"Creatinine" panel:DNAm_PhenoAge
+Crystallised_ability:_Boston_Naming_Test_ name:"Crystallised ability: Boston Naming Test (BNT)" panel:British_Panel
+Cutaneous_chemokine_attracting_T-cells_ name:"Cutaneous chemokine attracting T-cells (CTACK)" panel:Singapore_Panel
+Cystatin_C name:"Cystatin C"
+Cysteine name:"Cysteine"
+Cytomegalovirus name:"Cytomegalovirus" panel:British_Panel
+Cytomegalovirus_immunoglobulin_G_ name:"Cytomegalovirus immunoglobulin G (CMV IgG)" panel:Singapore_Panel
+Dehydroepiandrosterone_sulphate_ name:"Dehydroepiandrosterone sulphate (DHEAS)" panel:British_Panel
+Dendritic_cells name:"Dendritic cells" panel:British_Panel
+Dephosphorylated_and_uncarboxylated_matrix_Gla_protein__ name:"Dephosphorylated and uncarboxylated matrix Gla protein (dp-ucMGP) "
+DHEAS_Ratio:_Cortisol name:"DHEAS Ratio: Cortisol" panel:British_Panel
+Diastolic_arterial_blood_pressure name:"Diastolic arterial blood pressure"
+Distance_from_mouth_to_nose name:"Distance from mouth to nose" panel:Chinese_Panel
+DNA_methylation name:"DNA methylation" panel:Horvath_Clock,Hannum_Clock,Chinese_Panel
+DOGDIC name:"DOGDIC"
+ECG name:"ECG"
+Eotaxin name:"Eotaxin" panel:Singapore_Panel
+Estradiol_ name:"Estradiol (E2)"
+Estrogen name:"Estrogen" panel:British_Panel
+Evaluation_of_leg_muscle_mass:_dual_x-ray_absorptiometry name:"Evaluation of leg muscle mass: dual x-ray absorptiometry" panel:British_Panel
+Eye_angle name:"Eye angle" panel:Chinese_Panel
+Facto_necrosis_of_tumors_ name:"Facto necrosis of tumors (TNF-α-R)" panel:Singapore_Panel
+Fasting_plasma_glucose name:"Fasting plasma glucose" panel:British_Panel
+Ferritin name:"Ferritin" panel:Frailty_Index,Singapore_Panel
+Fibrinogen name:"Fibrinogen" panel:Singapore_Panel
+Fibroblast_growth_factor_ name:"Fibroblast growth factor (FGF)"
+Fibroblast_growth_factor_21_ name:"Fibroblast growth factor 21 (FGF21)" panel:Frailty_Index
+Fibronectin_type_III_domain_containing_5_ name:"Fibronectin type III domain containing 5 (FNDC5) (Irisin)" panel:Frailty_Index
+Folates name:"Folates"
+Fractalquin_ name:"Fractalquin (CX3CL1)" panel:Frailty_Index
+Free_triiodothyronine_ name:"Free triiodothyronine (FT3)" panel:British_Panel
+Gait__speed name:"Gait (Walking) speed" panel:Chinese_Panel,British_Panel
+GFR__ name:"GFR (Glomerular Filtration Rate)"
+Ghrelin_ name:"Ghrelin (GHRL)" panel:Frailty_Index,British_Panel
+Glucagon name:"Glucagon" panel:Singapore_Panel
+Glucagon-like_peptide-1_ name:"Glucagon-like peptide-1 (GLP-1)" panel:Singapore_Panel
+Glucose name:"Glucose" panel:DNAm_PhenoAge
+Glucose-dependent_insulinotropic_polypeptide_ name:"Glucose-dependent insulinotropic polypeptide (GIP)" panel:Singapore_Panel
+Glucosepane name:"Glucosepane"
+Glutathione name:"Glutathione"
+Glycation_end_products_and_N-glycans name:"Glycation end products and N-glycans" panel:Chinese_Panel
+Glycoprotein_nonmetastatic_melanoma_B_ name:"Glycoprotein nonmetastatic melanoma B (GPNMB)" panel:Frailty_Index
+Glycosylated_hemoglobin_ name:"Glycosylated hemoglobin (HbAС1)" panel:British_Panel
+GM-CSF name:"GM-CSF"
+GODIC name:"GODIC"
+GOLD name:"GOLD"
+Grip_strength name:"Grip strength" panel:Chinese_Panel,British_Panel
+Growth-regulated_oncogene-α_ name:"Growth-regulated oncogene-α (GRO-α)" panel:Singapore_Panel
+Growth-regulated_oncogene-β_ name:"Growth-regulated oncogene-β (GRO-β)"
+Growth_differentiation_factor-15_ name:"Growth differentiation factor-15 (GDF-15) (also known as TGF-PL, MIC-1, PDF, PLAB, and PTGFB)" panel:Frailty_Index
+Growth_factor_ name:"Growth factor (GF)" panel:Frailty_Index,Chinese_Panel,British_Panel
+HDL_cholesterol name:"HDL cholesterol" panel:British_Panel
+Heart_rate_at_rest name:"Heart rate at rest"
+Helicobacter_Pylori name:"Helicobacter Pylori" panel:Singapore_Panel
+Hematocrit_ name:"Hematocrit (from a general blood test)"
+Hemoglobin_ name:"Hemoglobin (from a general blood test)"
+Hepatocyte_growth_factors_ name:"Hepatocyte growth factors (HGF)"
+Heterochromatin_foci_associated_with_cellular_aging_ name:"Heterochromatin foci associated with cellular aging (SAHF)"
+High_mobility_group_box_1_ name:"High mobility group box 1 (HMGB1)" panel:Frailty_Index
+HOMA-IR_index_"Glycosylated_hemoglobin__" name:"HOMA-IR index 'Glycosylated hemoglobin (HbA1)'"
+Homocysteine name:"Homocysteine"
+IGFBP name:"IGFBP"
+IMT_ultrasound,_Carotid_intima-media_thickness name:"IMT ultrasound, Carotid intima-media thickness"
+Insulin name:"Insulin" panel:Chinese_Panel
+Insulin-like_growth_factor_1_ name:"Insulin-like growth factor 1 (IGF-1) (also known as Somatomedin C)" panel:Frailty_Index,Chinese_Panel,British_Panel
+Interferon_gamma_inducible_protein_IP-10_ name:"Interferon gamma inducible protein IP-10 (also known as CXCL10 C-X-C motif chemokine 10)" panel:Frailty_Index,Singapore_Panel
+Interleukin-1ra_ name:"Interleukin-1ra (IL-1ra)" panel:Singapore_Panel
+Interleukin-8_ name:"Interleukin-8 (IL-8)" panel:Singapore_Panel
+Interleukin_6_ name:"Interleukin 6 (IL-6)" panel:Frailty_Index,Singapore_Panel,British_Panel
+Iodine_ name:"Iodine (in blood serum)"
+Iron_ name:"Iron (Fe)"
+Keratin_18_ name:"Keratin 18 (KRT18)" panel:Frailty_Index
+Klotho name:"Klotho" panel:Frailty_Index
+Lactotransferrin_ name:"Lactotransferrin (LTF)" panel:Frailty_Index
+LDL name:"LDL" panel:British_Panel
+Leptin_ name:"Leptin (LEP)" panel:Frailty_Index,Singapore_Panel,British_Panel
+Leukocyte_number name:"Leukocyte number" panel:DNAm_PhenoAge
+Leukocyte_telomere_length name:"Leukocyte telomere length" panel:Chinese_Panel
+Lipofuscin name:"Lipofuscin"
+Lithium name:"Lithium"
+Long_non-coding_RNA_ name:"Long non-coding RNA (MIR31HG, AK156230, Meg3)" panel:Chinese_Panel
+Lymphocyte_ratio name:"Lymphocyte ratio" panel:DNAm_PhenoAge
+Magnesium name:"Magnesium"
+Malonic_dialdehyde name:"Malonic dialdehyde"
+Matrix_metalloproteinases_ name:"Matrix metalloproteinases (MMP-1)"
+Melatonin name:"Melatonin" panel:British_Panel
+MODIC name:"MODIC"
+MOLD name:"MOLD"
+Monocytic_chemotactic_protein-1_ name:"Monocytic chemotactic protein-1 (MCP-1)" panel:Singapore_Panel
+Mouth_width name:"Mouth width" panel:Chinese_Panel
+mTOR name:"mTOR" panel:Chinese_Panel
+Muscle_Body_Mass_Assessment:_Bioelectrical_Impedance name:"Muscle Body Mass Assessment: Bioelectrical Impedance" panel:Chinese_Panel,British_Panel
+NAD_+,_SIRT1,_SIRT2,_SIRT3,_SIRT6 name:"NAD +, SIRT1, SIRT2, SIRT3, SIRT6" panel:Chinese_Panel
+Natural_killers_ name:"Natural killers (NK)" panel:British_Panel
+NBS1 name:"NBS1"
+Neutrophils name:"Neutrophils" panel:British_Panel
+Nose_width name:"Nose width" panel:Chinese_Panel
+o-tyrosine name:"o-tyrosine" panel:Chinese_Panel
+OPG name:"OPG" panel:Singapore_Panel
+Osteoprotegerin_ name:"Osteoprotegerin (OPG)" panel:Singapore_Panel
+oxLDL name:"oxLDL"
+p16INK4A name:"p16INK4A" panel:Chinese_Panel
+PDGF-A name:"PDGF-A"
+Pegboard_test name:"Pegboard test" panel:Chinese_Panel
+Pentraxin_ name:"Pentraxin (PTX3)" panel:Frailty_Index
+Phosphorylated_τ-protein name:"Phosphorylated τ-protein"
+Plasminogen_activator_inhibitor_1_ name:"Plasminogen activator inhibitor 1 (PAI-1)(also known as Serpine E1)" panel:Frailty_Index
+Platelet_Growth_Factor_BB_ name:"Platelet Growth Factor BB (PDGF-BB)" panel:Singapore_Panel
+Potassium name:"Potassium"
+Processing_speed:_Digit-Symbol_Coding name:"Processing speed: Digit-Symbol Coding" panel:British_Panel
+Progesterone_ name:"Progesterone (for females) and Prostate Specific Antigen (PSA) (for males)"
+Progranulin_ name:"Progranulin (PGRN)" panel:Frailty_Index
+Promyelocytic_leukemia_protein_ name:"Promyelocytic leukemia protein (PML)"
+Protein_carbamylation name:"Protein carbamylation" panel:Chinese_Panel
+Protein_Oxidation_Products_ name:"Protein Oxidation Products (AOPP)"
+pS6RP name:"pS6RP" panel:Chinese_Panel
+Reasoning:_Raven’s_Progressive_Matrices name:"Reasoning: Raven’s Progressive Matrices" panel:British_Panel
+Regucalcin_ name:"Regucalcin (RGN) (Senescence marker protein-30, SMP30)" panel:Frailty_Index
+Resistin_ name:"Resistin (RETN)" panel:Frailty_Index,Singapore_Panel
+S100_calcium_binding_protein_B_ name:"S100 calcium binding protein B (S100B)" panel:Frailty_Index
+Selenium name:"Selenium"
+Senescence_associated_secretory_phenotype_ name:"Senescence associated secretory phenotype (SASP)" panel:Chinese_Panel
+Serum_glycoprotein_acetylation_ name:"Serum glycoprotein acetylation (GlycA)"
+Soluble_suppression_of_tumorigenicity_2__ name:"Soluble suppression of tumorigenicity 2 (ST2) " panel:Frailty_Index
+Somatostatin name:"Somatostatin" panel:British_Panel
+Spirometry:_forced_expiratory_volume_in_the_first_second_ name:"Spirometry: forced expiratory volume in the first second (FEV1)" panel:British_Panel
+Stem_cell_factor_ name:"Stem cell factor (SCF)" panel:Singapore_Panel
+Sulforaphane name:"Sulforaphane"
+Systolic_arterial_blood_pressure name:"Systolic arterial blood pressure" panel:British_Panel
+T_cell_phenotype name:"T cell phenotype" panel:British_Panel
+Telomere_length name:"Telomere length" panel:British_Panel
+Testosterone name:"Testosterone" panel:British_Panel
+The_average_volume_of_red_blood_cells name:"The average volume of red blood cells" panel:DNAm_PhenoAge
+The_percentage_of_fat_calculated_based_on_the_circumference_of_the_waist,_neck,_forearm,_wrist,_lower_leg,_body_weight,_height,_sex,_and_age name:"The percentage of fat calculated based on the circumference of the waist, neck, forearm, wrist, lower leg, body weight, height, sex, and age"
+The_width_of_the_distribution_of_red_blood_cells name:"The width of the distribution of red blood cells" panel:DNAm_PhenoAge
+Thrombocytes_ name:"Thrombocytes (from a general blood test)"
+Thrombospondin-2_ name:"Thrombospondin-2 (THBS2)" panel:Frailty_Index
+Thyroid-stimulating_Hormone__ name:"Thyroid-stimulating Hormone (TSH)" panel:British_Panel
+Thyroxine_ name:"Thyroxine (Free T4)" panel:British_Panel
+Timed_Get_Up_and_Go_test name:"Timed Get Up and Go test" panel:British_Panel
+Tissue_inhibitor-1_ name:"Tissue inhibitor-1 (TIMP-1)"
+Total_cholesterol name:"Total cholesterol" panel:British_Panel
+Total_τ-protein name:"Total τ-protein"
+tPA name:"tPA"
+Transforming_growth_factor-β_ name:"Transforming growth factor-β (TGF-β)" panel:Frailty_Index
+Transglutaminase_2_ name:"Transglutaminase 2 (TGM2)" panel:Frailty_Index
+Triglycerides name:"Triglycerides" panel:Chinese_Panel,British_Panel
+Ubiquinol name:"Ubiquinol"
+Uric_acid name:"Uric acid"
+Urokinase_plasminogen_activator_ name:"Urokinase plasminogen activator (uPA)" panel:Frailty_Index
+Vascular_endothelial_growth_factor_ name:"Vascular endothelial growth factor (VEGF)" panel:Singapore_Panel
+Verbal_fluency name:"Verbal fluency" panel:British_Panel
+Verbal_Memory_&_Learning:_Rey_Auditory_Verbal_Learning_Test name:"Verbal Memory & Learning: Rey Auditory Verbal Learning Test" panel:British_Panel
+Vimentin_ name:"Vimentin (VIM)" panel:Frailty_Index
+Visual_Memory:_Benton_Visual_Retention_Test name:"Visual Memory: Benton Visual Retention Test" panel:British_Panel
+Visuo-spatial_ability:_Block_Design name:"Visuo-spatial ability: Block Design" panel:British_Panel
+Vitamin_B12_ name:"Vitamin B12 (cyanocobalamin)"
+Vitamin_D_ name:"Vitamin D (25-ОН) (calciferol)"
+Vitamin_K-2_ name:"Vitamin K-2 (MK-7)"
+Waist_circumference name:"Waist circumference" panel:Chinese_Panel,British_Panel
+Working_memory:_Digit_Span_backward name:"Working memory: Digit Span backward" panel:British_Panel
+Биохимические_показатели_ name:"Biochemistry assay" panel:British_Panel
+Йод_ name:"Iodine (in hair)"
+Матриксная_металлопротеиназа-10 name:"Matrix metalloproteinases (MMP-10)"
+Матриксная_металлопротеиназа-3 name:"Matrix metalloproteinases (MMP-3)"
+Матриксная_металлопротеиназа-9 name:"Matrix metalloproteinases (MMP-9)"
+Матрилизин,_матриксная_металлопротеиназа-7 name:"Matrix metalloproteinases (MMP-7)" panel:Frailty_Index
+Наивные_CD4_лимфоциты/клетки_памяти_. name:"Наивные CD4 лимфоциты/клетки памяти (CD4/45RO, CD4/45RA, соотношение 'наивных' клеток и клеток памяти)."
+Сell-free_DNA_ name:"Сell-free DNA (also known as circulating DNA)"
+Т3/Т4 name:"Т3/Т4" panel:British_Panel
+Фолиевая_кислота_в_эритроцитах name:"Фолиевая кислота в эритроцитах"
+Цинк name:"Цинк"

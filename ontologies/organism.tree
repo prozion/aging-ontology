@@ -5,6 +5,8 @@ organism a:owl/Ontology dc/title:"Ontology about parts of organism" ns:https://p
 		owl ns:http://www.w3.org/2002/07/owl#
 		dc ns:http://purl.org/dc/elements/1.1/
 		skos ns:http://www.w3.org/2004/02/skos/core#
+		do ns:https://purl.org/agingontology/disease#
+		aon ns:https://purl.org/agingontology/core#
 		tabtree ns:https://purl.org/tabtree/core#
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
 		CellsGroup
@@ -13,5 +15,32 @@ organism a:owl/Ontology dc/title:"Ontology about parts of organism" ns:https://p
 			Liver
 			Kidney
 			Pancrea
+		OrganismProcess
+		OrganismSystem
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
-	individuals 
+	individuals +section-hierarchy-inverse-relation:skos/broader
+		; orgnism systems:
+		Unknown_system a:Unknown_system_1
+			Unknown_system_1 a:owl/Class owl/unionOf:`OrganismSystem,aon/OrganismProcess,do/Disease`
+		Metabolism_system a:OrganismSystem
+			Glucose_metabolism_system a:OrganismSystem
+		Cell_system a:OrganismSystem
+		Immune_system a:OrganismSystem
+		Intersystem a:OrganismSystem
+		Hormonal_system a:OrganismSystem
+		Nervous_system a:OrganismSystem
+		Cardiovascular_system a:OrganismSystem
+		Respiratory_system a:OrganismSystem
+		Connective_system a:OrganismSystem
+; покровная_система
+; костная_система
+; мышечная_система
+; дыхательная_система
+; сердечно-сосудистая_система
+; пищеварительная_система
+; мочевыделительная_система
+; репродуктивная_система
+; нервная_система
+; лимфатическая_система
+; эндокринная_система
+

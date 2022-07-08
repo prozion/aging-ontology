@@ -1,0 +1,44 @@
+cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.org/agingontology/cell#
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		do ns:https://purl.org/agingontology/disease#
+		org ns:https://purl.org/agingontology/organism#
+		aon ns:https://purl.org/agingontology/core#
+		tabtree ns:https://purl.org/tabtree/core#
+	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+		CellElement
+			CellCompartment
+		CellProcess
+		CellState
+	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+		compartment domain:CellElement range:CellCompartment
+	individuals +section-hierarchy-inverse-relation:skos/broader
+		; cell parts
+		Cytosol a:CellCompartment
+		DNA a:CellElement compartment:Nucleus,Mitochondria
+		Lyzosome a:CellCompartment
+		Membrane a:CellCompartment
+		Mitochondria a:CellCompartment
+		Nucleus a:CellCompartment
+		Ribosome a:CellElement
+		RNA a:CellElement
+		; Lifecycle stages
+		Apoptosis a:CellProcess
+		Meiosis a:CellProcess
+		Mitosis a:CellProcess
+		Cell_senescence a:CellProcess
+		; cell processes
+		Fibrosis a:CellProcess
+		Intercellular_communication a:CellProcess
+		Metabolism a:CellProcess
+			GlucoseMetabolism a:CellProcess
+		Oxidative_stress a:CellProcess
+		Protein_glycation a:CellProcess
+		Splicing a:CellProcess
+		Transcription a:CellProcess
+			RNAi_transcription a:CellProcess
+		Translation a:CellProcess

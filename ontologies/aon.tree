@@ -27,6 +27,7 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 		af ns:https://purl.org/sbgn/af#
 		; Ontology for the parts of organism:
 		org ns:https://purl.org/agingontology/organism#
+		cell ns:https://purl.org/agingontology/cell#
 		; Topical ontologies for diseases, chemicals, drugs etc.:
 		biochem ns:https://purl.org/agingontology/biochemistry#
 		drug ns:https://purl.org/agingontology/drugs#
@@ -35,7 +36,7 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
 		owl/Thing
 			BiologicalProcess
-				OrganismProcess
+				org/OrganismProcess
 					do/PathologicalProcess
 						AgingPathogeneticProcess
 							BasicAgingMechanism rdfs/seeAlso:Khaltourina_2020_Mechanisms_of_ageing_and_development
@@ -45,12 +46,10 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 				FunctionalBiomarker
 				HardwareBiomarker
 				PhenotypicBiomarker
+				QuestionnairyBiomarker
 			BiomarkerPanel rdfs/seeAlso:"https://docs.google.com/spreadsheets/d/1suMEVlMHKyTHwWzafBF0rmEAIPY0CowxxjEFvhO2TIA/edit#gid=853086944"
-				UntrustedBiomarkerPanel
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 		fullName subproperty-of:dc/title
-		panel domain:Biomarker range:BiomarkerPanel
-		partOfPanel domain:BiomarkerPanel range:BiomarkerPanel
 		substance domain:Biomarker range:biochem/ChemicalSubstance
 	individuals +section-hierarchy-inverse-relation:skos/broader
 		; Basic aging mechanisms:
@@ -63,22 +62,3 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 		Cellular_senescence a:BasicAgingMechanism
 		Immunosenescence a:BasicAgingMechanism
 		Low-grade_inflammation a:BasicAgingMechanism
-		; Biomarker panels:
-		Horvath_Clock a:BiomarkerPanel
-		Hannum_Clock a:BiomarkerPanel
-		DNAm_PhenoAge a:BiomarkerPanel
-		Frailty_Index a:BiomarkerPanel
-		Singapore_Panel a:BiomarkerPanel
-		Chinese_Panel a:BiomarkerPanel
-		British_Panel a:BiomarkerPanel
-		SENS_Panel a:BiomarkerPanel
-		SASP_Panel deabbr:"Senescence-associated secretory phenotype" a:BiomarkerPanel
-		TAME_Panel a:BiomarkerPanel
-		GDF11_Panel a:UntrustedBiomarkerPanel
-		Open_Longevity_Panel_Basic a:BiomarkerPanel
-		Open_Longevity_Panel_Pro a:BiomarkerPanel
-		Open_Longevity_Panel_New a:BiomarkerPanel
-		Theranostic_Panel_Full a:BiomarkerPanel
-		Theranostic_Panel_Oncology a:BiomarkerPanel partOfPanel:Theranostic_Panel_Full
-		Theranostic_Panel_Brain_and_Depression a:BiomarkerPanel partOfPanel:Theranostic_Panel_Full
-		Theranostic_Panel_Heart_and_Vessels a:BiomarkerPanel partOfPanel:Theranostic_Panel_Full

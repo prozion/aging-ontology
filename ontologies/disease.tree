@@ -7,9 +7,11 @@ disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxo
 		skos ns:http://www.w3.org/2004/02/skos/core#
 		tabtree ns:https://purl.org/tabtree/core#
 		doid ns:http://purl.obolibrary.org/obo/DOID_
+		org ns:https://purl.org/agingontology/organism#
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
 		Bacteria
 		Disease ogms:0000031 d:"Сложная реакция организма на действие патологического агента, являющаяся новым процессом жизнедеятельности, возникающим в результате нарушений во взаимодействии организма и внешней среды, характеризующаяся нарушением регуляции функции, приспособляемости и уменьшением работоспособности, чувством боли и недомогания"
+		MortalityFactor
 		Pathology
 		PathologicalAgent
 		PathologicalProcess d:"Реакция организма на необычное раздражение, в основе которого лежит нарушение функции и структуры"
@@ -20,8 +22,18 @@ disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxo
 		doid
 		hasSymptom owl/inverseOf:symptomFor
 		ogms
+		relatesTo range:Disease
 		symptomFor a:rdfs/Property domain:Symptom range:Disease
 	individuals +a:Disease +section-hierarchy-inverse-relation:skos/broader
+		; Mortality
+		All-cause_mortality a:MortalityFactor
+		Mortality_related_CVDs a:MortalityFactor relatesTo:Cardiovascular_system_disease
+		Mortality_related_neoplasms a:MortalityFactor relatesTo:Cancer
+		Mortality_related_respiratory_diseases a:MortalityFactor relatesTo:Respiratory_disease
+		; Processes
+		Death a:org/OrganismProcess
+		Inflammation a:org/OrganismProcess
+		; Diseases
 		Atherosclerosis
 		Cancer a:Disease,PathologicalProcess
 		Cardiovascular_system_disease doid:1287
@@ -47,7 +59,8 @@ disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxo
 		Osteoporosis
 		Osteoarthritis
 		Pancreatic_fibrosis
-		Pulmonary_disease
+		Respiratory_disease
+			Pulmonary_disease
 		Reproductive_system_disease doid:15
 			Erectile_dysfunction
 			Infertility
