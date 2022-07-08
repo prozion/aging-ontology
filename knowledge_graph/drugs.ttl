@@ -1,0 +1,39 @@
+@prefix : <https://purl.org/agingontology/drugs#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix tabtree: <https://purl.org/tabtree/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix biochem: <https://purl.org/agingontology/biochemistry#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+:AntioxidantDrug
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Drug .
+
+:DietarySupplement
+  rdfs:comment ""БАДы"@ru" ;
+  rdf:type owl:Class .
+
+:Drug
+  rdfs:subClassOf biochem:ChemicalSubstance ;
+  rdf:type owl:Class .
+
+:Probiotics
+  rdf:type owl:Class ;
+  rdfs:subClassOf :DietarySupplement .
+
+:Selenium
+  rdf:type :Drug .
+
+:Vaccine
+  rdf:type owl:Class .
+
+:drugs
+  rdf:type owl:Ontology ;
+  dc:title "Some drugs ontology" ;
+  :ns <https://purl.org/agingontology/drugs#> ;
+  owl:imports  .
+

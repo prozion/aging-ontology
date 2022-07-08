@@ -1,341 +1,341 @@
 AO7 name:"Сердечная недостаточность" ageFrom:"60" ageTo:"70" system:org/Cardiovascular_system followsTo:AO1621,AO543
-AO9 name:"Замещение свободного пространства соединительной тканью" ageFrom:"40" ageTo:"50" system:org/Connective_system followsTo:AO907
-AO13 name:"Ухудшение питания клеток" ageFrom:"20" ageTo:"40" system:org/Cell_system followsTo:AO319,AO401
-AO15 name:"Накопление гликированных белков" ageFrom:"40" ageTo:"50" system:org/Metabolism_system followsTo:AO1669
-AO19 name:"Накопление сшивок липид-белок" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO165,AO63,AO821,AO629,AO311
-AO21 name:"Негомологичная рекомбинация хромосом" ageFrom:"15" ageTo:"25" system:org/Intersystem followsTo:AO185
+AO9 name:"Замещение свободного пространства соединительной тканью" ageFrom:"40" ageTo:"50" system:Connective_system followsTo:AO907
+AO13 name:"Ухудшение питания клеток" ageFrom:"20" ageTo:"40" system:Cell_system followsTo:AO319,AO401
+AO15 name:"Накопление гликированных белков" ageFrom:"40" ageTo:"50" system:cell/Metabolism_system followsTo:AO1669
+AO19 name:"Накопление сшивок липид-белок" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO165,AO63,AO821,AO629,AO311
+AO21 name:"Негомологичная рекомбинация хромосом" ageFrom:"15" ageTo:"25" system:Intersystem followsTo:AO185
 AO23 name:"Уменьшение влияния на сердце симпатической нервной системы" ageFrom:"50" ageTo:"60" system:org/Nervous_system followsTo:AO7
-AO25 name:"Ухудшение удаления токсинов" ageFrom:"35" ageTo:"45" system:org/Connective_system followsTo:AO1640
-AO27 name:"Уменьшение функциональной активности клеток" ageFrom:"40" ageTo:"40" system:org/Cell_system followsTo:AO1703
-AO29 name:"Замедление процесса синтеза эластина и коллагена" ageFrom:"30" ageTo:"40" system:org/Metabolism_system followsTo:AO1665,AO737,AO489
+AO25 name:"Ухудшение удаления токсинов" ageFrom:"35" ageTo:"45" system:Connective_system followsTo:AO1640
+AO27 name:"Уменьшение функциональной активности клеток" ageFrom:"40" ageTo:"40" system:Cell_system followsTo:AO1703
+AO29 name:"Замедление процесса синтеза эластина и коллагена" ageFrom:"30" ageTo:"40" system:cell/Metabolism_system followsTo:AO1665,AO737,AO489
 AO31 name:"Атрофия лёгочных альвеол" ageFrom:"55" ageTo:"70" system:org/Respiratory_system followsTo:AO283
 AO33 name:"Хронические генерализованные вялотекущие воспаления" ageFrom:"50" ageTo:"60" system:org/Immune_system followsTo:AO1644,AO59,AO37
 AO37 name:"Накопление аммилоидных фибрил (бетта-амилоида)" ageFrom:"55" ageTo:"65" system:org/Nervous_system followsTo:AO177
 AO39 name:"Вторичный иммунодефицит" ageFrom:"50" ageTo:"60" system:org/Immune_system followsTo:AO225,AO1658,AO1661,AO1662,AO59,AO861,AO543
-AO45 name:"Метаболический синдром" ageFrom:"55" ageTo:"65" system:org/Metabolism_system followsTo:AO495
-AO47 name:"Накопление клеточного мусора в клетках печени" ageFrom:"20" ageTo:"30" system:org/Metabolism_system followsTo:AO175,AO679,AO276
+AO45 name:"Метаболический синдром" ageFrom:"55" ageTo:"65" system:cell/Metabolism_system followsTo:AO495
+AO47 name:"Накопление клеточного мусора в клетках печени" ageFrom:"20" ageTo:"30" system:cell/Metabolism_system followsTo:AO175,AO679,AO276
 AO49 name:"Онкогенез: появление злокачественных и доброкачественных опухолей" ageFrom:"55" ageTo:"65" system:do/Cancer followsTo:AO1709,AO1708,AO1711,AO1710,AO73,AO173,AO1644,AO191
-AO51 name:"Гипотрофия надпочечников" ageFrom:"25" ageTo:"35" system:org/Hormonal_system followsTo:AO321,AO915,AO241
+AO51 name:"Гипотрофия надпочечников" ageFrom:"25" ageTo:"35" system:org/Endocrine_system followsTo:AO321,AO915,AO241
 AO53 name:"Уменьшается эластичность легочной ткани" ageFrom:"55" ageTo:"65" system:org/Respiratory_system followsTo:AO283,AO831
 AO56 name:"Гипотрофия тканей, вызванная ухудшением общего кровообращения" ageFrom:"50" ageTo:"60" system:org/Cardiovascular_system followsTo:AO1706,AO699,AO7,AO133
 AO59 name:"Пневмония" ageFrom:"70" ageTo:"100" system:org/Respiratory_system followsTo:AO505
-AO61 name:"Увеличение количества непереваренной пищи в ЖКТ" ageFrom:"40" ageTo:"85" system:org/Metabolism_system followsTo:AO1704
-AO63 name:"Изменение физико-химических свойств мембранного матрикса" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO247,AO471,AO237
-AO65 name:"Снижение синтеза белка" ageFrom:"20" ageTo:"45" system:org/Metabolism_system followsTo:AO1705,AO1693,AO1699,AO1695,AO1642,AO385,AO1681,AO883,AO1673,AO1656,AO1655,AO1652,AO1649,AO447,AO833,AO29,AO319
+AO61 name:"Увеличение количества непереваренной пищи в ЖКТ" ageFrom:"40" ageTo:"85" system:cell/Metabolism_system followsTo:AO1704
+AO63 name:"Изменение физико-химических свойств мембранного матрикса" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO247,AO471,AO237
+AO65 name:"Снижение синтеза белка" ageFrom:"20" ageTo:"45" system:cell/Metabolism_system followsTo:AO1705,AO1693,AO1699,AO1695,AO1642,AO385,AO1681,AO883,AO1673,AO1656,AO1655,AO1652,AO1649,AO447,AO833,AO29,AO319
 AO67 name:"Ухудшение снабжения тканей кислородом" ageFrom:"65" ageTo:"75" system:org/Respiratory_system followsTo:AO345
-AO71 name:"Накопление денатурированных белков" ageFrom:"15" ageTo:"25" system:org/Intersystem followsTo:AO147,AO85
+AO71 name:"Накопление денатурированных белков" ageFrom:"15" ageTo:"25" system:Intersystem followsTo:AO147,AO85
 AO73 name:"Рак молочной железы" ageFrom:"65" ageTo:"65" system:do/Cancer followsTo:AO1713
-AO77 name:"Снижение физической работоспособности" ageFrom:"60" ageTo:"70" system:org/Intersystem followsTo:AO1694,AO145
-AO85 name:"Накопление белковых агрегатов (клеточного мусора)" ageFrom:"25" ageTo:"35" system:org/Intersystem followsTo:AO841,AO65,AO47,AO37,AO187,AO489
-AO91 name:"Сахарный диабет пожилого возраста" ageFrom:"50" ageTo:"85" system:org/Metabolism_system followsTo:AO1623,AO235,AO155,AO543
-AO93 name:"Размножение гладкомышечных клеток" ageFrom:"50" ageTo:"60" system:org/Cell_system followsTo:AO463
-AO95 name:"Ограничение подвижности" ageFrom:"65" ageTo:"75" system:org/Intersystem followsTo:AO103
-AO97 name:"Точковые (ядерные) мутации" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO1684,AO785,AO891,AO501
-AO101 name:"Ингибирование протеосомы" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO603
-AO103 name:"Усиление атрофии мышц" ageFrom:"65" ageTo:"75" system:org/Intersystem followsTo:AO145,AO77,AO7
+AO77 name:"Снижение физической работоспособности" ageFrom:"60" ageTo:"70" system:Intersystem followsTo:AO1694,AO145
+AO85 name:"Накопление белковых агрегатов (клеточного мусора)" ageFrom:"25" ageTo:"35" system:Intersystem followsTo:AO841,AO65,AO47,AO37,AO187,AO489
+AO91 name:"Сахарный диабет пожилого возраста" ageFrom:"50" ageTo:"85" system:cell/Metabolism_system followsTo:AO1623,AO235,AO155,AO543
+AO93 name:"Размножение гладкомышечных клеток" ageFrom:"50" ageTo:"60" system:Cell_system followsTo:AO463
+AO95 name:"Ограничение подвижности" ageFrom:"65" ageTo:"75" system:Intersystem followsTo:AO103
+AO97 name:"Точковые (ядерные) мутации" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO1684,AO785,AO891,AO501
+AO101 name:"Ингибирование протеосомы" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO603
+AO103 name:"Усиление атрофии мышц" ageFrom:"65" ageTo:"75" system:Intersystem followsTo:AO145,AO77,AO7
 AO109 name:"Снижение скорости рефлексов" ageFrom:"50" ageTo:"60" system:org/Nervous_system followsTo:AO1706,AO307
-AO115 name:"Неусвоение витамина B12" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO967
-AO117 name:"Повышение активности паратиреоидного гормона" ageFrom:"45" ageTo:"55" system:org/Hormonal_system followsTo:AO171
-AO123 name:"Повышение секреции пролактина" ageFrom:"35" ageTo:"45" system:org/Hormonal_system followsTo:AO391,AO73
+AO115 name:"Неусвоение витамина B12" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO967
+AO117 name:"Повышение активности паратиреоидного гормона" ageFrom:"45" ageTo:"55" system:org/Endocrine_system followsTo:AO171
+AO123 name:"Повышение секреции пролактина" ageFrom:"35" ageTo:"45" system:org/Endocrine_system followsTo:AO391,AO73
 AO126 name:"Нарушение регуляции основных систем жизнеобеспечения" ageFrom:"60" ageTo:"70" system:org/Nervous_system followsTo:AO59,AO543
-AO130 name:"Ожирение" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO1725,AO1722,AO1721,AO1719,AO1718,AO1716,AO1714,AO45,AO91
+AO130 name:"Ожирение" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO1725,AO1722,AO1721,AO1719,AO1718,AO1716,AO1714,AO45,AO91
 AO131 name:"Инфаркт миокарда" ageFrom:"60" ageTo:"70" system:org/Cardiovascular_system followsTo:AO543,AO7
-AO133 name:"Уменьшение функциональной активности почек" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO143,AO235
-AO137 name:"Костные шипы" ageFrom:"55" ageTo:"65" system:org/Intersystem followsTo:AO77
+AO133 name:"Уменьшение функциональной активности почек" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO143,AO235
+AO137 name:"Костные шипы" ageFrom:"55" ageTo:"65" system:Intersystem followsTo:AO77
 AO139 name:"Продуцирование воспалительных цитокинов" ageFrom:"50" ageTo:"100" system:org/Immune_system followsTo:AO281
 AO141 name:"Соединение альвеол между собой" ageFrom:"50" ageTo:"60" system:org/Respiratory_system followsTo:AO831,AO283
-AO143 name:"Снижение функциональной активности (тканей, органов, систем)" ageFrom:"50" ageTo:"60" system:org/Connective_system followsTo:AO1686
-AO145 name:"Общая дряхлость организма" ageFrom:"70" ageTo:"80" system:org/Intersystem followsTo:AO543
-AO147 name:"Накопление нефункциональных белков" ageFrom:"25" ageTo:"35" system:org/Intersystem followsTo:AO163,AO865
-AO151 name:"Снижение секреции тиреоидных гормонов" ageFrom:"35" ageTo:"45" system:org/Hormonal_system followsTo:AO1683,AO65
+AO143 name:"Снижение функциональной активности (тканей, органов, систем)" ageFrom:"50" ageTo:"60" system:Connective_system followsTo:AO1686
+AO145 name:"Общая дряхлость организма" ageFrom:"70" ageTo:"80" system:Intersystem followsTo:AO543
+AO147 name:"Накопление нефункциональных белков" ageFrom:"25" ageTo:"35" system:Intersystem followsTo:AO163,AO865
+AO151 name:"Снижение секреции тиреоидных гормонов" ageFrom:"35" ageTo:"45" system:org/Endocrine_system followsTo:AO1683,AO65
 AO153 name:"Уменьшение количества серотонина" ageFrom:"50" ageTo:"60" system:org/Nervous_system followsTo:AO909
-AO155 name:"Стойкое понижение уровня инсулина в крови" ageFrom:"45" ageTo:"55" system:org/Hormonal_system followsTo:AO1646,AO1633,AO1638,AO1629
+AO155 name:"Стойкое понижение уровня инсулина в крови" ageFrom:"45" ageTo:"55" system:org/Endocrine_system followsTo:AO1646,AO1633,AO1638,AO1629
 AO157 name:"Стохастическое повреждение ДНК" ageFrom:"10" ageTo:"15" system:org/Immune_system followsTo:AO555,AO97,AO1670,AO223,AO1583
-AO159 name:"Образование малонового альдегида" ageFrom:"15" ageTo:"85" system:org/Metabolism_system followsTo:AO529
-AO161 name:"Гипотрофия эндокринной части поджелудочной железы" ageFrom:"45" ageTo:"55" system:org/Hormonal_system followsTo:AO155
-AO163 name:"Снижение количества функционирующих клеток" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO1727
-AO165 name:"Повреждение мембран митохондрий" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO357
-AO169 name:"Увеличение количества коллагенных волокон (между клеток)" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO939
-AO171 name:"Вымывание Ca из костей" ageFrom:"45" ageTo:"55" system:org/Metabolism_system followsTo:AO675,AO377
+AO159 name:"Образование малонового альдегида" ageFrom:"15" ageTo:"85" system:cell/Metabolism_system followsTo:AO529
+AO161 name:"Гипотрофия эндокринной части поджелудочной железы" ageFrom:"45" ageTo:"55" system:org/Endocrine_system followsTo:AO155
+AO163 name:"Снижение количества функционирующих клеток" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO1727
+AO165 name:"Повреждение мембран митохондрий" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO357
+AO169 name:"Увеличение количества коллагенных волокон (между клеток)" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO939
+AO171 name:"Вымывание Ca из костей" ageFrom:"45" ageTo:"55" system:cell/Metabolism_system followsTo:AO675,AO377
 AO173 name:"Рак простаты" ageFrom:"65" ageTo:"65" system:do/Cancer followsTo:AO1713
-AO175 name:"Снижение секреции IGF-1 (инсулиноподобного фактора роста-1) в гепатоцитах печени" ageFrom:"20" ageTo:"30" system:org/Metabolism_system followsTo:AO767
+AO175 name:"Снижение секреции IGF-1 (инсулиноподобного фактора роста-1) в гепатоцитах печени" ageFrom:"20" ageTo:"30" system:cell/Metabolism_system followsTo:AO767
 AO177 name:"Увеличение количества амилоидных бляшек" ageFrom:"55" ageTo:"65" system:org/Nervous_system followsTo:AO193
-AO181 name:"Нарушение пула стволовых клеток в популяции, в результате нарушения 'Хоминга'" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO209
-AO185 name:"Хромосомные аберрации" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO239,AO223,AO433,AO501
-AO187 name:"Накопление липофусцина" ageFrom:"30" ageTo:"40" system:org/Metabolism_system followsTo:AO607
-AO189 name:"Образование пенистых клеток" ageFrom:"45" ageTo:"55" system:org/Cell_system followsTo:AO93
+AO181 name:"Нарушение пула стволовых клеток в популяции, в результате нарушения 'Хоминга'" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO209
+AO185 name:"Хромосомные аберрации" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO239,AO223,AO433,AO501
+AO187 name:"Накопление липофусцина" ageFrom:"30" ageTo:"40" system:cell/Metabolism_system followsTo:AO607
+AO189 name:"Образование пенистых клеток" ageFrom:"45" ageTo:"55" system:Cell_system followsTo:AO93
 AO191 name:"Рак легких" ageFrom:"65" ageTo:"70" system:do/Cancer followsTo:AO1713
 AO193 name:"Болезнь Альцгеймера" ageFrom:"60" ageTo:"70" system:org/Nervous_system followsTo:AO126
-AO195 name:"Уменьшение выработки эстрогена" ageFrom:"35" ageTo:"45" system:org/Hormonal_system followsTo:AO117
+AO195 name:"Уменьшение выработки эстрогена" ageFrom:"35" ageTo:"45" system:org/Endocrine_system followsTo:AO117
 AO197 name:"Анемия" ageFrom:"65" ageTo:"75" system:org/Respiratory_system followsTo:AO67
-AO201 name:"Сшивки (из-за металлов переменной валентности, диальдегидов)" ageFrom:"40" ageTo:"50" system:org/Intersystem followsTo:AO865
-AO203 name:"Остеохондроз" ageFrom:"50" ageTo:"60" system:org/Intersystem followsTo:AO377
+AO201 name:"Сшивки (из-за металлов переменной валентности, диальдегидов)" ageFrom:"40" ageTo:"50" system:Intersystem followsTo:AO865
+AO203 name:"Остеохондроз" ageFrom:"50" ageTo:"60" system:Intersystem followsTo:AO377
 AO205 name:"Артериальная гипертония" ageFrom:"55" ageTo:"65" system:org/Cardiovascular_system followsTo:AO1619,AO1617,AO295
-AO207 name:"Ухудшение функций миоцитов" ageFrom:"50" ageTo:"60" system:org/Cell_system followsTo:AO249,AO659
-AO209 name:"Уменьшение пролиферации клеток" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO288
-AO217 name:"Накопление повреждений в миоцитах" ageFrom:"50" ageTo:"60" system:org/Cell_system followsTo:AO207,AO249
+AO207 name:"Ухудшение функций миоцитов" ageFrom:"50" ageTo:"60" system:Cell_system followsTo:AO249,AO659
+AO209 name:"Уменьшение пролиферации клеток" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO288
+AO217 name:"Накопление повреждений в миоцитах" ageFrom:"50" ageTo:"60" system:Cell_system followsTo:AO207,AO249
 AO223 name:"Сверхактивация протоонкогенов" ageFrom:"15" ageTo:"25" system:org/Immune_system followsTo:AO1687
 AO225 name:"Активирование очагов онкологических клеток" ageFrom:"55" ageTo:"65" system:do/Cancer followsTo:AO49
-AO231 name:"Ухудшение состояния межклеточного матрикса в хрящах" ageFrom:"45" ageTo:"55" system:org/Cell_system followsTo:AO203
-AO235 name:"Почечная недостаточность" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO1698
-AO237 name:"Изменение рецепторной чувствительности клетки" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO243,AO563,AO733,AO615,AO871
-AO239 name:"Нестабильность генома" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO245,AO49
-AO241 name:"Снижение секреции норадреналина" ageFrom:"30" ageTo:"100" system:org/Hormonal_system followsTo:AO385,AO77
-AO243 name:"Блокирование реакций клетки на факторы роста, активирующие ее пролиферацию" ageFrom:"40" ageTo:"60" system:org/Cell_system followsTo:AO272
-AO245 name:"Образование сигнала о двухцепочечном разрыве ДНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO833
-AO247 name:"Повреждения эндотелия" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO895
-AO249 name:"Уменьшение количества миоцитов" ageFrom:"50" ageTo:"60" system:org/Cell_system followsTo:AO693,AO659
-AO251 name:"Снижение выработки ТТГ (Тиреотропный гормон)" ageFrom:"20" ageTo:"35" system:org/Hormonal_system followsTo:AO347
-AO253 name:"Потеря белков, покрывающих теломеры (TRF2)" ageFrom:"15" ageTo:"25" system:org/Intersystem followsTo:AO268
-AO257 name:"Ревматизм" ageFrom:"50" ageTo:"60" system:org/Intersystem followsTo:AO203
-AO266 name:"Нарушения хоминга" ageFrom:"35" ageTo:"45" system:org/Cell_system followsTo:AO383,AO1675,AO27
-AO268 name:"Патологическое укорочение теломер" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO185
+AO231 name:"Ухудшение состояния межклеточного матрикса в хрящах" ageFrom:"45" ageTo:"55" system:Cell_system followsTo:AO203
+AO235 name:"Почечная недостаточность" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO1698
+AO237 name:"Изменение рецепторной чувствительности клетки" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO243,AO563,AO733,AO615,AO871
+AO239 name:"Нестабильность генома" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO245,AO49
+AO241 name:"Снижение секреции норадреналина" ageFrom:"30" ageTo:"100" system:org/Endocrine_system followsTo:AO385,AO77
+AO243 name:"Блокирование реакций клетки на факторы роста, активирующие ее пролиферацию" ageFrom:"40" ageTo:"60" system:Cell_system followsTo:AO272
+AO245 name:"Образование сигнала о двухцепочечном разрыве ДНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO833
+AO247 name:"Повреждения эндотелия" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO895
+AO249 name:"Уменьшение количества миоцитов" ageFrom:"50" ageTo:"60" system:Cell_system followsTo:AO693,AO659
+AO251 name:"Снижение выработки ТТГ (Тиреотропный гормон)" ageFrom:"20" ageTo:"35" system:org/Endocrine_system followsTo:AO347
+AO253 name:"Потеря белков, покрывающих теломеры (TRF2)" ageFrom:"15" ageTo:"25" system:Intersystem followsTo:AO268
+AO257 name:"Ревматизм" ageFrom:"50" ageTo:"60" system:Intersystem followsTo:AO203
+AO266 name:"Нарушения хоминга" ageFrom:"35" ageTo:"45" system:Cell_system followsTo:AO383,AO1675,AO27
+AO268 name:"Патологическое укорочение теломер" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO185
 AO270 name:"Нарушение структуры хроматина" ageFrom:"15" ageTo:"25" system:org/Immune_system followsTo:AO1583
-AO272 name:"Репликативное старение (стойкое прекращение пролиферации клеток)" ageFrom:"60" ageTo:"80" system:org/Cell_system followsTo:AO729
-AO273 name:"Ухудшение микроциркуляции в поджелудочной железе" ageFrom:"45" ageTo:"55" system:org/Intersystem followsTo:AO161
-AO276 name:"Уменьшение синтеза С-комплемента" ageFrom:"25" ageTo:"35" system:org/Metabolism_system followsTo:AO39
-AO279 name:"Изменение проницаемости альвеолярной стенки" ageFrom:"50" ageTo:"75" system:org/Cell_system followsTo:AO917
+AO272 name:"Репликативное старение (стойкое прекращение пролиферации клеток)" ageFrom:"60" ageTo:"80" system:Cell_system followsTo:AO729
+AO273 name:"Ухудшение микроциркуляции в поджелудочной железе" ageFrom:"45" ageTo:"55" system:Intersystem followsTo:AO161
+AO276 name:"Уменьшение синтеза С-комплемента" ageFrom:"25" ageTo:"35" system:cell/Metabolism_system followsTo:AO39
+AO279 name:"Изменение проницаемости альвеолярной стенки" ageFrom:"50" ageTo:"75" system:Cell_system followsTo:AO917
 AO281 name:"Воспалительные реакции в тканях" ageFrom:"50" ageTo:"100" system:org/Immune_system followsTo:AO33
 AO283 name:"Уменьшение жизненной емкости легких" ageFrom:"60" ageTo:"70" system:org/Respiratory_system followsTo:AO505
-AO288 name:"Уменьшение скорости физиологической регенерации тканей" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO693,AO729
+AO288 name:"Уменьшение скорости физиологической регенерации тканей" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO693,AO729
 AO295 name:"Ишемический инсульт" ageFrom:"60" ageTo:"70" system:org/Cardiovascular_system followsTo:AO543
-AO301 name:"Гипотрофия эпифиза" ageFrom:"30" ageTo:"40" system:org/Hormonal_system followsTo:AO551
-AO307 name:"Переломы" ageFrom:"65" ageTo:"75" system:org/Intersystem followsTo:AO1663,AO95
-AO311 name:"Уплотнение клеточной мемраны" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO901
-AO315 name:"Повышение секреции вазопрессина" ageFrom:"30" ageTo:"40" system:org/Hormonal_system followsTo:AO205
-AO319 name:"Нарушение функций клетки" ageFrom:"20" ageTo:"40" system:org/Cell_system followsTo:AO209,AO677
-AO321 name:"Снижение секреции Дегидроэпиандростерона" ageFrom:"30" ageTo:"40" system:org/Hormonal_system followsTo:AO623,AO755,AO467
-AO325 name:"Накопление дефектного коллагена" ageFrom:"30" ageTo:"40" system:org/Intersystem followsTo:AO399
-AO333 name:"Ухудшение ансамблевой работы клеток" ageFrom:"40" ageTo:"50" system:org/Cell_system
+AO301 name:"Гипотрофия эпифиза" ageFrom:"30" ageTo:"40" system:org/Endocrine_system followsTo:AO551
+AO307 name:"Переломы" ageFrom:"65" ageTo:"75" system:Intersystem followsTo:AO1663,AO95
+AO311 name:"Уплотнение клеточной мемраны" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO901
+AO315 name:"Повышение секреции вазопрессина" ageFrom:"30" ageTo:"40" system:org/Endocrine_system followsTo:AO205
+AO319 name:"Нарушение функций клетки" ageFrom:"20" ageTo:"40" system:Cell_system followsTo:AO209,AO677
+AO321 name:"Снижение секреции Дегидроэпиандростерона" ageFrom:"30" ageTo:"40" system:org/Endocrine_system followsTo:AO623,AO755,AO467
+AO325 name:"Накопление дефектного коллагена" ageFrom:"30" ageTo:"40" system:Intersystem followsTo:AO399
+AO333 name:"Ухудшение ансамблевой работы клеток" ageFrom:"40" ageTo:"50" system:Cell_system
 AO345 name:"Гипоксия (разной степени)" ageFrom:"70" ageTo:"100" system:org/Respiratory_system followsTo:AO543
-AO347 name:"Гипотрофия щитовидной железы" ageFrom:"20" ageTo:"40" system:org/Hormonal_system followsTo:AO1623,AO151
-AO353 name:"Выработка свободных радикалов" ageFrom:"15" ageTo:"25" system:org/Intersystem followsTo:AO555,AO931,AO859,AO641,AO201,AO359,AO891,AO889,AO71,AO253,AO270,AO553,AO427,AO375,AO575,AO593
-AO357 name:"Появление дефектных митохондрий" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO617
-AO359 name:"Эпигенетические нарушения (сшивки ДНК-белок, деметилирование ДНК)" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO501
-AO363 name:"Накопление нефункциональных белков" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO85,AO539
-AO367 name:"Артриты" ageFrom:"55" ageTo:"65" system:org/Intersystem followsTo:AO137
-AO373 name:"Транспозиция мобильных элементов генома" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO1643,AO501
-AO375 name:"Образование 8-оксо-2’деоксигуанозина в промоторных и энхансерных участках ДНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO97
-AO377 name:"Остеопороз" ageFrom:"55" ageTo:"65" system:org/Intersystem followsTo:AO307
-AO383 name:"Гипотрофия половых желез" ageFrom:"30" ageTo:"40" system:org/Hormonal_system followsTo:AO467
+AO347 name:"Гипотрофия щитовидной железы" ageFrom:"20" ageTo:"40" system:org/Endocrine_system followsTo:AO1623,AO151
+AO353 name:"Выработка свободных радикалов" ageFrom:"15" ageTo:"25" system:Intersystem followsTo:AO555,AO931,AO859,AO641,AO201,AO359,AO891,AO889,AO71,AO253,AO270,AO553,AO427,AO375,AO575,AO593
+AO357 name:"Появление дефектных митохондрий" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO617
+AO359 name:"Эпигенетические нарушения (сшивки ДНК-белок, деметилирование ДНК)" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO501
+AO363 name:"Накопление нефункциональных белков" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO85,AO539
+AO367 name:"Артриты" ageFrom:"55" ageTo:"65" system:Intersystem followsTo:AO137
+AO373 name:"Транспозиция мобильных элементов генома" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO1643,AO501
+AO375 name:"Образование 8-оксо-2’деоксигуанозина в промоторных и энхансерных участках ДНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO97
+AO377 name:"Остеопороз" ageFrom:"55" ageTo:"65" system:Intersystem followsTo:AO307
+AO383 name:"Гипотрофия половых желез" ageFrom:"30" ageTo:"40" system:org/Endocrine_system followsTo:AO467
 AO385 name:"Ухудшение когнитивных способностей мозга" ageFrom:"70" ageTo:"80" system:org/Nervous_system followsTo:AO1639,AO543
-AO389 name:"Уменьшение числа связей между клетками" ageFrom:"20" ageTo:"40" system:org/Cell_system followsTo:AO13,AO793,AO333
-AO391 name:"Гипертрофия простаты" ageFrom:"40" ageTo:"50" system:org/Hormonal_system followsTo:AO173
-AO399 name:"Негативное изменение межклеточного матрикса" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO795,AO25,AO13
-AO401 name:"Ухудшение питания тканей" ageFrom:"20" ageTo:"50" system:org/Connective_system followsTo:AO163,AO599,AO231
-AO407 name:"Устойчивое прекращение пролиферации клеток" ageFrom:"35" ageTo:"45" system:org/Cell_system followsTo:AO272
-AO411 name:"Подавление секреции паратиреоидного гормона" ageFrom:"50" ageTo:"60" system:org/Hormonal_system followsTo:AO535
-AO427 name:"Сшивки ДНК-ДНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO501
-AO431 name:"Уменьшение объёма клетки" ageFrom:"35" ageTo:"50" system:org/Cell_system followsTo:AO9,AO1702,AO383,AO27
-AO433 name:"Негативное изменение конститутивной экспрессии генов" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO101,AO781
+AO389 name:"Уменьшение числа связей между клетками" ageFrom:"20" ageTo:"40" system:Cell_system followsTo:AO13,AO793,AO333
+AO391 name:"Гипертрофия простаты" ageFrom:"40" ageTo:"50" system:org/Endocrine_system followsTo:AO173
+AO399 name:"Негативное изменение межклеточного матрикса" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO795,AO25,AO13
+AO401 name:"Ухудшение питания тканей" ageFrom:"20" ageTo:"50" system:Connective_system followsTo:AO163,AO599,AO231
+AO407 name:"Устойчивое прекращение пролиферации клеток" ageFrom:"35" ageTo:"45" system:Cell_system followsTo:AO272
+AO411 name:"Подавление секреции паратиреоидного гормона" ageFrom:"50" ageTo:"60" system:org/Endocrine_system followsTo:AO535
+AO427 name:"Сшивки ДНК-ДНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO501
+AO431 name:"Уменьшение объёма клетки" ageFrom:"35" ageTo:"50" system:Cell_system followsTo:AO9,AO1702,AO383,AO27
+AO433 name:"Негативное изменение конститутивной экспрессии генов" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO101,AO781
 AO437 name:"Болезнь Паркинсона" ageFrom:"55" ageTo:"65" system:org/Nervous_system followsTo:AO1726,AO1642
-AO447 name:"Уменьшение количества (и ухудшение качества) адгезивных рецепторов" ageFrom:"20" ageTo:"40" system:org/Cell_system followsTo:AO181,AO389
-AO453 name:"Снижение количества и качества рибосом" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO65
+AO447 name:"Уменьшение количества (и ухудшение качества) адгезивных рецепторов" ageFrom:"20" ageTo:"40" system:Cell_system followsTo:AO181,AO389
+AO453 name:"Снижение количества и качества рибосом" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO65
 AO463 name:"Образование атеросклеротических бляшек" ageFrom:"50" ageTo:"60" system:org/Cardiovascular_system followsTo:AO1624,AO1617,AO489,AO1613,AO837
-AO467 name:"Снижение секреции половых гормонов (тестостерон, эстрадиол, прогестерон)" ageFrom:"30" ageTo:"40" system:org/Hormonal_system followsTo:AO195,AO209,AO601,AO123
-AO471 name:"Нарушение транспорта метаболитов через мембрану" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO871
-AO475 name:"Снижение выработки АКТГ (Аденекортикотропный гормон)" ageFrom:"25" ageTo:"35" system:org/Hormonal_system followsTo:AO51
+AO467 name:"Снижение секреции половых гормонов (тестостерон, эстрадиол, прогестерон)" ageFrom:"30" ageTo:"40" system:org/Endocrine_system followsTo:AO195,AO209,AO601,AO123
+AO471 name:"Нарушение транспорта метаболитов через мембрану" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO871
+AO475 name:"Снижение выработки АКТГ (Аденекортикотропный гормон)" ageFrom:"25" ageTo:"35" system:org/Endocrine_system followsTo:AO51
 AO489 name:"Уменьшение эластичности сосудов" ageFrom:"45" ageTo:"60" system:org/Cardiovascular_system followsTo:AO205,AO647
 AO495 name:"ИБС" ageFrom:"55" ageTo:"65" system:org/Cardiovascular_system followsTo:AO131,AO7
-AO501 name:"Нарушение индуцибельной экспрессии генов ДНК" ageFrom:"25" ageTo:"35" system:org/Intersystem followsTo:AO65
+AO501 name:"Нарушение индуцибельной экспрессии генов ДНК" ageFrom:"25" ageTo:"35" system:Intersystem followsTo:AO65
 AO505 name:"Легочная недостаточность" ageFrom:"65" ageTo:"75" system:org/Respiratory_system followsTo:AO345
-AO509 name:"Нарушение суточного ритма секреции нейрпептида Y" ageFrom:"25" ageTo:"35" system:org/Hormonal_system followsTo:AO687
+AO509 name:"Нарушение суточного ритма секреции нейрпептида Y" ageFrom:"25" ageTo:"35" system:org/Endocrine_system followsTo:AO687
 AO511 name:"Интеграция ретровирусов в ДНК" ageFrom:"40" ageTo:"100" system:org/Immune_system followsTo:AO1688
-AO519 name:"Увеличение количества альдегидов" ageFrom:"40" ageTo:"50" system:org/Metabolism_system followsTo:AO159
-AO523 name:"Ухудшение усвоения кальция и витамина D в кишечнике" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO377
-AO525 name:"Накопление окисленных белков" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO147
-AO529 name:"Снижение ферментной активности в железистых клетках ЖКТ" ageFrom:"40" ageTo:"85" system:org/Metabolism_system followsTo:AO945,AO845,AO61
-AO531 name:"Снижение синтеза рибосомальных белков" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO453
-AO535 name:"Снижение синтеза кальцийтриола" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO377
-AO539 name:"Накопление нефункциональных белков, входящих в состав антиоксидантных систем" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO593
+AO519 name:"Увеличение количества альдегидов" ageFrom:"40" ageTo:"50" system:cell/Metabolism_system followsTo:AO159
+AO523 name:"Ухудшение усвоения кальция и витамина D в кишечнике" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO377
+AO525 name:"Накопление окисленных белков" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO147
+AO529 name:"Снижение ферментной активности в железистых клетках ЖКТ" ageFrom:"40" ageTo:"85" system:cell/Metabolism_system followsTo:AO945,AO845,AO61
+AO531 name:"Снижение синтеза рибосомальных белков" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO453
+AO535 name:"Снижение синтеза кальцийтриола" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO377
+AO539 name:"Накопление нефункциональных белков, входящих в состав антиоксидантных систем" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO593
 AO543 name:"Смерть организма" ageFrom:"85" ageTo:"90" system:do/Death
-AO551 name:"Снижение секреции мелатонина" ageFrom:"30" ageTo:"40" system:org/Hormonal_system followsTo:AO39,AO687
-AO553 name:"Блокирование репликационной вилки" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO1583
-AO555 name:"Мутации мтДНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO825,AO357
+AO551 name:"Снижение секреции мелатонина" ageFrom:"30" ageTo:"40" system:org/Endocrine_system followsTo:AO39,AO687
+AO553 name:"Блокирование репликационной вилки" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO1583
+AO555 name:"Мутации мтДНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO825,AO357
 AO557 name:"Накопление жирных кислот в крови" ageFrom:"35" ageTo:"45" system:org/Cardiovascular_system followsTo:AO865
-AO563 name:"Уменьшение количества нейронов" ageFrom:"55" ageTo:"65" system:org/Cell_system followsTo:AO437
+AO563 name:"Уменьшение количества нейронов" ageFrom:"55" ageTo:"65" system:Cell_system followsTo:AO437
 AO565 name:"Появление аутоиммунной реакции" ageFrom:"45" ageTo:"55" system:org/Immune_system followsTo:AO1678,AO819,AO965
-AO575 name:"Образование алкилированных оснований" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO97
-AO589 name:"Кишечная интоксикация" ageFrom:"50" ageTo:"85" system:org/Metabolism_system followsTo:AO1696,AO1679
-AO593 name:"Повышение активности АФК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO629,AO19,AO933
-AO599 name:"Ухудшение состояния межклеточного матрикса в сухожилиях" ageFrom:"35" ageTo:"45" system:org/Cell_system followsTo:AO137
-AO601 name:"Менопауза и андропауза" ageFrom:"35" ageTo:"45" system:org/Hormonal_system followsTo:AO249,AO623,AO693
-AO603 name:"Подавление аутофагии" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO85,AO163
-AO607 name:"Переполнение лизосомы" ageFrom:"35" ageTo:"45" system:org/Cell_system followsTo:AO319
-AO615 name:"Понижение толерантности к глюкозе" ageFrom:"35" ageTo:"45" system:org/Cell_system followsTo:AO755
-AO617 name:"Снижение выработки АТФ (в отдельных клетках)" ageFrom:"30" ageTo:"40" system:org/Metabolism_system followsTo:AO407
-AO623 name:"Увеличение количества жировой ткани" ageFrom:"40" ageTo:"50" system:org/Metabolism_system followsTo:AO557,AO130
-AO629 name:"Перикисное окисление липидов в мембранах" ageFrom:"25" ageTo:"35" system:org/Metabolism_system followsTo:AO169,AO159,AO63
-AO635 name:"Снижение синтеза рибосомальной РНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO453
-AO641 name:"Накопление карбонилированных белков" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO85,AO147
+AO575 name:"Образование алкилированных оснований" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO97
+AO589 name:"Кишечная интоксикация" ageFrom:"50" ageTo:"85" system:cell/Metabolism_system followsTo:AO1696,AO1679
+AO593 name:"Повышение активности АФК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO629,AO19,AO933
+AO599 name:"Ухудшение состояния межклеточного матрикса в сухожилиях" ageFrom:"35" ageTo:"45" system:Cell_system followsTo:AO137
+AO601 name:"Менопауза и андропауза" ageFrom:"35" ageTo:"45" system:org/Endocrine_system followsTo:AO249,AO623,AO693
+AO603 name:"Подавление аутофагии" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO85,AO163
+AO607 name:"Переполнение лизосомы" ageFrom:"35" ageTo:"45" system:Cell_system followsTo:AO319
+AO615 name:"Понижение толерантности к глюкозе" ageFrom:"35" ageTo:"45" system:Cell_system followsTo:AO755
+AO617 name:"Снижение выработки АТФ (в отдельных клетках)" ageFrom:"30" ageTo:"40" system:cell/Metabolism_system followsTo:AO407
+AO623 name:"Увеличение количества жировой ткани" ageFrom:"40" ageTo:"50" system:cell/Metabolism_system followsTo:AO557,AO130
+AO629 name:"Перикисное окисление липидов в мембранах" ageFrom:"25" ageTo:"35" system:cell/Metabolism_system followsTo:AO169,AO159,AO63
+AO635 name:"Снижение синтеза рибосомальной РНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO453
+AO641 name:"Накопление карбонилированных белков" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO85,AO147
 AO647 name:"Увеличение периферического сопротивления" ageFrom:"50" ageTo:"60" system:org/Cardiovascular_system followsTo:AO837,AO205
 AO649 name:"Уменьшение проводимости нервных волокон" ageFrom:"45" ageTo:"50" system:org/Nervous_system followsTo:AO109,AO1641,AO733,AO385
 AO659 name:"Миокардиопатия" ageFrom:"55" ageTo:"65" system:org/Cardiovascular_system followsTo:AO7
-AO665 name:"Снижение синтеза мРНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO531
-AO675 name:"Увеличение уровня Ca в крови" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO1657,AO411,AO203
-AO677 name:"Появление дефектных клеток" ageFrom:"50" ageTo:"60" system:org/Cell_system followsTo:AO145
-AO679 name:"Снижение выработки Q10" ageFrom:"20" ageTo:"30" system:org/Metabolism_system followsTo:AO693
-AO687 name:"Постоянное переедание" ageFrom:"30" ageTo:"40" system:org/Metabolism_system followsTo:AO801,AO623,AO755,AO557
-AO693 name:"Гипоплазия мышечной ткани" ageFrom:"50" ageTo:"60" system:org/Intersystem followsTo:AO1693
+AO665 name:"Снижение синтеза мРНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO531
+AO675 name:"Увеличение уровня Ca в крови" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO1657,AO411,AO203
+AO677 name:"Появление дефектных клеток" ageFrom:"50" ageTo:"60" system:Cell_system followsTo:AO145
+AO679 name:"Снижение выработки Q10" ageFrom:"20" ageTo:"30" system:cell/Metabolism_system followsTo:AO693
+AO687 name:"Постоянное переедание" ageFrom:"30" ageTo:"40" system:cell/Metabolism_system followsTo:AO801,AO623,AO755,AO557
+AO693 name:"Гипоплазия мышечной ткани" ageFrom:"50" ageTo:"60" system:Intersystem followsTo:AO1693
 AO699 name:"Гипотрофия мышц грудной клетки" ageFrom:"55" ageTo:"65" system:org/Respiratory_system followsTo:AO831
-AO727 name:"Начало атрофии ретикулярных клеток тимуса" ageFrom:"20" ageTo:"50" system:org/Cell_system followsTo:AO39
-AO729 name:"Гипоплазия тканей" ageFrom:"50" ageTo:"80" system:org/Connective_system followsTo:AO1664
+AO727 name:"Начало атрофии ретикулярных клеток тимуса" ageFrom:"20" ageTo:"50" system:Cell_system followsTo:AO39
+AO729 name:"Гипоплазия тканей" ageFrom:"50" ageTo:"80" system:Connective_system followsTo:AO1664
 AO733 name:"Уменьшение адаптивной реакции" ageFrom:"50" ageTo:"60" system:org/Nervous_system followsTo:AO385
 AO737 name:"Уменьшение эластичности стенок легочных альвеол" ageFrom:"35" ageTo:"45" system:org/Respiratory_system followsTo:AO53
 AO751 name:"Снижение секреции нейротрансмиттеров" ageFrom:"50" ageTo:"60" system:org/Nervous_system followsTo:AO385
-AO755 name:"Длительное повышение уровня глюкозы в крови" ageFrom:"35" ageTo:"45" system:org/Metabolism_system followsTo:AO130,AO15,AO801,AO519
-AO767 name:"Гипотрофия нейроэндокринных узлов (в гипоталамусе и стволе мозга)" ageFrom:"20" ageTo:"30" system:org/Hormonal_system followsTo:AO241,AO919,AO301,AO885,AO509,AO315
-AO781 name:"Снижение экспрессии компонентов репаративных систем" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO839
-AO783 name:"Разрастание гнилостной флоры" ageFrom:"40" ageTo:"85" system:org/Cell_system followsTo:AO589
-AO785 name:"Снижение количества активных копий ДНК, кодирующей рибосомальную РНК и белки" ageFrom:"15" ageTo:"25" system:org/Intersystem followsTo:AO635,AO665
-AO793 name:"Ухудшение передачи сигнальной информации" ageFrom:"20" ageTo:"40" system:org/Connective_system followsTo:AO319
-AO795 name:"Уменьшение количества информационных молекул" ageFrom:"20" ageTo:"40" system:org/Connective_system followsTo:AO793
-AO799 name:"Накопление внеклеточного мусора" ageFrom:"45" ageTo:"55" system:org/Cell_system followsTo:AO189
-AO801 name:"Снижение секреции соматотропина (гормон роста)" ageFrom:"40" ageTo:"50" system:org/Hormonal_system followsTo:AO1707,AO49,AO1612,AO729,AO155,AO693
-AO819 name:"Атака обкладочных клеток желудка иммунной системой" ageFrom:"45" ageTo:"55" system:org/Cell_system followsTo:AO1712,AO115
-AO821 name:"Образование дефектных антигенов в клетках организма" ageFrom:"40" ageTo:"50" system:org/Cell_system followsTo:AO877
-AO825 name:"Образование NUMT-псевдогенов в мтДНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO1689
+AO755 name:"Длительное повышение уровня глюкозы в крови" ageFrom:"35" ageTo:"45" system:cell/Metabolism_system followsTo:AO130,AO15,AO801,AO519
+AO767 name:"Гипотрофия нейроэндокринных узлов (в гипоталамусе и стволе мозга)" ageFrom:"20" ageTo:"30" system:org/Endocrine_system followsTo:AO241,AO919,AO301,AO885,AO509,AO315
+AO781 name:"Снижение экспрессии компонентов репаративных систем" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO839
+AO783 name:"Разрастание гнилостной флоры" ageFrom:"40" ageTo:"85" system:Cell_system followsTo:AO589
+AO785 name:"Снижение количества активных копий ДНК, кодирующей рибосомальную РНК и белки" ageFrom:"15" ageTo:"25" system:Intersystem followsTo:AO635,AO665
+AO793 name:"Ухудшение передачи сигнальной информации" ageFrom:"20" ageTo:"40" system:Connective_system followsTo:AO319
+AO795 name:"Уменьшение количества информационных молекул" ageFrom:"20" ageTo:"40" system:Connective_system followsTo:AO793
+AO799 name:"Накопление внеклеточного мусора" ageFrom:"45" ageTo:"55" system:Cell_system followsTo:AO189
+AO801 name:"Снижение секреции соматотропина (гормон роста)" ageFrom:"40" ageTo:"50" system:org/Endocrine_system followsTo:AO1707,AO49,AO1612,AO729,AO155,AO693
+AO819 name:"Атака обкладочных клеток желудка иммунной системой" ageFrom:"45" ageTo:"55" system:Cell_system followsTo:AO1712,AO115
+AO821 name:"Образование дефектных антигенов в клетках организма" ageFrom:"40" ageTo:"50" system:Cell_system followsTo:AO877
+AO825 name:"Образование NUMT-псевдогенов в мтДНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO1689
 AO831 name:"Эмфизема лёгких" ageFrom:"68" ageTo:"75" system:org/Respiratory_system followsTo:AO505
-AO833 name:"p53-зависимая необратимая задержка пролиферации клеток" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO272
+AO833 name:"p53-зависимая необратимая задержка пролиферации клеток" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO272
 AO837 name:"Ухудшение общего кровообращения" ageFrom:"50" ageTo:"60" system:org/Cardiovascular_system followsTo:AO145,AO1614,AO56,AO951
-AO839 name:"Снижение активности белков теплового шока" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO147
-AO841 name:"Первичное ухудшение микроциркуляции крови и лимфы" ageFrom:"20" ageTo:"60" system:org/Intersystem followsTo:AO401,AO273
-AO845 name:"Нарушение усваиваемости витаминов групп BDCE" ageFrom:"45" ageTo:"50" system:org/Metabolism_system followsTo:AO523
-AO859 name:"Накопление белковых сшивок" ageFrom:"15" ageTo:"20" system:org/Intersystem followsTo:AO85,AO325
+AO839 name:"Снижение активности белков теплового шока" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO147
+AO841 name:"Первичное ухудшение микроциркуляции крови и лимфы" ageFrom:"20" ageTo:"60" system:Intersystem followsTo:AO401,AO273
+AO845 name:"Нарушение усваиваемости витаминов групп BDCE" ageFrom:"45" ageTo:"50" system:cell/Metabolism_system followsTo:AO523
+AO859 name:"Накопление белковых сшивок" ageFrom:"15" ageTo:"20" system:Intersystem followsTo:AO85,AO325
 AO861 name:"Хронические инфекции" ageFrom:"35" ageTo:"100" system:org/Immune_system followsTo:AO139,AO511
 AO865 name:"Изменение структуры аполипопротеина (ЛПНП)" ageFrom:"40" ageTo:"50" system:org/Cardiovascular_system followsTo:AO799
-AO871 name:"Нарушение метаболизма клетки" ageFrom:"30" ageTo:"40" system:org/Metabolism_system followsTo:AO319
-AO877 name:"Иммунная система воспринимает эти клетки как чужеродные" ageFrom:"40" ageTo:"50" system:org/Cell_system followsTo:AO565
-AO883 name:"Уменьшение количества внутриклеточных элементов (митохондрии, рибосомы)" ageFrom:"35" ageTo:"50" system:org/Cell_system followsTo:AO431
-AO885 name:"Гипотрофия передней доли гипофиза" ageFrom:"20" ageTo:"35" system:org/Hormonal_system followsTo:AO475,AO687,AO251
-AO889 name:"Потеря Т-петли в теломерах" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO268
-AO891 name:"Разрывы цепей ДНК" ageFrom:"20" ageTo:"30" system:org/Intersystem followsTo:AO1643
+AO871 name:"Нарушение метаболизма клетки" ageFrom:"30" ageTo:"40" system:cell/Metabolism_system followsTo:AO319
+AO877 name:"Иммунная система воспринимает эти клетки как чужеродные" ageFrom:"40" ageTo:"50" system:Cell_system followsTo:AO565
+AO883 name:"Уменьшение количества внутриклеточных элементов (митохондрии, рибосомы)" ageFrom:"35" ageTo:"50" system:Cell_system followsTo:AO431
+AO885 name:"Гипотрофия передней доли гипофиза" ageFrom:"20" ageTo:"35" system:org/Endocrine_system followsTo:AO475,AO687,AO251
+AO889 name:"Потеря Т-петли в теломерах" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO268
+AO891 name:"Разрывы цепей ДНК" ageFrom:"20" ageTo:"30" system:Intersystem followsTo:AO1643
 AO895 name:"Проникновение окислов липидов и фибринов и тромбоцитов в субэндотелиальное пространство" ageFrom:"30" ageTo:"40" system:org/Cardiovascular_system followsTo:AO959
-AO901 name:"Снижение проницаемости мембраны" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO27
+AO901 name:"Снижение проницаемости мембраны" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO27
 AO907 name:"Увеличение количества соединительной ткани" ageFrom:"43" ageTo:"50" system:org/Respiratory_system followsTo:AO53,AO831
 AO909 name:"Депрессия" ageFrom:"55" ageTo:"60" system:org/Nervous_system followsTo:AO39
-AO915 name:"Повышение секреции глюкокортикоидов" ageFrom:"30" ageTo:"40" system:org/Hormonal_system followsTo:AO525
+AO915 name:"Повышение секреции глюкокортикоидов" ageFrom:"30" ageTo:"40" system:org/Endocrine_system followsTo:AO525
 AO917 name:"Нарушение газообмена CO2 и O2" ageFrom:"65" ageTo:"75" system:org/Respiratory_system followsTo:AO505
-AO919 name:"Изменение порога чувствительности в центре аппетита гипоталамуса" ageFrom:"25" ageTo:"35" system:org/Hormonal_system followsTo:AO1685
+AO919 name:"Изменение порога чувствительности в центре аппетита гипоталамуса" ageFrom:"25" ageTo:"35" system:org/Endocrine_system followsTo:AO1685
 AO927 name:"Деструкция симпатических окончаний" ageFrom:"45" ageTo:"60" system:org/Nervous_system followsTo:AO385,AO23,AO751
-AO931 name:"Возрастное переключение активности разных субъединиц протеасом" ageFrom:"15" ageTo:"25" system:org/Intersystem followsTo:AO1586
-AO933 name:"Окисление эластина" ageFrom:"30" ageTo:"40" system:org/Metabolism_system followsTo:AO1665,AO737
-AO939 name:"Уменьшение проницаемости межклеточного пространства" ageFrom:"20" ageTo:"45" system:org/Cell_system followsTo:AO389
-AO945 name:"Дефицит микроэлементов" ageFrom:"45" ageTo:"85" system:org/Metabolism_system followsTo:AO39
+AO931 name:"Возрастное переключение активности разных субъединиц протеасом" ageFrom:"15" ageTo:"25" system:Intersystem followsTo:AO1586
+AO933 name:"Окисление эластина" ageFrom:"30" ageTo:"40" system:cell/Metabolism_system followsTo:AO1665,AO737
+AO939 name:"Уменьшение проницаемости межклеточного пространства" ageFrom:"20" ageTo:"45" system:Cell_system followsTo:AO389
+AO945 name:"Дефицит микроэлементов" ageFrom:"45" ageTo:"85" system:cell/Metabolism_system followsTo:AO39
 AO951 name:"Нарушение мозгового кровообращения" ageFrom:"55" ageTo:"65" system:org/Cardiovascular_system followsTo:AO295,AO385
-AO959 name:"Переполнение макрофагов окислами липидов" ageFrom:"45" ageTo:"55" system:org/Cell_system followsTo:AO189
+AO959 name:"Переполнение макрофагов окислами липидов" ageFrom:"45" ageTo:"55" system:Cell_system followsTo:AO189
 AO965 name:"Аутоиммунные заболевания" ageFrom:"45" ageTo:"55" system:org/Immune_system followsTo:AO649,AO367,AO257
-AO967 name:"Гиповитаминоз B12" ageFrom:"50" ageTo:"60" system:org/Metabolism_system followsTo:AO153
-AO1583 name:"Временное адаптивное прекращение пролиферации клеток" ageFrom:"25" ageTo:"35" system:org/Cell_system followsTo:AO407,AO272
-AO1586 name:"Рост доли субъединиц протеосом с пониженной активностью" ageFrom:"15" ageTo:"25" system:org/Intersystem followsTo:AO363
-AO1612 name:"Инсулиннезависимый сахарный диабет (II типа)" ageFrom:"55" ageTo:"80" system:org/Metabolism_system followsTo:AO235,AO543
-AO1613 name:"Сужение просвета сосудов" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO295,AO647
-AO1614 name:"Ухудшение коронарного кровообращения" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO495
-AO1616 name:"Повышение проницаемости сосудистой стенки" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO1622,AO1618
-AO1617 name:"Разрыв сосудов мозга" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO1618
-AO1618 name:"Геморрагический инсульт" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO543
-AO1619 name:"Нарушение функционирования головного мозга" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO385
-AO1620 name:"Закупорка сосудов мозга" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO295
-AO1621 name:"Артериальная гипотония" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO295
-AO1622 name:"Гиповолемия" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO1621
-AO1623 name:"Брадикардия" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO1621
-AO1624 name:"Тромбоз сосудов мозга" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO1620
-AO1625 name:"Тромботическая эмболия сосудов мозга" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO1620
-AO1626 name:"Образование пристеночных тромбов в сердце" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO1625
-AO1627 name:"Пороки сердца" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO1626
-AO1628 name:"Эндокардит" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO1627,AO1626
-AO1629 name:"Повышение уровня глюкагона в крови" ageFrom:"" ageTo:"" system:org/Hormonal_system followsTo:AO1630
-AO1630 name:"Усиление липолиза (расщепления триглицеридов)" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1631
-AO1631 name:"Кетонемия" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1632
-AO1632 name:"Метаболический ацидоз" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO543
-AO1633 name:"Уменьшение транспорта аминокислот в клетки" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO1634
-AO1634 name:"Повышение содержания аминокислот в крови" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1635
-AO1635 name:"Выделение аминокислот с мочей" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1636
-AO1636 name:"Отрицательный азотный баланс" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1632
-AO1638 name:"Повышение активности липазы" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1630
-AO1639 name:"Старческая деменция" ageFrom:"" ageTo:"" system:org/Nervous_system followsTo:AO543
-AO1640 name:"Общая интоксикация организма" ageFrom:"40" ageTo:"50" system:org/Metabolism_system followsTo:AO1616,AO543,AO39
-AO1641 name:"Рассеянный склероз: первично-прогрессирующая форма" ageFrom:"50" ageTo:"" system:org/Immune_system followsTo:AO225,AO131,AO59
-AO1642 name:"Мышечная слабость" ageFrom:"50" ageTo:"60" system:org/Unknown_system followsTo:AO95,AO307
-AO1643 name:"Разрывы хромосом" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO21
-AO1644 name:"Усиление продуцирование металлопротеиназ" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1645
-AO1645 name:"Уменьшение функциональной активности рецепторов" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO59,AO37
-AO1646 name:"Повышение уровня кортизола в крови" ageFrom:"" ageTo:"" system:org/Hormonal_system followsTo:AO1633
-AO1647 name:"Экзогенные химические и физические факторы" ageFrom:"10" ageTo:"15" system:org/Unknown_system followsTo:AO373,AO157,AO353
-AO1648 name:"Уменьшение количества стволовых мышечных клеток" ageFrom:"30" ageTo:"40" system:org/Cell_system followsTo:AO288
-AO1649 name:"Уменьшение концентрации цитокина IL7 в тимусе" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO727
-AO1651 name:"Повышение порога возбудимости нервных центров" ageFrom:"" ageTo:"" system:org/Nervous_system followsTo:AO109
-AO1652 name:"Уменьшение активности холинацетилазы" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1653
-AO1653 name:"Уменьшение синтеза ацетилхолина" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1654
-AO1654 name:"Нарушение межсинаптической связи между нейронами" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO109
-AO1655 name:"Уменьшение количества нервных рецепторов" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO109
-AO1656 name:"Дефицит фактора роста нервов (ФРН)" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO927
-AO1657 name:"Кальцификация миоцитов" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO217
-AO1658 name:"Хронический обструктивный бронхит" ageFrom:"" ageTo:"" system:org/Respiratory_system followsTo:AO139,AO1659
-AO1659 name:"Хронический кашель" ageFrom:"" ageTo:"" system:org/Respiratory_system followsTo:AO1660
-AO1660 name:"Повышение давления в альвеолах" ageFrom:"" ageTo:"" system:org/Respiratory_system followsTo:AO279,AO31,AO141
-AO1661 name:"Бронхиальная астма" ageFrom:"" ageTo:"" system:org/Respiratory_system followsTo:AO139,AO1659
-AO1662 name:"Стрептококковая и стафилококковая инфекция" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1628
-AO1663 name:"Жировая эмболия" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1676,AO1620
-AO1664 name:"Гипоплазия костного мозга" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO197
+AO967 name:"Гиповитаминоз B12" ageFrom:"50" ageTo:"60" system:cell/Metabolism_system followsTo:AO153
+AO1583 name:"Временное адаптивное прекращение пролиферации клеток" ageFrom:"25" ageTo:"35" system:Cell_system followsTo:AO407,AO272
+AO1586 name:"Рост доли субъединиц протеосом с пониженной активностью" ageFrom:"15" ageTo:"25" system:Intersystem followsTo:AO363
+AO1612 name:"Инсулиннезависимый сахарный диабет (II типа)" ageFrom:"55" ageTo:"80" system:cell/Metabolism_system followsTo:AO235,AO543
+AO1613 name:"Сужение просвета сосудов" system:org/Cardiovascular_system followsTo:AO295,AO647
+AO1614 name:"Ухудшение коронарного кровообращения" system:org/Cardiovascular_system followsTo:AO495
+AO1616 name:"Повышение проницаемости сосудистой стенки" system:Cell_system followsTo:AO1622,AO1618
+AO1617 name:"Разрыв сосудов мозга" system:org/Cardiovascular_system followsTo:AO1618
+AO1618 name:"Геморрагический инсульт" system:org/Cardiovascular_system followsTo:AO543
+AO1619 name:"Нарушение функционирования головного мозга" system:org/Cardiovascular_system followsTo:AO385
+AO1620 name:"Закупорка сосудов мозга" system:org/Cardiovascular_system followsTo:AO295
+AO1621 name:"Артериальная гипотония" system:org/Cardiovascular_system followsTo:AO295
+AO1622 name:"Гиповолемия" system:Cell_system followsTo:AO1621
+AO1623 name:"Брадикардия" system:org/Cardiovascular_system followsTo:AO1621
+AO1624 name:"Тромбоз сосудов мозга" system:org/Cardiovascular_system followsTo:AO1620
+AO1625 name:"Тромботическая эмболия сосудов мозга" system:org/Cardiovascular_system followsTo:AO1620
+AO1626 name:"Образование пристеночных тромбов в сердце" system:org/Cardiovascular_system followsTo:AO1625
+AO1627 name:"Пороки сердца" system:org/Cardiovascular_system followsTo:AO1626
+AO1628 name:"Эндокардит" system:org/Cardiovascular_system followsTo:AO1627,AO1626
+AO1629 name:"Повышение уровня глюкагона в крови" system:org/Endocrine_system followsTo:AO1630
+AO1630 name:"Усиление липолиза (расщепления триглицеридов)" system:cell/Metabolism_system followsTo:AO1631
+AO1631 name:"Кетонемия" system:cell/Metabolism_system followsTo:AO1632
+AO1632 name:"Метаболический ацидоз" system:cell/Metabolism_system followsTo:AO543
+AO1633 name:"Уменьшение транспорта аминокислот в клетки" system:Cell_system followsTo:AO1634
+AO1634 name:"Повышение содержания аминокислот в крови" system:cell/Metabolism_system followsTo:AO1635
+AO1635 name:"Выделение аминокислот с мочей" system:cell/Metabolism_system followsTo:AO1636
+AO1636 name:"Отрицательный азотный баланс" system:cell/Metabolism_system followsTo:AO1632
+AO1638 name:"Повышение активности липазы" system:cell/Metabolism_system followsTo:AO1630
+AO1639 name:"Старческая деменция" system:org/Nervous_system followsTo:AO543
+AO1640 name:"Общая интоксикация организма" ageFrom:"40" ageTo:"50" system:cell/Metabolism_system followsTo:AO1616,AO543,AO39
+AO1641 name:"Рассеянный склероз: первично-прогрессирующая форма" ageFrom:"50" system:org/Immune_system followsTo:AO225,AO131,AO59
+AO1642 name:"Мышечная слабость" ageFrom:"50" ageTo:"60" system:Unknown_system followsTo:AO95,AO307
+AO1643 name:"Разрывы хромосом" system:Unknown_system followsTo:AO21
+AO1644 name:"Усиление продуцирование металлопротеиназ" system:Unknown_system followsTo:AO1645
+AO1645 name:"Уменьшение функциональной активности рецепторов" system:Cell_system followsTo:AO59,AO37
+AO1646 name:"Повышение уровня кортизола в крови" system:org/Endocrine_system followsTo:AO1633
+AO1647 name:"Экзогенные химические и физические факторы" ageFrom:"10" ageTo:"15" system:Unknown_system followsTo:AO373,AO157,AO353
+AO1648 name:"Уменьшение количества стволовых мышечных клеток" ageFrom:"30" ageTo:"40" system:Cell_system followsTo:AO288
+AO1649 name:"Уменьшение концентрации цитокина IL7 в тимусе" system:cell/Metabolism_system followsTo:AO727
+AO1651 name:"Повышение порога возбудимости нервных центров" system:org/Nervous_system followsTo:AO109
+AO1652 name:"Уменьшение активности холинацетилазы" system:cell/Metabolism_system followsTo:AO1653
+AO1653 name:"Уменьшение синтеза ацетилхолина" system:Unknown_system followsTo:AO1654
+AO1654 name:"Нарушение межсинаптической связи между нейронами" system:Cell_system followsTo:AO109
+AO1655 name:"Уменьшение количества нервных рецепторов" system:Cell_system followsTo:AO109
+AO1656 name:"Дефицит фактора роста нервов (ФРН)" system:Cell_system followsTo:AO927
+AO1657 name:"Кальцификация миоцитов" system:Cell_system followsTo:AO217
+AO1658 name:"Хронический обструктивный бронхит" system:org/Respiratory_system followsTo:AO139,AO1659
+AO1659 name:"Хронический кашель" system:org/Respiratory_system followsTo:AO1660
+AO1660 name:"Повышение давления в альвеолах" system:org/Respiratory_system followsTo:AO279,AO31,AO141
+AO1661 name:"Бронхиальная астма" system:org/Respiratory_system followsTo:AO139,AO1659
+AO1662 name:"Стрептококковая и стафилококковая инфекция" system:Unknown_system followsTo:AO1628
+AO1663 name:"Жировая эмболия" system:Unknown_system followsTo:AO1676,AO1620
+AO1664 name:"Гипоплазия костного мозга" system:Unknown_system followsTo:AO197
 AO1665 name:"Уменьшение содержания эластина в стенках артерий (на 5–10%)" ageFrom:"30" ageTo:"40" system:org/Cardiovascular_system followsTo:AO1666
 AO1666 name:"Начало кальциноза артерий" ageFrom:"30" ageTo:"40" system:org/Cardiovascular_system followsTo:AO1667
 AO1667 name:"Выраженный кальциноз артерий" ageFrom:"55" ageTo:"65" system:org/Cardiovascular_system followsTo:AO1668,AO489
-AO1668 name:"Уменьшение кровотока" ageFrom:"" ageTo:"" system:org/Cardiovascular_system followsTo:AO837
-AO1669 name:"Межбелковые сшивки" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO865
-AO1670 name:"Амплификация ДНК" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO223
-AO1672 name:"Тепловое движение молекул" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO157
-AO1673 name:"Уменьшение синтеза селектинов и адрессинов" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1674
-AO1674 name:"Нарушение взаимодействия между белками хоминга (L-селектинамии адрессинами)" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO266
-AO1675 name:"Нарушение миграции лимфоцитов в лимфоузлы" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO39
-AO1676 name:"Жировая эмболия сосудов легких" ageFrom:"" ageTo:"" system:org/Respiratory_system followsTo:AO1692,AO345
-AO1678 name:"Воспаление сосудистой стенки" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1616
-AO1679 name:"Дисбактериоз" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1680
-AO1680 name:"Аллергические реакции" ageFrom:"" ageTo:"" system:org/Immune_system followsTo:AO1616
-AO1681 name:"Истощение запасов нейромедиаторов" ageFrom:"" ageTo:"" system:org/Nervous_system followsTo:AO1682
-AO1682 name:"Утомление синапсов" ageFrom:"" ageTo:"" system:org/Nervous_system followsTo:AO1651
-AO1683 name:"Уменьшение поглощения кислорода клеткой" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO385,AO95
-AO1684 name:"Снижение скорости деления стволовых мышечных клеток" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO1648
-AO1685 name:"Замедление поступления сигналов в центре насыщения гипоталамуса о насыщении" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO687
-AO1686 name:"Функциональная недостаточность органов" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO543
-AO1687 name:"Превращение протоонкогенов в онкогены" ageFrom:"" ageTo:"" system:do/Cancer followsTo:AO225
-AO1688 name:"Поздние мутации" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO143
-AO1689 name:"Миграция NUMT-псевдогенов в ядро" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO501
-AO1690 name:"Недорепликация ДНК при нормальной пролиферации клеток" ageFrom:"10" ageTo:"15" system:org/Unknown_system followsTo:AO1691
-AO1691 name:"Нормальное укорочение теломер" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO272
+AO1668 name:"Уменьшение кровотока" system:org/Cardiovascular_system followsTo:AO837
+AO1669 name:"Межбелковые сшивки" system:Unknown_system followsTo:AO865
+AO1670 name:"Амплификация ДНК" system:Unknown_system followsTo:AO223
+AO1672 name:"Тепловое движение молекул" system:Unknown_system followsTo:AO157
+AO1673 name:"Уменьшение синтеза селектинов и адрессинов" system:Unknown_system followsTo:AO1674
+AO1674 name:"Нарушение взаимодействия между белками хоминга (L-селектинамии адрессинами)" system:Unknown_system followsTo:AO266
+AO1675 name:"Нарушение миграции лимфоцитов в лимфоузлы" system:Unknown_system followsTo:AO39
+AO1676 name:"Жировая эмболия сосудов легких" system:org/Respiratory_system followsTo:AO1692,AO345
+AO1678 name:"Воспаление сосудистой стенки" system:Unknown_system followsTo:AO1616
+AO1679 name:"Дисбактериоз" system:cell/Metabolism_system followsTo:AO1680
+AO1680 name:"Аллергические реакции" system:org/Immune_system followsTo:AO1616
+AO1681 name:"Истощение запасов нейромедиаторов" system:org/Nervous_system followsTo:AO1682
+AO1682 name:"Утомление синапсов" system:org/Nervous_system followsTo:AO1651
+AO1683 name:"Уменьшение поглощения кислорода клеткой" system:Cell_system followsTo:AO385,AO95
+AO1684 name:"Снижение скорости деления стволовых мышечных клеток" system:Cell_system followsTo:AO1648
+AO1685 name:"Замедление поступления сигналов в центре насыщения гипоталамуса о насыщении" system:Unknown_system followsTo:AO687
+AO1686 name:"Функциональная недостаточность органов" system:Unknown_system followsTo:AO543
+AO1687 name:"Превращение протоонкогенов в онкогены" system:do/Cancer followsTo:AO225
+AO1688 name:"Поздние мутации" system:Unknown_system followsTo:AO143
+AO1689 name:"Миграция NUMT-псевдогенов в ядро" system:Unknown_system followsTo:AO501
+AO1690 name:"Недорепликация ДНК при нормальной пролиферации клеток" ageFrom:"10" ageTo:"15" system:Unknown_system followsTo:AO1691
+AO1691 name:"Нормальное укорочение теломер" system:Unknown_system followsTo:AO272
 AO1692 name:"Инфаркт легких" ageFrom:"60" ageTo:"70" system:org/Respiratory_system followsTo:AO345
-AO1693 name:"Атрофия мышц (саркопения)" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1642
-AO1694 name:"Длительное лежание в постели" ageFrom:"65" ageTo:"79" system:org/Unknown_system followsTo:AO59
-AO1695 name:"Снижение синтеза белка в железистых клетках ЖКТ" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO529
-AO1696 name:"Повышение онкориска кишечника" ageFrom:"" ageTo:"" system:do/Cancer followsTo:AO1711,AO1710
-AO1698 name:"Нарушение водно-солевого обмена" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO675,AO7,AO1632
-AO1699 name:"Уменьшение синтеза белка в кардиомиоцитах" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1713,AO1700
-AO1700 name:"Уменьшение функциональной активности кардиомиоцитов" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO1713,AO1701
-AO1701 name:"Уменьшение функциональной активности миокарда" ageFrom:"45" ageTo:"" system:org/Cardiovascular_system followsTo:AO7
-AO1702 name:"Дальнейшее ухудшение функциональной активности печени" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO25
-AO1703 name:"Уменьшение функциональной активности клеток почек" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO133
-AO1704 name:"Задержка эвакуации непереваренной пищи (запор)" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO783
-AO1705 name:"Гипотрофия гладкой мускулатуры стенки кишечника" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1706
-AO1706 name:"Ослабление мышечного тонуса стенки кишечника" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1704
-AO1707 name:"Гормональное усиление атрофии ретикулярных клеток тимуса" ageFrom:"" ageTo:"" system:org/Immune_system followsTo:AO39
-AO1708 name:"Рак пищевода" ageFrom:"65" ageTo:"" system:do/Cancer followsTo:AO1713
-AO1709 name:"Рак желудка" ageFrom:"65" ageTo:"" system:do/Cancer followsTo:AO1713
-AO1710 name:"Рак тонкого кишечника" ageFrom:"65" ageTo:"" system:do/Cancer followsTo:AO1713
-AO1711 name:"Рак толстого кишечника" ageFrom:"65" ageTo:"" system:do/Cancer followsTo:AO1713
-AO1712 name:"Гипоплазия обкладочных стенок слизистой желудка" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO1714
-AO1713 name:"Раковая интоксикация" ageFrom:"" ageTo:"" system:do/Cancer followsTo:AO543
-AO1714 name:"Выраженное уменьшение кислотности желудочного сока" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1715
-AO1715 name:"Гипоцидный гастрит" ageFrom:"" ageTo:"" system:org/Cell_system followsTo:AO1709
-AO1716 name:"Стимуляция желчеобразования" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1717
-AO1717 name:"Избыточная концентрация желчных кислот и продуктов из распада в кишечнике" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO1696
-AO1718 name:"Превращение тестостерона в эстрогены (в жировой ткани мужчин)" ageFrom:"" ageTo:"" system:org/Hormonal_system followsTo:AO173
-AO1719 name:"Отрыжка" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1720
-AO1720 name:"Выброс желудочных кислот в пищевод" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO1708
-AO1721 name:"Избыток инсулина" ageFrom:"" ageTo:"" system:org/Hormonal_system followsTo:AO225
-AO1722 name:"Избыток холестерина" ageFrom:"" ageTo:"" system:org/Metabolism_system followsTo:AO225
-AO1723 name:"Рак эндокринных желез" ageFrom:"65" ageTo:"" system:do/Cancer followsTo:AO1713
-AO1724 name:"Рак женских половых органов" ageFrom:"65" ageTo:"" system:do/Cancer followsTo:AO1713
-AO1725 name:"Избыток половых стероидных гормонов (эстрогены)" ageFrom:"" ageTo:"" system:org/Hormonal_system followsTo:AO73,AO1723,AO1724
-AO1726 name:"Аденома простаты" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO173
-AO1727 name:"Уменьшение количества T-хелперов" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO39
-AO1728 name:"Нарушение микрофлоры ЖКТ" ageFrom:"" ageTo:"" system:org/Unknown_system followsTo:AO153
+AO1693 name:"Атрофия мышц (саркопения)" system:Unknown_system followsTo:AO1642
+AO1694 name:"Длительное лежание в постели" ageFrom:"65" ageTo:"79" system:Unknown_system followsTo:AO59
+AO1695 name:"Снижение синтеза белка в железистых клетках ЖКТ" system:cell/Metabolism_system followsTo:AO529
+AO1696 name:"Повышение онкориска кишечника" system:do/Cancer followsTo:AO1711,AO1710
+AO1698 name:"Нарушение водно-солевого обмена" system:cell/Metabolism_system followsTo:AO675,AO7,AO1632
+AO1699 name:"Уменьшение синтеза белка в кардиомиоцитах" system:cell/Metabolism_system followsTo:AO1713,AO1700
+AO1700 name:"Уменьшение функциональной активности кардиомиоцитов" system:Cell_system followsTo:AO1713,AO1701
+AO1701 name:"Уменьшение функциональной активности миокарда" ageFrom:"45" system:org/Cardiovascular_system followsTo:AO7
+AO1702 name:"Дальнейшее ухудшение функциональной активности печени" system:Unknown_system followsTo:AO25
+AO1703 name:"Уменьшение функциональной активности клеток почек" system:Unknown_system followsTo:AO133
+AO1704 name:"Задержка эвакуации непереваренной пищи (запор)" system:Unknown_system followsTo:AO783
+AO1705 name:"Гипотрофия гладкой мускулатуры стенки кишечника" system:Unknown_system followsTo:AO1706
+AO1706 name:"Ослабление мышечного тонуса стенки кишечника" system:Unknown_system followsTo:AO1704
+AO1707 name:"Гормональное усиление атрофии ретикулярных клеток тимуса" system:org/Immune_system followsTo:AO39
+AO1708 name:"Рак пищевода" ageFrom:"65" system:do/Cancer followsTo:AO1713
+AO1709 name:"Рак желудка" ageFrom:"65" system:do/Cancer followsTo:AO1713
+AO1710 name:"Рак тонкого кишечника" ageFrom:"65" system:do/Cancer followsTo:AO1713
+AO1711 name:"Рак толстого кишечника" ageFrom:"65" system:do/Cancer followsTo:AO1713
+AO1712 name:"Гипоплазия обкладочных стенок слизистой желудка" system:Cell_system followsTo:AO1714
+AO1713 name:"Раковая интоксикация" system:do/Cancer followsTo:AO543
+AO1714 name:"Выраженное уменьшение кислотности желудочного сока" system:cell/Metabolism_system followsTo:AO1715
+AO1715 name:"Гипоцидный гастрит" system:Cell_system followsTo:AO1709
+AO1716 name:"Стимуляция желчеобразования" system:cell/Metabolism_system followsTo:AO1717
+AO1717 name:"Избыточная концентрация желчных кислот и продуктов из распада в кишечнике" system:cell/Metabolism_system followsTo:AO1696
+AO1718 name:"Превращение тестостерона в эстрогены (в жировой ткани мужчин)" system:org/Endocrine_system followsTo:AO173
+AO1719 name:"Отрыжка" system:Unknown_system followsTo:AO1720
+AO1720 name:"Выброс желудочных кислот в пищевод" system:Unknown_system followsTo:AO1708
+AO1721 name:"Избыток инсулина" system:org/Endocrine_system followsTo:AO225
+AO1722 name:"Избыток холестерина" system:cell/Metabolism_system followsTo:AO225
+AO1723 name:"Рак эндокринных желез" ageFrom:"65" system:do/Cancer followsTo:AO1713
+AO1724 name:"Рак женских половых органов" ageFrom:"65" system:do/Cancer followsTo:AO1713
+AO1725 name:"Избыток половых стероидных гормонов (эстрогены)" system:org/Endocrine_system followsTo:AO73,AO1723,AO1724
+AO1726 name:"Аденома простаты" system:Unknown_system followsTo:AO173
+AO1727 name:"Уменьшение количества T-хелперов" system:Unknown_system followsTo:AO39
+AO1728 name:"Нарушение микрофлоры ЖКТ" system:Unknown_system followsTo:AO153

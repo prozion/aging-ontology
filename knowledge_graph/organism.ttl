@@ -1,0 +1,83 @@
+@prefix : <https://purl.org/agingontology/organism#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix aon: <https://purl.org/agingontology/core#> .
+@prefix tabtree: <https://purl.org/tabtree/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix do: <https://purl.org/agingontology/disease#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+:Cardiovascular_system
+  owl:sameAs :Circulatory_system ;
+  rdf:type :OrganismSystem .
+
+:CellsGroup
+  rdf:type owl:Class .
+
+:Digestive_system
+  owl:sameAs :Excretory_system ;
+  rdf:type :OrganismSystem .
+
+:Endocrine_system
+  rdf:type :OrganismSystem .
+
+:Heart
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Organ .
+
+:Immune_system
+  owl:sameAs :Lymphatic_system ;
+  rdf:type :OrganismSystem .
+
+:Integumentary_system
+  owl:sameAs :Exocrine_system ;
+  rdf:type :OrganismSystem .
+
+:Kidney
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Organ .
+
+:Liver
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Organ .
+
+:Muscular_system
+  rdf:type :OrganismSystem .
+
+:Nervous_system
+  rdf:type :OrganismSystem .
+
+:Organ
+  rdf:type owl:Class .
+
+:OrganismProcess
+  rdf:type owl:Class .
+
+:OrganismSystem
+  rdf:type owl:Class .
+
+:Pancrea
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Organ .
+
+:Renal_system
+  owl:sameAs :Urinary_system ;
+  rdf:type :OrganismSystem .
+
+:Reproductive_system
+  rdf:type :OrganismSystem .
+
+:Respiratory_system
+  rdf:type :OrganismSystem .
+
+:Skeletal_system
+  rdf:type :OrganismSystem .
+
+:organism
+  rdf:type owl:Ontology ;
+  dc:title "Ontology about parts of organism" ;
+  :ns <https://purl.org/agingontology/organism#> ;
+  owl:imports  .
+

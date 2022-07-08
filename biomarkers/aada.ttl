@@ -1,0 +1,39 @@
+@prefix : <https://purl.org/agingontology/aada#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix do: <https://purl.org/agingontology/disease#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: <https://purl.org/agingontology/organism#> .
+@prefix cell: <https://purl.org/agingontology/cell#> .
+@prefix aon: <https://purl.org/agingontology/aon#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:aada
+  rdf:type owl:Ontology ;
+  dc:title "All aging diagnostic approaches (AADA) table" ;
+  :ns <https://purl.org/agingontology/aada#> ;
+  owl:imports <https://purl.org/agingontology/aon#> ;
+  owl:imports <https://purl.org/agingontology/organism#> .
+
+:AADAOrganismFeature
+  rdf:type owl:Class .
+
+:AADASystem
+  rdf:type owl:Class .
+
+:ATM
+  rdfs:label "ATM" ;
+  rdf:type aon:Biomarker ;
+  :panel :SASP_Panel ;
+  :system cell:DNA_damage_response .
+
+:Active_vitamin_B12
+  rdfs:label "Active vitamin B12 (holotranscobalamin)" ;
+  rdf:type aon:MolecularBiomarker ;
+  :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
+
+:Adenosylhomocysteinase
+  rdfs:label "Adenosylhomocysteinase (AHCY)" ;
+  rdf:type aon:MolecularBiomarker ;
+  :panel :Frailty_Index .

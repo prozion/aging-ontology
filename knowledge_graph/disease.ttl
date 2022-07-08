@@ -1,0 +1,199 @@
+@prefix : <https://purl.org/agingontology/disease#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tabtree: <https://purl.org/tabtree/core#> .
+@prefix org: <https://purl.org/agingontology/organism#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix doid: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+:All-cause_mortality
+  rdf:type :Disease .
+
+:Alzheimers_disease
+  owl:sameAs :AD ;
+  rdf:type :Disease ;
+  skos:broader :Neurodegenerative_disease .
+
+:Atherosclerosis
+  rdf:type :Disease .
+
+:Bacteria
+  rdf:type owl:Class .
+
+:COPD
+  rdfs:label "Chronic obstructive lung disease" ;
+  rdf:type :Disease .
+
+:Cancer
+  rdf:type :Disease .
+
+:Cardiovascular_system_disease
+  :doid "1287" ;
+  rdf:type :Disease .
+
+:Cataract
+  rdf:type :Disease ;
+  skos:broader :Eye_disease .
+
+:Death
+  rdf:type :Disease .
+
+:Dementia
+  rdf:type :Disease .
+
+:Diabetes
+  :doid "81062" ;
+  rdf:type :Disease ;
+  skos:broader :Glucose_metabolism_disease .
+
+:Disease
+  :ogms "31" ;
+  rdfs:comment "Сложная реакция организма на действие патологического агента, являющаяся новым процессом жизнедеятельности, возникающим в результате нарушений во взаимодействии организма и внешней среды, характеризующаяся нарушением регуляции функции, приспособляемости и уменьшением работоспособности, чувством боли и недомогания" ;
+  rdf:type owl:Class .
+
+:Dry_eye_disease
+  rdf:type :Disease ;
+  skos:broader :Eye_disease .
+
+:Erectile_dysfunction
+  rdf:type :Disease ;
+  skos:broader :Reproductive_system_disease .
+
+:Eye_disease
+  rdf:type :Disease .
+
+:Glaukoma
+  rdf:type :Disease ;
+  skos:broader :Eye_disease .
+
+:Glucose_metabolism_disease
+  :doid "4194" ;
+  rdf:type :Disease .
+
+:Heart_disease
+  rdf:type :Disease ;
+  skos:broader :Cardiovascular_system_disease .
+
+:Hepatitis
+  rdf:type :Disease .
+
+:IPF
+  rdfs:label "Idiopathic lung ﬁbrosis" ;
+  rdf:type :Disease .
+
+:Infertility
+  rdf:type :Disease ;
+  skos:broader :Reproductive_system_disease .
+
+:Inflammation
+  rdf:type :Disease .
+
+:Kidney_disease
+  rdf:type :Disease .
+
+:Liver_disease
+  rdf:type :Disease .
+
+:MortalityFactor
+  rdf:type owl:Class .
+
+:Mortality_related_CVDs
+  rdf:type :Disease ;
+  :relatesTo :Cardiovascular_system_disease .
+
+:Mortality_related_neoplasms
+  rdf:type :Disease ;
+  :relatesTo :Cancer .
+
+:Mortality_related_respiratory_diseases
+  rdf:type :Disease ;
+  :relatesTo :Respiratory_disease .
+
+:Neurodegenerative_disease
+  :doid "1289" ;
+  rdf:type :Disease .
+
+:Osteoarthritis
+  rdf:type :Disease .
+
+:Osteoporosis
+  rdf:type :Disease .
+
+:Pancreatic_fibrosis
+  rdf:type :Disease .
+
+:Parkinson_disease
+  owl:sameAs :PD ;
+  rdf:type :Disease ;
+  skos:broader :Neurodegenerative_disease .
+
+:PathologicalAgent
+  rdf:type owl:Class .
+
+:PathologicalProcess
+  rdfs:comment "Реакция организма на необычное раздражение, в основе которого лежит нарушение функции и структуры" ;
+  rdf:type owl:Class .
+
+:Pathology
+  rdf:type owl:Class .
+
+:PathologyProduct
+  rdf:type owl:Class .
+
+:Pulmonary_disease
+  rdf:type :Disease ;
+  skos:broader :Respiratory_disease .
+
+:Renal_disease
+  rdf:type :Disease .
+
+:Reproductive_system_disease
+  :doid "15" ;
+  rdf:type :Disease .
+
+:Respiratory_disease
+  rdf:type :Disease .
+
+:Retinopathy
+  rdf:type :Disease ;
+  skos:broader :Eye_disease .
+
+:Secondary_cataract
+  rdf:type :Disease ;
+  skos:broader :Cataract .
+
+:Symptom
+  rdf:type owl:Class .
+
+:Vascular_disease
+  rdf:type :Disease ;
+  skos:broader :Cardiovascular_system_disease .
+
+:Virus
+  rdf:type owl:Class .
+
+:disease
+  rdf:type owl:Ontology ;
+  dc:title "Proxy ontology for DOID (Disease Ontology) taxonomy" ;
+  :ns <https://purl.org/agingontology/disease#> ;
+  owl:imports  .
+
+:hasSymptom
+  owl:inverseOf :symptomFor ;
+  rdf:type rdf:Property .
+
+:ogms
+  rdf:type rdf:Property .
+
+:relatesTo
+  rdfs:range :Disease ;
+  rdf:type rdf:Property .
+
+:symptomFor
+  rdf:type rdf:Property ;
+  rdfs:domain :Symptom ;
+  rdfs:range :Disease .
+

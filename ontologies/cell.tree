@@ -14,12 +14,16 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 			CellCompartment
 		CellProcess
 		CellState
+		CellSystem
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 		compartment domain:CellElement range:CellCompartment
 	individuals +section-hierarchy-inverse-relation:skos/broader
+		; cell systems
+		Metabolism_system a:CellSystem
+			Glucose_metabolism_system a:CellSystem
 		; cell parts
 		Cytosol a:CellCompartment
-		DNA a:CellElement compartment:Nucleus,Mitochondria
+		Chromosome a:CellElement compartment:Nucleus,Mitochondria
 		Lyzosome a:CellCompartment
 		Membrane a:CellCompartment
 		Mitochondria a:CellCompartment
@@ -28,10 +32,11 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 		RNA a:CellElement
 		; Lifecycle stages
 		Apoptosis a:CellProcess
+		Cell_senescence a:CellProcess
 		Meiosis a:CellProcess
 		Mitosis a:CellProcess
-		Cell_senescence a:CellProcess
 		; cell processes
+		DNA_damage_response a:CellProcess
 		Fibrosis a:CellProcess
 		Intercellular_communication a:CellProcess
 		Metabolism a:CellProcess

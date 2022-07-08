@@ -25,31 +25,39 @@
   (keyword (format "AO%s" (-> id (subs 1)))))
 
 (defn read-blocks []
-  (let [content (read-csv "../_import/hasd_67.3_blocks.csv")]
+  (let [content (read-csv "../hasd/_import/hasd_67.3_blocks.csv")]
     (reduce
       (fn [acc line]
         (let [[id name age-from age-to system] line
               system (case system
-                      "metabolism" :org/Metabolism_system
-                      "unknown" :org/Unknown_system
-                      "cell" :org/Cell_system
+                      "metabolism" :cell/Metabolism_system
+                      "unknown" :Unknown_system
+                      "cell" :Cell_system
                       "immune" :org/Immune_system
-                      "intersystem" :org/Intersystem
-                      "hormones" :org/Hormonal_system
+                      "intersystem" :Intersystem
+                      "hormones" :org/Endocrine_system
                       "nervous" :org/Nervous_system
                       "cardiovascular" :org/Cardiovascular_system
                       "respiratory" :org/Respiratory_system
-                      "connective" :org/Connective_system
+                      "connective" :Connective_system
                       "cancer" :do/Cancer
-                      "death" :aon/Death
-                      :org/Unknown_system)
+                      "death" :do/Death
+                      nil)
               id (ao-id id)]
-          (merge acc {id {:__id id :name name :ageFrom age-from :ageTo age-to :system system}})))
+          (merge acc {id
+                        (merge
+                          {:__id id :name name}
+                          (when (not-empty? age-from)
+                            {:ageFrom age-from})
+                          (when (not-empty? age-to)
+                            {:ageTo age-to})
+                          (when system
+                            {:system system}))})))
       {}
       content)))
 
 (defn read-links [tabtree]
-  (let [content (read-csv "../_import/hasd_67.3_links.csv")]
+  (let [content (read-csv "../hasd/_import/hasd_67.3_links.csv")]
     (reduce
       (fn [tabtree' line]
         (let [[from-id _ _ to-id _] line
@@ -84,13 +92,17 @@
       :sorter (fn [a b] (compare (-> a name ->integer) (-> b name ->integer))))))
 
 (defn glue-hasd-scheme-and-hasd-nodes []
-  (let [scheme (read-file "../hasd/hasd_scheme.tree")
-        individuals-lines (read-file-by-lines "../hasd/hasd_individuals.tree")
-        formatted-individuals (format "%s\n" (s/join "\n\t\t\t" individuals-lines))
-        filled-scheme (s/replace scheme "[HASDNode instances]" formatted-individuals)]
-    (write-to-file
-      "../hasd/hasd.tree"
-      filled-scheme)))
+  (write-to-file
+    "../hasd/hasd.tree"
+    (output/glue-tabtree-file "../hasd/hasd.glue" :glue-files-root "../hasd/")))
+
+  ; (let [scheme (read-file "../hasd/hasd_scheme.tree")
+  ;       individuals-lines (read-file-by-lines "../hasd/hasd_individuals.tree")
+  ;       formatted-individuals (format "%s\n" (s/join "\n\t\t\t" individuals-lines))
+  ;       filled-scheme (s/replace scheme "[HASDNode instances]" formatted-individuals)]
+  ;   (write-to-file
+  ;     "../hasd/hasd.tree"
+  ;     filled-scheme)))
 
 (defn generate-hasd-rdf []
   (glue-hasd-scheme-and-hasd-nodes)

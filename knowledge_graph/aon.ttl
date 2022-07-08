@@ -1,0 +1,125 @@
+@prefix : <https://purl.org/agingontology/core#> .
+@prefix therapies: <https://purl.org/agingontology/therapies#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix doid: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix do: <https://purl.org/agingontology/disease#> .
+@prefix GO: <http://purl.obolibrary.org/obo/GO_> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix npg: <http://www.nature.com/ontologies/core/> .
+@prefix biochem: <https://purl.org/agingontology/biochemistry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix af: <https://purl.org/sbgn/af#> .
+@prefix tt: <https://purl.org/tabtree/time#> .
+@prefix sio: <http://semanticscience.org/resource/SIO_> .
+@prefix org: <https://purl.org/agingontology/organism#> .
+@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix NCIT: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix OGMS: <http://purl.obolibrary.org/obo/OGMS_> .
+@prefix drug: <https://purl.org/agingontology/drugs#> .
+@prefix cell: <https://purl.org/agingontology/cell#> .
+@prefix pub: <https://purl.org/tabtree/publication#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+:Aging-related_hormonal_changes
+  rdf:type :BasicAgingMechanism .
+
+:AgingPathogeneticProcess
+  rdf:type owl:Class ;
+  rdfs:subClassOf do:PathologicalProcess .
+
+:BasicAgingMechanism
+  rdfs:seeAlso :Khaltourina_2020_Mechanisms_of_ageing_and_development ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :AgingPathogeneticProcess .
+
+:BiologicalProcess
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing .
+
+:Biomarker
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing .
+
+:BiomarkerPanel
+  rdfs:seeAlso <https://docs.google.com/spreadsheets/d/1suMEVlMHKyTHwWzafBF0rmEAIPY0CowxxjEFvhO2TIA/edit#gid=853086944> ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing .
+
+:BloodBasedBiomarker
+  rdf:type owl:Class ;
+  rdfs:subClassOf :MolecularBiomarker .
+
+:Body_composition_changes
+  rdf:type :BasicAgingMechanism .
+
+:Cellular_senescence
+  rdf:type :BasicAgingMechanism .
+
+:Failure_of_proteostasis
+  rdf:type :BasicAgingMechanism .
+
+:Fibrosis
+  rdf:type :BasicAgingMechanism .
+
+:FunctionalBiomarker
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Biomarker .
+
+:HardwareBiomarker
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Biomarker .
+
+:Immunosenescence
+  rdf:type :BasicAgingMechanism .
+
+:Insulin_resistance
+  rdf:type :BasicAgingMechanism .
+
+:Low-grade_inflammation
+  rdf:type :BasicAgingMechanism .
+
+:Mitochondrial_dysfunction
+  rdf:type :BasicAgingMechanism .
+
+:MolecularBiomarker
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Biomarker .
+
+:PhenotypicBiomarker
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Biomarker .
+
+:QuestionnairyBiomarker
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Biomarker .
+
+:aon
+  rdf:type owl:Ontology ;
+  dc:title "Aging ontology (AON)" ;
+  :ns <https://purl.org/agingontology/core#> ;
+  owl:imports  .
+
+:fullName
+  rdfs:subPropertyOf dc:title ;
+  rdf:type rdf:Property .
+
+:substance
+  rdfs:domain :Biomarker ;
+  rdfs:range biochem:ChemicalSubstance ;
+  rdf:type rdf:Property .
+
+:do/PathologicalProcess
+  rdf:type owl:Class ;
+  rdfs:subClassOf org:OrganismProcess .
+
+:org/OrganismProcess
+  rdf:type owl:Class ;
+  rdfs:subClassOf :BiologicalProcess .
+
+:owl/Thing
+  rdf:type owl:Class .
+

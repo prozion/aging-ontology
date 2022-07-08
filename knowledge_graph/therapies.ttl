@@ -1,0 +1,41 @@
+@prefix : <https://purl.org/agingontology/therapies#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix drugs: <https://purl.org/agingontology/drugs#> .
+@prefix tabtree: <https://purl.org/tabtree/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+:AdverseEffect
+  rdf:type owl:Class .
+
+:Exercise
+  rdf:type owl:Class .
+
+:Intervention
+  rdf:type owl:Class .
+
+:MedicalDiagnosis
+  rdf:type owl:Class .
+
+:Therapy
+  rdfs:comment "The attempted remediation of a health problem, usually following a medical diagnosis." ;
+  rdf:type owl:Class .
+
+:Treatment
+  owl:equivalentClass :Therapy ;
+  rdf:type owl:Class .
+
+:includesIntervention
+  rdfs:domain :Therapy ;
+  rdfs:range :Intervention ;
+  rdf:type rdf:Property .
+
+:therapies
+  rdf:type owl:Ontology ;
+  dc:title "Ontology about therapies and interventions" ;
+  :ns <https://purl.org/agingontology/therapies#> ;
+  owl:imports  .
+

@@ -5,19 +5,27 @@ aada a:owl/Ontology dc/title:"All aging diagnostic approaches (AADA) table" ns:h
 		owl ns:http://www.w3.org/2002/07/owl#
 		dc ns:http://purl.org/dc/elements/1.1/
 		skos ns:http://www.w3.org/2004/02/skos/core#
-		aon ns:https://purl.org/agingontology/aon#
-		org ns:https://purl.org/agingontology/organism#
-		cell ns:https://purl.org/agingontology/cell#
-		do ns:https://purl.org/agingontology/disease#
+		aon ns:https://purl.org/agingontology/aon# imports:<t>
+		org ns:https://purl.org/agingontology/organism# imports:<t>
+		cell ns:https://purl.org/agingontology/cell# imports:<t>
+		do ns:https://purl.org/agingontology/disease# imports:<t>
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+		AADAOrganismFeature
+		AADASystem
 		UntrustedBiomarkerPanel subclass-of:aon/BiomarkerPanel
-		SystemOrganProcess owl/unionOf:`org/OrganismSystem,org/OrganismProcess,org/Organ,cell/CellProcess,cell/CellPart,do/MortalityFactor`
+		SystemOrganProcess owl/unionOf:`org/OrganismSystem,org/OrganismProcess,org/Organ,cell/CellProcess,cell/CellPart,do/MortalityFactor,AADASystem,AADAOrganismFeature`
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 		panel domain:aon/Biomarker range:aon/BiomarkerPanel
 		partOfPanel domain:aon/BiomarkerPanel range:aon/BiomarkerPanel
 		system domain:aon/Biomarker range:SystemOrganProcess
-		basicAgingMechanism domain:aon/Biomarker range:aon/BasicAgingMechanism
+		agingMechanism domain:aon/Biomarker range:aon/BasicAgingMechanism
 	individuals +section-hierarchy-inverse-relation:skos/broader
+		; Custom systems:
+		DNA_system a:AADASystem
+		; Custom features
+		Physical_ability a:AADAOrganismFeature
+		Facial_feature a:AADAOrganismFeature
+		Cognitive_function a:AADAOrganismFeature
 		; Biomarker panels:
 		Horvath_Clock a:aon/BiomarkerPanel
 		Hannum_Clock a:aon/BiomarkerPanel
@@ -37,4 +45,3 @@ aada a:owl/Ontology dc/title:"All aging diagnostic approaches (AADA) table" ns:h
 		Theranostic_Panel_Oncology a:aon/BiomarkerPanel partOfPanel:Theranostic_Panel_Full
 		Theranostic_Panel_Brain_and_Depression a:aon/BiomarkerPanel partOfPanel:Theranostic_Panel_Full
 		Theranostic_Panel_Heart_and_Vessels a:aon/BiomarkerPanel partOfPanel:Theranostic_Panel_Full
-		[AADA biomarkers]

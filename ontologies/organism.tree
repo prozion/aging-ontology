@@ -19,28 +19,20 @@ organism a:owl/Ontology dc/title:"Ontology about parts of organism" ns:https://p
 		OrganismSystem
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 	individuals +section-hierarchy-inverse-relation:skos/broader
-		; orgnism systems:
-		Unknown_system a:Unknown_system_1
-			Unknown_system_1 a:owl/Class owl/unionOf:`OrganismSystem,aon/OrganismProcess,do/Disease`
-		Metabolism_system a:OrganismSystem
-			Glucose_metabolism_system a:OrganismSystem
-		Cell_system a:OrganismSystem
-		Immune_system a:OrganismSystem
-		Intersystem a:OrganismSystem
-		Hormonal_system a:OrganismSystem
-		Nervous_system a:OrganismSystem
-		Cardiovascular_system a:OrganismSystem
-		Respiratory_system a:OrganismSystem
-		Connective_system a:OrganismSystem
-; покровная_система
-; костная_система
-; мышечная_система
-; дыхательная_система
-; сердечно-сосудистая_система
-; пищеварительная_система
-; мочевыделительная_система
-; репродуктивная_система
-; нервная_система
-; лимфатическая_система
-; эндокринная_система
+		; organism systems (from https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body):
+		Cardiovascular_system eq:Circulatory_system a:OrganismSystem ; сердечно-сосудистая_система
+		Digestive_system eq:Excretory_system a:OrganismSystem ; пищеварительная_система
+		Endocrine_system a:OrganismSystem ; эндокринная_система
+		Integumentary_system eq:Exocrine_system a:OrganismSystem ; покровная_система
+		Immune_system eq:Lymphatic_system a:OrganismSystem ; лимфатическая_система
+		Muscular_system a:OrganismSystem ; мышечная_система
+		Nervous_system a:OrganismSystem ; нервная_система
+		Renal_system eq:Urinary_system a:OrganismSystem ; мочевыделительная_система
+		Reproductive_system a:OrganismSystem ; репродуктивная_система
+		Respiratory_system a:OrganismSystem ; дыхательная_система
+		Skeletal_system a:OrganismSystem ; костная_система
+
+
+
+
 

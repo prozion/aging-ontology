@@ -4,11 +4,13 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
 		owl ns:http://www.w3.org/2002/07/owl#
 		xsd ns:http://www.w3.org/2001/XMLSchema#
+		cell ns:https://purl.org/agingontology/cell#
+		org ns:https://purl.org/agingontology/organism#
 		do ns:https://purl.org/agingontology/disease#
 		aon ns:https://purl.org/agingontology/core#
-		org ns:https://purl.org/agingontology/organism#
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of	
 		HASDNode subclass-of:aon/AgingPathogeneticProcess
+		HASDSystem
 		Diagram
 	properties +a:rdfs/Property
 		; name domain:HASDNode range:xsd/Literal subproperty-of:rdfs/label
@@ -17,9 +19,10 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		hasElement domain:Diagram range:HASDNode
 		followsTo domain:HASDNode range:HASDNode
 		system domain:HASDNode range:system_1
-			system_1 a:owl/Class owl/unionOf:`org/OrganismSystem,aon/OrganismProcess,do/Disease`
-			; owl/oneOf:`unknown,metabolism,cell,immune,intersystem,hormones,nervous,cardiovascular,respiratory,cancer,connective,death` ; owl/oneOf:`"Unknown_system,Metabolism_system,Cell_system,ImmuneSystem,Intersystem,Hormonal_system,NervousSystem,CardiovascularSystem,RespiratorySystem,Cancer,ConnectiveSystem,Death`
+			system_1 a:owl/Class owl/unionOf:`org/OrganismSystem,aon/OrganismProcess,do/Disease,cell/CellSystem,HASDSystem`
+			; owl/oneOf:`unknown,metabolism,cell,immune,intersystem,hormones,nervous,cardiovascular,respiratory,cancer,connective,death` 
 	individuals
-		HASDDiagram a:Diagram +a:HASDNode section-hierarchy-relation:hasElement
-			[HASDNode instances]
-			
+		Cell_system a:HASDSystem
+		Connective_system a:HASDSystem
+		Intersystem a:HASDSystem
+		Unknown_system a:HASDSystem

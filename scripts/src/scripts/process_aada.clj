@@ -16,10 +16,14 @@
 (defn idify [id]
   (-> id
          (s/replace #"\(.+\)" "")
-         (s/replace #"\s" "_")
+         (s/replace #"[:\"&.,]" "")
+         (s/replace #"[\s/]" "_")
+         (s/replace #"\+" "")
+         (s/replace #"_{2,}" "_")
+         (s/replace #"_$" "")
          keyword))
 
-(defn make-aada-tabtree []
+(defn make-aada-individuals-tabtree []
   (let [content (read-tsv "../biomarkers/all_aging_diagnostic_approaches.tsv")
         content (drop 8 content)
         ; content (remove (fn [[_ marker-en]] (empty? marker-en)) content)
@@ -89,7 +93,7 @@
                     system (case system-organ-process
                               "Cardiovascular system" :org/Cardiovascular_system
                               "Hormonal system" :org/Hormonal_system
-                              "DNA" :cell/DNA
+                              "DNA" :DNA_system
                               "RNAi transcription" :cell/RNAi_transcription
                               "Metabolism" :org/Metabolism_system
                               "Glucose metabolism" :org/Glucose_metabolism_system
@@ -104,14 +108,14 @@
                               "Mortality related neoplasms" :do/Mortality_related_neoplasms
                               "Mortality related respiratory diseases" :do/Mortality_related_respiratory_diseases
                               "Lung function" :org/Respiratory_system
-                              "Bone health" :?
-                              "Skeletal muscle and body composition" :?
-                              "Immune function" :?
-                              "Physical abilities" :?
-                              "Facial features" :?
-                              "Cognitive function" :?
-                              "Immune system" :?
-                              "Participate in DNA damage response" :?
+                              "Bone health" :org/Skeletal_system
+                              "Skeletal muscle and body composition" :org/Muscular_system
+                              "Immune function" :org/Immune_system
+                              "Physical abilities" :Physical_ability
+                              "Facial features" :Facial_feature
+                              "Cognitive function" :Cognitive_function
+                              "Immune system" :org/Immune_system
+                              "Participate in DNA damage response" :cell/DNA_damage_response
                               nil)
                     ]
                 [(conj
@@ -122,8 +126,7 @@
                       { :__id id :name name :a class}
                       (when (not-empty? panels) {:panel panels})
                       (when system {:system system})
-                      (when (not-empty? hallmark-of-aging) {:basicAgingMechanism hallmark-of-aging})
-
+                      ; (when (not-empty? hallmark-of-aging) {:agingMechanism hallmark-of-aging})
                     )
                     })
                   (inc i)]))
@@ -131,6 +134,16 @@
             content)
         ]
     (write-to-file
-      "../biomarkers/aada.tree"
+      "../biomarkers/aada_individuals.tree"
       (output/tabtree->string content))
     true))
+
+(defn build-aada []
+  (let [aada-tabtree "../biomarkers/aada.tree"]
+    (make-aada-individuals-tabtree)
+    (write-to-file
+      aada-tabtree
+      (output/glue-tabtree-file "../biomarkers/aada.glue" :glue-files-root "../biomarkers/"))
+    (write-to-file
+      "../biomarkers/aada.ttl"
+      (rdf/tabtree->rdf (tabtree/parse-tab-tree aada-tabtree)))))

@@ -1,0 +1,118 @@
+@prefix : <https://purl.org/agingontology/cell#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix do: <https://purl.org/agingontology/disease#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: <https://purl.org/agingontology/organism#> .
+@prefix tabtree: <https://purl.org/tabtree/core#> .
+@prefix aon: <https://purl.org/agingontology/core#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+:Apoptosis
+  rdf:type :CellProcess .
+
+:CellCompartment
+  rdf:type owl:Class ;
+  rdfs:subClassOf :CellElement .
+
+:CellElement
+  rdf:type owl:Class .
+
+:CellProcess
+  rdf:type owl:Class .
+
+:CellState
+  rdf:type owl:Class .
+
+:CellSystem
+  rdf:type owl:Class .
+
+:Cell_senescence
+  rdf:type :CellProcess .
+
+:Chromosome
+  rdf:type :CellElement ;
+  :compartment :Nucleus, :Mitochondria .
+
+:Cytosol
+  rdf:type :CellCompartment .
+
+:DNA_damage_response
+  rdf:type :CellProcess .
+
+:Fibrosis
+  rdf:type :CellProcess .
+
+:GlucoseMetabolism
+  rdf:type :CellProcess ;
+  skos:broader :Metabolism .
+
+:Glucose_metabolism_system
+  rdf:type :CellSystem ;
+  skos:broader :Metabolism_system .
+
+:Intercellular_communication
+  rdf:type :CellProcess .
+
+:Lyzosome
+  rdf:type :CellCompartment .
+
+:Meiosis
+  rdf:type :CellProcess .
+
+:Membrane
+  rdf:type :CellCompartment .
+
+:Metabolism
+  rdf:type :CellProcess .
+
+:Metabolism_system
+  rdf:type :CellSystem .
+
+:Mitochondria
+  rdf:type :CellCompartment .
+
+:Mitosis
+  rdf:type :CellProcess .
+
+:Nucleus
+  rdf:type :CellCompartment .
+
+:Oxidative_stress
+  rdf:type :CellProcess .
+
+:Protein_glycation
+  rdf:type :CellProcess .
+
+:RNA
+  rdf:type :CellElement .
+
+:RNAi_transcription
+  rdf:type :CellProcess ;
+  skos:broader :Transcription .
+
+:Ribosome
+  rdf:type :CellElement .
+
+:Splicing
+  rdf:type :CellProcess .
+
+:Transcription
+  rdf:type :CellProcess .
+
+:Translation
+  rdf:type :CellProcess .
+
+:cell
+  rdf:type owl:Ontology ;
+  dc:title "Ontology about parts of the cell" ;
+  :ns <https://purl.org/agingontology/cell#> ;
+  owl:imports  .
+
+:compartment
+  rdfs:domain :CellElement ;
+  rdfs:range :CellCompartment ;
+  rdf:type rdf:Property .
+

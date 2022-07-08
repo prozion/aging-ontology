@@ -52,7 +52,7 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 		fullName subproperty-of:dc/title
 		substance domain:Biomarker range:biochem/ChemicalSubstance
 	individuals +section-hierarchy-inverse-relation:skos/broader
-		; Basic aging mechanisms:
+		; Basic aging mechanisms (hallmarks of aging):
 		Fibrosis a:BasicAgingMechanism
 		Insulin_resistance a:BasicAgingMechanism
 		Failure_of_proteostasis a:BasicAgingMechanism
