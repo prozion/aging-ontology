@@ -108,8 +108,7 @@
 :cell
   rdf:type owl:Ontology ;
   dc:title "Ontology about parts of the cell" ;
-  :ns <https://purl.org/agingontology/cell#> ;
-  owl:imports  .
+  :ns <https://purl.org/agingontology/cell#> .
 
 :compartment
   rdfs:domain :CellElement ;

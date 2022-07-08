@@ -5,10 +5,10 @@ aada a:owl/Ontology dc/title:"All aging diagnostic approaches (AADA) table" ns:h
 		owl ns:http://www.w3.org/2002/07/owl#
 		dc ns:http://purl.org/dc/elements/1.1/
 		skos ns:http://www.w3.org/2004/02/skos/core#
-		aon ns:https://purl.org/agingontology/aon# imports:<t>
+		aon ns:https://purl.org/agingontology/aon#
 		org ns:https://purl.org/agingontology/organism# imports:<t>
-		cell ns:https://purl.org/agingontology/cell# imports:<t>
-		do ns:https://purl.org/agingontology/disease# imports:<t>
+		cell ns:https://purl.org/agingontology/cell#
+		do ns:https://purl.org/agingontology/disease#
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
 		AADAOrganismFeature
 		AADASystem

@@ -78,6 +78,5 @@
 :organism
   rdf:type owl:Ontology ;
   dc:title "Ontology about parts of organism" ;
-  :ns <https://purl.org/agingontology/organism#> ;
-  owl:imports  .
+  :ns <https://purl.org/agingontology/organism#> .
 

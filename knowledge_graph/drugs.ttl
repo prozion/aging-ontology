@@ -34,6 +34,5 @@
 :drugs
   rdf:type owl:Ontology ;
   dc:title "Some drugs ontology" ;
-  :ns <https://purl.org/agingontology/drugs#> ;
-  owl:imports  .
+  :ns <https://purl.org/agingontology/drugs#> .
 
