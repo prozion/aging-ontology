@@ -36,6 +36,10 @@
   rdf:type owl:Class ;
   rdfs:subClassOf :AgingPathogeneticProcess .
 
+:BehavioralPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :GeneralPathology .
+
 :BiologicalProcess
   rdf:type owl:Class ;
   rdfs:subClassOf owl:Thing .
@@ -56,8 +60,36 @@
 :Body_composition_changes
   rdf:type :BasicAgingMechanism .
 
+:CellMembranePathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :CellPathology .
+
+:CellMetabolismPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :CellPathology .
+
+:CellPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :TissuePathology .
+
 :Cellular_senescence
   rdf:type :BasicAgingMechanism .
+
+:ChromosomePathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :NucleusPathology .
+
+:DNAPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :ChromosomePathology .
+
+:ExogenPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :GeneralPathology .
+
+:ExtracellularMetabolismPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :TissuePathology .
 
 :Failure_of_proteostasis
   rdf:type :BasicAgingMechanism .
@@ -69,6 +101,11 @@
   rdf:type owl:Class ;
   rdfs:subClassOf :Biomarker .
 
+:GeneralPathology
+  rdfs:comment "This classification tries to localize pathological and age-related features to the area of their cause" ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing .
+
 :HardwareBiomarker
   rdf:type owl:Class ;
   rdfs:subClassOf :Biomarker .
@@ -76,18 +113,54 @@
 :Immunosenescence
   rdf:type :BasicAgingMechanism .
 
+:InfectionCausedPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :ExogenPathology .
+
 :Insulin_resistance
   rdf:type :BasicAgingMechanism .
 
 :Low-grade_inflammation
   rdf:type :BasicAgingMechanism .
 
+:LysosomePathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :CellPathology .
+
+:MicrobiotaPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :OrganPathology .
+
 :Mitochondrial_dysfunction
   rdf:type :BasicAgingMechanism .
+
+:MitochondrionDNAPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :MitochondrionPathology .
+
+:MitochondrionPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :CellPathology .
 
 :MolecularBiomarker
   rdf:type owl:Class ;
   rdfs:subClassOf :Biomarker .
+
+:NucleusPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :CellPathology .
+
+:OrganPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :OrganismSystemPathology .
+
+:OrganismPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :GeneralPathology .
+
+:OrganismSystemPathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :OrganismPathology .
 
 :PhenotypicBiomarker
   rdf:type owl:Class ;
@@ -96,6 +169,10 @@
 :QuestionnairyBiomarker
   rdf:type owl:Class ;
   rdfs:subClassOf :Biomarker .
+
+:TissuePathology
+  rdf:type owl:Class ;
+  rdfs:subClassOf :OrganPathology .
 
 :aon
   rdf:type owl:Ontology ;

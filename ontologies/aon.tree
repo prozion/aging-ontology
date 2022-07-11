@@ -47,7 +47,26 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 				HardwareBiomarker
 				PhenotypicBiomarker
 				QuestionnairyBiomarker
-			BiomarkerPanel rdfs/seeAlso:"https://docs.google.com/spreadsheets/d/1suMEVlMHKyTHwWzafBF0rmEAIPY0CowxxjEFvhO2TIA/edit#gid=853086944"
+			BiomarkerPanel rdfs/seeAlso:"https://docs.google.com/spreadsheets/d/1suMEVlMHKyTHwWzafBF0rmEAIPY0CowxxjEFvhO2TIA/edit#gid=853086944" 
+			GeneralPathology d:"This classification tries to localize pathological and age-related features to the area of their cause"
+				BehavioralPathology
+				ExogenPathology
+					InfectionCausedPathology
+				OrganismPathology
+					OrganismSystemPathology
+						OrganPathology
+							MicrobiotaPathology
+							TissuePathology
+								ExtracellularMetabolismPathology
+								CellPathology
+									CellMembranePathology
+									CellMetabolismPathology
+									LysosomePathology
+									NucleusPathology
+										ChromosomePathology
+											DNAPathology
+									MitochondrionPathology
+										MitochondrionDNAPathology
 	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
 		fullName subproperty-of:dc/title
 		substance domain:Biomarker range:biochem/ChemicalSubstance

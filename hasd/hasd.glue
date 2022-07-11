@@ -2,3 +2,4 @@
 	individuals
 		HASDDiagram a:Diagram +a:HASDNode section-hierarchy-relation:hasElement
 			[hasd_individuals.tree]
+		[hasd_individuals_classification.tree]

@@ -15,12 +15,17 @@
 
 (defn idify [id]
   (-> id
-         (s/replace #"\(.+\)" "")
+         ; (s/replace #"\(.+\)" "")
+         (s/replace #"\(" "_")
+         (s/replace #"\)" "_")
+         (s/replace #"—" "")
          (s/replace #"[:\"&.,]" "")
          (s/replace #"[\s/]" "_")
          (s/replace #"\+" "")
          (s/replace #"_{2,}" "_")
          (s/replace #"_$" "")
+         (s/replace #"^_" "")
+         (s/replace #"_also_known.*$" "")
          keyword))
 
 (defn make-aada-individuals-tabtree []

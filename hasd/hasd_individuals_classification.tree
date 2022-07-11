@@ -1,0 +1,341 @@
+AO7 name:"Сердечная недостаточность" a:aon/OrganPathology organismSystem:org/Cardiovascular_system 
+AO9 name:"Замещение свободного пространства соединительной тканью" a:aon/TissuePathology agingHallmark:aon/Fibrosis
+AO13 name:"Ухудшение питания клеток" a:aon/TissuePathology agingHallmark:aon/Insulin_resistance,aon/Cellular_senescence
+AO15 name:"Накопление гликированных белков" a:aon/CellPathology agingHallmark:aon/Failure_of_proteostasis 
+AO19 name:"Накопление сшивок липид-белок" a:aon/CellPathology agingHallmark:aon/Failure_of_proteostasis
+AO21 name:"Негомологичная рекомбинация хромосом" a:aon/NucleusPathology
+AO23 name:"Уменьшение влияния на сердце симпатической нервной системы" a:aon/OrganPathology organismSystem:org/Nervous_system agingHallmark:aon/Cellular_senescence,aon/Aging-related_hormonal_changes
+AO25 name:"Ухудшение удаления токсинов" a:aon/TissuePathology organismSystem:org/Renal_system,org/Digestive_system agingHallmark:aon/Failure_of_proteostasis,aon/Cellular_senescence
+AO27 name:"Уменьшение функциональной активности клеток" a:aon/CellPathology
+AO29 name:"Замедление процесса синтеза эластина и коллагена" a:aon/CellPathology
+AO31 name:"Атрофия лёгочных альвеол" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO33 name:"Хронические генерализованные вялотекущие воспаления" a:aon/TissuePathology organismSystem:org/Immune_system agingHallmark:aon/Low-grade_inflammation
+AO37 name:"Накопление аммилоидных фибрил (бетта-амилоида)" a:aon/TissuePathology
+AO39 name:"Вторичный иммунодефицит" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO45 name:"Метаболический синдром" a:aon/CellMetabolismPathology
+AO47 name:"Накопление клеточного мусора в клетках печени" a:aon/CellPathology organismSystem:org/Digestive_system
+AO49 name:"Онкогенез: появление злокачественных и доброкачественных опухолей" a:aon/TissuePathology 
+AO51 name:"Гипотрофия надпочечников" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO53 name:"Уменьшается эластичность легочной ткани" a:aon/TissuePathology organismSystem:org/Respiratory_system
+AO56 name:"Гипотрофия тканей, вызванная ухудшением общего кровообращения" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO59 name:"Пневмония" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO61 name:"Увеличение количества непереваренной пищи в ЖКТ" a:aon/OrganismSystemPathology organismSystem:org/Digestive_system
+AO63 name:"Изменение физико-химических свойств мембранного матрикса" a:aon/CellPathology
+AO65 name:"Снижение синтеза белка" a:aon/CellPathology
+AO67 name:"Ухудшение снабжения тканей кислородом" a:aon/TissuePathology organismSystem:org/Respiratory_system
+AO71 name:"Накопление денатурированных белков" a:aon/CellPathology
+AO73 name:"Рак молочной железы" a:aon/TissuePathology organismSystem:org/Reproductive_system
+AO77 name:"Снижение физической работоспособности" a:aon/OrganismPathology 
+AO85 name:"Накопление белковых агрегатов (клеточного мусора)" a:aon/CellPathology agingHallmark:aon/Failure_of_proteostasis
+AO91 name:"Сахарный диабет пожилого возраста" a:aon/OrganismPathology
+AO93 name:"Размножение гладкомышечных клеток" a:aon/TissuePathology organismSystem:org/Muscular_system
+AO95 name:"Ограничение подвижности" a:aon/OrganismPathology
+AO97 name:"Точковые (ядерные) мутации" a:aon/DNAPathology
+AO101 name:"Ингибирование протеосомы" a:aon/CellPathology agingHallmark:aon/Failure_of_proteostasis
+AO103 name:"Усиление атрофии мышц" a:aon/OrganPathology organismSystem:org/Muscular_system
+AO109 name:"Снижение скорости рефлексов" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO115 name:"Неусвоение витамина B12" a:aon/OrganismSystemPathology
+AO117 name:"Повышение активности паратиреоидного гормона" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO123 name:"Повышение секреции пролактина" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO126 name:"Нарушение регуляции основных систем жизнеобеспечения" a:aon/OrganismPathology
+AO130 name:"Ожирение" a:aon/OrganismPathology agingHallmark:aon/Body_composition_changes
+AO131 name:"Инфаркт миокарда" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO133 name:"Уменьшение функциональной активности почек" a:aon/OrganPathology organismSystem:org/Renal_system
+AO137 name:"Костные шипы" a:aon/TissuePathology organismSystem:org/Skeletal_system
+AO139 name:"Продуцирование воспалительных цитокинов" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO141 name:"Соединение альвеол между собой" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO143 name:"Снижение функциональной активности (тканей, органов, систем)" a:aon/OrganismPathology
+AO145 name:"Общая дряхлость организма" a:aon/OrganismPathology
+AO147 name:"Накопление нефункциональных белков" a:aon/CellPathology
+AO151 name:"Снижение секреции тиреоидных гормонов" a:aon/OrganPathology organismSystem:org/Endocrine_system agingHallmark:aon/Aging-related_hormonal_changes
+AO153 name:"Уменьшение количества серотонина" a:aon/OrganismSystemPathology organismSystem:org/Endocrine_system
+AO155 name:"Стойкое понижение уровня инсулина в крови" a:aon/OrganismSystemPathology organismSystem:org/Endocrine_system agingHallmark:aon/Aging-related_hormonal_changes
+AO157 name:"Стохастическое повреждение ДНК" a:aon/DNAPathology
+AO159 name:"Образование малонового альдегида" a:aon/CellPathology
+AO161 name:"Гипотрофия эндокринной части поджелудочной железы" a:aon/OrganismPathology organismSystem:org/Endocrine_system
+AO163 name:"Снижение количества функционирующих клеток" a:aon/OrganismPathology
+AO165 name:"Повреждение мембран митохондрий" a:aon/MitochondrionPathology agingHallmark:aon/Mitochondrial_dysfunction
+AO169 name:"Увеличение количества коллагенных волокон (между клеток)" a:aon/TissuePathology
+AO171 name:"Вымывание Ca из костей" a:aon/TissuePathology organismSystem:org/Skeletal_system
+AO173 name:"Рак простаты" a:aon/TissuePathology organismSystem:org/Reproductive_system
+AO175 name:"Снижение секреции IGF-1 (инсулиноподобного фактора роста-1) в гепатоцитах печени" a:aon/TissuePathology organismSystem:org/Endocrine_system
+AO177 name:"Увеличение количества амилоидных бляшек" a:aon/TissuePathology
+AO181 name:"Нарушение пула стволовых клеток в популяции, в результате нарушения 'Хоминга'" a:aon/TissuePathology
+AO185 name:"Хромосомные аберрации" a:aon/NucleusPathology
+AO187 name:"Накопление липофусцина" a:aon/CellPathology
+AO189 name:"Образование пенистых клеток" a:aon/CellPathology organismSystem:org/Immune_system
+AO191 name:"Рак легких" a:aon/TissuePathology organismSystem:org/Respiratory_system
+AO193 name:"Болезнь Альцгеймера" a:aon/OrganSystemPathology organismSystem:org/Nervous_system
+AO195 name:"Уменьшение выработки эстрогена" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO197 name:"Анемия" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO201 name:"Сшивки (из-за металлов переменной валентности, диальдегидов)" a:aon/TissuePathology
+AO203 name:"Остеохондроз" a:aon/OrganPathology organismSystem:org/Skeleatl_system
+AO205 name:"Артериальная гипертония" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO207 name:"Ухудшение функций миоцитов" a:aon/CellPathology organismSystem:org/Muscular_system
+AO209 name:"Уменьшение пролиферации клеток" a:aon/TissuePathology
+AO217 name:"Накопление повреждений в миоцитах" a:aon/CellPathology organismSystem:org/Muscular_system
+AO223 name:"Сверхактивация протоонкогенов" a:aon/OrganismPathology
+AO225 name:"Активирование очагов онкологических клеток" a:aon/TissuePathology
+AO231 name:"Ухудшение состояния межклеточного матрикса в хрящах" a:aon/TissuePathology
+AO235 name:"Почечная недостаточность" a:aon/OrganPathology organismSystem:org/Renal_system
+AO237 name:"Изменение рецепторной чувствительности клетки" a:aon/CellMembranePathology
+AO239 name:"Нестабильность генома" a:aon/DNAPathology
+AO241 name:"Снижение секреции норадреналина" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO243 name:"Блокирование реакций клетки на факторы роста, активирующие ее пролиферацию" a:aon/CellPathology 
+AO245 name:"Образование сигнала о двухцепочечном разрыве ДНК" a:aon/DNAPathology
+AO247 name:"Повреждения эндотелия" a:aon/TissuePathology organismSystem:org/Cardiovascular_system
+AO249 name:"Уменьшение количества миоцитов" a:aon/OrganismSystemPathology organismSystem:org/Muscular_system
+AO251 name:"Снижение выработки ТТГ (Тиреотропный гормон)" a:aon/TissuePathology organismSystem:org/Endocrine_system agingHallmark:aon/Aging-related_hormonal_changes
+AO253 name:"Потеря белков, покрывающих теломеры (TRF2)" a:aon/NucleusPathology agingHallmark:aon/Cellular_senescence
+AO257 name:"Ревматизм" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO266 name:"Нарушения хоминга" a:aon/TissuePathology
+AO268 name:"Патологическое укорочение теломер" a:aon/DNAPathology agingHallmark:aon/Cellular_senescence
+AO270 name:"Нарушение структуры хроматина" a:aon/NucleusPathology
+AO272 name:"Репликативное старение (стойкое прекращение пролиферации клеток)" a:aon/TissuePathology
+AO273 name:"Ухудшение микроциркуляции в поджелудочной железе" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO276 name:"Уменьшение синтеза С-комплемента" a:aon/OrganismSystemPathology
+AO279 name:"Изменение проницаемости альвеолярной стенки" a:aon/TissuePathology organismSystem:org/Respiratory_system
+AO281 name:"Воспалительные реакции в тканях" a:aon/TissuePathology
+AO283 name:"Уменьшение жизненной емкости легких" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO288 name:"Уменьшение скорости физиологической регенерации тканей" a:aon/TissuePathology 
+AO295 name:"Ишемический инсульт" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO301 name:"Гипотрофия эпифиза" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO307 name:"Переломы" a:aon/OrganPathology organismSystem:org/Skeletal_system
+AO311 name:"Уплотнение клеточной мемраны" a:aon/CellMembranePathology 
+AO315 name:"Повышение секреции вазопрессина" a:aon/OrganPathology
+AO319 name:"Нарушение функций клетки" a:aon/CellPathology
+AO321 name:"Снижение секреции Дегидроэпиандростерона" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO325 name:"Накопление дефектного коллагена" a:aon/TissuePathology
+AO333 name:"Ухудшение ансамблевой работы клеток" a:aon/TissuePathology
+AO345 name:"Гипоксия (разной степени)" a:aon/OrganismSystemPathology
+AO347 name:"Гипотрофия щитовидной железы" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO353 name:"Выработка свободных радикалов" a:aon/CellPathology
+AO357 name:"Появление дефектных митохондрий" a:aon/MitochondrionPathology agingHallmark:aon/Mitochondrial_dysfunction
+AO359 name:"Эпигенетические нарушения (сшивки ДНК-белок, деметилирование ДНК)" a:aon/NucleusPathology
+AO363 name:"Накопление нефункциональных белков" a:aon/CellPathology
+AO367 name:"Артриты" a:aon/OrganPathology organismSystem:org/Skeletal_system
+AO373 name:"Транспозиция мобильных элементов генома" a:aon/DNAPathology
+AO375 name:"Образование 8-оксо-2’деоксигуанозина в промоторных и энхансерных участках ДНК" a:aon/DNAPathology
+AO377 name:"Остеопороз" a:aon/TissuePathology organismSystem:org/Skeletal_system
+AO383 name:"Гипотрофия половых желез" a:aon/OrganPathology organismSystem:org/Reproductive_system agingHallmark:aon/Aging-related_hormonal_changes
+AO385 name:"Ухудшение когнитивных способностей мозга" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO389 name:"Уменьшение числа связей между клетками" a:aon/TissuePathology
+AO391 name:"Гипертрофия простаты" a:aon/OrganPathology organismSystem:org/Reproductive_system agingHallmark:aon/Aging-related_hormonal_changes
+AO399 name:"Негативное изменение межклеточного матрикса" a:aon/TissuePathology
+AO401 name:"Ухудшение питания тканей" a:aon/TissuePathology
+AO407 name:"Устойчивое прекращение пролиферации клеток" a:aon/TissuePathology
+AO411 name:"Подавление секреции паратиреоидного гормона" a:aon/TissuePathology organismSystem:org/Endocrine_system agingHallmark:aon/Aging-related_hormonal_changes
+AO427 name:"Сшивки ДНК-ДНК" a:aon/NucleusPathology
+AO431 name:"Уменьшение объёма клетки" a:aon/CellPathology
+AO433 name:"Негативное изменение конститутивной экспрессии генов" a:aon/NucleusPathology
+AO437 name:"Болезнь Паркинсона" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO447 name:"Уменьшение количества (и ухудшение качества) адгезивных рецепторов" a:aon/CellMembranePathology
+AO453 name:"Снижение количества и качества рибосом" a:aon/CellPathology
+AO463 name:"Образование атеросклеротических бляшек" a:aon/TissuePathology organismSystem:org/Cardiovascular_system
+AO467 name:"Снижение секреции половых гормонов (тестостерон, эстрадиол, прогестерон)" a:aon/OrganPathology organismSystem:org/Endocrine_system agingHallmark:aon/Aging-related_hormonal_changes
+AO471 name:"Нарушение транспорта метаболитов через мембрану" a:aon/CellMembranePathology
+AO475 name:"Снижение выработки АКТГ (Аденекортикотропный гормон)" a:aon/TissuePathology organismSystem:org/Endocrine_system agingHallmark:aon/Aging-related_hormonal_changes
+AO489 name:"Уменьшение эластичности сосудов" a:aon/TissuePathology organismSystem:org/Cardiovascular_system
+AO495 name:"ИБС" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO501 name:"Нарушение индуцибельной экспрессии генов ДНК" a:aon/NucleusPathology
+AO505 name:"Легочная недостаточность" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO509 name:"Нарушение суточного ритма секреции нейрпептида Y" a:aon/OrganismSystemPathology
+AO511 name:"Интеграция ретровирусов в ДНК" a:aon/DNAPathology
+AO519 name:"Увеличение количества альдегидов" a:aon/CellMetabolismPathology
+AO523 name:"Ухудшение усвоения кальция и витамина D в кишечнике" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO525 name:"Накопление окисленных белков" a:aon/CellPathology
+AO529 name:"Снижение ферментной активности в железистых клетках ЖКТ" a:aon/CellMetabolismPathology organismSystem:os/Digestive_system,org/Endocrine_system
+AO531 name:"Снижение синтеза рибосомальных белков" a:aon/NucleusPathology
+AO535 name:"Снижение синтеза кальцийтриола" a:aon/OrganismSystemPathology
+AO539 name:"Накопление нефункциональных белков, входящих в состав антиоксидантных систем" a:aon/CellPathology 
+AO543 name:"Смерть организма" a:aon/OrganismPathology
+AO551 name:"Снижение секреции мелатонина" a:aon/TissuePathology organismSystem:org/Endocrine_system
+AO553 name:"Блокирование репликационной вилки" a:aon/NucleusPathology
+AO555 name:"Мутации мтДНК" a:aon/MitochondrionDNAPathology
+AO557 name:"Накопление жирных кислот в крови" a:aon/TissuePathology organismSystem:org/Cardiovascular_systemпп
+AO563 name:"Уменьшение количества нейронов" a:aon/OrganismSystemPathology organismSystem:org/NervousSystem
+AO565 name:"Появление аутоиммунной реакции" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO575 name:"Образование алкилированных оснований" a:aon/CellMetabolismPathology
+AO589 name:"Кишечная интоксикация" a:aon/MicrobiotaPathology organismSystem:org/Digestive_system
+AO593 name:"Повышение активности АФК" a:aon/CellMetabolismPathology
+AO599 name:"Ухудшение состояния межклеточного матрикса в сухожилиях" a:aon/TissuePathology organismSystem:org/Muscular_system
+AO601 name:"Менопауза и андропауза" a:aon/OrganismSystemPathology organismSystem:org/Reproductive_system
+AO603 name:"Подавление аутофагии" a:aon/OrganismSystemPathology
+AO607 name:"Переполнение лизосомы" a:aon/LysosomePathology
+AO615 name:"Понижение толерантности к глюкозе" a:aon/OrganismSystemPathology
+AO617 name:"Снижение выработки АТФ (в отдельных клетках)" a:aon/MitochondrionPathology agingHallmark:aon/Mitochondrial_dysfunction
+AO623 name:"Увеличение количества жировой ткани" a:aon/OrganismPathology
+AO629 name:"Перикисное окисление липидов в мембранах" a:aon/CellMembranePathology
+AO635 name:"Снижение синтеза рибосомальной РНК" a:aon/CellPathology
+AO641 name:"Накопление карбонилированных белков" a:aon/CellPathology
+AO647 name:"Увеличение периферического сопротивления" a:aon/OrganismSystemPathology
+AO649 name:"Уменьшение проводимости нервных волокон" a:aon/TissuePathology organismSystem:org/Nervous_system
+AO659 name:"Миокардиопатия" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO665 name:"Снижение синтеза мРНК" a:aon/NucleusPathology
+AO675 name:"Увеличение уровня Ca в крови" a:aon/TissuePathology
+AO677 name:"Появление дефектных клеток" a:aon/CellPathology
+AO679 name:"Снижение выработки Q10" a:aon/TissuePathology
+AO687 name:"Постоянное переедание" a:aon/BehavioralPathology organismSystem:org/Digestive_system
+AO693 name:"Гипоплазия мышечной ткани" a:aon/TissuePathology organismSystem:org/Muscular_system
+AO699 name:"Гипотрофия мышц грудной клетки" a:aon/OrganPathology organismSystem:org/Muscular_system
+AO727 name:"Начало атрофии ретикулярных клеток тимуса" a:aon/CellPathology organismSystem:org/Endocrine_system
+AO729 name:"Гипоплазия тканей" a:aon/TissuePathology
+AO733 name:"Уменьшение адаптивной реакции" a:aon/OrganismSystemPathology
+AO737 name:"Уменьшение эластичности стенок легочных альвеол" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO751 name:"Снижение секреции нейротрансмиттеров" a:aon/TissuePathology
+AO755 name:"Длительное повышение уровня глюкозы в крови" a:aon/TissuePathology
+AO767 name:"Гипотрофия нейроэндокринных узлов (в гипоталамусе и стволе мозга)" a:aon/OrganPathology organismSystem:org/Nervous_system
+AO781 name:"Снижение экспрессии компонентов репаративных систем" a:aon/NucleusPathology organismSystem:org/Reproductive_system
+AO783 name:"Разрастание гнилостной флоры" a:aon/MicrobiotaPathology organismSystem:org/Digestive_system
+AO785 name:"Снижение количества активных копий ДНК, кодирующей рибосомальную РНК и белки" a:aon/DNAPathology
+AO793 name:"Ухудшение передачи сигнальной информации" a:aon/CellMembranePathology
+AO795 name:"Уменьшение количества информационных молекул" a:aon/OrganismSystemPathology agingHallmark:aon/Aging-related_hormonal_changes
+AO799 name:"Накопление внеклеточного мусора" a:aon/TissuePathology
+AO801 name:"Снижение секреции соматотропина (гормон роста)" a:aon/TissuePathology organismSystem:org/Endocrine_system agingHallmark:aon/Aging-related_hormonal_changes
+AO819 name:"Атака обкладочных клеток желудка иммунной системой" a:aon/OrganismSystemPathology organismSystem:org/Digestive_system
+AO821 name:"Образование дефектных антигенов в клетках организма" a:aon/CellPathology organismSystem:org/Immune_system
+AO825 name:"Образование NUMT-псевдогенов в мтДНК" a:aon/MitochondrionDNAPathology
+AO831 name:"Эмфизема лёгких" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO833 name:"p53-зависимая необратимая задержка пролиферации клеток" a:aon/TissuePathology
+AO837 name:"Ухудшение общего кровообращения" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO839 name:"Снижение активности белков теплового шока" a:aon/CellPathology
+AO841 name:"Первичное ухудшение микроциркуляции крови и лимфы" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO845 name:"Нарушение усваиваемости витаминов групп BDCE" a:aon/OrganismSystemPathology
+AO859 name:"Накопление белковых сшивок" a:aon/CellPathology
+AO861 name:"Хронические инфекции" a:aon/InfectionCausedPathology organismSystem:org/Immune_system
+AO865 name:"Изменение структуры аполипопротеина (ЛПНП)" a:aon/TissuePathology
+AO871 name:"Нарушение метаболизма клетки" a:aon/CellMetabolismPathology
+AO877 name:"Иммунная система воспринимает эти клетки как чужеродные" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO883 name:"Уменьшение количества внутриклеточных элементов (митохондрии, рибосомы)" a:aon/CellPathology agingHallmark:aon/Mitochondrial_dysfunction
+AO885 name:"Гипотрофия передней доли гипофиза" a:aon/OrganPathology a:org/Nervous_system,org/Endocrine_system
+AO889 name:"Потеря Т-петли в теломерах" a:aon/ChromosomePathology agingHallmark:aon/Cellular_senescence
+AO891 name:"Разрывы цепей ДНК" a:aon/ChromosomePathology
+AO895 name:"Проникновение окислов липидов и фибринов и тромбоцитов в субэндотелиальное пространство" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO901 name:"Снижение проницаемости мембраны" a:aon/CellMembranePathology
+AO907 name:"Увеличение количества соединительной ткани" a:aon/TissuePathology
+AO909 name:"Депрессия" a:aon/BehavioralPathology organismSystem:org/Nervous_system
+AO915 name:"Повышение секреции глюкокортикоидов" a:aon/TissuePathology organismSystem:org/Endocrine_system
+AO917 name:"Нарушение газообмена CO2 и O2" a:aon/OrganismSystemPathology organismSystem:org/Respiratory_system
+AO919 name:"Изменение порога чувствительности в центре аппетита гипоталамуса" a:aon/OrganPathology organismSystem:org/NervousSystem
+AO927 name:"Деструкция симпатических окончаний" a:aon/CellPathology organismSystem:org/NervousSystem
+AO931 name:"Возрастное переключение активности разных субъединиц протеасом" a:aon/CellPathology
+AO933 name:"Окисление эластина" a:aon/TissuePathology
+AO939 name:"Уменьшение проницаемости межклеточного пространства" a:aon/TissuePathology
+AO945 name:"Дефицит микроэлементов" a:aon/ExogenPathology
+AO951 name:"Нарушение мозгового кровообращения" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO959 name:"Переполнение макрофагов окислами липидов" a:aon/CellMetabolismPathology organismSystem:org/Immune_system
+AO965 name:"Аутоиммунные заболевания" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO967 name:"Гиповитаминоз B12" a:aon/OrganismSystemPathology
+AO1583 name:"Временное адаптивное прекращение пролиферации клеток" a:aon/ExogenPathology
+AO1586 name:"Рост доли субъединиц протеосом с пониженной активностью" a:aon/CellPathology agingHallmark:aon/Failure_of_proteostasis
+AO1612 name:"Инсулиннезависимый сахарный диабет (II типа)" a:aon/OrganismSystemPathology organismSystem:org/Endocrine_system
+AO1613 name:"Сужение просвета сосудов" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO1614 name:"Ухудшение коронарного кровообращения" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO1616 name:"Повышение проницаемости сосудистой стенки" a:aon/TissuePathology organismSystem:org/Cardiovascular_system
+AO1617 name:"Разрыв сосудов мозга" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1618 name:"Геморрагический инсульт" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1619 name:"Нарушение функционирования головного мозга" a:aon/OrganPathology organismSystem:org/Nervous_system
+AO1620 name:"Закупорка сосудов мозга" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1621 name:"Артериальная гипотония" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO1622 name:"Гиповолемия" a:aon/OrganismPathology
+AO1623 name:"Брадикардия" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO1624 name:"Тромбоз сосудов мозга" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1625 name:"Тромботическая эмболия сосудов мозга" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1626 name:"Образование пристеночных тромбов в сердце" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1627 name:"Пороки сердца" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1628 name:"Эндокардит" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1629 name:"Повышение уровня глюкагона в крови" a:aon/TissuePathology organismSystem:org/Endocrine_system
+AO1630 name:"Усиление липолиза (расщепления триглицеридов)" a:aon/CellMetabolismPathology
+AO1631 name:"Кетонемия" a:aon/OrganismSystemPathology organismSystem:org/Renal_system
+AO1632 name:"Метаболический ацидоз" a:aon/OrganismPathology
+AO1633 name:"Уменьшение транспорта аминокислот в клетки" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO1634 name:"Повышение содержания аминокислот в крови" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
+AO1635 name:"Выделение аминокислот с мочей" a:aon/OrganismSystemPathology organismSystem:org/Renal_system
+AO1636 name:"Отрицательный азотный баланс" a:aon/OrganismSystemPathology
+AO1638 name:"Повышение активности липазы" a:aon/OrganismSystemPathology
+AO1639 name:"Старческая деменция" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO1640 name:"Общая интоксикация организма" a:aon/OrganismPathology
+AO1641 name:"Рассеянный склероз: первично-прогрессирующая форма" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO1642 name:"Мышечная слабость" a:aon/OrganismSystemPathology organismSystem:org/Muscular_system
+AO1643 name:"Разрывы хромосом" a:aon/OrganismChromosomePathology
+AO1644 name:"Усиление продуцирование металлопротеиназ" a:aon/NucleusPathology
+AO1645 name:"Уменьшение функциональной активности рецепторов" a:aon/CellMembranePathology
+AO1646 name:"Повышение уровня кортизола в крови" a:aon/OrganismSystemPathology organismSystem:org/Endocrine_system
+AO1647 name:"Экзогенные химические и физические факторы" a:aon/ExogenPathology
+AO1648 name:"Уменьшение количества стволовых мышечных клеток" a:aon/TissuePathology organismSystem:org/Muscular_system
+AO1649 name:"Уменьшение концентрации цитокина IL7 в тимусе" a:aon/OrganPathology organismSystem:org/Endocrine_system
+AO1651 name:"Повышение порога возбудимости нервных центров" a:aon/CellPathology organismSystem:org/Nervous_system
+AO1652 name:"Уменьшение активности холинацетилазы" a:aon/CellMetabolismPathology
+AO1653 name:"Уменьшение синтеза ацетилхолина" a:aon/CellMetabolismPathology organismSystem:org/Nervous_system
+AO1654 name:"Нарушение межсинаптической связи между нейронами" a:aon/TissuePathology organismSystem:org/Nervous_system
+AO1655 name:"Уменьшение количества нервных рецепторов" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO1656 name:"Дефицит фактора роста нервов (ФРН)" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO1657 name:"Кальцификация миоцитов" a:aon/TissuePathology organismSystem:org/Muscular_system
+AO1658 name:"Хронический обструктивный бронхит" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO1659 name:"Хронический кашель" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO1660 name:"Повышение давления в альвеолах" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO1661 name:"Бронхиальная астма" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO1662 name:"Стрептококковая и стафилококковая инфекция" a:aon/InfectionCausedPathology
+AO1663 name:"Жировая эмболия" a:aon/OrganPathology
+AO1664 name:"Гипоплазия костного мозга" a:aon/OrganPathology a:aon/Nervous_system
+AO1665 name:"Уменьшение содержания эластина в стенках артерий (на 5–10%)" a:aon/TissuePathology organismSystem:org/Cardiovascular_system
+AO1666 name:"Начало кальциноза артерий" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1667 name:"Выраженный кальциноз артерий" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1668 name:"Уменьшение кровотока" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1669 name:"Межбелковые сшивки" a:aon/CellPathology
+AO1670 name:"Амплификация ДНК" a:aon/DNAPathology
+AO1672 name:"Тепловое движение молекул" a:aon/ExogenPathology
+AO1673 name:"Уменьшение синтеза селектинов и адрессинов" a:aon/CellMetabolismPathology 
+AO1674 name:"Нарушение взаимодействия между белками хоминга (L-селектинамии адрессинами)" a:aon/CellPathology 
+AO1675 name:"Нарушение миграции лимфоцитов в лимфоузлы" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO1676 name:"Жировая эмболия сосудов легких" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO1678 name:"Воспаление сосудистой стенки" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
+AO1679 name:"Дисбактериоз" a:aon/MicrobiotaPathology organismSystem:org/Digestive_system
+AO1680 name:"Аллергические реакции" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
+AO1681 name:"Истощение запасов нейромедиаторов" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO1682 name:"Утомление синапсов" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
+AO1683 name:"Уменьшение поглощения кислорода клеткой" a:aon/CellPathology
+AO1684 name:"Снижение скорости деления стволовых мышечных клеток" a:aon/TissuePathology organismSystem:org/Muscular_system
+AO1685 name:"Замедление поступления сигналов в центре насыщения гипоталамуса о насыщении" a:aon/OrganPathology organismSystem:org/Nervous_system
+AO1686 name:"Функциональная недостаточность органов" a:aon/OrganismPathology
+AO1687 name:"Превращение протоонкогенов в онкогены" a:aon/OrganismPathology
+AO1688 name:"Поздние мутации" a:aon/DNAPathology
+AO1689 name:"Миграция NUMT-псевдогенов в ядро" a:aon/DNAPathology 
+AO1690 name:"Недорепликация ДНК при нормальной пролиферации клеток" a:aon/DNAPathology
+AO1691 name:"Нормальное укорочение теломер" a:aon/DNAPathology agingHallmark:aon/Cellular_senescence
+AO1692 name:"Инфаркт легких" a:aon/OrganPathology organismSystem:org/Respiratory_system
+AO1693 name:"Атрофия мышц (саркопения)" a:aon/OrganPathology organismSystem:org/Muscular_system
+AO1694 name:"Длительное лежание в постели" a:aon/ExogenPathology
+AO1695 name:"Снижение синтеза белка в железистых клетках ЖКТ" a:aon/CellMetabolismPathology organismSystem:org/Digestive_system
+AO1696 name:"Повышение онкориска кишечника" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1698 name:"Нарушение водно-солевого обмена" a:aon/OrganismSystemPathology organismSystem:org/Renal_system
+AO1699 name:"Уменьшение синтеза белка в кардиомиоцитах" a:aon/CellPathology organismSystem:org/Cardiovascular_system
+AO1700 name:"Уменьшение функциональной активности кардиомиоцитов" a:aon/CellPathology organismSystem:org/Cardiovascular_system
+AO1701 name:"Уменьшение функциональной активности миокарда" a:aon/TissuePathology organismSystem:org/Cardiovascular_system
+AO1702 name:"Дальнейшее ухудшение функциональной активности печени" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1703 name:"Уменьшение функциональной активности клеток почек" a:aon/TissuePathology organismSystem:org/Renal_system
+AO1704 name:"Задержка эвакуации непереваренной пищи (запор)" a:aon/OrganismSystemPathology organismSystem:org/Digestive_system
+AO1705 name:"Гипотрофия гладкой мускулатуры стенки кишечника" a:aon/TissuePathology organismSystem:org/Digestive_system
+AO1706 name:"Ослабление мышечного тонуса стенки кишечника" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1707 name:"Гормональное усиление атрофии ретикулярных клеток тимуса" a:aon/OrganismSystemPathology agingHallmark:aon/Aging-related_hormonal_changes
+AO1708 name:"Рак пищевода" a:aon/TissuePathology organismSystem:org/Digestive_system
+AO1709 name:"Рак желудка" a:aon/TissuePathology organismSystem:org/Digestive_system
+AO1710 name:"Рак тонкого кишечника" a:aon/TissuePathology organismSystem:org/Digestive_system
+AO1711 name:"Рак толстого кишечника" a:aon/TissuePathology organismSystem:org/Digestive_system
+AO1712 name:"Гипоплазия обкладочных стенок слизистой желудка" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1713 name:"Раковая интоксикация" a:aon/OrganismPathology
+AO1714 name:"Выраженное уменьшение кислотности желудочного сока" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1715 name:"Гипоцидный гастрит" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1716 name:"Стимуляция желчеобразования" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1717 name:"Избыточная концентрация желчных кислот и продуктов их распада в кишечнике" a:aon/OrganPathology organismSystem:org/Digestive_system
+AO1718 name:"Превращение тестостерона в эстрогены (в жировой ткани мужчин)" a:aon/TissuePathology osLEndocrine_system
+AO1719 name:"Отрыжка" a:aon/OrganismSystemPathology organismSystem:org/Digestive_system
+AO1720 name:"Выброс желудочных кислот в пищевод" a:aon/OrganismSystemPathology organismSystem:org/Digestive_system
+AO1721 name:"Избыток инсулина" a:aon/OrganismSystemPathology organismSystem:org/Endocrine_system agingHallmark:aon/Insulin_resistance
+AO1722 name:"Избыток холестерина" a:aon/OrganismSystemPathology organismSystem:org/Endocrine_system
+AO1723 name:"Рак эндокринных желез" a:aon/TissuePathology  organismSystem:org/Endocrine_system
+AO1724 name:"Рак женских половых органов" a:aon/TissuePathology organismSystem:org/Reproductive_system
+AO1725 name:"Избыток половых стероидных гормонов (эстрогены)" a:aon/OrganismSystemPathology organismSystem:org/Reproductive_system,org/Endocrine_system
+AO1726 name:"Аденома простаты" a:aon/TissuePathology organismSystem:org/Reproductive_system
+AO1727 name:"Уменьшение количества T-хелперов" a:aon/OrganismSystemPathology organismSystem:org/Immune_system agingHallmark:aon/Immunosenescence
+AO1728 name:"Нарушение микрофлоры ЖКТ" a:aon/MicrobiotaPathology organismSystem:org/Digestive_system

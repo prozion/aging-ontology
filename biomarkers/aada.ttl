@@ -34,7 +34,7 @@
   :panel :Chinese_Panel, :SENS_Panel ;
   :system cell:Oxidative_stress, cell:Mitochondria, cell:Apoptosis .
 
-:8-isoprostane
+:8-isoprostane_8-ISO
   rdfs:label "8-isoprostane (8-ISO)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Chinese_Panel, :SENS_Panel, :Open_Longevity_Panel_New ;
@@ -52,12 +52,12 @@
   :panel :SASP_Panel ;
   :system cell:DNA_damage_response .
 
-:Active_vitamin_B12
+:Active_vitamin_B12_holotranscobalamin
   rdfs:label "Active vitamin B12 (holotranscobalamin)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
 
-:Adenosylhomocysteinase
+:Adenosylhomocysteinase_AHCY
   rdfs:label "Adenosylhomocysteinase (AHCY)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
@@ -68,24 +68,24 @@
   :panel :Frailty_Index, :Singapore_Panel ;
   :system do:Inflammation, cell:Intercellular_communication .
 
-:Adiponectin
+:Adiponectin_ADIPOQ
   rdfs:label "Adiponectin (ADIPOQ)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :British_Panel .
 
-:Advanced_glycosylation_end-product_specific_receptor
+:Advanced_glycosylation_end-product_specific_receptor_AGER
   rdfs:label "Advanced glycosylation end-product specific receptor (AGER)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
   :system org:Nervous_system .
 
-:Agrin
+:Agrin_AGRN
   rdfs:label "Agrin (AGRN)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
   :system org:Nervous_system .
 
-:Alanine_aminotransferase
+:Alanine_aminotransferase_ALT
   rdfs:label "Alanine aminotransferase (ALT)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
@@ -100,12 +100,12 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :DNAm_PhenoAge .
 
-:Alpha-fetoprotein
+:Alpha-fetoprotein_AFP
   rdfs:label "Alpha-fetoprotein (AFP)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology .
 
-:Amino-terminal_peptide_of_procollagen_type_III
+:Amino-terminal_peptide_of_procollagen_type_III_PIIINP
   rdfs:label "Amino-terminal peptide of procollagen type III (PIIINP)" ;
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_New .
@@ -115,29 +115,29 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :SENS_Panel .
 
-:Angiotensinogen
+:Angiotensinogen_AGT
   rdfs:label "Angiotensinogen (AGT)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
   :system cell:Fibrosis .
 
-:Antigenic_profiles_of_EPCs_CD34
+:Antigenic_profiles_of_EPCs_CD34_KDR_EPC_endothelial_progenitor_cells
   rdfs:label "Antigenic profiles of EPCs: CD34(+)KDR(+) (EPC — endothelial progenitor cells))" ;
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_New .
 
-:Apolipoprotein_B
+:Apolipoprotein_B_ApoB
   rdfs:label "Apolipoprotein B (ApoB)" ;
   rdf:type aon:Biomarker ;
   :panel :GDF11_Panel .
 
-:Associated_with_cellular_aging_β-galactosidase
+:Associated_with_cellular_aging_β-galactosidase_SA-β-Gal
   rdfs:label "Associated with cellular aging β-galactosidase (SA-β-Gal)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Chinese_Panel, :SENS_Panel ;
   :system cell:Cell_senescence .
 
-:Athrogenic_Index
+:Athrogenic_Index_Total_
   rdfs:label "Athrogenic Index ((Total – HDL)/HDL)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Heart_and_Vessels .
@@ -161,17 +161,19 @@
   :panel :British_Panel ;
   :system org:Glucose_metabolism_system .
 
-:Biomarker_measuring_type_I_collagen_degradation
+:Biomarker_measuring_type_I_collagen_degradation_C1M
   rdfs:label "Biomarker measuring type I collagen degradation (C1M)" ;
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_New .
 
 :Body_Mass_Index
+  :agingMechanism aon:Body_composition_changes .
+
+:Body_Mass_Index_BMI
   rdfs:label "Body Mass Index (BMI)" ;
   rdf:type aon:Biomarker ;
   :panel :Chinese_Panel, :British_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full ;
-  :system org:Muscular_system ;
-  :agingMechanism aon:Body_composition_changes .
+  :system org:Muscular_system .
 
 :Body_weight
   rdfs:label "Body weight" ;
@@ -192,7 +194,7 @@
   :panel :TAME_Panel ;
   :system org:Cardiovascular_system .
 
-:Brain_neurotrophic_factor
+:Brain_neurotrophic_factor_BDNF
   rdfs:label "Brain neurotrophic factor (BDNF)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
@@ -201,13 +203,13 @@
 :British_Panel
   rdf:type aon:BiomarkerPanel .
 
-:Broadband_ultrasound_attenuation_at_heel
+:Broadband_ultrasound_attenuation_BUA_at_heel
   rdfs:label "Broadband ultrasound attenuation (BUA) at heel" ;
   rdf:type aon:Biomarker ;
   :panel :British_Panel ;
   :system org:Skeletal_system .
 
-:C-reactive_protein
+:C-reactive_protein_CRP
   rdfs:label "C-reactive protein (CRP)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :DNAm_PhenoAge, :British_Panel, :TAME_Panel, :GDF11_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels ;
@@ -267,23 +269,23 @@
   :panel :Open_Longevity_Panel_Pro ;
   :system org:Immune_system .
 
-:Calreticulin
+:Calreticulin_CALR
   rdfs:label "Calreticulin (CALR)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
 
-:Carboxyl-terminal_telopeptide_of_collagen_type_I
+:Carboxyl-terminal_telopeptide_of_collagen_type_I_CITP
   rdfs:label "Carboxyl-terminal telopeptide of collagen type I (CITP)" ;
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_New .
 
-:Carboxymethyl-lysine
+:Carboxymethyl-lysine_CML
   rdfs:label "Carboxymethyl-lysine (CML)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :SENS_Panel, :Open_Longevity_Panel_New ;
   :system cell:Protein_glycation .
 
-:Cellular_mtDNA
+:Cellular_mtDNA_its_number_and_the_presence_of_mutated_variants_with_deletions
   rdfs:label "Cellular mtDNA (its number and the presence of mutated variants with deletions)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :SENS_Panel ;
@@ -316,27 +318,27 @@
   :panel :SASP_Panel ;
   :system cell:DNA_damage_response .
 
-:Circulating_miRNAs
+:Circulating_extracellular_microvesicles
+  rdfs:label "Circulating (extracellular) microvesicles" ;
+  rdf:type aon:MolecularBiomarker ;
+  :panel :Frailty_Index .
+
+:Circulating_miRNAs_miR-34a_miR-21_miR-126-3p_miR-151a-3p_miR-181a-5p_miR-1248
   rdfs:label "Circulating miRNAs (miR-34a, miR-21, miR-126-3p, miR-151a-3p, miR-181a-5p, miR-1248)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :Chinese_Panel ;
   :system cell:RNAi_transcription .
 
-:Circulating_microvesicles
-  rdfs:label "Circulating (extracellular) microvesicles" ;
-  rdf:type aon:MolecularBiomarker ;
-  :panel :Frailty_Index .
-
 :Cognitive_function
   rdf:type :AADAOrganismFeature .
 
-:Complement_factor_3_and_1Q
+:Complement_factor_3_and_1Q_C3_и_C1q
   rdfs:label "Complement factor 3 and 1Q (C3 и C1q) " ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
   :system org:Nervous_system .
 
-:Connective_tissue_growth_factor
+:Connective_tissue_growth_factor_CTGF
   rdfs:label "Connective tissue growth factor (CTGF)" ;
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_New .
@@ -346,13 +348,13 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :DNAm_PhenoAge, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
 
-:Crystallised_ability_Boston_Naming_Test
+:Crystallised_ability_Boston_Naming_Test_BNT
   rdfs:label "Crystallised ability: Boston Naming Test (BNT)" ;
   rdf:type aon:QuestionnairyBiomarker ;
   :panel :British_Panel ;
   :system :Cognitive_function .
 
-:Cutaneous_chemokine_attracting_T-cells
+:Cutaneous_chemokine_attracting_T-cells_CTACK
   rdfs:label "Cutaneous chemokine attracting T-cells (CTACK)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
@@ -375,7 +377,7 @@
   :panel :British_Panel ;
   :system org:Immune_system .
 
-:Cytomegalovirus_immunoglobulin_G
+:Cytomegalovirus_immunoglobulin_G_CMV_IgG
   rdfs:label "Cytomegalovirus immunoglobulin G (CMV IgG)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel .
@@ -403,7 +405,7 @@
   :panel :SENS_Panel ;
   :system cell:Protein_glycation .
 
-:Dehydroepiandrosterone_sulphate
+:Dehydroepiandrosterone_sulphate_DHEAS
   rdfs:label "Dehydroepiandrosterone sulphate (DHEAS)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel, :GDF11_Panel .
@@ -414,7 +416,7 @@
   :panel :British_Panel ;
   :system org:Immune_system .
 
-:Dephosphorylated_and_uncarboxylated_matrix_Gla_protein
+:Dephosphorylated_and_uncarboxylated_matrix_Gla_protein_dp-ucMGP
   rdfs:label "Dephosphorylated and uncarboxylated matrix Gla protein (dp-ucMGP) " ;
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_New .
@@ -443,7 +445,7 @@
   :panel :Singapore_Panel ;
   :system do:All-cause_mortality .
 
-:Estradiol
+:Estradiol_E2
   rdfs:label "Estradiol (E2)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :GDF11_Panel .
@@ -468,7 +470,7 @@
 :Facial_feature
   rdf:type :AADAOrganismFeature .
 
-:Facto_necrosis_of_tumors
+:Facto_necrosis_of_tumors_TNF-α-R
   rdfs:label "Facto necrosis of tumors (TNF-α-R)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel, :TAME_Panel ;
@@ -490,17 +492,17 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel .
 
-:Fibroblast_growth_factor
-  rdfs:label "Fibroblast growth factor (FGF)" ;
-  rdf:type aon:Biomarker ;
-  :panel :SASP_Panel .
-
-:Fibroblast_growth_factor_21
+:Fibroblast_growth_factor_21_FGF21
   rdfs:label "Fibroblast growth factor 21 (FGF21)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
 
-:Fibronectin_type_III_domain_containing_5
+:Fibroblast_growth_factor_FGF
+  rdfs:label "Fibroblast growth factor (FGF)" ;
+  rdf:type aon:Biomarker ;
+  :panel :SASP_Panel .
+
+:Fibronectin_type_III_domain_containing_5_FNDC5_Irisin
   rdfs:label "Fibronectin type III domain containing 5 (FNDC5) (Irisin)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
@@ -511,7 +513,7 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Heart_and_Vessels .
 
-:Fractalquin
+:Fractalquin_CX3CL1
   rdfs:label "Fractalquin (CX3CL1)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
@@ -520,7 +522,7 @@
 :Frailty_Index
   rdf:type aon:BiomarkerPanel .
 
-:Free_triiodothyronine
+:Free_triiodothyronine_FT3
   rdfs:label "Free triiodothyronine (FT3)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
@@ -528,7 +530,7 @@
 :GDF11_Panel
   rdf:type :UntrustedBiomarkerPanel .
 
-:GFR
+:GFR_Glomerular_Filtration_Rate
   rdfs:label "GFR (Glomerular Filtration Rate)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
@@ -550,13 +552,13 @@
   :panel :SENS_Panel ;
   :system cell:Protein_glycation .
 
-:Gait_speed
+:Gait_Walking_speed
   rdfs:label "Gait (Walking) speed" ;
   rdf:type aon:PhenotypicBiomarker ;
   :panel :Chinese_Panel, :British_Panel ;
   :system :Physical_ability .
 
-:Ghrelin
+:Ghrelin_GHRL
   rdfs:label "Ghrelin (GHRL)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :British_Panel .
@@ -567,7 +569,7 @@
   :panel :Singapore_Panel ;
   :system do:All-cause_mortality .
 
-:Glucagon-like_peptide-1
+:Glucagon-like_peptide-1_GLP-1
   rdfs:label "Glucagon-like peptide-1 (GLP-1)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
@@ -579,7 +581,7 @@
   :panel :DNAm_PhenoAge, :TAME_Panel ;
   :system org:Glucose_metabolism_system .
 
-:Glucose-dependent_insulinotropic_polypeptide
+:Glucose-dependent_insulinotropic_polypeptide_GIP
   rdfs:label "Glucose-dependent insulinotropic polypeptide (GIP)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel .
@@ -601,12 +603,12 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :Chinese_Panel .
 
-:Glycoprotein_nonmetastatic_melanoma_B
+:Glycoprotein_nonmetastatic_melanoma_B_GPNMB
   rdfs:label "Glycoprotein nonmetastatic melanoma B (GPNMB)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
 
-:Glycosylated_hemoglobin
+:Glycosylated_hemoglobin_HbAС1
   rdfs:label "Glycosylated hemoglobin (HbAС1)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel, :TAME_Panel, :GDF11_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels ;
@@ -618,24 +620,24 @@
   :panel :Chinese_Panel, :British_Panel, :GDF11_Panel ;
   :system :Physical_ability .
 
-:Growth-regulated_oncogene-α
+:Growth-regulated_oncogene-α_GRO-α
   rdfs:label "Growth-regulated oncogene-α (GRO-α)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel, :SASP_Panel ;
   :system do:Mortality_related_CVDs .
 
-:Growth-regulated_oncogene-β
+:Growth-regulated_oncogene-β_GRO-β
   rdfs:label "Growth-regulated oncogene-β (GRO-β)" ;
   rdf:type aon:Biomarker ;
   :panel :SASP_Panel .
 
-:Growth_differentiation_factor-15
+:Growth_differentiation_factor-15_GDF-15
   rdfs:label "Growth differentiation factor-15 (GDF-15) (also known as TGF-PL, MIC-1, PDF, PLAB, and PTGFB)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :TAME_Panel, :Open_Longevity_Panel_New ;
   :system do:Mortality_related_CVDs .
 
-:Growth_factor
+:Growth_factor_GF
   rdfs:label "Growth factor (GF)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :Chinese_Panel, :British_Panel .
@@ -646,7 +648,7 @@
   :panel :British_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels ;
   :system org:Cardiovascular_system .
 
-:HOMA-IR_index_Glycosylated_hemoglobin
+:HOMA-IR_index_Glycosylated_hemoglobin_HbA1
   rdfs:label "HOMA-IR index 'Glycosylated hemoglobin (HbA1)'" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
@@ -665,28 +667,28 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel .
 
-:Hematocrit
+:Hematocrit_from_a_general_blood_test
   rdfs:label "Hematocrit (from a general blood test)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
 
-:Hemoglobin
+:Hemoglobin_from_a_general_blood_test
   rdfs:label "Hemoglobin (from a general blood test)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
 
-:Hepatocyte_growth_factors
+:Hepatocyte_growth_factors_HGF
   rdfs:label "Hepatocyte growth factors (HGF)" ;
   rdf:type aon:Biomarker ;
   :panel :SASP_Panel .
 
-:Heterochromatin_foci_associated_with_cellular_aging
+:Heterochromatin_foci_associated_with_cellular_aging_SAHF
   rdfs:label "Heterochromatin foci associated with cellular aging (SAHF)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :SENS_Panel ;
   :system cell:Cell_senescence .
 
-:High_mobility_group_box_1
+:High_mobility_group_box_1_HMGB1
   rdfs:label "High mobility group box 1 (HMGB1)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :SENS_Panel ;
@@ -717,7 +719,7 @@
   :panel :Chinese_Panel, :TAME_Panel, :GDF11_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels ;
   :system org:Glucose_metabolism_system .
 
-:Insulin-like_growth_factor_1
+:Insulin-like_growth_factor_1_IGF-1
   rdfs:label "Insulin-like growth factor 1 (IGF-1) (also known as Somatomedin C)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :Chinese_Panel, :British_Panel, :TAME_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
@@ -728,35 +730,40 @@
   :panel :Frailty_Index, :Singapore_Panel ;
   :system do:Inflammation, cell:Intercellular_communication .
 
-:Interleukin-1ra
+:Interleukin-1ra_IL-1ra
   rdfs:label "Interleukin-1ra (IL-1ra)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
   :system do:Mortality_related_neoplasms .
 
-:Interleukin-8
+:Interleukin-8_IL-8
   rdfs:label "Interleukin-8 (IL-8)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel, :SASP_Panel ;
   :system do:All-cause_mortality .
 
-:Interleukin_6
+:Interleukin_6_IL-6
   rdfs:label "Interleukin 6 (IL-6)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :Singapore_Panel, :British_Panel, :SENS_Panel, :SASP_Panel, :TAME_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression ;
   :system do:Inflammation, cell:Intercellular_communication .
 
-:Iodine
+:Iodine_in_blood_serum
   rdfs:label "Iodine (in blood serum)" ;
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full .
 
-:Iron
+:Iodine_in_hair
+  rdfs:label "Iodine (in hair)" ;
+  rdf:type aon:Biomarker ;
+  :panel :Open_Longevity_Panel_Pro .
+
+:Iron_Fe
   rdfs:label "Iron (Fe)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology .
 
-:Keratin_18
+:Keratin_18_KRT18
   rdfs:label "Keratin 18 (KRT18)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
@@ -772,12 +779,12 @@
   :panel :British_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Heart_and_Vessels ;
   :system org:Cardiovascular_system .
 
-:Lactotransferrin
+:Lactotransferrin_LTF
   rdfs:label "Lactotransferrin (LTF)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
 
-:Leptin
+:Leptin_LEP
   rdfs:label "Leptin (LEP)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :Singapore_Panel, :British_Panel .
@@ -804,7 +811,7 @@
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
 
-:Long_non-coding_RNA
+:Long_non-coding_RNA_MIR31HG_AK156230_Meg3
   rdfs:label "Long non-coding RNA (MIR31HG, AK156230, Meg3)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Chinese_Panel ;
@@ -838,17 +845,39 @@
   :panel :SENS_Panel ;
   :system cell:Oxidative_stress, cell:Mitochondria, cell:Apoptosis .
 
-:Matrix_metalloproteinases
+:Matrix_metalloproteinases_MMP-1
   rdfs:label "Matrix metalloproteinases (MMP-1)" ;
   rdf:type aon:Biomarker ;
   :panel :SASP_Panel .
+
+:Matrix_metalloproteinases_MMP-10
+  rdfs:label "Matrix metalloproteinases (MMP-10)" ;
+  rdf:type aon:Biomarker ;
+  :panel :SASP_Panel .
+
+:Matrix_metalloproteinases_MMP-3
+  rdfs:label "Matrix metalloproteinases (MMP-3)" ;
+  rdf:type aon:Biomarker ;
+  :panel :SASP_Panel .
+
+:Matrix_metalloproteinases_MMP-7
+  rdfs:label "Matrix metalloproteinases (MMP-7)" ;
+  rdf:type aon:MolecularBiomarker ;
+  :panel :Frailty_Index ;
+  :system cell:Fibrosis .
+
+:Matrix_metalloproteinases_MMP-9
+  rdfs:label "Matrix metalloproteinases (MMP-9)" ;
+  rdf:type aon:MolecularBiomarker ;
+  :panel :Open_Longevity_Panel_New ;
+  :system cell:Fibrosis .
 
 :Melatonin
   rdfs:label "Melatonin" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel .
 
-:Monocytic_chemotactic_protein-1
+:Monocytic_chemotactic_protein-1_MCP-1
   rdfs:label "Monocytic chemotactic protein-1 (MCP-1)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
@@ -877,7 +906,7 @@
   :panel :SASP_Panel ;
   :system cell:DNA_damage_response .
 
-:Natural_killers
+:Natural_killers_NK
   rdfs:label "Natural killers (NK)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel ;
@@ -910,7 +939,7 @@
 :Open_Longevity_Panel_Pro
   rdf:type aon:BiomarkerPanel .
 
-:Osteoprotegerin
+:Osteoprotegerin_OPG
   rdfs:label "Osteoprotegerin (OPG)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
@@ -926,7 +955,7 @@
   rdf:type aon:Biomarker ;
   :panel :Chinese_Panel .
 
-:Pentraxin
+:Pentraxin_PTX3
   rdfs:label "Pentraxin (PTX3)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
@@ -946,13 +975,13 @@
 :Physical_ability
   rdf:type :AADAOrganismFeature .
 
-:Plasminogen_activator_inhibitor_1
+:Plasminogen_activator_inhibitor_1_PAI-1
   rdfs:label "Plasminogen activator inhibitor 1 (PAI-1)(also known as Serpine E1)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :SASP_Panel ;
   :system cell:Fibrosis .
 
-:Platelet_Growth_Factor_BB
+:Platelet_Growth_Factor_BB_PDGF-BB
   rdfs:label "Platelet Growth Factor BB (PDGF-BB)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
@@ -969,23 +998,23 @@
   :panel :British_Panel ;
   :system :Cognitive_function .
 
-:Progesterone
+:Progesterone_for_females_and_Prostate_Specific_Antigen_PSA_for_males
   rdfs:label "Progesterone (for females) and Prostate Specific Antigen (PSA) (for males)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :GDF11_Panel .
 
-:Progranulin
+:Progranulin_PGRN
   rdfs:label "Progranulin (PGRN)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
   :system org:Nervous_system .
 
-:Promyelocytic_leukemia_protein
+:Promyelocytic_leukemia_protein_PML
   rdfs:label "Promyelocytic leukemia protein (PML)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :SENS_Panel .
 
-:Protein_Oxidation_Products
+:Protein_Oxidation_Products_AOPP
   rdfs:label "Protein Oxidation Products (AOPP)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :SENS_Panel ;
@@ -1002,17 +1031,17 @@
   :panel :British_Panel ;
   :system :Cognitive_function .
 
-:Regucalcin
+:Regucalcin_RGN_Senescence_marker_protein-30_SMP30
   rdfs:label "Regucalcin (RGN) (Senescence marker protein-30, SMP30)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
 
-:Resistin
+:Resistin_RETN
   rdfs:label "Resistin (RETN)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :Singapore_Panel .
 
-:S100_calcium_binding_protein_B
+:S100_calcium_binding_protein_B_S100B
   rdfs:label "S100 calcium binding protein B (S100B)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index .
@@ -1029,13 +1058,13 @@
   rdf:type aon:Biomarker ;
   :panel :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full .
 
-:Senescence_associated_secretory_phenotype
+:Senescence_associated_secretory_phenotype_SASP
   rdfs:label "Senescence associated secretory phenotype (SASP)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Chinese_Panel ;
   :system do:Inflammation, cell:Intercellular_communication .
 
-:Serum_glycoprotein_acetylation
+:Serum_glycoprotein_acetylation_GlycA
   rdfs:label "Serum glycoprotein acetylation (GlycA)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_New ;
@@ -1044,7 +1073,7 @@
 :Singapore_Panel
   rdf:type aon:BiomarkerPanel .
 
-:Soluble_suppression_of_tumorigenicity_2
+:Soluble_suppression_of_tumorigenicity_2_ST2
   rdfs:label "Soluble suppression of tumorigenicity 2 (ST2) " ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
@@ -1055,13 +1084,19 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel .
 
-:Spirometry_forced_expiratory_volume_in_the_first_second
+:Spirometry_forced_expiratory_volume_in_the_first_second_FEV1
   rdfs:label "Spirometry: forced expiratory volume in the first second (FEV1)" ;
   rdf:type aon:Biomarker ;
   :panel :British_Panel, :GDF11_Panel ;
   :system org:Respiratory_system .
 
-:Stem_cell_factor
+:Standing_balance_One_leg_stand_tandem_stands
+  rdfs:label " Standing balance (One leg stand, tandem stands)" ;
+  rdf:type aon:PhenotypicBiomarker ;
+  :panel :Chinese_Panel, :British_Panel ;
+  :system :Physical_ability .
+
+:Stem_cell_factor_SCF
   rdfs:label "Stem cell factor (SCF)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
@@ -1133,23 +1168,23 @@
   rdf:type aon:BiomarkerPanel ;
   :partOfPanel :Theranostic_Panel_Full .
 
-:Thrombocytes
+:Thrombocytes_from_a_general_blood_test
   rdfs:label "Thrombocytes (from a general blood test)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :GDF11_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
 
-:Thrombospondin-2
+:Thrombospondin-2_THBS2
   rdfs:label "Thrombospondin-2 (THBS2)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
   :system cell:Fibrosis .
 
-:Thyroid-stimulating_Hormone
+:Thyroid-stimulating_Hormone_TSH
   rdfs:label "Thyroid-stimulating Hormone (TSH)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel, :GDF11_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
 
-:Thyroxine
+:Thyroxine_Free_T4
   rdfs:label "Thyroxine (Free T4)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Brain_and_Depression, :Theranostic_Panel_Heart_and_Vessels .
@@ -1160,7 +1195,7 @@
   :panel :British_Panel ;
   :system :Physical_ability .
 
-:Tissue_inhibitor-1
+:Tissue_inhibitor-1_TIMP-1
   rdfs:label "Tissue inhibitor-1 (TIMP-1)" ;
   rdf:type aon:Biomarker ;
   :panel :SASP_Panel, :Open_Longevity_Panel_New .
@@ -1176,13 +1211,13 @@
   rdf:type aon:MolecularBiomarker ;
   :panel :SENS_Panel .
 
-:Transforming_growth_factor-β
+:Transforming_growth_factor-β_TGF-β
   rdfs:label "Transforming growth factor-β (TGF-β)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :SASP_Panel, :Open_Longevity_Panel_New ;
   :system cell:Fibrosis .
 
-:Transglutaminase_2
+:Transglutaminase_2_TGM2
   rdfs:label "Transglutaminase 2 (TGM2)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
@@ -1210,13 +1245,13 @@
   :panel :SENS_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Heart_and_Vessels ;
   :system cell:Oxidative_stress, cell:Mitochondria, cell:Apoptosis .
 
-:Urokinase_plasminogen_activator
+:Urokinase_plasminogen_activator_uPA
   rdfs:label "Urokinase plasminogen activator (uPA)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index, :SASP_Panel ;
   :system cell:Fibrosis .
 
-:Vascular_endothelial_growth_factor
+:Vascular_endothelial_growth_factor_VEGF
   rdfs:label "Vascular endothelial growth factor (VEGF)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Singapore_Panel ;
@@ -1234,7 +1269,7 @@
   :panel :British_Panel ;
   :system :Cognitive_function .
 
-:Vimentin
+:Vimentin_VIM
   rdfs:label "Vimentin (VIM)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Frailty_Index ;
@@ -1252,17 +1287,17 @@
   :panel :British_Panel ;
   :system :Cognitive_function .
 
-:Vitamin_B12
+:Vitamin_B12_cyanocobalamin
   rdfs:label "Vitamin B12 (cyanocobalamin)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full, :Theranostic_Panel_Oncology, :Theranostic_Panel_Brain_and_Depression .
 
-:Vitamin_D
+:Vitamin_D_25-ОН_calciferol
   rdfs:label "Vitamin D (25-ОН) (calciferol)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :GDF11_Panel, :Open_Longevity_Panel_Basic, :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full .
 
-:Vitamin_K-2
+:Vitamin_K-2_MK-7
   rdfs:label "Vitamin K-2 (MK-7)" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Open_Longevity_Panel_Pro, :Theranostic_Panel_Full .
@@ -1279,17 +1314,11 @@
   :panel :British_Panel ;
   :system :Cognitive_function .
 
-:_Standing_balance
-  rdfs:label " Standing balance (One leg stand, tandem stands)" ;
-  rdf:type aon:PhenotypicBiomarker ;
-  :panel :Chinese_Panel, :British_Panel ;
-  :system :Physical_ability .
-
 :aada
   rdf:type owl:Ontology ;
   dc:title "All aging diagnostic approaches (AADA) table" ;
   :ns <https://purl.org/agingontology/aada#> ;
-  owl:imports <https://purl.org/agingontology/organism#> .
+  owl:imports <https://purl.org/agingontology/organism#>, <https://purl.org/agingontology/cell#> .
 
 :agingMechanism
   rdfs:domain aon:Biomarker ;
@@ -1343,40 +1372,13 @@
   rdf:type aon:Biomarker ;
   :panel :SASP_Panel .
 
-:Биохимические_показатели
+:Биохимические_показатели_без_подробностей
   rdfs:label "Biochemistry assay" ;
   rdf:type aon:MolecularBiomarker ;
   :panel :British_Panel ;
   :system org:Cardiovascular_system .
 
-:Йод
-  rdfs:label "Iodine (in hair)" ;
-  rdf:type aon:Biomarker ;
-  :panel :Open_Longevity_Panel_Pro .
-
-:Матриксная_металлопротеиназа-10
-  rdfs:label "Matrix metalloproteinases (MMP-10)" ;
-  rdf:type aon:Biomarker ;
-  :panel :SASP_Panel .
-
-:Матриксная_металлопротеиназа-3
-  rdfs:label "Matrix metalloproteinases (MMP-3)" ;
-  rdf:type aon:Biomarker ;
-  :panel :SASP_Panel .
-
-:Матриксная_металлопротеиназа-9
-  rdfs:label "Matrix metalloproteinases (MMP-9)" ;
-  rdf:type aon:MolecularBiomarker ;
-  :panel :Open_Longevity_Panel_New ;
-  :system cell:Fibrosis .
-
-:Матрилизин_матриксная_металлопротеиназа-7
-  rdfs:label "Matrix metalloproteinases (MMP-7)" ;
-  rdf:type aon:MolecularBiomarker ;
-  :panel :Frailty_Index ;
-  :system cell:Fibrosis .
-
-:Наивные_CD4_лимфоциты_клетки_памяти
+:Наивные_CD4_лимфоциты_клетки_памяти_CD4_45RO_CD4_45RA_соотношение_наивных_клеток_и_клеток_памяти
   rdfs:label "Наивные CD4 лимфоциты/клетки памяти (CD4/45RO, CD4/45RA, соотношение 'наивных' клеток и клеток памяти)." ;
   rdf:type aon:MolecularBiomarker ;
   :panel :Theranostic_Panel_Full, :Theranostic_Panel_Oncology ;

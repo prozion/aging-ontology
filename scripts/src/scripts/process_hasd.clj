@@ -52,7 +52,7 @@
                           (when (not-empty? age-to)
                             {:ageTo age-to})
                           (when system
-                            {:system system}))})))
+                            {:hasdSystem system}))})))
       {}
       content)))
 
@@ -81,7 +81,7 @@
 (defn analyze []
   (defn count-systems []
     (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd_individuals.tree")]
-      (->> tabtree vals (map :system) flatten (remove nil?) distinct)))
+      (->> tabtree vals (map :hasdSystem) flatten (remove nil?) distinct)))
   true)
 
 (defn generate-hasd-individuals []
@@ -105,8 +105,12 @@
   ;     filled-scheme)))
 
 (defn generate-hasd-rdf []
-  (glue-hasd-scheme-and-hasd-nodes)
   (let [tabtree (tabtree/parse-tab-tree "../hasd/hasd.tree")]
     (write-to-file
       "../hasd/hasd.ttl"
       (rdf/tabtree->rdf tabtree))))
+
+(defn build-hasd []
+  (generate-hasd-individuals)
+  (glue-hasd-scheme-and-hasd-nodes)
+  (generate-hasd-rdf))
