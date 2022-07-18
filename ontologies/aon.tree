@@ -33,8 +33,8 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 		drug ns:https://purl.org/agingontology/drugs#
 		do ns:https://purl.org/agingontology/disease#
 		therapies ns:https://purl.org/agingontology/therapies#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
-		owl/Thing
+	classes +section-hierarchy-inverse-relation:subclass-of
+		owl/Thing +a:owl/Class
 			BiologicalProcess
 				org/OrganismProcess
 					do/PathologicalProcess

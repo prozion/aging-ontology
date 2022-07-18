@@ -10,11 +10,11 @@
 
 
 :All-cause_mortality
-  rdf:type :Disease .
+  rdf:type :MortalityFactor .
 
 :Alzheimers_disease
-  owl:sameAs :AD ;
   rdf:type :Disease ;
+  owl:sameAs :AD ;
   skos:broader :Neurodegenerative_disease .
 
 :Atherosclerosis
@@ -24,35 +24,35 @@
   rdf:type owl:Class .
 
 :COPD
-  rdfs:label "Chronic obstructive lung disease" ;
-  rdf:type :Disease .
+  rdf:type :Disease ;
+  rdfs:label "Chronic obstructive lung disease" .
 
 :Cancer
-  rdf:type :Disease .
+  rdf:type :Disease, :PathologicalProcess .
 
 :Cardiovascular_system_disease
-  :doid "1287" ;
-  rdf:type :Disease .
+  rdf:type :Disease ;
+  :doid "1287" .
 
 :Cataract
   rdf:type :Disease ;
   skos:broader :Eye_disease .
 
 :Death
-  rdf:type :Disease .
+  rdf:type org:OrganismProcess .
 
 :Dementia
   rdf:type :Disease .
 
 :Diabetes
-  :doid "81062" ;
   rdf:type :Disease ;
+  :doid "81062" ;
   skos:broader :Glucose_metabolism_disease .
 
 :Disease
+  rdf:type owl:Class ;
   :ogms "31" ;
-  rdfs:comment "Сложная реакция организма на действие патологического агента, являющаяся новым процессом жизнедеятельности, возникающим в результате нарушений во взаимодействии организма и внешней среды, характеризующаяся нарушением регуляции функции, приспособляемости и уменьшением работоспособности, чувством боли и недомогания" ;
-  rdf:type owl:Class .
+  rdfs:comment "Сложная реакция организма на действие патологического агента, являющаяся новым процессом жизнедеятельности, возникающим в результате нарушений во взаимодействии организма и внешней среды, характеризующаяся нарушением регуляции функции, приспособляемости и уменьшением работоспособности, чувством боли и недомогания" .
 
 :Dry_eye_disease
   rdf:type :Disease ;
@@ -70,8 +70,8 @@
   skos:broader :Eye_disease .
 
 :Glucose_metabolism_disease
-  :doid "4194" ;
-  rdf:type :Disease .
+  rdf:type :Disease ;
+  :doid "4194" .
 
 :Heart_disease
   rdf:type :Disease ;
@@ -81,15 +81,15 @@
   rdf:type :Disease .
 
 :IPF
-  rdfs:label "Idiopathic lung ﬁbrosis" ;
-  rdf:type :Disease .
+  rdf:type :Disease ;
+  rdfs:label "Idiopathic lung ﬁbrosis" .
 
 :Infertility
   rdf:type :Disease ;
   skos:broader :Reproductive_system_disease .
 
 :Inflammation
-  rdf:type :Disease .
+  rdf:type org:OrganismProcess .
 
 :Kidney_disease
   rdf:type :Disease .
@@ -101,20 +101,20 @@
   rdf:type owl:Class .
 
 :Mortality_related_CVDs
-  rdf:type :Disease ;
+  rdf:type :MortalityFactor ;
   :relatesTo :Cardiovascular_system_disease .
 
 :Mortality_related_neoplasms
-  rdf:type :Disease ;
+  rdf:type :MortalityFactor ;
   :relatesTo :Cancer .
 
 :Mortality_related_respiratory_diseases
-  rdf:type :Disease ;
+  rdf:type :MortalityFactor ;
   :relatesTo :Respiratory_disease .
 
 :Neurodegenerative_disease
-  :doid "1289" ;
-  rdf:type :Disease .
+  rdf:type :Disease ;
+  :doid "1289" .
 
 :Osteoarthritis
   rdf:type :Disease .
@@ -126,16 +126,16 @@
   rdf:type :Disease .
 
 :Parkinson_disease
-  owl:sameAs :PD ;
   rdf:type :Disease ;
+  owl:sameAs :PD ;
   skos:broader :Neurodegenerative_disease .
 
 :PathologicalAgent
   rdf:type owl:Class .
 
 :PathologicalProcess
-  rdfs:comment "Реакция организма на необычное раздражение, в основе которого лежит нарушение функции и структуры" ;
-  rdf:type owl:Class .
+  rdf:type owl:Class ;
+  rdfs:comment "Реакция организма на необычное раздражение, в основе которого лежит нарушение функции и структуры" .
 
 :Pathology
   rdf:type owl:Class .
@@ -151,8 +151,8 @@
   rdf:type :Disease .
 
 :Reproductive_system_disease
-  :doid "15" ;
-  rdf:type :Disease .
+  rdf:type :Disease ;
+  :doid "15" .
 
 :Respiratory_disease
   rdf:type :Disease .
@@ -181,18 +181,18 @@
   :ns <https://purl.org/agingontology/disease#> .
 
 :hasSymptom
-  owl:inverseOf :symptomFor ;
-  rdf:type rdf:Property .
+  rdf:type rdf:Property ;
+  owl:inverseOf :symptomFor .
 
 :ogms
   rdf:type rdf:Property .
 
 :relatesTo
-  rdfs:range :Disease ;
-  rdf:type rdf:Property .
+  rdf:type rdf:Property ;
+  rdfs:range :Disease .
 
 :symptomFor
-  rdf:type rdf:Property ;
+  rdf:type rdfs:Property ;
   rdfs:domain :Symptom ;
   rdfs:range :Disease .
 

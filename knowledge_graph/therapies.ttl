@@ -21,17 +21,17 @@
   rdf:type owl:Class .
 
 :Therapy
-  rdfs:comment "The attempted remediation of a health problem, usually following a medical diagnosis." ;
-  rdf:type owl:Class .
+  rdf:type owl:Class ;
+  rdfs:comment "The attempted remediation of a health problem, usually following a medical diagnosis." .
 
 :Treatment
-  owl:equivalentClass :Therapy ;
-  rdf:type owl:Class .
+  rdf:type owl:Class ;
+  owl:equivalentClass :Therapy .
 
 :includesIntervention
+  rdf:type rdf:Property ;
   rdfs:domain :Therapy ;
-  rdfs:range :Intervention ;
-  rdf:type rdf:Property .
+  rdfs:range :Intervention .
 
 :therapies
   rdf:type owl:Ontology ;

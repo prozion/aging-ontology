@@ -1,0 +1,4309 @@
+@prefix : <https://purl.org/agingontology/hasd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/agingontology/hasd> .
+
+<https://purl.org/agingontology/hasd> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://purl.org/agingontology/cell#compartment
+<https://purl.org/agingontology/cell#compartment> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <https://purl.org/agingontology/cell#CellElement> ;
+                                                  rdfs:range <https://purl.org/agingontology/cell#CellCompartment> .
+
+
+###  https://purl.org/agingontology/disease#hasSymptom
+<https://purl.org/agingontology/disease#hasSymptom> rdf:type owl:ObjectProperty ;
+                                                    owl:inverseOf <https://purl.org/agingontology/disease#symptomFor> .
+
+
+###  https://purl.org/agingontology/disease#relatesTo
+<https://purl.org/agingontology/disease#relatesTo> rdf:type owl:ObjectProperty ;
+                                                   rdfs:range <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#symptomFor
+<https://purl.org/agingontology/disease#symptomFor> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <https://purl.org/agingontology/disease#Symptom> ;
+                                                    rdfs:range <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/hasd#ageFrom
+:ageFrom rdf:type owl:ObjectProperty ;
+         rdfs:domain :HASDNode ;
+         rdfs:range xsd:Literal .
+
+
+###  https://purl.org/agingontology/hasd#ageTo
+:ageTo rdf:type owl:ObjectProperty ;
+       rdfs:domain :HASDNode ;
+       rdfs:range xsd:Literal .
+
+
+###  https://purl.org/agingontology/hasd#agingHallmark
+:agingHallmark rdf:type owl:ObjectProperty ;
+               rdfs:domain :HASDNode ;
+               rdfs:range <https://purl.org/agingontology/core#BasicAgingMechanism> .
+
+
+###  https://purl.org/agingontology/hasd#followsFrom
+:followsFrom rdf:type owl:ObjectProperty ;
+             owl:inverseOf :followsTo .
+
+
+###  https://purl.org/agingontology/hasd#followsTo
+:followsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :HASDNode ;
+           rdfs:range :HASDNode .
+
+
+###  https://purl.org/agingontology/hasd#hasElement
+:hasElement rdf:type owl:ObjectProperty ;
+            rdfs:domain :Diagram ;
+            rdfs:range :HASDNode .
+
+
+###  https://purl.org/agingontology/hasd#hasdSystem
+:hasdSystem rdf:type owl:ObjectProperty ;
+            rdfs:domain :HASDNode ;
+            rdfs:range :hasdSystem_1 .
+
+
+###  https://purl.org/agingontology/hasd#organismSystem
+:organismSystem rdf:type owl:ObjectProperty ;
+                rdfs:domain :HASDNode ;
+                rdfs:range <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#Property
+rdfs:Property rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Literal
+xsd:Literal rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/cell#CellCompartment
+<https://purl.org/agingontology/cell#CellCompartment> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://purl.org/agingontology/cell#CellElement> .
+
+
+###  https://purl.org/agingontology/cell#CellElement
+<https://purl.org/agingontology/cell#CellElement> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/cell#CellProcess
+<https://purl.org/agingontology/cell#CellProcess> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/cell#CellSystem
+<https://purl.org/agingontology/cell#CellSystem> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#AgingPathogeneticProcess
+<https://purl.org/agingontology/core#AgingPathogeneticProcess> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#BasicAgingMechanism
+<https://purl.org/agingontology/core#BasicAgingMechanism> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#BehavioralPathology
+<https://purl.org/agingontology/core#BehavioralPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#CellMembranePathology
+<https://purl.org/agingontology/core#CellMembranePathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#CellMetabolismPathology
+<https://purl.org/agingontology/core#CellMetabolismPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#CellPathology
+<https://purl.org/agingontology/core#CellPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#ChromosomePathology
+<https://purl.org/agingontology/core#ChromosomePathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#DNAPathology
+<https://purl.org/agingontology/core#DNAPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#ExogenPathology
+<https://purl.org/agingontology/core#ExogenPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#InfectionCausedPathology
+<https://purl.org/agingontology/core#InfectionCausedPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#LysosomePathology
+<https://purl.org/agingontology/core#LysosomePathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#MicrobiotaPathology
+<https://purl.org/agingontology/core#MicrobiotaPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#MitochondrionDNAPathology
+<https://purl.org/agingontology/core#MitochondrionDNAPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#MitochondrionPathology
+<https://purl.org/agingontology/core#MitochondrionPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#Nervous_system
+<https://purl.org/agingontology/core#Nervous_system> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#NucleusPathology
+<https://purl.org/agingontology/core#NucleusPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#OrganPathology
+<https://purl.org/agingontology/core#OrganPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#OrganSystemPathology
+<https://purl.org/agingontology/core#OrganSystemPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#OrganismChromosomePathology
+<https://purl.org/agingontology/core#OrganismChromosomePathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#OrganismPathology
+<https://purl.org/agingontology/core#OrganismPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#OrganismSystemPathology
+<https://purl.org/agingontology/core#OrganismSystemPathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#TissuePathology
+<https://purl.org/agingontology/core#TissuePathology> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/disease#Disease
+<https://purl.org/agingontology/disease#Disease> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/disease#Symptom
+<https://purl.org/agingontology/disease#Symptom> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/hasd#Diagram
+:Diagram rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/hasd#HASDNode
+:HASDNode rdf:type owl:Class ;
+          rdfs:subClassOf <https://purl.org/agingontology/core#AgingPathogeneticProcess> .
+
+
+###  https://purl.org/agingontology/hasd#HASDSystem
+:HASDSystem rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/hasd#hasdSystem_1
+:hasdSystem_1 rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:unionOf ( <https://purl.org/agingontology/cell#CellSystem>
+                                                  <https://purl.org/agingontology/disease#Disease>
+                                                  :HASDSystem
+                                                  <https://purl.org/agingontology/organism#OrganismProcess>
+                                                  <https://purl.org/agingontology/organism#OrganismSystem>
+                                                )
+                                  ] .
+
+
+###  https://purl.org/agingontology/organism#Heart
+<https://purl.org/agingontology/organism#Heart> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://purl.org/agingontology/organism#Organ> .
+
+
+###  https://purl.org/agingontology/organism#Kidney
+<https://purl.org/agingontology/organism#Kidney> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://purl.org/agingontology/organism#Organ> .
+
+
+###  https://purl.org/agingontology/organism#Liver
+<https://purl.org/agingontology/organism#Liver> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://purl.org/agingontology/organism#Organ> .
+
+
+###  https://purl.org/agingontology/organism#Organ
+<https://purl.org/agingontology/organism#Organ> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/organism#OrganismProcess
+<https://purl.org/agingontology/organism#OrganismProcess> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/organism#OrganismSystem
+<https://purl.org/agingontology/organism#OrganismSystem> rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/organism#Pancrea
+<https://purl.org/agingontology/organism#Pancrea> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://purl.org/agingontology/organism#Organ> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/agingontology/cell#Apoptosis
+<https://purl.org/agingontology/cell#Apoptosis> rdf:type owl:NamedIndividual ,
+                                                         <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Cell_senescence
+<https://purl.org/agingontology/cell#Cell_senescence> rdf:type owl:NamedIndividual ,
+                                                               <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Chromosome
+<https://purl.org/agingontology/cell#Chromosome> rdf:type owl:NamedIndividual ,
+                                                          <https://purl.org/agingontology/cell#CellElement> ;
+                                                 <https://purl.org/agingontology/cell#compartment> <https://purl.org/agingontology/cell#Mitochondria> ,
+                                                                                                   <https://purl.org/agingontology/cell#Nucleus> .
+
+
+###  https://purl.org/agingontology/cell#Cytosol
+<https://purl.org/agingontology/cell#Cytosol> rdf:type owl:NamedIndividual ,
+                                                       <https://purl.org/agingontology/cell#CellCompartment> .
+
+
+###  https://purl.org/agingontology/cell#DNA_damage_response
+<https://purl.org/agingontology/cell#DNA_damage_response> rdf:type owl:NamedIndividual ,
+                                                                   <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Fibrosis
+<https://purl.org/agingontology/cell#Fibrosis> rdf:type owl:NamedIndividual ,
+                                                        <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#GlucoseMetabolism
+<https://purl.org/agingontology/cell#GlucoseMetabolism> rdf:type owl:NamedIndividual ,
+                                                                 <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Glucose_metabolism_system
+<https://purl.org/agingontology/cell#Glucose_metabolism_system> rdf:type owl:NamedIndividual ,
+                                                                         <https://purl.org/agingontology/cell#CellSystem> .
+
+
+###  https://purl.org/agingontology/cell#Intercellular_communication
+<https://purl.org/agingontology/cell#Intercellular_communication> rdf:type owl:NamedIndividual ,
+                                                                           <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Lyzosome
+<https://purl.org/agingontology/cell#Lyzosome> rdf:type owl:NamedIndividual ,
+                                                        <https://purl.org/agingontology/cell#CellCompartment> .
+
+
+###  https://purl.org/agingontology/cell#Meiosis
+<https://purl.org/agingontology/cell#Meiosis> rdf:type owl:NamedIndividual ,
+                                                       <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Membrane
+<https://purl.org/agingontology/cell#Membrane> rdf:type owl:NamedIndividual ,
+                                                        <https://purl.org/agingontology/cell#CellCompartment> .
+
+
+###  https://purl.org/agingontology/cell#Metabolism
+<https://purl.org/agingontology/cell#Metabolism> rdf:type owl:NamedIndividual ,
+                                                          <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Metabolism_system
+<https://purl.org/agingontology/cell#Metabolism_system> rdf:type owl:NamedIndividual ,
+                                                                 <https://purl.org/agingontology/cell#CellSystem> .
+
+
+###  https://purl.org/agingontology/cell#Mitochondria
+<https://purl.org/agingontology/cell#Mitochondria> rdf:type owl:NamedIndividual ,
+                                                            <https://purl.org/agingontology/cell#CellCompartment> .
+
+
+###  https://purl.org/agingontology/cell#Mitosis
+<https://purl.org/agingontology/cell#Mitosis> rdf:type owl:NamedIndividual ,
+                                                       <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Nucleus
+<https://purl.org/agingontology/cell#Nucleus> rdf:type owl:NamedIndividual ,
+                                                       <https://purl.org/agingontology/cell#CellCompartment> .
+
+
+###  https://purl.org/agingontology/cell#Oxidative_stress
+<https://purl.org/agingontology/cell#Oxidative_stress> rdf:type owl:NamedIndividual ,
+                                                                <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Protein_glycation
+<https://purl.org/agingontology/cell#Protein_glycation> rdf:type owl:NamedIndividual ,
+                                                                 <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#RNA
+<https://purl.org/agingontology/cell#RNA> rdf:type owl:NamedIndividual ,
+                                                   <https://purl.org/agingontology/cell#CellElement> .
+
+
+###  https://purl.org/agingontology/cell#RNAi_transcription
+<https://purl.org/agingontology/cell#RNAi_transcription> rdf:type owl:NamedIndividual ,
+                                                                  <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Ribosome
+<https://purl.org/agingontology/cell#Ribosome> rdf:type owl:NamedIndividual ,
+                                                        <https://purl.org/agingontology/cell#CellElement> .
+
+
+###  https://purl.org/agingontology/cell#Splicing
+<https://purl.org/agingontology/cell#Splicing> rdf:type owl:NamedIndividual ,
+                                                        <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Transcription
+<https://purl.org/agingontology/cell#Transcription> rdf:type owl:NamedIndividual ,
+                                                             <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/cell#Translation
+<https://purl.org/agingontology/cell#Translation> rdf:type owl:NamedIndividual ,
+                                                           <https://purl.org/agingontology/cell#CellProcess> .
+
+
+###  https://purl.org/agingontology/core#Aging-related_hormonal_changes
+<https://purl.org/agingontology/core#Aging-related_hormonal_changes> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Body_composition_changes
+<https://purl.org/agingontology/core#Body_composition_changes> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Cellular_senescence
+<https://purl.org/agingontology/core#Cellular_senescence> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Failure_of_proteostasis
+<https://purl.org/agingontology/core#Failure_of_proteostasis> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Fibrosis
+<https://purl.org/agingontology/core#Fibrosis> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Immunosenescence
+<https://purl.org/agingontology/core#Immunosenescence> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Insulin_resistance
+<https://purl.org/agingontology/core#Insulin_resistance> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Low-grade_inflammation
+<https://purl.org/agingontology/core#Low-grade_inflammation> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/core#Mitochondrial_dysfunction
+<https://purl.org/agingontology/core#Mitochondrial_dysfunction> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/disease#AD
+<https://purl.org/agingontology/disease#AD> rdf:type owl:NamedIndividual ;
+                                            owl:sameAs <https://purl.org/agingontology/disease#Alzheimers_disease> .
+
+
+###  https://purl.org/agingontology/disease#All-cause_mortality
+<https://purl.org/agingontology/disease#All-cause_mortality> rdf:type owl:NamedIndividual ,
+                                                                      <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Alzheimers_disease
+<https://purl.org/agingontology/disease#Alzheimers_disease> rdf:type owl:NamedIndividual ,
+                                                                     <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Atherosclerosis
+<https://purl.org/agingontology/disease#Atherosclerosis> rdf:type owl:NamedIndividual ,
+                                                                  <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#COPD
+<https://purl.org/agingontology/disease#COPD> rdf:type owl:NamedIndividual ,
+                                                       <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Cancer
+<https://purl.org/agingontology/disease#Cancer> rdf:type owl:NamedIndividual ,
+                                                         <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Cardiovascular_system_disease
+<https://purl.org/agingontology/disease#Cardiovascular_system_disease> rdf:type owl:NamedIndividual ,
+                                                                                <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Cataract
+<https://purl.org/agingontology/disease#Cataract> rdf:type owl:NamedIndividual ,
+                                                           <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Death
+<https://purl.org/agingontology/disease#Death> rdf:type owl:NamedIndividual ,
+                                                        <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Dementia
+<https://purl.org/agingontology/disease#Dementia> rdf:type owl:NamedIndividual ,
+                                                           <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Diabetes
+<https://purl.org/agingontology/disease#Diabetes> rdf:type owl:NamedIndividual ,
+                                                           <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Dry_eye_disease
+<https://purl.org/agingontology/disease#Dry_eye_disease> rdf:type owl:NamedIndividual ,
+                                                                  <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Erectile_dysfunction
+<https://purl.org/agingontology/disease#Erectile_dysfunction> rdf:type owl:NamedIndividual ,
+                                                                       <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Eye_disease
+<https://purl.org/agingontology/disease#Eye_disease> rdf:type owl:NamedIndividual ,
+                                                              <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Glaukoma
+<https://purl.org/agingontology/disease#Glaukoma> rdf:type owl:NamedIndividual ,
+                                                           <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Glucose_metabolism_disease
+<https://purl.org/agingontology/disease#Glucose_metabolism_disease> rdf:type owl:NamedIndividual ,
+                                                                             <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Heart_disease
+<https://purl.org/agingontology/disease#Heart_disease> rdf:type owl:NamedIndividual ,
+                                                                <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Hepatitis
+<https://purl.org/agingontology/disease#Hepatitis> rdf:type owl:NamedIndividual ,
+                                                            <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#IPF
+<https://purl.org/agingontology/disease#IPF> rdf:type owl:NamedIndividual ,
+                                                      <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Infertility
+<https://purl.org/agingontology/disease#Infertility> rdf:type owl:NamedIndividual ,
+                                                              <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Inflammation
+<https://purl.org/agingontology/disease#Inflammation> rdf:type owl:NamedIndividual ,
+                                                               <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Kidney_disease
+<https://purl.org/agingontology/disease#Kidney_disease> rdf:type owl:NamedIndividual ,
+                                                                 <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Liver_disease
+<https://purl.org/agingontology/disease#Liver_disease> rdf:type owl:NamedIndividual ,
+                                                                <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Mortality_related_CVDs
+<https://purl.org/agingontology/disease#Mortality_related_CVDs> rdf:type owl:NamedIndividual ,
+                                                                         <https://purl.org/agingontology/disease#Disease> ;
+                                                                <https://purl.org/agingontology/disease#relatesTo> <https://purl.org/agingontology/disease#Cardiovascular_system_disease> .
+
+
+###  https://purl.org/agingontology/disease#Mortality_related_neoplasms
+<https://purl.org/agingontology/disease#Mortality_related_neoplasms> rdf:type owl:NamedIndividual ,
+                                                                              <https://purl.org/agingontology/disease#Disease> ;
+                                                                     <https://purl.org/agingontology/disease#relatesTo> <https://purl.org/agingontology/disease#Cancer> .
+
+
+###  https://purl.org/agingontology/disease#Mortality_related_respiratory_diseases
+<https://purl.org/agingontology/disease#Mortality_related_respiratory_diseases> rdf:type owl:NamedIndividual ,
+                                                                                         <https://purl.org/agingontology/disease#Disease> ;
+                                                                                <https://purl.org/agingontology/disease#relatesTo> <https://purl.org/agingontology/disease#Respiratory_disease> .
+
+
+###  https://purl.org/agingontology/disease#Neurodegenerative_disease
+<https://purl.org/agingontology/disease#Neurodegenerative_disease> rdf:type owl:NamedIndividual ,
+                                                                            <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Osteoarthritis
+<https://purl.org/agingontology/disease#Osteoarthritis> rdf:type owl:NamedIndividual ,
+                                                                 <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Osteoporosis
+<https://purl.org/agingontology/disease#Osteoporosis> rdf:type owl:NamedIndividual ,
+                                                               <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#PD
+<https://purl.org/agingontology/disease#PD> rdf:type owl:NamedIndividual ;
+                                            owl:sameAs <https://purl.org/agingontology/disease#Parkinson_disease> .
+
+
+###  https://purl.org/agingontology/disease#Pancreatic_fibrosis
+<https://purl.org/agingontology/disease#Pancreatic_fibrosis> rdf:type owl:NamedIndividual ,
+                                                                      <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Parkinson_disease
+<https://purl.org/agingontology/disease#Parkinson_disease> rdf:type owl:NamedIndividual ,
+                                                                    <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Pulmonary_disease
+<https://purl.org/agingontology/disease#Pulmonary_disease> rdf:type owl:NamedIndividual ,
+                                                                    <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Renal_disease
+<https://purl.org/agingontology/disease#Renal_disease> rdf:type owl:NamedIndividual ,
+                                                                <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Reproductive_system_disease
+<https://purl.org/agingontology/disease#Reproductive_system_disease> rdf:type owl:NamedIndividual ,
+                                                                              <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Respiratory_disease
+<https://purl.org/agingontology/disease#Respiratory_disease> rdf:type owl:NamedIndividual ,
+                                                                      <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Retinopathy
+<https://purl.org/agingontology/disease#Retinopathy> rdf:type owl:NamedIndividual ,
+                                                              <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Secondary_cataract
+<https://purl.org/agingontology/disease#Secondary_cataract> rdf:type owl:NamedIndividual ,
+                                                                     <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/disease#Vascular_disease
+<https://purl.org/agingontology/disease#Vascular_disease> rdf:type owl:NamedIndividual ,
+                                                                   <https://purl.org/agingontology/disease#Disease> .
+
+
+###  https://purl.org/agingontology/hasd#AO101
+:AO101 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Failure_of_proteostasis> ;
+       :followsTo :AO603 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO103
+:AO103 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO145 ,
+                  :AO7 ,
+                  :AO77 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO109
+:AO109 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO1706 ,
+                  :AO307 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO115
+:AO115 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO967 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO117
+:AO117 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO171 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO123
+:AO123 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO391 ,
+                  :AO73 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO126
+:AO126 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :followsTo :AO543 ,
+                  :AO59 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO13
+:AO13 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :agingHallmark <https://purl.org/agingontology/core#Cellular_senescence> ,
+                     <https://purl.org/agingontology/core#Insulin_resistance> ;
+      :followsTo :AO319 ,
+                 :AO401 ;
+      :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO130
+:AO130 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Body_composition_changes> ;
+       :followsTo :AO1714 ,
+                  :AO1716 ,
+                  :AO1718 ,
+                  :AO1719 ,
+                  :AO1721 ,
+                  :AO1722 ,
+                  :AO1725 ,
+                  :AO45 ,
+                  :AO91 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO131
+:AO131 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO543 ,
+                  :AO7 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO133
+:AO133 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO143 ,
+                  :AO235 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Renal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO137
+:AO137 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO77 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Skeletal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO139
+:AO139 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO281 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO141
+:AO141 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO283 ,
+                  :AO831 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO143
+:AO143 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :followsTo :AO1686 ;
+       :hasdSystem :Connective_system .
+
+
+###  https://purl.org/agingontology/hasd#AO145
+:AO145 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :followsTo :AO543 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO147
+:AO147 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO163 ,
+                  :AO865 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO15
+:AO15 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :agingHallmark <https://purl.org/agingontology/core#Failure_of_proteostasis> ;
+      :followsTo :AO1669 ;
+      :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO151
+:AO151 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO1683 ,
+                  :AO65 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO153
+:AO153 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO909 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO155
+:AO155 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO1629 ,
+                  :AO1633 ,
+                  :AO1638 ,
+                  :AO1646 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO157
+:AO157 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO1583 ,
+                  :AO1670 ,
+                  :AO223 ,
+                  :AO555 ,
+                  :AO97 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1583
+:AO1583 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#ExogenPathology> ,
+                 :HASDNode ;
+        :followsTo :AO272 ,
+                   :AO407 ;
+        :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1586
+:AO1586 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellPathology> ,
+                 :HASDNode ;
+        :agingHallmark <https://purl.org/agingontology/core#Failure_of_proteostasis> ;
+        :followsTo :AO363 ;
+        :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO159
+:AO159 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO529 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO161
+:AO161 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :followsTo :AO155 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1612
+:AO1612 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO235 ,
+                   :AO543 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1613
+:AO1613 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO295 ,
+                   :AO647 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1614
+:AO1614 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO495 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1616
+:AO1616 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1618 ,
+                   :AO1622 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1617
+:AO1617 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1618 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1618
+:AO1618 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO543 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1619
+:AO1619 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO385 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1620
+:AO1620 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO295 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1621
+:AO1621 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO295 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1622
+:AO1622 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1621 ;
+        :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1623
+:AO1623 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1621 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1624
+:AO1624 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1620 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1625
+:AO1625 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1620 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1626
+:AO1626 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1625 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1627
+:AO1627 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1626 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1628
+:AO1628 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1626 ,
+                   :AO1627 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1629
+:AO1629 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1630 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO163
+:AO163 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :followsTo :AO1727 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1630
+:AO1630 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1631 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1631
+:AO1631 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1632 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Renal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1632
+:AO1632 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO543 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1633
+:AO1633 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1634 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1634
+:AO1634 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1635 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1635
+:AO1635 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1636 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Renal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1636
+:AO1636 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1632 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1638
+:AO1638 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1630 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1639
+:AO1639 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO543 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1640
+:AO1640 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1616 ,
+                   :AO39 ,
+                   :AO543 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1641
+:AO1641 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO131 ,
+                   :AO225 ,
+                   :AO59 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1642
+:AO1642 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO307 ,
+                   :AO95 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1643
+:AO1643 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismChromosomePathology> ,
+                 :HASDNode ;
+        :followsTo :AO21 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1644
+:AO1644 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#NucleusPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1645 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1645
+:AO1645 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellMembranePathology> ,
+                 :HASDNode ;
+        :followsTo :AO37 ,
+                   :AO59 ;
+        :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1646
+:AO1646 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1633 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1647
+:AO1647 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#ExogenPathology> ,
+                 :HASDNode ;
+        :followsTo :AO157 ,
+                   :AO353 ,
+                   :AO373 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1648
+:AO1648 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO288 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1649
+:AO1649 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO727 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO165
+:AO165 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#MitochondrionPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Mitochondrial_dysfunction> ;
+       :followsTo :AO357 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1651
+:AO1651 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellPathology> ,
+                 :HASDNode ;
+        :followsTo :AO109 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1652
+:AO1652 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1653 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1653
+:AO1653 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1654 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1654
+:AO1654 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO109 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1655
+:AO1655 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO109 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1656
+:AO1656 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO927 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1657
+:AO1657 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO217 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1658
+:AO1658 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO139 ,
+                   :AO1659 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1659
+:AO1659 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1660 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1660
+:AO1660 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO141 ,
+                   :AO279 ,
+                   :AO31 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1661
+:AO1661 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO139 ,
+                   :AO1659 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1662
+:AO1662 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#InfectionCausedPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1628 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1663
+:AO1663 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1620 ,
+                   :AO1676 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1664
+:AO1664 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#Nervous_system> ,
+                 :HASDNode ;
+        :followsTo :AO197 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1665
+:AO1665 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1666 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1666
+:AO1666 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1667 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1667
+:AO1667 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1668 ,
+                   :AO489 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1668
+:AO1668 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO837 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1669
+:AO1669 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellPathology> ,
+                 :HASDNode ;
+        :followsTo :AO865 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1670
+:AO1670 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#DNAPathology> ,
+                 :HASDNode ;
+        :followsTo :AO223 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1672
+:AO1672 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#ExogenPathology> ,
+                 :HASDNode ;
+        :followsTo :AO157 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1673
+:AO1673 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1674 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1674
+:AO1674 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellPathology> ,
+                 :HASDNode ;
+        :followsTo :AO266 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1675
+:AO1675 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO39 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1676
+:AO1676 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1692 ,
+                   :AO345 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1678
+:AO1678 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1616 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1679
+:AO1679 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#MicrobiotaPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1680 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1680
+:AO1680 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1616 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1681
+:AO1681 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1682 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1682
+:AO1682 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1651 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1683
+:AO1683 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellPathology> ,
+                 :HASDNode ;
+        :followsTo :AO385 ,
+                   :AO95 ;
+        :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1684
+:AO1684 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1648 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1685
+:AO1685 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO687 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1686
+:AO1686 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO543 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1687
+:AO1687 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO225 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> .
+
+
+###  https://purl.org/agingontology/hasd#AO1688
+:AO1688 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#DNAPathology> ,
+                 :HASDNode ;
+        :followsTo :AO143 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1689
+:AO1689 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#DNAPathology> ,
+                 :HASDNode ;
+        :followsTo :AO501 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO169
+:AO169 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO939 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1690
+:AO1690 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#DNAPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1691 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1691
+:AO1691 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#DNAPathology> ,
+                 :HASDNode ;
+        :agingHallmark <https://purl.org/agingontology/core#Cellular_senescence> ;
+        :followsTo :AO272 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1692
+:AO1692 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO345 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1693
+:AO1693 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1642 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1694
+:AO1694 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#ExogenPathology> ,
+                 :HASDNode ;
+        :followsTo :AO59 ;
+        :hasdSystem :Unknown_system .
+
+
+###  https://purl.org/agingontology/hasd#AO1695
+:AO1695 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO529 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1696
+:AO1696 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1710 ,
+                   :AO1711 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1698
+:AO1698 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1632 ,
+                   :AO675 ,
+                   :AO7 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Renal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1699
+:AO1699 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1700 ,
+                   :AO1713 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1700
+:AO1700 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#CellPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1701 ,
+                   :AO1713 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1701
+:AO1701 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO7 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1702
+:AO1702 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO25 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1703
+:AO1703 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO133 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Renal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1704
+:AO1704 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO783 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1705
+:AO1705 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1706 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1706
+:AO1706 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1704 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1707
+:AO1707 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+        :followsTo :AO39 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1708
+:AO1708 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1713 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1709
+:AO1709 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1713 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO171
+:AO171 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO377 ,
+                  :AO675 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Skeletal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1710
+:AO1710 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1713 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1711
+:AO1711 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1713 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1712
+:AO1712 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1714 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1713
+:AO1713 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismPathology> ,
+                 :HASDNode ;
+        :followsTo :AO543 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> .
+
+
+###  https://purl.org/agingontology/hasd#AO1714
+:AO1714 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1715 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1715
+:AO1715 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1709 ;
+        :hasdSystem :Cell_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1716
+:AO1716 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1717 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1717
+:AO1717 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1696 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1718
+:AO1718 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO173 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1719
+:AO1719 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1720 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1720
+:AO1720 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1708 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1721
+:AO1721 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :agingHallmark <https://purl.org/agingontology/core#Insulin_resistance> ;
+        :followsTo :AO225 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1722
+:AO1722 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO225 ;
+        :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1723
+:AO1723 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1713 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1724
+:AO1724 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO1713 ;
+        :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+        :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1725
+:AO1725 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :followsTo :AO1723 ,
+                   :AO1724 ,
+                   :AO73 ;
+        :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+        :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> ,
+                        <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1726
+:AO1726 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#TissuePathology> ,
+                 :HASDNode ;
+        :followsTo :AO173 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1727
+:AO1727 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                 :HASDNode ;
+        :agingHallmark <https://purl.org/agingontology/core#Immunosenescence> ;
+        :followsTo :AO39 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO1728
+:AO1728 rdf:type owl:NamedIndividual ,
+                 <https://purl.org/agingontology/core#MicrobiotaPathology> ,
+                 :HASDNode ;
+        :followsTo :AO153 ;
+        :hasdSystem :Unknown_system ;
+        :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO173
+:AO173 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1713 ;
+       :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+       :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO175
+:AO175 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO767 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO177
+:AO177 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO193 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO181
+:AO181 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO209 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO185
+:AO185 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO223 ,
+                  :AO239 ,
+                  :AO433 ,
+                  :AO501 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO187
+:AO187 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO607 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO189
+:AO189 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO93 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO19
+:AO19 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :agingHallmark <https://purl.org/agingontology/core#Failure_of_proteostasis> ;
+      :followsTo :AO165 ,
+                 :AO311 ,
+                 :AO629 ,
+                 :AO63 ,
+                 :AO821 ;
+      :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO191
+:AO191 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1713 ;
+       :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO193
+:AO193 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO126 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO195
+:AO195 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO117 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO197
+:AO197 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO67 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO201
+:AO201 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO865 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO203
+:AO203 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO377 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Skeletal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO205
+:AO205 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO1617 ,
+                  :AO1619 ,
+                  :AO295 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO207
+:AO207 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO249 ,
+                  :AO659 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO209
+:AO209 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO288 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO21
+:AO21 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#NucleusPathology> ,
+               :HASDNode ;
+      :followsTo :AO185 ;
+      :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO217
+:AO217 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO207 ,
+                  :AO249 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO223
+:AO223 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :followsTo :AO1687 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO225
+:AO225 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO49 ;
+       :hasdSystem <https://purl.org/agingontology/disease#Cancer> .
+
+
+###  https://purl.org/agingontology/hasd#AO23
+:AO23 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganPathology> ,
+               :HASDNode ;
+      :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ,
+                     <https://purl.org/agingontology/core#Cellular_senescence> ;
+      :followsTo :AO7 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO231
+:AO231 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO203 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO235
+:AO235 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO1698 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Renal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO237
+:AO237 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMembranePathology> ,
+                :HASDNode ;
+       :followsTo :AO243 ,
+                  :AO563 ,
+                  :AO615 ,
+                  :AO733 ,
+                  :AO871 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO239
+:AO239 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO245 ,
+                  :AO49 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO241
+:AO241 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO385 ,
+                  :AO77 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO243
+:AO243 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO272 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO245
+:AO245 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO833 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO247
+:AO247 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO895 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO249
+:AO249 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO659 ,
+                  :AO693 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO25
+:AO25 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :agingHallmark <https://purl.org/agingontology/core#Cellular_senescence> ,
+                     <https://purl.org/agingontology/core#Failure_of_proteostasis> ;
+      :followsTo :AO1640 ;
+      :hasdSystem :Connective_system ;
+      :organismSystem <https://purl.org/agingontology/organism#Digestive_system> ,
+                      <https://purl.org/agingontology/organism#Renal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO251
+:AO251 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO347 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO253
+:AO253 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Cellular_senescence> ;
+       :followsTo :AO268 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO257
+:AO257 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO203 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO266
+:AO266 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1675 ,
+                  :AO27 ,
+                  :AO383 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO268
+:AO268 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Cellular_senescence> ;
+       :followsTo :AO185 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO27
+:AO27 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :followsTo :AO1703 ;
+      :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO270
+:AO270 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO1583 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO272
+:AO272 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO729 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO273
+:AO273 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO161 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO276
+:AO276 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO39 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO279
+:AO279 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO917 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO281
+:AO281 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO33 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO283
+:AO283 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO505 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO288
+:AO288 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO693 ,
+                  :AO729 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO29
+:AO29 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :followsTo :AO1665 ,
+                 :AO489 ,
+                 :AO737 ;
+      :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO295
+:AO295 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO543 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO301
+:AO301 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO551 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO307
+:AO307 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO1663 ,
+                  :AO95 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Skeletal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO31
+:AO31 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganPathology> ,
+               :HASDNode ;
+      :followsTo :AO283 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO311
+:AO311 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMembranePathology> ,
+                :HASDNode ;
+       :followsTo :AO901 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO315
+:AO315 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO205 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO319
+:AO319 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO209 ,
+                  :AO677 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO321
+:AO321 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO467 ,
+                  :AO623 ,
+                  :AO755 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO325
+:AO325 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO399 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO33
+:AO33 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :agingHallmark <https://purl.org/agingontology/core#Low-grade_inflammation> ;
+      :followsTo :AO1644 ,
+                 :AO37 ,
+                 :AO59 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO333
+:AO333 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO345
+:AO345 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO543 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO347
+:AO347 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO151 ,
+                  :AO1623 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO353
+:AO353 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO201 ,
+                  :AO253 ,
+                  :AO270 ,
+                  :AO359 ,
+                  :AO375 ,
+                  :AO427 ,
+                  :AO553 ,
+                  :AO555 ,
+                  :AO575 ,
+                  :AO593 ,
+                  :AO641 ,
+                  :AO71 ,
+                  :AO859 ,
+                  :AO889 ,
+                  :AO891 ,
+                  :AO931 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO357
+:AO357 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#MitochondrionPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Mitochondrial_dysfunction> ;
+       :followsTo :AO617 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO359
+:AO359 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO501 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO363
+:AO363 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO539 ,
+                  :AO85 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO367
+:AO367 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO137 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Skeletal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO37
+:AO37 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :followsTo :AO177 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO373
+:AO373 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO1643 ,
+                  :AO501 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO375
+:AO375 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO97 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO377
+:AO377 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO307 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Skeletal_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO383
+:AO383 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO467 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO385
+:AO385 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO1639 ,
+                  :AO543 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO389
+:AO389 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO13 ,
+                  :AO333 ,
+                  :AO793 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO39
+:AO39 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+               :HASDNode ;
+      :followsTo :AO1658 ,
+                 :AO1661 ,
+                 :AO1662 ,
+                 :AO225 ,
+                 :AO543 ,
+                 :AO59 ,
+                 :AO861 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO391
+:AO391 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO173 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO399
+:AO399 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO13 ,
+                  :AO25 ,
+                  :AO795 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO401
+:AO401 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO163 ,
+                  :AO231 ,
+                  :AO599 ;
+       :hasdSystem :Connective_system .
+
+
+###  https://purl.org/agingontology/hasd#AO407
+:AO407 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO272 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO411
+:AO411 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO535 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO427
+:AO427 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO501 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO431
+:AO431 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO1702 ,
+                  :AO27 ,
+                  :AO383 ,
+                  :AO9 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO433
+:AO433 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO101 ,
+                  :AO781 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO437
+:AO437 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO1642 ,
+                  :AO1726 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO447
+:AO447 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMembranePathology> ,
+                :HASDNode ;
+       :followsTo :AO181 ,
+                  :AO389 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO45
+:AO45 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+               :HASDNode ;
+      :followsTo :AO495 ;
+      :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO453
+:AO453 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO65 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO463
+:AO463 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1613 ,
+                  :AO1617 ,
+                  :AO1624 ,
+                  :AO489 ,
+                  :AO837 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO467
+:AO467 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO123 ,
+                  :AO195 ,
+                  :AO209 ,
+                  :AO601 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO47
+:AO47 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :followsTo :AO175 ,
+                 :AO276 ,
+                 :AO679 ;
+      :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO471
+:AO471 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMembranePathology> ,
+                :HASDNode ;
+       :followsTo :AO871 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO475
+:AO475 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO51 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO489
+:AO489 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO205 ,
+                  :AO647 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO49
+:AO49 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :followsTo :AO1644 ,
+                 :AO1708 ,
+                 :AO1709 ,
+                 :AO1710 ,
+                 :AO1711 ,
+                 :AO173 ,
+                 :AO191 ,
+                 :AO73 ;
+      :hasdSystem <https://purl.org/agingontology/disease#Cancer> .
+
+
+###  https://purl.org/agingontology/hasd#AO495
+:AO495 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO131 ,
+                  :AO7 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO501
+:AO501 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO65 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO505
+:AO505 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO345 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO509
+:AO509 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO687 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO51
+:AO51 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganPathology> ,
+               :HASDNode ;
+      :followsTo :AO241 ,
+                 :AO321 ,
+                 :AO915 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO511
+:AO511 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO1688 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO519
+:AO519 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                :HASDNode ;
+       :followsTo :AO159 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO523
+:AO523 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO377 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO525
+:AO525 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO147 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO529
+:AO529 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                :HASDNode ;
+       :followsTo :AO61 ,
+                  :AO845 ,
+                  :AO945 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Digestive_system> ,
+                       <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO53
+:AO53 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :followsTo :AO283 ,
+                 :AO831 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO531
+:AO531 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO453 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO535
+:AO535 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO377 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO539
+:AO539 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO593 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO543
+:AO543 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :hasdSystem <https://purl.org/agingontology/disease#Death> .
+
+
+###  https://purl.org/agingontology/hasd#AO551
+:AO551 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO39 ,
+                  :AO687 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO553
+:AO553 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO1583 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO555
+:AO555 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#MitochondrionDNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO357 ,
+                  :AO825 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO557
+:AO557 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO865 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO56
+:AO56 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+               :HASDNode ;
+      :followsTo :AO133 ,
+                 :AO1706 ,
+                 :AO699 ,
+                 :AO7 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO563
+:AO563 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO437 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO565
+:AO565 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO1678 ,
+                  :AO819 ,
+                  :AO965 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO575
+:AO575 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                :HASDNode ;
+       :followsTo :AO97 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO589
+:AO589 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#MicrobiotaPathology> ,
+                :HASDNode ;
+       :followsTo :AO1679 ,
+                  :AO1696 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO59
+:AO59 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganPathology> ,
+               :HASDNode ;
+      :followsTo :AO505 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO593
+:AO593 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                :HASDNode ;
+       :followsTo :AO19 ,
+                  :AO629 ,
+                  :AO933 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO599
+:AO599 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO137 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO601
+:AO601 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO249 ,
+                  :AO623 ,
+                  :AO693 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO603
+:AO603 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO163 ,
+                  :AO85 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO607
+:AO607 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#LysosomePathology> ,
+                :HASDNode ;
+       :followsTo :AO319 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO61
+:AO61 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+               :HASDNode ;
+      :followsTo :AO1704 ;
+      :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO615
+:AO615 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO755 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO617
+:AO617 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#MitochondrionPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Mitochondrial_dysfunction> ;
+       :followsTo :AO407 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO623
+:AO623 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismPathology> ,
+                :HASDNode ;
+       :followsTo :AO130 ,
+                  :AO557 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO629
+:AO629 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMembranePathology> ,
+                :HASDNode ;
+       :followsTo :AO159 ,
+                  :AO169 ,
+                  :AO63 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO63
+:AO63 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :followsTo :AO237 ,
+                 :AO247 ,
+                 :AO471 ;
+      :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO635
+:AO635 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO453 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO641
+:AO641 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO147 ,
+                  :AO85 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO647
+:AO647 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO205 ,
+                  :AO837 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO649
+:AO649 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO109 ,
+                  :AO1641 ,
+                  :AO385 ,
+                  :AO733 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO65
+:AO65 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :followsTo :AO1642 ,
+                 :AO1649 ,
+                 :AO1652 ,
+                 :AO1655 ,
+                 :AO1656 ,
+                 :AO1673 ,
+                 :AO1681 ,
+                 :AO1693 ,
+                 :AO1695 ,
+                 :AO1699 ,
+                 :AO1705 ,
+                 :AO29 ,
+                 :AO319 ,
+                 :AO385 ,
+                 :AO447 ,
+                 :AO833 ,
+                 :AO883 ;
+      :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO659
+:AO659 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO7 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO665
+:AO665 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO531 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO67
+:AO67 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :followsTo :AO345 ;
+      :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+      :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO675
+:AO675 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1657 ,
+                  :AO203 ,
+                  :AO411 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO677
+:AO677 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO145 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO679
+:AO679 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO693 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO687
+:AO687 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#BehavioralPathology> ,
+                :HASDNode ;
+       :followsTo :AO557 ,
+                  :AO623 ,
+                  :AO755 ,
+                  :AO801 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO693
+:AO693 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1693 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO699
+:AO699 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO831 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO7
+:AO7 rdf:type owl:NamedIndividual ,
+              <https://purl.org/agingontology/core#OrganPathology> ,
+              :HASDNode ;
+     :followsTo :AO1621 ,
+                :AO543 ;
+     :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+     :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO71
+:AO71 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :followsTo :AO147 ,
+                 :AO85 ;
+      :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO727
+:AO727 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO39 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO729
+:AO729 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1664 ;
+       :hasdSystem :Connective_system .
+
+
+###  https://purl.org/agingontology/hasd#AO73
+:AO73 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :followsTo :AO1713 ;
+      :hasdSystem <https://purl.org/agingontology/disease#Cancer> ;
+      :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO733
+:AO733 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO385 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO737
+:AO737 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO53 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO751
+:AO751 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO385 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO755
+:AO755 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO130 ,
+                  :AO15 ,
+                  :AO519 ,
+                  :AO801 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO767
+:AO767 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO241 ,
+                  :AO301 ,
+                  :AO315 ,
+                  :AO509 ,
+                  :AO885 ,
+                  :AO919 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO77
+:AO77 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganismPathology> ,
+               :HASDNode ;
+      :followsTo :AO145 ,
+                 :AO1694 ;
+      :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO781
+:AO781 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#NucleusPathology> ,
+                :HASDNode ;
+       :followsTo :AO839 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Reproductive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO783
+:AO783 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#MicrobiotaPathology> ,
+                :HASDNode ;
+       :followsTo :AO589 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO785
+:AO785 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#DNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO635 ,
+                  :AO665 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO793
+:AO793 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMembranePathology> ,
+                :HASDNode ;
+       :followsTo :AO319 ;
+       :hasdSystem :Connective_system .
+
+
+###  https://purl.org/agingontology/hasd#AO795
+:AO795 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO793 ;
+       :hasdSystem :Connective_system .
+
+
+###  https://purl.org/agingontology/hasd#AO799
+:AO799 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO189 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO801
+:AO801 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Aging-related_hormonal_changes> ;
+       :followsTo :AO155 ,
+                  :AO1612 ,
+                  :AO1707 ,
+                  :AO49 ,
+                  :AO693 ,
+                  :AO729 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO819
+:AO819 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO115 ,
+                  :AO1712 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Digestive_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO821
+:AO821 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO877 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO825
+:AO825 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#MitochondrionDNAPathology> ,
+                :HASDNode ;
+       :followsTo :AO1689 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO831
+:AO831 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO505 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO833
+:AO833 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO272 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO837
+:AO837 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO145 ,
+                  :AO1614 ,
+                  :AO56 ,
+                  :AO951 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO839
+:AO839 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO147 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO841
+:AO841 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO273 ,
+                  :AO401 ;
+       :hasdSystem :Intersystem ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO845
+:AO845 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO523 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO85
+:AO85 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#CellPathology> ,
+               :HASDNode ;
+      :agingHallmark <https://purl.org/agingontology/core#Failure_of_proteostasis> ;
+      :followsTo :AO187 ,
+                 :AO37 ,
+                 :AO47 ,
+                 :AO489 ,
+                 :AO65 ,
+                 :AO841 ;
+      :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO859
+:AO859 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO325 ,
+                  :AO85 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO861
+:AO861 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#InfectionCausedPathology> ,
+                :HASDNode ;
+       :followsTo :AO139 ,
+                  :AO511 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO865
+:AO865 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO799 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO871
+:AO871 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                :HASDNode ;
+       :followsTo :AO319 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO877
+:AO877 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO565 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO883
+:AO883 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Mitochondrial_dysfunction> ;
+       :followsTo :AO431 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO885
+:AO885 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO251 ,
+                  :AO475 ,
+                  :AO687 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> ,
+                       <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO889
+:AO889 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#ChromosomePathology> ,
+                :HASDNode ;
+       :agingHallmark <https://purl.org/agingontology/core#Cellular_senescence> ;
+       :followsTo :AO268 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO891
+:AO891 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#ChromosomePathology> ,
+                :HASDNode ;
+       :followsTo :AO1643 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO895
+:AO895 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO959 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO9
+:AO9 rdf:type owl:NamedIndividual ,
+              <https://purl.org/agingontology/core#TissuePathology> ,
+              :HASDNode ;
+     :agingHallmark <https://purl.org/agingontology/core#Fibrosis> ;
+     :followsTo :AO907 ;
+     :hasdSystem :Connective_system .
+
+
+###  https://purl.org/agingontology/hasd#AO901
+:AO901 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMembranePathology> ,
+                :HASDNode ;
+       :followsTo :AO27 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO907
+:AO907 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO53 ,
+                  :AO831 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO909
+:AO909 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#BehavioralPathology> ,
+                :HASDNode ;
+       :followsTo :AO39 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO91
+:AO91 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganismPathology> ,
+               :HASDNode ;
+      :followsTo :AO155 ,
+                 :AO1623 ,
+                 :AO235 ,
+                 :AO543 ;
+      :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO915
+:AO915 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO525 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Endocrine_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO917
+:AO917 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO505 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Respiratory_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Respiratory_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO919
+:AO919 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO1685 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Endocrine_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO927
+:AO927 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO23 ,
+                  :AO385 ,
+                  :AO751 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Nervous_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Nervous_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO93
+:AO93 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#TissuePathology> ,
+               :HASDNode ;
+      :followsTo :AO463 ;
+      :hasdSystem :Cell_system ;
+      :organismSystem <https://purl.org/agingontology/organism#Muscular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO931
+:AO931 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellPathology> ,
+                :HASDNode ;
+       :followsTo :AO1586 ;
+       :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO933
+:AO933 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO1665 ,
+                  :AO737 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO939
+:AO939 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#TissuePathology> ,
+                :HASDNode ;
+       :followsTo :AO389 ;
+       :hasdSystem :Cell_system .
+
+
+###  https://purl.org/agingontology/hasd#AO945
+:AO945 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#ExogenPathology> ,
+                :HASDNode ;
+       :followsTo :AO39 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO95
+:AO95 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#OrganismPathology> ,
+               :HASDNode ;
+      :followsTo :AO103 ;
+      :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#AO951
+:AO951 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganPathology> ,
+                :HASDNode ;
+       :followsTo :AO295 ,
+                  :AO385 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Cardiovascular_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Cardiovascular_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO959
+:AO959 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#CellMetabolismPathology> ,
+                :HASDNode ;
+       :followsTo :AO189 ;
+       :hasdSystem :Cell_system ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO965
+:AO965 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO257 ,
+                  :AO367 ,
+                  :AO649 ;
+       :hasdSystem <https://purl.org/agingontology/organism#Immune_system> ;
+       :organismSystem <https://purl.org/agingontology/organism#Immune_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO967
+:AO967 rdf:type owl:NamedIndividual ,
+                <https://purl.org/agingontology/core#OrganismSystemPathology> ,
+                :HASDNode ;
+       :followsTo :AO153 ;
+       :hasdSystem <https://purl.org/agingontology/cell#Metabolism_system> .
+
+
+###  https://purl.org/agingontology/hasd#AO97
+:AO97 rdf:type owl:NamedIndividual ,
+               <https://purl.org/agingontology/core#DNAPathology> ,
+               :HASDNode ;
+      :followsTo :AO1684 ,
+                 :AO501 ,
+                 :AO785 ,
+                 :AO891 ;
+      :hasdSystem :Intersystem .
+
+
+###  https://purl.org/agingontology/hasd#Cell_system
+:Cell_system rdf:type owl:NamedIndividual ,
+                      :HASDSystem .
+
+
+###  https://purl.org/agingontology/hasd#Connective_system
+:Connective_system rdf:type owl:NamedIndividual ,
+                            :HASDSystem .
+
+
+###  https://purl.org/agingontology/hasd#HASDDiagram
+:HASDDiagram rdf:type owl:NamedIndividual ,
+                      :Diagram ;
+             :hasElement :AO101 ,
+                         :AO103 ,
+                         :AO109 ,
+                         :AO115 ,
+                         :AO117 ,
+                         :AO123 ,
+                         :AO126 ,
+                         :AO13 ,
+                         :AO130 ,
+                         :AO131 ,
+                         :AO133 ,
+                         :AO137 ,
+                         :AO139 ,
+                         :AO141 ,
+                         :AO143 ,
+                         :AO145 ,
+                         :AO147 ,
+                         :AO15 ,
+                         :AO151 ,
+                         :AO153 ,
+                         :AO155 ,
+                         :AO157 ,
+                         :AO1583 ,
+                         :AO1586 ,
+                         :AO159 ,
+                         :AO161 ,
+                         :AO1612 ,
+                         :AO1613 ,
+                         :AO1614 ,
+                         :AO1616 ,
+                         :AO1617 ,
+                         :AO1618 ,
+                         :AO1619 ,
+                         :AO1620 ,
+                         :AO1621 ,
+                         :AO1622 ,
+                         :AO1623 ,
+                         :AO1624 ,
+                         :AO1625 ,
+                         :AO1626 ,
+                         :AO1627 ,
+                         :AO1628 ,
+                         :AO1629 ,
+                         :AO163 ,
+                         :AO1630 ,
+                         :AO1631 ,
+                         :AO1632 ,
+                         :AO1633 ,
+                         :AO1634 ,
+                         :AO1635 ,
+                         :AO1636 ,
+                         :AO1638 ,
+                         :AO1639 ,
+                         :AO1640 ,
+                         :AO1641 ,
+                         :AO1642 ,
+                         :AO1643 ,
+                         :AO1644 ,
+                         :AO1645 ,
+                         :AO1646 ,
+                         :AO1647 ,
+                         :AO1648 ,
+                         :AO1649 ,
+                         :AO165 ,
+                         :AO1651 ,
+                         :AO1652 ,
+                         :AO1653 ,
+                         :AO1654 ,
+                         :AO1655 ,
+                         :AO1656 ,
+                         :AO1657 ,
+                         :AO1658 ,
+                         :AO1659 ,
+                         :AO1660 ,
+                         :AO1661 ,
+                         :AO1662 ,
+                         :AO1663 ,
+                         :AO1664 ,
+                         :AO1665 ,
+                         :AO1666 ,
+                         :AO1667 ,
+                         :AO1668 ,
+                         :AO1669 ,
+                         :AO1670 ,
+                         :AO1672 ,
+                         :AO1673 ,
+                         :AO1674 ,
+                         :AO1675 ,
+                         :AO1676 ,
+                         :AO1678 ,
+                         :AO1679 ,
+                         :AO1680 ,
+                         :AO1681 ,
+                         :AO1682 ,
+                         :AO1683 ,
+                         :AO1684 ,
+                         :AO1685 ,
+                         :AO1686 ,
+                         :AO1687 ,
+                         :AO1688 ,
+                         :AO1689 ,
+                         :AO169 ,
+                         :AO1690 ,
+                         :AO1691 ,
+                         :AO1692 ,
+                         :AO1693 ,
+                         :AO1694 ,
+                         :AO1695 ,
+                         :AO1696 ,
+                         :AO1698 ,
+                         :AO1699 ,
+                         :AO1700 ,
+                         :AO1701 ,
+                         :AO1702 ,
+                         :AO1703 ,
+                         :AO1704 ,
+                         :AO1705 ,
+                         :AO1706 ,
+                         :AO1707 ,
+                         :AO1708 ,
+                         :AO1709 ,
+                         :AO171 ,
+                         :AO1710 ,
+                         :AO1711 ,
+                         :AO1712 ,
+                         :AO1713 ,
+                         :AO1714 ,
+                         :AO1715 ,
+                         :AO1716 ,
+                         :AO1717 ,
+                         :AO1718 ,
+                         :AO1719 ,
+                         :AO1720 ,
+                         :AO1721 ,
+                         :AO1722 ,
+                         :AO1723 ,
+                         :AO1724 ,
+                         :AO1725 ,
+                         :AO1726 ,
+                         :AO1727 ,
+                         :AO1728 ,
+                         :AO173 ,
+                         :AO175 ,
+                         :AO177 ,
+                         :AO181 ,
+                         :AO185 ,
+                         :AO187 ,
+                         :AO189 ,
+                         :AO19 ,
+                         :AO191 ,
+                         :AO193 ,
+                         :AO195 ,
+                         :AO197 ,
+                         :AO201 ,
+                         :AO203 ,
+                         :AO205 ,
+                         :AO207 ,
+                         :AO209 ,
+                         :AO21 ,
+                         :AO217 ,
+                         :AO223 ,
+                         :AO225 ,
+                         :AO23 ,
+                         :AO231 ,
+                         :AO235 ,
+                         :AO237 ,
+                         :AO239 ,
+                         :AO241 ,
+                         :AO243 ,
+                         :AO245 ,
+                         :AO247 ,
+                         :AO249 ,
+                         :AO25 ,
+                         :AO251 ,
+                         :AO253 ,
+                         :AO257 ,
+                         :AO266 ,
+                         :AO268 ,
+                         :AO27 ,
+                         :AO270 ,
+                         :AO272 ,
+                         :AO273 ,
+                         :AO276 ,
+                         :AO279 ,
+                         :AO281 ,
+                         :AO283 ,
+                         :AO288 ,
+                         :AO29 ,
+                         :AO295 ,
+                         :AO301 ,
+                         :AO307 ,
+                         :AO31 ,
+                         :AO311 ,
+                         :AO315 ,
+                         :AO319 ,
+                         :AO321 ,
+                         :AO325 ,
+                         :AO33 ,
+                         :AO333 ,
+                         :AO345 ,
+                         :AO347 ,
+                         :AO353 ,
+                         :AO357 ,
+                         :AO359 ,
+                         :AO363 ,
+                         :AO367 ,
+                         :AO37 ,
+                         :AO373 ,
+                         :AO375 ,
+                         :AO377 ,
+                         :AO383 ,
+                         :AO385 ,
+                         :AO389 ,
+                         :AO39 ,
+                         :AO391 ,
+                         :AO399 ,
+                         :AO401 ,
+                         :AO407 ,
+                         :AO411 ,
+                         :AO427 ,
+                         :AO431 ,
+                         :AO433 ,
+                         :AO437 ,
+                         :AO447 ,
+                         :AO45 ,
+                         :AO453 ,
+                         :AO463 ,
+                         :AO467 ,
+                         :AO47 ,
+                         :AO471 ,
+                         :AO475 ,
+                         :AO489 ,
+                         :AO49 ,
+                         :AO495 ,
+                         :AO501 ,
+                         :AO505 ,
+                         :AO509 ,
+                         :AO51 ,
+                         :AO511 ,
+                         :AO519 ,
+                         :AO523 ,
+                         :AO525 ,
+                         :AO529 ,
+                         :AO53 ,
+                         :AO531 ,
+                         :AO535 ,
+                         :AO539 ,
+                         :AO543 ,
+                         :AO551 ,
+                         :AO553 ,
+                         :AO555 ,
+                         :AO557 ,
+                         :AO56 ,
+                         :AO563 ,
+                         :AO565 ,
+                         :AO575 ,
+                         :AO589 ,
+                         :AO59 ,
+                         :AO593 ,
+                         :AO599 ,
+                         :AO601 ,
+                         :AO603 ,
+                         :AO607 ,
+                         :AO61 ,
+                         :AO615 ,
+                         :AO617 ,
+                         :AO623 ,
+                         :AO629 ,
+                         :AO63 ,
+                         :AO635 ,
+                         :AO641 ,
+                         :AO647 ,
+                         :AO649 ,
+                         :AO65 ,
+                         :AO659 ,
+                         :AO665 ,
+                         :AO67 ,
+                         :AO675 ,
+                         :AO677 ,
+                         :AO679 ,
+                         :AO687 ,
+                         :AO693 ,
+                         :AO699 ,
+                         :AO7 ,
+                         :AO71 ,
+                         :AO727 ,
+                         :AO729 ,
+                         :AO73 ,
+                         :AO733 ,
+                         :AO737 ,
+                         :AO751 ,
+                         :AO755 ,
+                         :AO767 ,
+                         :AO77 ,
+                         :AO781 ,
+                         :AO783 ,
+                         :AO785 ,
+                         :AO793 ,
+                         :AO795 ,
+                         :AO799 ,
+                         :AO801 ,
+                         :AO819 ,
+                         :AO821 ,
+                         :AO825 ,
+                         :AO831 ,
+                         :AO833 ,
+                         :AO837 ,
+                         :AO839 ,
+                         :AO841 ,
+                         :AO845 ,
+                         :AO85 ,
+                         :AO859 ,
+                         :AO861 ,
+                         :AO865 ,
+                         :AO871 ,
+                         :AO877 ,
+                         :AO883 ,
+                         :AO885 ,
+                         :AO889 ,
+                         :AO891 ,
+                         :AO895 ,
+                         :AO9 ,
+                         :AO901 ,
+                         :AO907 ,
+                         :AO909 ,
+                         :AO91 ,
+                         :AO915 ,
+                         :AO917 ,
+                         :AO919 ,
+                         :AO927 ,
+                         :AO93 ,
+                         :AO931 ,
+                         :AO933 ,
+                         :AO939 ,
+                         :AO945 ,
+                         :AO95 ,
+                         :AO951 ,
+                         :AO959 ,
+                         :AO965 ,
+                         :AO967 ,
+                         :AO97 .
+
+
+###  https://purl.org/agingontology/hasd#Intersystem
+:Intersystem rdf:type owl:NamedIndividual ,
+                      :HASDSystem .
+
+
+###  https://purl.org/agingontology/hasd#Unknown_system
+:Unknown_system rdf:type owl:NamedIndividual ,
+                         :HASDSystem .
+
+
+###  https://purl.org/agingontology/hasd#ageFrom
+:ageFrom rdf:type owl:NamedIndividual ,
+                  rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#ageTo
+:ageTo rdf:type owl:NamedIndividual ,
+                rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#agingHallmark
+:agingHallmark rdf:type owl:NamedIndividual ,
+                        rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#ah
+:ah rdf:type owl:NamedIndividual ,
+             rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#followsFrom
+:followsFrom rdf:type owl:NamedIndividual ,
+                      rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#followsTo
+:followsTo rdf:type owl:NamedIndividual ,
+                    rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#hasElement
+:hasElement rdf:type owl:NamedIndividual ,
+                     rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#hasdSystem
+:hasdSystem rdf:type owl:NamedIndividual ,
+                     rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#organismSystem
+:organismSystem rdf:type owl:NamedIndividual ,
+                         rdfs:Property .
+
+
+###  https://purl.org/agingontology/hasd#os
+:os rdf:type owl:NamedIndividual ,
+             rdfs:Property .
+
+
+###  https://purl.org/agingontology/organism#Cardiovascular_system
+<https://purl.org/agingontology/organism#Cardiovascular_system> rdf:type owl:NamedIndividual ,
+                                                                         <https://purl.org/agingontology/organism#OrganismSystem> ;
+                                                                owl:sameAs <https://purl.org/agingontology/organism#Circulatory_system> .
+
+
+###  https://purl.org/agingontology/organism#Circulatory_system
+<https://purl.org/agingontology/organism#Circulatory_system> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/organism#Digestive_system
+<https://purl.org/agingontology/organism#Digestive_system> rdf:type owl:NamedIndividual ,
+                                                                    <https://purl.org/agingontology/organism#OrganismSystem> ;
+                                                           owl:sameAs <https://purl.org/agingontology/organism#Excretory_system> .
+
+
+###  https://purl.org/agingontology/organism#Endocrine_system
+<https://purl.org/agingontology/organism#Endocrine_system> rdf:type owl:NamedIndividual ,
+                                                                    <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+###  https://purl.org/agingontology/organism#Excretory_system
+<https://purl.org/agingontology/organism#Excretory_system> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/organism#Exocrine_system
+<https://purl.org/agingontology/organism#Exocrine_system> rdf:type owl:NamedIndividual ;
+                                                          owl:sameAs <https://purl.org/agingontology/organism#Integumentary_system> .
+
+
+###  https://purl.org/agingontology/organism#Immune_system
+<https://purl.org/agingontology/organism#Immune_system> rdf:type owl:NamedIndividual ,
+                                                                 <https://purl.org/agingontology/organism#OrganismSystem> ;
+                                                        owl:sameAs <https://purl.org/agingontology/organism#Lymphatic_system> .
+
+
+###  https://purl.org/agingontology/organism#Integumentary_system
+<https://purl.org/agingontology/organism#Integumentary_system> rdf:type owl:NamedIndividual ,
+                                                                        <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+###  https://purl.org/agingontology/organism#Lymphatic_system
+<https://purl.org/agingontology/organism#Lymphatic_system> rdf:type owl:NamedIndividual .
+
+
+###  https://purl.org/agingontology/organism#Muscular_system
+<https://purl.org/agingontology/organism#Muscular_system> rdf:type owl:NamedIndividual ,
+                                                                   <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+###  https://purl.org/agingontology/organism#Nervous_system
+<https://purl.org/agingontology/organism#Nervous_system> rdf:type owl:NamedIndividual ,
+                                                                  <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+###  https://purl.org/agingontology/organism#Renal_system
+<https://purl.org/agingontology/organism#Renal_system> rdf:type owl:NamedIndividual ,
+                                                                <https://purl.org/agingontology/organism#OrganismSystem> ;
+                                                       owl:sameAs <https://purl.org/agingontology/organism#Urinary_system> .
+
+
+###  https://purl.org/agingontology/organism#Reproductive_system
+<https://purl.org/agingontology/organism#Reproductive_system> rdf:type owl:NamedIndividual ,
+                                                                       <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+###  https://purl.org/agingontology/organism#Respiratory_system
+<https://purl.org/agingontology/organism#Respiratory_system> rdf:type owl:NamedIndividual ,
+                                                                      <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+###  https://purl.org/agingontology/organism#Skeletal_system
+<https://purl.org/agingontology/organism#Skeletal_system> rdf:type owl:NamedIndividual ,
+                                                                   <https://purl.org/agingontology/organism#OrganismSystem> .
+
+
+###  https://purl.org/agingontology/organism#Urinary_system
+<https://purl.org/agingontology/organism#Urinary_system> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

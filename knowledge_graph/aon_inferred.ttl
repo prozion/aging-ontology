@@ -1,0 +1,252 @@
+@prefix : <https://purl.org/agingontology/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/agingontology/core> .
+
+<https://purl.org/agingontology/core> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/agingontology/core#AgingPathogeneticProcess
+:AgingPathogeneticProcess rdf:type owl:Class ;
+                          rdfs:subClassOf <https://purl.org/agingontology/disease#PathologicalProcess> .
+
+
+###  https://purl.org/agingontology/core#BasicAgingMechanism
+:BasicAgingMechanism rdf:type owl:Class ;
+                     rdfs:subClassOf :AgingPathogeneticProcess .
+
+
+###  https://purl.org/agingontology/core#BehavioralPathology
+:BehavioralPathology rdf:type owl:Class ;
+                     rdfs:subClassOf :GeneralPathology .
+
+
+###  https://purl.org/agingontology/core#BiologicalProcess
+:BiologicalProcess rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#Biomarker
+:Biomarker rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#BloodBasedBiomarker
+:BloodBasedBiomarker rdf:type owl:Class ;
+                     rdfs:subClassOf :MolecularBiomarker .
+
+
+###  https://purl.org/agingontology/core#CellMembranePathology
+:CellMembranePathology rdf:type owl:Class ;
+                       rdfs:subClassOf :CellPathology .
+
+
+###  https://purl.org/agingontology/core#CellMetabolismPathology
+:CellMetabolismPathology rdf:type owl:Class ;
+                         rdfs:subClassOf :CellPathology .
+
+
+###  https://purl.org/agingontology/core#CellPathology
+:CellPathology rdf:type owl:Class ;
+               rdfs:subClassOf :TissuePathology .
+
+
+###  https://purl.org/agingontology/core#ChromosomePathology
+:ChromosomePathology rdf:type owl:Class ;
+                     rdfs:subClassOf :NucleusPathology .
+
+
+###  https://purl.org/agingontology/core#DNAPathology
+:DNAPathology rdf:type owl:Class ;
+              rdfs:subClassOf :ChromosomePathology .
+
+
+###  https://purl.org/agingontology/core#ExogenPathology
+:ExogenPathology rdf:type owl:Class ;
+                 rdfs:subClassOf :GeneralPathology .
+
+
+###  https://purl.org/agingontology/core#ExtracellularMetabolismPathology
+:ExtracellularMetabolismPathology rdf:type owl:Class ;
+                                  rdfs:subClassOf :TissuePathology .
+
+
+###  https://purl.org/agingontology/core#FunctionalBiomarker
+:FunctionalBiomarker rdf:type owl:Class ;
+                     rdfs:subClassOf :Biomarker .
+
+
+###  https://purl.org/agingontology/core#GeneralPathology
+:GeneralPathology rdf:type owl:Class .
+
+
+###  https://purl.org/agingontology/core#HardwareBiomarker
+:HardwareBiomarker rdf:type owl:Class ;
+                   rdfs:subClassOf :Biomarker .
+
+
+###  https://purl.org/agingontology/core#InfectionCausedPathology
+:InfectionCausedPathology rdf:type owl:Class ;
+                          rdfs:subClassOf :ExogenPathology .
+
+
+###  https://purl.org/agingontology/core#LysosomePathology
+:LysosomePathology rdf:type owl:Class ;
+                   rdfs:subClassOf :CellPathology .
+
+
+###  https://purl.org/agingontology/core#MicrobiotaPathology
+:MicrobiotaPathology rdf:type owl:Class ;
+                     rdfs:subClassOf :OrganPathology .
+
+
+###  https://purl.org/agingontology/core#MitochondrionDNAPathology
+:MitochondrionDNAPathology rdf:type owl:Class ;
+                           rdfs:subClassOf :MitochondrionPathology .
+
+
+###  https://purl.org/agingontology/core#MitochondrionPathology
+:MitochondrionPathology rdf:type owl:Class ;
+                        rdfs:subClassOf :CellPathology .
+
+
+###  https://purl.org/agingontology/core#MolecularBiomarker
+:MolecularBiomarker rdf:type owl:Class ;
+                    rdfs:subClassOf :Biomarker .
+
+
+###  https://purl.org/agingontology/core#NucleusPathology
+:NucleusPathology rdf:type owl:Class ;
+                  rdfs:subClassOf :CellPathology .
+
+
+###  https://purl.org/agingontology/core#OrganPathology
+:OrganPathology rdf:type owl:Class ;
+                rdfs:subClassOf :OrganismSystemPathology .
+
+
+###  https://purl.org/agingontology/core#OrganismPathology
+:OrganismPathology rdf:type owl:Class ;
+                   rdfs:subClassOf :GeneralPathology .
+
+
+###  https://purl.org/agingontology/core#OrganismSystemPathology
+:OrganismSystemPathology rdf:type owl:Class ;
+                         rdfs:subClassOf :OrganismPathology .
+
+
+###  https://purl.org/agingontology/core#PhenotypicBiomarker
+:PhenotypicBiomarker rdf:type owl:Class ;
+                     rdfs:subClassOf :Biomarker .
+
+
+###  https://purl.org/agingontology/core#QuestionnairyBiomarker
+:QuestionnairyBiomarker rdf:type owl:Class ;
+                        rdfs:subClassOf :Biomarker .
+
+
+###  https://purl.org/agingontology/core#TissuePathology
+:TissuePathology rdf:type owl:Class ;
+                 rdfs:subClassOf :OrganPathology .
+
+
+###  https://purl.org/agingontology/disease#PathologicalProcess
+<https://purl.org/agingontology/disease#PathologicalProcess> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/organism#OrganismProcess
+<https://purl.org/agingontology/organism#OrganismProcess> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :BiologicalProcess .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/agingontology/core#Aging-related_hormonal_changes
+:Aging-related_hormonal_changes rdf:type owl:NamedIndividual ,
+                                         :AgingPathogeneticProcess ,
+                                         :BasicAgingMechanism ,
+                                         :BiologicalProcess ,
+                                         <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                                         <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Body_composition_changes
+:Body_composition_changes rdf:type owl:NamedIndividual ,
+                                   :AgingPathogeneticProcess ,
+                                   :BasicAgingMechanism ,
+                                   :BiologicalProcess ,
+                                   <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                                   <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Cellular_senescence
+:Cellular_senescence rdf:type owl:NamedIndividual ,
+                              :AgingPathogeneticProcess ,
+                              :BasicAgingMechanism ,
+                              :BiologicalProcess ,
+                              <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                              <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Failure_of_proteostasis
+:Failure_of_proteostasis rdf:type owl:NamedIndividual ,
+                                  :AgingPathogeneticProcess ,
+                                  :BasicAgingMechanism ,
+                                  :BiologicalProcess ,
+                                  <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                                  <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Fibrosis
+:Fibrosis rdf:type owl:NamedIndividual ,
+                   :AgingPathogeneticProcess ,
+                   :BasicAgingMechanism ,
+                   :BiologicalProcess ,
+                   <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                   <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Immunosenescence
+:Immunosenescence rdf:type owl:NamedIndividual ,
+                           :AgingPathogeneticProcess ,
+                           :BasicAgingMechanism ,
+                           :BiologicalProcess ,
+                           <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                           <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Insulin_resistance
+:Insulin_resistance rdf:type owl:NamedIndividual ,
+                             :AgingPathogeneticProcess ,
+                             :BasicAgingMechanism ,
+                             :BiologicalProcess ,
+                             <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                             <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Low-grade_inflammation
+:Low-grade_inflammation rdf:type owl:NamedIndividual ,
+                                 :AgingPathogeneticProcess ,
+                                 :BasicAgingMechanism ,
+                                 :BiologicalProcess ,
+                                 <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                                 <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  https://purl.org/agingontology/core#Mitochondrial_dysfunction
+:Mitochondrial_dysfunction rdf:type owl:NamedIndividual ,
+                                    :AgingPathogeneticProcess ,
+                                    :BasicAgingMechanism ,
+                                    :BiologicalProcess ,
+                                    <https://purl.org/agingontology/disease#PathologicalProcess> ,
+                                    <https://purl.org/agingontology/organism#OrganismProcess> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

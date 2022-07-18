@@ -4,10 +4,10 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
 		owl ns:http://www.w3.org/2002/07/owl#
 		xsd ns:http://www.w3.org/2001/XMLSchema#
-		cell ns:https://purl.org/agingontology/cell#
-		org ns:https://purl.org/agingontology/organism#
-		do ns:https://purl.org/agingontology/disease#
-		aon ns:https://purl.org/agingontology/core#
+		cell ns:https://purl.org/agingontology/cell# imports:<t>
+		org ns:https://purl.org/agingontology/organism# imports:<t>
+		do ns:https://purl.org/agingontology/disease# imports:<t>
+		aon ns:https://purl.org/agingontology/core# imports:<t>
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of	
 		HASDNode subclass-of:aon/AgingPathogeneticProcess
 		HASDSystem
@@ -15,16 +15,14 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 	properties +a:rdfs/Property
 		; name domain:HASDNode range:xsd/Literal subproperty-of:rdfs/label
 		agingHallmark domain:HASDNode range:aon/BasicAgingMechanism d:"points to one or several basic mechanisms of aging, following Khaltourina_2020 paper"
-		ah eq-property:agingHallmark
 		ageFrom domain:HASDNode range:xsd/Literal
 		ageTo domain:HASDNode range:xsd/Literal
 		hasElement domain:Diagram range:HASDNode
 		followsTo domain:HASDNode range:HASDNode
+		followsFrom owl/inverseOf:followsTo
 		organismSystem domain:HASDNode range:org/OrganismSystem d:"canonical classification for organism systems, such as Cardiovascular, Endocrine, Muscular etc."
-		os eq-property:organismSystem
 		hasdSystem domain:HASDNode range:hasdSystem_1
-			hasdSystem_1 a:owl/Class owl/unionOf:`org/OrganismSystem,aon/OrganismProcess,do/Disease,cell/CellSystem,HASDSystem`
-			; owl/oneOf:`unknown,metabolism,cell,immune,intersystem,hormones,nervous,cardiovascular,respiratory,cancer,connective,death` 
+			hasdSystem_1 a:owl/Class owl/unionOf:`org/OrganismSystem,org/OrganismProcess,do/Disease,cell/CellSystem,HASDSystem`
 	individuals
 		Cell_system a:HASDSystem
 		Connective_system a:HASDSystem

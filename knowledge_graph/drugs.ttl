@@ -14,19 +14,19 @@
   rdfs:subClassOf :Drug .
 
 :DietarySupplement
-  rdfs:comment ""БАДы"@ru" ;
-  rdf:type owl:Class .
+  rdf:type owl:Class ;
+  rdfs:comment ""БАДы"@ru" .
 
 :Drug
-  rdfs:subClassOf biochem:ChemicalSubstance ;
-  rdf:type owl:Class .
+  rdf:type owl:Class ;
+  rdfs:subClassOf biochem:ChemicalSubstance .
 
 :Probiotics
   rdf:type owl:Class ;
   rdfs:subClassOf :DietarySupplement .
 
 :Selenium
-  rdf:type :Drug .
+  rdf:type :DietarySupplement .
 
 :Vaccine
   rdf:type owl:Class .

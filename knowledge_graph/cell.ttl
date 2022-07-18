@@ -111,7 +111,7 @@
   :ns <https://purl.org/agingontology/cell#> .
 
 :compartment
+  rdf:type rdf:Property ;
   rdfs:domain :CellElement ;
-  rdfs:range :CellCompartment ;
-  rdf:type rdf:Property .
+  rdfs:range :CellCompartment .
 

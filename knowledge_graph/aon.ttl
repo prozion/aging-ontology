@@ -32,8 +32,8 @@
   rdfs:subClassOf do:PathologicalProcess .
 
 :BasicAgingMechanism
-  rdfs:seeAlso :Khaltourina_2020_Mechanisms_of_ageing_and_development ;
   rdf:type owl:Class ;
+  rdfs:seeAlso :Khaltourina_2020_Mechanisms_of_ageing_and_development ;
   rdfs:subClassOf :AgingPathogeneticProcess .
 
 :BehavioralPathology
@@ -49,8 +49,8 @@
   rdfs:subClassOf owl:Thing .
 
 :BiomarkerPanel
-  rdfs:seeAlso <https://docs.google.com/spreadsheets/d/1suMEVlMHKyTHwWzafBF0rmEAIPY0CowxxjEFvhO2TIA/edit#gid=853086944> ;
   rdf:type owl:Class ;
+  rdfs:seeAlso <https://docs.google.com/spreadsheets/d/1suMEVlMHKyTHwWzafBF0rmEAIPY0CowxxjEFvhO2TIA/edit#gid=853086944> ;
   rdfs:subClassOf owl:Thing .
 
 :BloodBasedBiomarker
@@ -102,8 +102,8 @@
   rdfs:subClassOf :Biomarker .
 
 :GeneralPathology
-  rdfs:comment "This classification tries to localize pathological and age-related features to the area of their cause" ;
   rdf:type owl:Class ;
+  rdfs:comment "This classification tries to localize pathological and age-related features to the area of their cause" ;
   rdfs:subClassOf owl:Thing .
 
 :HardwareBiomarker
@@ -180,22 +180,19 @@
   :ns <https://purl.org/agingontology/core#> .
 
 :fullName
-  rdfs:subPropertyOf dc:title ;
-  rdf:type rdf:Property .
+  rdf:type rdf:Property ;
+  rdfs:subPropertyOf dc:title .
 
 :substance
+  rdf:type rdf:Property ;
   rdfs:domain :Biomarker ;
-  rdfs:range biochem:ChemicalSubstance ;
-  rdf:type rdf:Property .
+  rdfs:range biochem:ChemicalSubstance .
 
-:do/PathologicalProcess
+do:PathologicalProcess
   rdf:type owl:Class ;
   rdfs:subClassOf org:OrganismProcess .
 
-:org/OrganismProcess
+org:OrganismProcess
   rdf:type owl:Class ;
   rdfs:subClassOf :BiologicalProcess .
-
-:owl/Thing
-  rdf:type owl:Class .
 

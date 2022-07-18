@@ -1171,7 +1171,7 @@
   :ageTo "60" ;
   :hasdSystem :Intersystem ;
   :followsTo :AO377 ;
-  :organismSystem org:Skeleatl_system .
+  :organismSystem org:Skeletal_system .
 
 :AO205
   rdf:type :HASDNode, aon:OrganismSystemPathology ;
@@ -1925,7 +1925,7 @@
   :ageTo "85" ;
   :hasdSystem cell:Metabolism_system ;
   :followsTo :AO945, :AO845, :AO61 ;
-  :organismSystem os:Digestive_system, org:Endocrine_system .
+  :organismSystem org:Digestive_system, org:Endocrine_system .
 
 :AO53
   rdf:type :HASDNode, aon:TissuePathology ;
@@ -1999,7 +1999,7 @@
   :ageTo "45" ;
   :hasdSystem org:Cardiovascular_system ;
   :followsTo :AO865 ;
-  :organismSystem org:Cardiovascular_systemпп .
+  :organismSystem org:Cardiovascular_system .
 
 :AO56
   rdf:type :HASDNode, aon:OrganismSystemPathology ;
@@ -2017,7 +2017,7 @@
   :ageTo "65" ;
   :hasdSystem :Cell_system ;
   :followsTo :AO437 ;
-  :organismSystem org:NervousSystem .
+  :organismSystem org:Nervous_system .
 
 :AO565
   rdf:type :HASDNode, aon:OrganismSystemPathology ;
@@ -2556,12 +2556,13 @@
   :agingHallmark aon:Mitochondrial_dysfunction .
 
 :AO885
-  rdf:type :HASDNode, org:Nervous_system, org:Endocrine_system ;
+  rdf:type :HASDNode, aon:OrganPathology ;
   rdfs:label "Гипотрофия передней доли гипофиза" ;
   :ageFrom "20" ;
   :ageTo "35" ;
   :hasdSystem org:Endocrine_system ;
-  :followsTo :AO475, :AO687, :AO251 .
+  :followsTo :AO475, :AO687, :AO251 ;
+  :organismSystem org:Nervous_system, org:Endocrine_system .
 
 :AO889
   rdf:type :HASDNode, aon:ChromosomePathology ;
@@ -2656,7 +2657,7 @@
   :ageTo "35" ;
   :hasdSystem org:Endocrine_system ;
   :followsTo :AO1685 ;
-  :organismSystem org:NervousSystem .
+  :organismSystem org:Nervous_system .
 
 :AO927
   rdf:type :HASDNode, aon:CellPathology ;
@@ -2665,7 +2666,7 @@
   :ageTo "60" ;
   :hasdSystem org:Nervous_system ;
   :followsTo :AO385, :AO23, :AO751 ;
-  :organismSystem org:NervousSystem .
+  :organismSystem org:Nervous_system .
 
 :AO93
   rdf:type :HASDNode, aon:TissuePathology ;
@@ -2780,7 +2781,8 @@
   rdf:type owl:Ontology ;
   rdfs:comment "Aging Ontology based on Human Aging System Diagram" ;
   rdfs:seeAlso <http://sciencevsaging.org/en/diagram> ;
-  :ns <https://purl.org/agingontology/hasd#> .
+  :ns <https://purl.org/agingontology/hasd#> ;
+  owl:imports <https://purl.org/agingontology/cell#>, <https://purl.org/agingontology/organism#>, <https://purl.org/agingontology/disease#>, <https://purl.org/agingontology/core#> .
 
 :HASDSystem
   rdf:type owl:Class .
@@ -2811,6 +2813,10 @@
   rdf:type rdfs:Property ;
   owl:equivalentProperty :agingHallmark .
 
+:followsFrom
+  rdf:type rdfs:Property ;
+  owl:inverseOf :followsTo .
+
 :followsTo
   rdf:type rdfs:Property ;
   rdfs:domain :HASDNode ;
@@ -2828,7 +2834,7 @@
 
 :hasdSystem_1
   rdf:type owl:Class ;
-  owl:unionOf :__rdf-list, true, :__values, org:OrganismSystem, aon:OrganismProcess, do:Disease, cell:CellSystem, :HASDSystem .
+  owl:unionOf (org:OrganismSystem org:OrganismProcess do:Disease cell:CellSystem :HASDSystem) .
 
 :organismSystem
   rdf:type rdfs:Property ;

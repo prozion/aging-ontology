@@ -22,8 +22,8 @@
                   ["deploy"]
                   ["vcs" "push"]]
   :repl-options {
-    :init-ns scripts.process-hasd
-    ; :init-ns scripts.build-aging-knowledge-graph
+    ; :init-ns scripts.process-hasd
+    :init-ns scripts.build-aging-knowledge-graph
     ; :init-ns scripts.process-aada
   }
 )

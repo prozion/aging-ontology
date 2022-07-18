@@ -4,10 +4,10 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
 		owl ns:http://www.w3.org/2002/07/owl#
 		xsd ns:http://www.w3.org/2001/XMLSchema#
-		cell ns:https://purl.org/agingontology/cell#
-		org ns:https://purl.org/agingontology/organism#
-		do ns:https://purl.org/agingontology/disease#
-		aon ns:https://purl.org/agingontology/core#
+		cell ns:https://purl.org/agingontology/cell# imports:<t>
+		org ns:https://purl.org/agingontology/organism# imports:<t>
+		do ns:https://purl.org/agingontology/disease# imports:<t>
+		aon ns:https://purl.org/agingontology/core# imports:<t>
 	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of	
 		HASDNode subclass-of:aon/AgingPathogeneticProcess
 		HASDSystem
@@ -20,10 +20,11 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		ageTo domain:HASDNode range:xsd/Literal
 		hasElement domain:Diagram range:HASDNode
 		followsTo domain:HASDNode range:HASDNode
+		followsFrom owl/inverseOf:followsTo
 		organismSystem domain:HASDNode range:org/OrganismSystem d:"canonical classification for organism systems, such as Cardiovascular, Endocrine, Muscular etc."
 		os eq-property:organismSystem
 		hasdSystem domain:HASDNode range:hasdSystem_1
-			hasdSystem_1 a:owl/Class owl/unionOf:`org/OrganismSystem,aon/OrganismProcess,do/Disease,cell/CellSystem,HASDSystem`
+			hasdSystem_1 a:owl/Class owl/unionOf:`org/OrganismSystem,org/OrganismProcess,do/Disease,cell/CellSystem,HASDSystem`
 			; owl/oneOf:`unknown,metabolism,cell,immune,intersystem,hormones,nervous,cardiovascular,respiratory,cancer,connective,death` 
 	individuals
 		Cell_system a:HASDSystem
@@ -444,7 +445,7 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		AO195 name:"Уменьшение выработки эстрогена" a:aon/OrganPathology organismSystem:org/Endocrine_system
 		AO197 name:"Анемия" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
 		AO201 name:"Сшивки (из-за металлов переменной валентности, диальдегидов)" a:aon/TissuePathology
-		AO203 name:"Остеохондроз" a:aon/OrganPathology organismSystem:org/Skeleatl_system
+		AO203 name:"Остеохондроз" a:aon/OrganPathology organismSystem:org/Skeletal_system
 		AO205 name:"Артериальная гипертония" a:aon/OrganismSystemPathology organismSystem:org/Cardiovascular_system
 		AO207 name:"Ухудшение функций миоцитов" a:aon/CellPathology organismSystem:org/Muscular_system
 		AO209 name:"Уменьшение пролиферации клеток" a:aon/TissuePathology
@@ -519,7 +520,7 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		AO519 name:"Увеличение количества альдегидов" a:aon/CellMetabolismPathology
 		AO523 name:"Ухудшение усвоения кальция и витамина D в кишечнике" a:aon/OrganPathology organismSystem:org/Digestive_system
 		AO525 name:"Накопление окисленных белков" a:aon/CellPathology
-		AO529 name:"Снижение ферментной активности в железистых клетках ЖКТ" a:aon/CellMetabolismPathology organismSystem:os/Digestive_system,org/Endocrine_system
+		AO529 name:"Снижение ферментной активности в железистых клетках ЖКТ" a:aon/CellMetabolismPathology organismSystem:org/Digestive_system,org/Endocrine_system
 		AO531 name:"Снижение синтеза рибосомальных белков" a:aon/NucleusPathology
 		AO535 name:"Снижение синтеза кальцийтриола" a:aon/OrganismSystemPathology
 		AO539 name:"Накопление нефункциональных белков, входящих в состав антиоксидантных систем" a:aon/CellPathology 
@@ -527,8 +528,8 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		AO551 name:"Снижение секреции мелатонина" a:aon/TissuePathology organismSystem:org/Endocrine_system
 		AO553 name:"Блокирование репликационной вилки" a:aon/NucleusPathology
 		AO555 name:"Мутации мтДНК" a:aon/MitochondrionDNAPathology
-		AO557 name:"Накопление жирных кислот в крови" a:aon/TissuePathology organismSystem:org/Cardiovascular_systemпп
-		AO563 name:"Уменьшение количества нейронов" a:aon/OrganismSystemPathology organismSystem:org/NervousSystem
+		AO557 name:"Накопление жирных кислот в крови" a:aon/TissuePathology organismSystem:org/Cardiovascular_system
+		AO563 name:"Уменьшение количества нейронов" a:aon/OrganismSystemPathology organismSystem:org/Nervous_system
 		AO565 name:"Появление аутоиммунной реакции" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
 		AO575 name:"Образование алкилированных оснований" a:aon/CellMetabolismPathology
 		AO589 name:"Кишечная интоксикация" a:aon/MicrobiotaPathology organismSystem:org/Digestive_system
@@ -582,7 +583,7 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		AO871 name:"Нарушение метаболизма клетки" a:aon/CellMetabolismPathology
 		AO877 name:"Иммунная система воспринимает эти клетки как чужеродные" a:aon/OrganismSystemPathology organismSystem:org/Immune_system
 		AO883 name:"Уменьшение количества внутриклеточных элементов (митохондрии, рибосомы)" a:aon/CellPathology agingHallmark:aon/Mitochondrial_dysfunction
-		AO885 name:"Гипотрофия передней доли гипофиза" a:aon/OrganPathology a:org/Nervous_system,org/Endocrine_system
+		AO885 name:"Гипотрофия передней доли гипофиза" a:aon/OrganPathology organismSystem:org/Nervous_system,org/Endocrine_system
 		AO889 name:"Потеря Т-петли в теломерах" a:aon/ChromosomePathology agingHallmark:aon/Cellular_senescence
 		AO891 name:"Разрывы цепей ДНК" a:aon/ChromosomePathology
 		AO895 name:"Проникновение окислов липидов и фибринов и тромбоцитов в субэндотелиальное пространство" a:aon/OrganPathology organismSystem:org/Cardiovascular_system
@@ -591,8 +592,8 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		AO909 name:"Депрессия" a:aon/BehavioralPathology organismSystem:org/Nervous_system
 		AO915 name:"Повышение секреции глюкокортикоидов" a:aon/TissuePathology organismSystem:org/Endocrine_system
 		AO917 name:"Нарушение газообмена CO2 и O2" a:aon/OrganismSystemPathology organismSystem:org/Respiratory_system
-		AO919 name:"Изменение порога чувствительности в центре аппетита гипоталамуса" a:aon/OrganPathology organismSystem:org/NervousSystem
-		AO927 name:"Деструкция симпатических окончаний" a:aon/CellPathology organismSystem:org/NervousSystem
+		AO919 name:"Изменение порога чувствительности в центре аппетита гипоталамуса" a:aon/OrganPathology organismSystem:org/Nervous_system
+		AO927 name:"Деструкция симпатических окончаний" a:aon/CellPathology organismSystem:org/Nervous_system
 		AO931 name:"Возрастное переключение активности разных субъединиц протеасом" a:aon/CellPathology
 		AO933 name:"Окисление эластина" a:aon/TissuePathology
 		AO939 name:"Уменьшение проницаемости межклеточного пространства" a:aon/TissuePathology
