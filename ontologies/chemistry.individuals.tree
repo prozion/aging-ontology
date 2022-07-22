@@ -1,0 +1,66 @@
+individuals
+	elements +a:Atom
+		H name:"Hydrogen" percentage:62.0 am:1.01
+		C name:"Carbon" percentage:24.0 am:12.01
+		O name:"Oxygen" percentage:12.0 am:16.0
+		N name:"Nitrogen" percentage:1.1 am:14.01
+		P name:"Phosphorus" percentage:0.22 am:30.97
+		Ca name:"Calcium" percentage:0.22 am:40.08
+		S name:"Sulphur" percentage:0.038 am:32.06
+		Na name:"Natrium" percentage:0.037 am:22.99
+		K name:"Potassium" percentage:0.030 am:39.10
+		Cl name:"Chlorine" percentage:0.024 am:35.45
+		Mg name:"Magnesium" percentage:0.015 am:24.30
+		Fe name:"Iron" am:55.85
+	molecules +a:Molecule
+		inorganic_molecules
+			Phosphate
+		other_molecules
+			Glycerol a:Polyol
+		nucleobases +a:Nucleobase
+			Adenine consistsOf:Purine
+			Cytosine consistsOf:Pyrimidine
+			Guanine consistsOf:Purine
+			Thymine consistsOf:Pyrimidine
+			Uracyl consistsOf:Pyrimidine
+		nucleobases_parts
+			Imidazole a:CyclicOrganicCompound
+			Pyrimidine a:Diazine
+			Purine a:HeterocyclicOrganicCompound consistsOf:Pyrimidine,Imidazole
+		carbohydrates
+			Deoxyribopyranose a:Deoxyribose
+			α-d-Glucopyranose a:Glucose
+			d-Glucose a:Glucose
+			d-Ribose a:Ribose
+		aminoacids +a:AminoAcid
+			Selenocysteine alt:Sec g/codon:g/UGA
+			aliphatic +a:AliphaticAminoAcid
+				Glycine alt:Gly hi:-0.4
+				Alanine alt:Ala hi:1.8
+				Valine alt:Val hi:4.2
+				Leucine alt:Leu hi:3.8
+				Isoleucine alt:Ile hi:4.5
+				Proline alt:Pro hi:-1.6
+			polar_neutral +a:PolarNeutralAminoAcid
+				Serine alt:Ser hi:-0.8
+				Threonine alt:Thr hi:-0.7
+			amide +a:AmideAminoAcid
+				Asparagine alt:Asn hi:-3.5
+				Glutamine alt:Gln hi:-3.5
+			sulphur_containing +a:SulphurContainingAminoAcid
+				Cysteine alt:Cys hi:2.5
+				Methionine alt:Met hi:1.9
+			aromatic +a:AromaticAminoAcid
+				Phenylalanine alt:Phe hi:2.8
+				Tyrosine alt:Tyr hi:-1.3
+				Tryptophan alt:Trp hi:-0.9
+			anionic +a:AnionicAminoAcid
+				Aspartate alt:Asp hi:-3.5
+				Glutamate alt:Glu hi:-3.5
+			cationic +a:CationicAminoAcid
+				Histidine alt:His hi:-3.2
+				Lysine alt:Lys hi:-3.9
+				Arginine alt:Arg hi:-4.5
+		macromolecules +a:Macromolecule
+			DNA
+			RNA

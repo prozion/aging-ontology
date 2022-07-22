@@ -8,7 +8,7 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		org ns:https://purl.org/agingontology/organism# imports:<t>
 		do ns:https://purl.org/agingontology/disease# imports:<t>
 		aon ns:https://purl.org/agingontology/core# imports:<t>
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of	
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of	
 		HASDNode subclass-of:aon/AgingPathogeneticProcess
 		HASDSystem
 		Diagram

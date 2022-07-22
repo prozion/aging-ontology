@@ -1,0 +1,12 @@
+terms
+	Actin subclass-of:ContractileProtein
+	Albumin subclass-of:TransportProtein
+	Dehydrogenase a:Oxidoreductase
+	Fibrinogen a:IntermediateProtein
+	Glutelin subclass-of:StorageProtein
+	Immunoglobulin subclass-of:DefenceProtein
+	Insulin a:RegulatoryProtein
+	Miosin subclass-of:ContractileProtein
+	Nucleosome a:Complex
+	Ovalbomin subclass-of:StorageProtein
+	Spliceosome a:RNPComplex

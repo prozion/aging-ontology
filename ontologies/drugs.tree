@@ -6,14 +6,14 @@ drugs a:owl/Ontology dc/title:"Some drugs ontology" ns:https://purl.org/agingont
 		dc ns:http://purl.org/dc/elements/1.1/
 		skos ns:http://www.w3.org/2004/02/skos/core#
 		chebi ns:http://purl.obolibrary.org/obo/CHEBI_
-		biochem ns:https://purl.org/agingontology/biochemistry#
+		biochem ns:https://purl.org/agingontology/chemistry#
 		tabtree ns:https://purl.org/tabtree/core#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		DietarySupplement d:"БАДы"@ru
 			Probiotics
 		Drug subclass-of:biochem/ChemicalSubstance
 			AntioxidantDrug
 		Vaccine
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 	individuals +a:Drug
 		Selenium a:DietarySupplement

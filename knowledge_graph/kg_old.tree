@@ -1,5 +1,5 @@
 aon a:owl/Ontology __source:common.atxt dc/title:"Aging ontology (AON)" ns:https://purl.org/agingontology/core#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		owl/Thing a:owl/Class
 			Age __source:Khaltourina_2010__Results subclass-of:owl/Thing
 				BiologicalAge __source:Khaltourina_2010__Results subclass-of:Age
@@ -140,7 +140,7 @@ aon a:owl/Ontology __source:common.atxt dc/title:"Aging ontology (AON)" ns:https
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
 		skos ns:http://www.w3.org/2004/02/skos/core#
 		tt ns:https://purl.org/tabtree/time#
-	properties +a:rdfs/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdfs/Property +hierarchy-inverse-relation:subproperty-of
 		fullName __source:common.atxt subproperty-of:dc/title
 		issuedBy a:owl/ObjectProperty __source:common.atxt owl/inverseOf:dc/publisher
 null

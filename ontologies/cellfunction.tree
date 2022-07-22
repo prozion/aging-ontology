@@ -1,0 +1,67 @@
+cellfunction a:owl/Ontology dc/title:"Ontology for functions fulfilled by chemical substances inside and around the cell" ns:https://purl.org/agingontology/cellfunction#
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		chebi ns:http://purl.obolibrary.org/obo/CHEBI_
+		biopax ns:http://www.biopax.org/release/biopax-level3.owl#
+		tabtree ns:https://purl.org/tabtree/core#
+		g ns:https://purl.org/agingontology/genes#
+		ch ns:https://purl.org/agingontology/chemistry#
+		p ns:https://purl.org/agingontology/proteins#
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
+		FunctionalUnit
+			Transporter
+				MembraneTransportUnit
+					IonChannel
+			Regulator
+				MetabolismRegulator
+					Enzyme eq-class:CataliticProtein
+						Oxydoreductase
+						Transferase
+						Hydrolase
+						Lyase
+						Isomerase
+						Ligase
+						ATPase
+						Kinase
+						Oxidase
+				GeneRegulator
+			Defender
+			Builder
+				Constructor
+					Formin
+				Destructor
+					Proteasome
+			Motor
+				CytoskeletalMotor
+					Dynein
+						CytoplasmicDynein
+						AxonemalDynein eq-class:FlagellarDynein,CiliaryDynein
+					Kinesin
+						ConventionalKinesin eq-class:Kinesin-1
+						HeterotrimericKinesin eq-class:Kinesin-2
+						BipolarKinesin eq-class:Kinesin-5
+						Kinesin-13
+					Myosin
+				PolymerizationMotor
+				RotaryMotor
+				NucleicAcidMotor
+					Helicase
+					Topoisomerase
+				EnzymaticMotor subclass-of:Enzyme
+					Catalase
+					Urease
+					Aldolase
+					Hexokinase subclass-of:Kinase
+					Phosphoglucose_isomerase
+					Phosphofructokinase subclass-of:Kinase
+					Glucose_oxidase subclass-of:Oxydase
+			SignalUnit
+			StructuralUnit
+				CytoskeletalUnit
+					Actin
+			Receptor
+			StorageUnit

@@ -8,7 +8,7 @@ disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxo
 		tabtree ns:https://purl.org/tabtree/core#
 		doid ns:http://purl.obolibrary.org/obo/DOID_
 		org ns:https://purl.org/agingontology/organism#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		Bacteria
 		Disease ogms:0000031 d:"Сложная реакция организма на действие патологического агента, являющаяся новым процессом жизнедеятельности, возникающим в результате нарушений во взаимодействии организма и внешней среды, характеризующаяся нарушением регуляции функции, приспособляемости и уменьшением работоспособности, чувством боли и недомогания"
 		MortalityFactor
@@ -18,13 +18,13 @@ disease a:owl/Ontology dc/title:"Proxy ontology for DOID (Disease Ontology) taxo
 		PathologyProduct
 		Symptom
 		Virus
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		doid
 		hasSymptom owl/inverseOf:symptomFor
 		ogms
 		relatesTo range:Disease
 		symptomFor a:rdfs/Property domain:Symptom range:Disease
-	individuals +a:Disease +section-hierarchy-inverse-relation:skos/broader
+	individuals +a:Disease +hierarchy-inverse-relation:skos/broader
 		; Mortality
 		All-cause_mortality a:MortalityFactor
 		Mortality_related_CVDs a:MortalityFactor relatesTo:Cardiovascular_system_disease

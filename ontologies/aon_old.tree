@@ -28,11 +28,11 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:"https://purl.org/agingont
 		; Ontology for the parts of organism:
 		org ns:https://purl.org/agingontology/organism#
 		; Topical ontologies for diseases, chemicals, drugs etc.:
-		biochem ns:https://purl.org/agingontology/biochemistry#
+		biochem ns:https://purl.org/agingontology/chemistry#
 		drug ns:https://purl.org/agingontology/drugs#
 		do ns:https://purl.org/agingontology/disease#
 		therapies ns:https://purl.org/agingontology/therapies#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		owl/Thing
 			BiologicalProcess
 				OrganismProcess
@@ -54,10 +54,10 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:"https://purl.org/agingont
 				PopulationStatisticsParameter
 			MeasurableParameter
 				OrganismMeasurableParameter
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		fullName subproperty-of:dc/title
 		correlatesTo domain:BiologicalProcess range:StatisticalParameter
-	individuals +section-hierarchy-inverse-relation:skos/broader
+	individuals +hierarchy-inverse-relation:skos/broader
 		Aging
 			Biological_aging a:BiologicalProcess ncit:C16269 go:0007568
 				Human_biological_aging

@@ -1,0 +1,23 @@
+genes a:owl/Ontology dc/title:"DNA sequence ontology" ns:https://purl.org/agingontology/genes#
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		do ns:https://purl.org/agingontology/disease#
+		org ns:https://purl.org/agingontology/organism#
+		aon ns:https://purl.org/agingontology/core#
+		cell ns:https://purl.org/agingontology/cell#
+		nucleus ns:https://purl.org/agingontology/nucleus#
+		c ns:https://purl.org/agingontology/chemistry#
+		tabtree ns:https://purl.org/tabtree/core#
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
+		Codon
+			StopCodon
+		TranslationInitiationSite
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
+		codon domain:c/AminoAcid range:Codon
+		encodedAA owl/inverseOf:codon
+		nickname range:rdfs/Literal
+	individuals +hierarchy-inverse-relation:skos/broader

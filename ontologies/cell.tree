@@ -9,21 +9,22 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 		org ns:https://purl.org/agingontology/organism#
 		aon ns:https://purl.org/agingontology/core#
 		tabtree ns:https://purl.org/tabtree/core#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		CellElement
 			CellCompartment
 		CellProcess
 		CellState
 		CellSystem
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+		Proteome
+		Regulome
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		compartment domain:CellElement range:CellCompartment
-	individuals +section-hierarchy-inverse-relation:skos/broader
+	individuals +hierarchy-inverse-relation:skos/broader
 		; cell systems
 		Metabolism_system a:CellSystem
 			Glucose_metabolism_system a:CellSystem
 		; cell parts
 		Cytosol a:CellCompartment
-		Chromosome a:CellElement compartment:Nucleus,Mitochondria
 		Lyzosome a:CellCompartment
 		Membrane a:CellCompartment
 		Mitochondria a:CellCompartment

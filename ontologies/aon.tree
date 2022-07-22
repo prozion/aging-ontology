@@ -29,11 +29,11 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 		org ns:https://purl.org/agingontology/organism#
 		cell ns:https://purl.org/agingontology/cell#
 		; Topical ontologies for diseases, chemicals, drugs etc.:
-		biochem ns:https://purl.org/agingontology/biochemistry#
+		biochem ns:https://purl.org/agingontology/chemistry#
 		drug ns:https://purl.org/agingontology/drugs#
 		do ns:https://purl.org/agingontology/disease#
 		therapies ns:https://purl.org/agingontology/therapies#
-	classes +section-hierarchy-inverse-relation:subclass-of
+	classes +hierarchy-inverse-relation:subclass-of
 		owl/Thing +a:owl/Class
 			BiologicalProcess
 				org/OrganismProcess
@@ -67,10 +67,10 @@ aon a:owl/Ontology dc/title:"Aging ontology (AON)" ns:https://purl.org/agingonto
 											DNAPathology
 									MitochondrionPathology
 										MitochondrionDNAPathology
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		fullName subproperty-of:dc/title
 		substance domain:Biomarker range:biochem/ChemicalSubstance
-	individuals +section-hierarchy-inverse-relation:skos/broader
+	individuals +hierarchy-inverse-relation:skos/broader
 		; Basic aging mechanisms (hallmarks of aging):
 		Fibrosis a:BasicAgingMechanism
 		Insulin_resistance a:BasicAgingMechanism

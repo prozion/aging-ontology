@@ -7,7 +7,7 @@ tissues a:owl/Ontology dc/title:"Ontology about tissues" ns:https://purl.org/agi
 		skos ns:http://www.w3.org/2004/02/skos/core#
 		cell ns:https://purl.org/agingontology/cell#
 		org ns:https://purl.org/agingontology/organism#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		Tissue
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 	individuals 

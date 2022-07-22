@@ -8,7 +8,7 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		org ns:https://purl.org/agingontology/organism# imports:<t>
 		do ns:https://purl.org/agingontology/disease# imports:<t>
 		aon ns:https://purl.org/agingontology/core# imports:<t>
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of	
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of	
 		HASDNode subclass-of:aon/AgingPathogeneticProcess
 		HASDSystem
 		Diagram
@@ -32,7 +32,7 @@ HASDOntology a:owl/Ontology rdfs/comment:"Aging Ontology based on Human Aging Sy
 		Intersystem a:HASDSystem
 		Unknown_system a:HASDSystem
 	individuals
-		HASDDiagram a:Diagram +a:HASDNode section-hierarchy-relation:hasElement
+		HASDDiagram a:Diagram +a:HASDNode hierarchy-relation:hasElement
 			AO7 name:"Сердечная недостаточность" ageFrom:"60" ageTo:"70" hasdSystem:org/Cardiovascular_system followsTo:AO1621,AO543
 			AO9 name:"Замещение свободного пространства соединительной тканью" ageFrom:"40" ageTo:"50" hasdSystem:Connective_system followsTo:AO907
 			AO13 name:"Ухудшение питания клеток" ageFrom:"20" ageTo:"40" hasdSystem:Cell_system followsTo:AO319,AO401

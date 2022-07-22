@@ -1,0 +1,86 @@
+codons +a:Codon
+	UAA a:StopCodon nickname:"Ochre"
+	UAG a:StopCodon nickname:"Amber"
+	UGA a:StopCodon nickname:"Opal" encodedAA:c/Selenocysteine
+	phe +ch/encodedAA:ch/Phenylalanine
+		UUU
+		UUC
+		UUA
+		UUG
+	leu +ch/encodedAA:ch/Leucine
+		CUU
+		CUC
+		CUA
+		CUG
+	ile +ch/encodedAA:ch/Isoleucine
+		AUU
+		AUC
+	met +ch/encodedAA:ch/Methionine
+		AUG a:TranslationInitiationSite
+	val +ch/encodedAA:ch/Valine
+		GUU
+		GUC
+		GUA
+		GUG
+	ser +ch/encodedAA:ch/Serine
+		UCU
+		UCC
+		UCA
+		UCG
+	pro +ch/encodedAA:ch/Proline
+		CCU
+		CCC
+		CCA
+		CCG
+	thr +ch/encodedAA:ch/Threonine
+		ACU
+		ACC
+		ACA
+		ACG
+	ala +ch/encodedAA:ch/Alanine
+		GCU
+		GCC
+		GCA
+		GCG
+	tyr +ch/encodedAA:ch/Tyrosine
+		UAU
+		UAC
+	his +ch/encodedAA:ch/Histidine
+		CAU
+		CAC
+	gln +ch/encodedAA:ch/Glutamine
+		CAA
+		CAG
+	asn +ch/encodedAA:ch/Asparagine
+		AAU
+		AAC
+	lys +ch/encodedAA:ch/Lysine
+		AAA
+		AAG
+	asp +ch/encodedAA:ch/Aspartate
+		GAU
+		GAC
+	glu +ch/encodedAA:ch/Glutamate
+		GAA
+		GAG
+	cys +ch/encodedAA:ch/Cysteine
+		UGU
+		UGC
+	trp +ch/encodedAA:ch/Tryptophan
+		UGG
+	arg +ch/encodedAA:ch/Arginine
+		CGU
+		CGC
+		CGA
+		CGG
+		AGA
+		AGG
+	ser +ch/encodedAA:ch/Serine
+		AGU
+		AGC
+	gly +ch/encodedAA:ch/Glycine
+		GGU
+		GGC
+		GGA
+		GGG
+		

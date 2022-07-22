@@ -8,7 +8,7 @@ organism a:owl/Ontology dc/title:"Ontology about parts of organism" ns:https://p
 		do ns:https://purl.org/agingontology/disease#
 		aon ns:https://purl.org/agingontology/core#
 		tabtree ns:https://purl.org/tabtree/core#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		CellsGroup
 		Organ
 			Heart
@@ -17,8 +17,8 @@ organism a:owl/Ontology dc/title:"Ontology about parts of organism" ns:https://p
 			Pancrea
 		OrganismProcess
 		OrganismSystem
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
-	individuals +section-hierarchy-inverse-relation:skos/broader
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
+	individuals +hierarchy-inverse-relation:skos/broader
 		; organism systems (from https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body):
 		Cardiovascular_system eq:Circulatory_system a:OrganismSystem ; сердечно-сосудистая_система
 		Digestive_system eq:Excretory_system a:OrganismSystem ; пищеварительная_система

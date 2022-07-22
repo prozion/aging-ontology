@@ -1,0 +1,69 @@
+proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/agingontology/proteins#
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		chebi ns:http://purl.obolibrary.org/obo/CHEBI_
+		biopax ns:http://www.biopax.org/release/biopax-level3.owl#
+		tabtree ns:https://purl.org/tabtree/core#
+		g ns:https://purl.org/agingontology/genes#
+		ch ns:https://purl.org/agingontology/chemistry#
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
+		Protein subclass-of:ch/Macromolecule d:"distinct polypeptide corresponded to a distinct gene, proteins build of domain made from differen genes sholud be of ProteinComplex type"
+			MisfoldedProtein subclass-of:Anomaly
+			Selenoprotein
+		ProteinPart d:"part of Protein molecule, not "
+			Cofactor eq-class:ProstheticGroup
+		FunctionalUnit d:"protein, protein complex or other molecules that have some certain functionality within organism as a system"
+			SingleRNA
+			SingleProtein
+			ProteinComplex
+				MonoProteinComplex
+				QuasiMonoProteinComplex d:"when the complex constitutes of hundreds and thousands proteins of just few kinds, which combined together"
+				HeteroProteinComplex
+				MixedProteinComplex d:"when complex constitutes of proteins and also of some other kind of organic/inorganic molecules"
+		ProteinFamily
+			ProteinSuperfamily
+		ProteinWithLocation
+			MembraneProtein
+				IntegralMembraneProtein
+					TransmembraneProtein
+			MembraneProtein
+				NuclearMembraneProtein
+					InnerNuclearMembraneProtein
+			CytoplasmicProtein
+			NuclearProtein
+				Nucleoprotein
+		ProteinWithShape
+			GlobularProtein d:"Proteins that fold into compact units. Soluble in aqueous solutions"
+			FibrousProtein
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
+		CytoskeletalProtein
+			Keratin
+			Tubulin
+				α-Tubulin
+				β-Tubulin
+				γ-Tubulin
+				δ-Tubulin
+				ζ-Tubulin
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
+		isozyme domain:Enzyme range:Enzyme
+		partOfComplex domain:Protein range:ProteinComplex
+	individuals
+		single_proteins
+			H2A a:Histone
+			Dystrophin a:CytoplasmicProtein,StructuralProtein
+			RNA_polymerase a:PolymerizationMotor
+			DNA_polymerase a:PolymerizationMotor
+		protein_complexes +hierarchy-inverse-relation:partOfComplex
+			ARP2_3_complex name:"ARP2/3 complex" a:ProteinComplex
+			Dynactin
+			Ferritin a:ProteinComplex,StorageUnit
+				Ferritin_H a:Protein
+				Ferritin_L a:Protein
+
+
+
+			

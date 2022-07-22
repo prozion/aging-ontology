@@ -9,17 +9,17 @@ aada a:owl/Ontology dc/title:"All aging diagnostic approaches (AADA) table" ns:h
 		org ns:https://purl.org/agingontology/organism# imports:<t>
 		cell ns:https://purl.org/agingontology/cell# imports:<t>
 		do ns:https://purl.org/agingontology/disease#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		AADAOrganismFeature
 		AADASystem
 		UntrustedBiomarkerPanel subclass-of:aon/BiomarkerPanel
 		SystemOrganProcess owl/unionOf:`org/OrganismSystem,org/OrganismProcess,org/Organ,cell/CellProcess,cell/CellPart,do/MortalityFactor,AADASystem,AADAOrganismFeature`
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		panel domain:aon/Biomarker range:aon/BiomarkerPanel
 		partOfPanel domain:aon/BiomarkerPanel range:aon/BiomarkerPanel
 		system domain:aon/Biomarker range:SystemOrganProcess
 		agingMechanism domain:aon/Biomarker range:aon/BasicAgingMechanism
-	individuals +section-hierarchy-inverse-relation:skos/broader
+	individuals +hierarchy-inverse-relation:skos/broader
 		; Custom systems:
 		DNA_system a:AADASystem
 		; Custom features

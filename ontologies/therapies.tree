@@ -7,13 +7,13 @@ therapies a:owl/Ontology dc/title:"Ontology about therapies and interventions" n
 		skos ns:http://www.w3.org/2004/02/skos/core#
 		drugs ns:https://purl.org/agingontology/drugs#
 		tabtree ns:https://purl.org/tabtree/core#
-	classes +a:owl/Class +section-hierarchy-inverse-relation:subclass-of
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		AdverseEffect
 		Exercise
 		MedicalDiagnosis 
 		Therapy d:"The attempted remediation of a health problem, usually following a medical diagnosis."
 		Treatment eq-class:Therapy
 		Intervention
-	properties +a:rdf/Property +section-hierarchy-inverse-relation:subproperty-of
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		includesIntervention domain:Therapy range:Intervention
 	individuals 

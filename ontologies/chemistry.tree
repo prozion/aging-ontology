@@ -1,0 +1,97 @@
+chemistry a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/agingontology/chemistry#
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		chebi ns:http://purl.obolibrary.org/obo/CHEBI_
+		biopax ns:http://www.biopax.org/release/biopax-level3.owl#
+		tabtree ns:https://purl.org/tabtree/core#
+		g ns:https://purl.org/agingontology/genes#
+		p ns:https://purl.org/agingontology/proteins#
+	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
+		Anomaly
+		Atom
+		ChemicalCompound eq-class:Molecule
+			InorganicCompound
+			OrganometallicCompound
+			OrganicCompound
+				Hydrocarbon
+					SaturatedHydrocarbon
+					UnsaturatedHydrocarbon
+					AromaticHydrocarbon
+				CyclicOrganicCompound
+					HeterocyclicOrganicCompound
+						Diazine
+		ChemicalCompound
+			Acid
+				OrganicAcid subclass-of:OrganicCompound
+			Ester
+		FunctionalGroup
+		FunctionalMolecule
+			Antioxidant
+		OrganicCompound
+			Alcohol
+			Alkaloid
+			Amine
+			AminoAcid subclass-of:Amine,OrganicAcid
+				AliphaticAminoAcid
+				PolarNeutralAminoAcid
+				AmideAminoAcid
+				SulphurContainingAminoAcid
+				AromaticAminoAcid
+				AnionicAminoAcid
+				CationicAminoAcid
+			Carbohydrate
+				Monosaccharide
+					Fructose
+					Galactose
+					Glucose
+					Ribose
+					Deoxyribose
+				Disaccharide
+					Sucrose
+					Lactose
+				Polysaccharide
+					Cellulose
+					Starch
+			Hydrocarbon
+				Alkane
+			Lipid
+				SimpleLipid
+					TAG
+					Wax
+				CompoundLipid
+					Phospholipid
+					Glycolipid
+					Lipoprotein
+				DerivedLipid
+					FattyAcid
+					Steroid
+					Eicosanoid
+					KetonBody
+				MiscellaneousLipid
+					Squalene
+					Carotenoid
+			Polyol
+		OrganicCompound
+			Macromolecule
+				p/Protein
+				NucleicAcid
+					DNA
+					RNA
+				Complex
+					p/ProteinComplex
+					RNPComplex d:"Ribonucleoprotein complex"
+		MoleculePart
+			p/ProteinPart
+	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
+		am d:"Atomic mass" domain:Atom range:rdfs/Literal
+		consistsOf owl/inverseOf:partOf
+		formula
+		from range:MoleculePart domain:MoleculePart
+		hi domain:Molecule range:rdfs/Literal d:"Hydropathy index"
+		isomer
+		partOf domain:ChemicalEntity range:ChemicalEntity
+		percentage range:rdfs/Literal
