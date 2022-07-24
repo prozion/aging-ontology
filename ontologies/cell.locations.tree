@@ -1,0 +1,27 @@
+individuals +hierarchy-inverse-relation:partOf
+	Somewhere_in_organism a:ElementLocation ++a:ElementLocation
+		ExtracellularSpace
+		Cell
+			Cell_membrane a:Membrane
+			Cytosol
+				Lyzosome
+					LyzosomalMembrane a:Membrane
+				Peroxisome
+					PeroxisomalMembrane a:Membrane
+				Ribosome
+				Mitochondria
+					Outer_mitochondrial_membrane a:Membrane
+					Inner_mitochondrial_membrane a:Membrane
+					Mitochondrial_DNA
+				Golgi_apparatus a:EndomembraneSystem
+				Endoplasmic_reticulum a:EndomembraneSystem +a:EndomembraneSystem
+					Rough_endoplasmic_reticulum
+					Smooth_endoplasmic_reticulum
+						Sarcoplasmic_reticulum
+			Nucleus
+				Nuclear_membrane
+					Outer_nuclear_membrane a:Membrane
+					Inner_nuclear_membrane a:Membrane
+				Chromosome
+					Nuclear_DNA
+				Nucleolus

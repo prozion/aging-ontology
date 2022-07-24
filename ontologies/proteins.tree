@@ -24,18 +24,27 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 				QuasiMonoProteinComplex d:"when the complex constitutes of hundreds and thousands proteins of just few kinds, which combined together"
 				HeteroProteinComplex
 				MixedProteinComplex d:"when complex constitutes of proteins and also of some other kind of organic/inorganic molecules"
+		MembraneProtein
+			IntegralMembraneProtein
+				TransmembraneProtein
+					IntercellularMembraneProtein subclass-of:CellMembraneProtein
 		ProteinFamily
 			ProteinSuperfamily
 		ProteinWithLocation
-			MembraneProtein
-				IntegralMembraneProtein
-					TransmembraneProtein
-			MembraneProtein
-				NuclearMembraneProtein
-					InnerNuclearMembraneProtein
-			CytoplasmicProtein
-			NuclearProtein
-				Nucleoprotein
+			ExtracellularProtein
+			IntracellularProtein
+				MembraneProtein
+					NuclearMembraneProtein
+						InnerNuclearMembraneProtein
+					PeroxisomalMembraneProtein
+					CellMembraneProtein
+					MitochondrialMembraneProtein
+						OuterMitochondrialMembraneProtein
+						InnerMitochondrialMembraneProtein
+				CytoplasmicProtein
+					GolgiCompartmentProtein
+				NuclearProtein
+					Nucleoprotein
 		ProteinWithShape
 			GlobularProtein d:"Proteins that fold into compact units. Soluble in aqueous solutions"
 			FibrousProtein
@@ -51,6 +60,7 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		isozyme domain:Enzyme range:Enzyme
 		partOfComplex domain:Protein range:ProteinComplex
+		consistsOf domain:ProteinComplex range:owl/Class
 	individuals
 		single_proteins
 			H2A a:Histone
@@ -63,6 +73,7 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 			Ferritin a:ProteinComplex,StorageUnit
 				Ferritin_H a:Protein
 				Ferritin_L a:Protein
+			Connexon a:ProteinComplex consistsOf:Connexin
 
 
 

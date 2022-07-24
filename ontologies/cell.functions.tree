@@ -1,0 +1,58 @@
+classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
+	FunctionalUnit d:"Functions fulfilled by chemical substances inside and around the cell"
+		Transporter
+			MembraneTransportUnit
+				IonChannel
+			IntercellularTransportUnit
+				Connexon
+		Regulator
+			MetabolismRegulator
+				Catalyzer
+					Enzyme eq-class:CataliticProtein rdfs/seeAlso:https://iubmb.qmul.ac.uk/enzyme/rules.html
+						Oxydoreductase
+						Transferase
+							Kinase
+						Hydrolase
+						Lyase
+						Isomerase
+						Ligase
+						; ATPase
+						; Oxidase
+			GeneRegulator
+		Defender
+		Builder
+			Constructor
+				Formin
+			Destructor
+				Proteasome
+		Motor
+			CytoskeletalMotor
+				Dynein
+					CytoplasmicDynein
+					AxonemalDynein eq-class:FlagellarDynein,CiliaryDynein
+				Kinesin
+					ConventionalKinesin eq-class:Kinesin-1
+					HeterotrimericKinesin eq-class:Kinesin-2
+					BipolarKinesin eq-class:Kinesin-5
+					Kinesin-13
+				Myosin
+			PolymerizationMotor
+			RotaryMotor
+			NucleicAcidMotor
+				Helicase
+				Topoisomerase
+			EnzymaticMotor subclass-of:Enzyme
+				Catalase
+				Urease
+				Aldolase
+				Hexokinase subclass-of:Kinase
+				Phosphoglucose_isomerase
+				Phosphofructokinase subclass-of:Kinase
+				Glucose_oxidase subclass-of:Oxydase
+		SignalUnit
+		StructuralUnit
+			CytoskeletalUnit
+				Actin
+		Receptor
+		StorageUnit
+			ProteinPrecursor
