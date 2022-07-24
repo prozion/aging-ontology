@@ -1,5 +1,5 @@
 classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
-	FunctionalUnit d:"Functions fulfilled by chemical substances inside and around the cell"
+	FunctionalUnit d:"Functions performed by chemical substances inside and around the cell"
 		Transporter
 			TransmembraneTransporter
 				Antiporter
