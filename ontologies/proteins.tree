@@ -14,6 +14,11 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 		Protein subclass-of:ch/Macromolecule d:"distinct polypeptide corresponded to a distinct gene, proteins build of domain made from differen genes sholud be of ProteinComplex type"
 			MisfoldedProtein subclass-of:Anomaly
 			Selenoprotein
+		Protein
+			SelfProtein
+			ViralProtein
+			BacterialProtein
+				CommensalBacteriaProtein
 		ProteinPart d:"part of Protein molecule, not "
 			Cofactor eq-class:ProstheticGroup
 		FunctionalUnit d:"protein, protein complex or other molecules that have some certain functionality within organism as a system"

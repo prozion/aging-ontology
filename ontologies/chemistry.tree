@@ -10,6 +10,7 @@ chemistry a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/a
 		tabtree ns:https://purl.org/tabtree/core#
 		g ns:https://purl.org/agingontology/genes#
 		p ns:https://purl.org/agingontology/proteins#
+		c ns:https://purl.org/agingontology/cell#
 	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		Anomaly
 		Atom
@@ -81,6 +82,14 @@ chemistry a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/a
 				NucleicAcid
 					DNA
 					RNA
+						lncRNA deabbr:"Long non-coding RNA"
+						mRNA deabbr:"Matrix RNA"
+						miRNA deabbr:"Micro-RNA"
+						pre-mRNA deabbr:"Precursor mRNA"
+						rRNA deabbr:"Ribosomal RNA"
+						snRNA deabbr:"Small Nuclear RNA"
+						snoRNA deabbr:"Small Nucleolar RNA"
+						tRNA deabbr:"Transfer RNA"
 				Complex
 					p/ProteinComplex
 					RNPComplex d:"Ribonucleoprotein complex"

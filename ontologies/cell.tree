@@ -9,6 +9,7 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 		org ns:https://purl.org/agingontology/organism#
 		aon ns:https://purl.org/agingontology/core#
 		tabtree ns:https://purl.org/tabtree/core#
+		p ns:https://purl.org/agingontology/proteins#
 	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		BiologicalElement
 			CellElement
@@ -20,12 +21,39 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 		ElementLocation
 		EndomembraneSystem
 		Membrane
-		Proteome
-		Regulome
+	classes +hierarchy-inverse-relation:subclass-of
+		CellElement
+			Ribosome subclass-of:p/MixedProteinComplex
+			Dynein subclass-of:CytoskeletalMotor
+				CytoplasmicDynein
+				AxonemalDynein eq-class:FlagellarDynein,CiliaryDynein
+			Kinesin subclass-of:CytoskeletalMotor
+				ConventionalKinesin eq-class:Kinesin-1
+				HeterotrimericKinesin eq-class:Kinesin-2
+				BipolarKinesin eq-class:Kinesin-5
+				Kinesin-13
+			Myosin subclass-of:CytoskeletalMotor
+		Enzyme
+			Helicase subclass-of:NucleicAcidMotor
+			Topoisomerase subclass-of:NucleicAcidMotor
+		Formin subclass-of:Constructor
+		Proteasome subclass-of:Destructor
+		EnzymaticMotor
+			Catalase
+			Urease
+			Aldolase
+			Hexokinase subclass-of:Kinase
+			Phosphoglucose_isomerase
+			Phosphofructokinase subclass-of:Kinase
+			Glucose_oxidase subclass-of:Oxydase
 	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		compartment domain:CellElement range:CellCompartment
 		partOf a:owl/TransitiveProperty domain:BiologicalElement range:BiologicalElement
 	individuals +hierarchy-inverse-relation:skos/broader
+		Ankyrin a:ProteinComplex,MembraneCytoskeletalJoint
+		Axoneme a:ProteinComplex,CytoskeletalUnit
+		Actin a:ProteinComplex,CytoskeletalUnit
+		Connexon a:ProteinComplex,GapJunction
 		cell_systems +a:CellSystem
 			Metabolism_system
 				Glucose_metabolism_system

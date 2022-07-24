@@ -1,17 +1,21 @@
 individuals +hierarchy-inverse-relation:partOf
 	Somewhere_in_organism a:ElementLocation ++a:ElementLocation
 		ExtracellularSpace
+			Exosome
+		Cell_membrane a:Membrane
 		Cell
-			Cell_membrane a:Membrane
 			Cytosol
+				Cytoskeleton
+					Axoneme
 				Lyzosome
-					LyzosomalMembrane a:Membrane
+					Lyzosomal_membrane a:Membrane
 				Peroxisome
-					PeroxisomalMembrane a:Membrane
-				Ribosome
+					Peroxisomal_membrane a:Membrane
+				Cytoplasmic_ribosome a:Ribosome
 				Mitochondria
 					Outer_mitochondrial_membrane a:Membrane
 					Inner_mitochondrial_membrane a:Membrane
+						Mitoribosome eq:Mitochondrial_ribosome a:Ribosome
 					Mitochondrial_DNA
 				Golgi_apparatus a:EndomembraneSystem
 				Endoplasmic_reticulum a:EndomembraneSystem +a:EndomembraneSystem

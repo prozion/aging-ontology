@@ -1,10 +1,12 @@
 classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 	FunctionalUnit d:"Functions fulfilled by chemical substances inside and around the cell"
 		Transporter
-			MembraneTransportUnit
+			TransmembraneTransporter
+				Antiporter
 				IonChannel
-			IntercellularTransportUnit
-				Connexon
+			IntercellularConnector
+				GapJunction
+			IonBinder
 		Regulator
 			MetabolismRegulator
 				Catalyzer
@@ -18,41 +20,35 @@ classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 						Ligase
 						; ATPase
 						; Oxidase
+				ProteinModificator
+					Acetilyzer
+					Deacetilyzer
+					Ubiquitinator
 			GeneRegulator
+				TranscriptionRegulator
+					HistoneModificator
+					TranscriptionFactor
+			TranslationRegulator
 		Defender
 		Builder
 			Constructor
-				Formin
 			Destructor
-				Proteasome
 		Motor
 			CytoskeletalMotor
-				Dynein
-					CytoplasmicDynein
-					AxonemalDynein eq-class:FlagellarDynein,CiliaryDynein
-				Kinesin
-					ConventionalKinesin eq-class:Kinesin-1
-					HeterotrimericKinesin eq-class:Kinesin-2
-					BipolarKinesin eq-class:Kinesin-5
-					Kinesin-13
-				Myosin
+				CytoplasmicMotor
+				AxonemalMotor
 			PolymerizationMotor
 			RotaryMotor
 			NucleicAcidMotor
-				Helicase
-				Topoisomerase
 			EnzymaticMotor subclass-of:Enzyme
-				Catalase
-				Urease
-				Aldolase
-				Hexokinase subclass-of:Kinase
-				Phosphoglucose_isomerase
-				Phosphofructokinase subclass-of:Kinase
-				Glucose_oxidase subclass-of:Oxydase
 		SignalUnit
+			Autoantigen
 		StructuralUnit
 			CytoskeletalUnit
-				Actin
+				AxonemalUnit
+			Joint
+				IntercellularJoint
+				MembraneCytoskeletalJoint
 		Receptor
 		StorageUnit
 			ProteinPrecursor
