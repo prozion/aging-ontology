@@ -1,0 +1,39 @@
+; pubs - approximate number of publications that relates the gene to keywords from aging pool, parsed from 30 millions abstracts in PubMed database
+aging_related_genes +a:Gene +hierarchy-inverse-relation:subclass-of
+	ACE f:ProteinModificator loc:Extracellular,Plasma_membrane,Lyzosome,Endosome pubs:80 open-genes:<no>
+	ACE2 f:Carboxypeptidase
+	AKT1 f:ProteinKinase loc:Cell,Nucleus
+	ATM f:Kinase pubs:80
+	BDNF f:GrowthFactor chr:Chromosome_11 pubs:200
+	CAT f:Catalase chr:Chromosome_11 pubs:100
+	CA3 f:Carbonic_anhydrase loc:Cytosol chr:Chromosome_8 pubs:100
+	CD34 f:CellAttacher pubs:40 open-genes:<no>
+	CD68 f:Antigen pubs:50 open-genes:<no>
+	CGA f:Signal loc:Extracellular,Golgi pubs:80
+	CRP f:PatternRecognitionReceptor chr:Chromosome_1 pubs:200
+	C3 f:ComplementActivator loc:Extracellular,Endoplasmic_reticulum pubs:70
+	FOXO3 f:TranscriptionalActivator pubs:60
+	GDF11 f:GrowthFactor relatedTo:TERT pubs:60
+	GFAP f:Filament loc:Cytosokeleton,Cytosol cell:Astrocyte chr:Chromosome_17 pubs:100 open-genes:<no>
+	H2AX f:Histone loc:Nucleus,Cytoskeleton pubs:70
+	IGF1 f:GrowthFactor pubs:60
+	IL6 f:Signal pubs:60
+	ING1 f:ProteinRegulator loc:Nucleus
+	LMNA f:NuclearLamina pubs:60
+	MSC f:TranscriptionalRepressor chr:Chromosome_8 pubs:200
+	NLRP3 f:InflammasomeUnit loc:Golgi,Cytosol,Nucleus cell:Myelocyte pubs:70
+	PPARGC1A eq:PGC-1α f:TranscriptionRegulator loc:Nucleus,Mitochondrion chr:Chromosome_4 pubs:100
+	PTEN f:Phosphatase,ProteinRegulator loc:Cell pubs:80
+	PTH f:Signal loc:Extracellular pubs:60
+	RPE f:Epimerase chr:Chromosome_2 pubs:100
+	SHBG f:IntracellularTransporter,SteroidTransporter loc:Extracellular pubs:60
+	SIRT1 f:Signal loc:Cytosol,Nucleus,Mitochondrion chr:Chromosome_10 pubs:300
+	SIRT3 f:Deacetylase loc:Nucleus,Mitochondrion chr:Chromosome_11 pubs:90
+	SIRT6 f:Deacetylase loc:Nucleus chr:Chromosome_19 pubs:80
+	SOD2 f:SuperoxideDismutase loc:Mitochondrion,Extracellular chr:Chromosome_6 pubs:90
+	STAT3 f:TranscriptionActivator loc:Cytosol,Nucleus,Plasma_membrane,Lyzosome pubs:70
+	TERT deabbr:"Telomerase Reverse Transcriptase" f:Polymerase loc:Cytosol,Nucleus,Mitochondrion pubs:70
+	TLR4 f:LipopolysaccharideReceptor loc:Endosome,Plasma_mambrane chr:Chromosome_9 pubs:80
+	TNF f:Signal loc:Extracellular,Plasma_membrane chr:Chromosome_6 pubs:300
+	TP53 f:TranscriptionActivator pubs:50
+	

@@ -9,11 +9,16 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 		org ns:https://purl.org/agingontology/organism#
 		aon ns:https://purl.org/agingontology/core#
 		tabtree ns:https://purl.org/tabtree/core#
+		af ns:https://purl.org/sbgn/af#
 		p ns:https://purl.org/agingontology/proteins#
 	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		BiologicalElement
 			CellElement
 				CellCompartment
+		BiologicalPathway
+			RegulatoryPathway
+			SignalPathway
+		Cell
 		CellProcess
 		CellState
 			LifecycleStage
@@ -21,7 +26,11 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 		ElementLocation
 		EndomembraneSystem
 		Membrane
+		Receptor
+			GPCRReceptor deabbr:"G protein-coupled receptor"
 	classes +hierarchy-inverse-relation:subclass-of
+		Cell
+			Leukocyte
 		CellElement
 			Ribosome subclass-of:p/MixedProteinComplex
 			Dynein subclass-of:CytoskeletalMotor
@@ -33,11 +42,6 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 				BipolarKinesin eq-class:Kinesin-5
 				Kinesin-13
 			Myosin subclass-of:CytoskeletalMotor
-		Enzyme
-			Helicase subclass-of:NucleicAcidMotor
-			Topoisomerase subclass-of:NucleicAcidMotor
-		Formin subclass-of:Constructor
-		Proteasome subclass-of:Destructor
 		EnzymaticMotor
 			Catalase
 			Urease
@@ -46,8 +50,18 @@ cell a:owl/Ontology dc/title:"Ontology about parts of the cell" ns:https://purl.
 			Phosphoglucose_isomerase
 			Phosphofructokinase subclass-of:Kinase
 			Glucose_oxidase subclass-of:Oxydase
+		Enzyme
+			Helicase subclass-of:NucleicAcidMotor
+			Topoisomerase subclass-of:NucleicAcidMotor
+		Formin subclass-of:Constructor
+		Proteasome subclass-of:Destructor
+		Signal
+			Cytokine
+		ZincFinger subclass-of:UbiquitinLigase
 	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
 		compartment domain:CellElement range:CellCompartment
+		diff-from owl/inverseOf:diff-to
+		diff-to domain:Cell range:Cell
 		partOf a:owl/TransitiveProperty domain:BiologicalElement range:BiologicalElement
 	individuals +hierarchy-inverse-relation:skos/broader
 		Ankyrin a:ProteinComplex,MembraneCytoskeletalJoint

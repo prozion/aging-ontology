@@ -1,31 +1,39 @@
 individuals +hierarchy-inverse-relation:partOf
 	Somewhere_in_organism a:ElementLocation ++a:ElementLocation
-		ExtracellularSpace
+		Extracellular
 			Exosome
-		Cell_membrane a:Membrane
+		Cell_periphery
+			Cell_junction
+			Cell_membrane a:Membrane eq:Plasma_membrane
 		Cell
-			Cytosol
+			Cytosol_compartment
+				Cytosol
 				Cytoskeleton
 					Axoneme
 				Lyzosome
 					Lyzosomal_membrane a:Membrane
 				Peroxisome
 					Peroxisomal_membrane a:Membrane
+				Endosome
+					Endosoma_membrane a:Membrane
 				Cytoplasmic_ribosome a:Ribosome
-				Mitochondria
-					Outer_mitochondrial_membrane a:Membrane
-					Inner_mitochondrial_membrane a:Membrane
-						Mitoribosome eq:Mitochondrial_ribosome a:Ribosome
+				Mitochondrion
+					Mitochondrial_membrane
+						Outer_mitochondrial_membrane a:Membrane
+						Inner_mitochondrial_membrane a:Membrane
+							Mitoribosome eq:Mitochondrial_ribosome a:Ribosome
 					Mitochondrial_DNA
-				Golgi_apparatus a:EndomembraneSystem
+				Golgi a:EndomembraneSystem
 				Endoplasmic_reticulum a:EndomembraneSystem +a:EndomembraneSystem
 					Rough_endoplasmic_reticulum
 					Smooth_endoplasmic_reticulum
 						Sarcoplasmic_reticulum
+				Centrosome
 			Nucleus
 				Nuclear_membrane
 					Outer_nuclear_membrane a:Membrane
 					Inner_nuclear_membrane a:Membrane
+				Nucleoplasm
 				Chromosome
 					Nuclear_DNA
 				Nucleolus

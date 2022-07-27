@@ -1,0 +1,13 @@
+individuals +a:BiologicalPathway
+	signal_pathways +a:SignalPathway
+		BMP_pathway deabbr:"Bone Morphogenetic Proteins"
+		Glucose_pathway
+		Insulin_pathway
+		PI3K-AKT-mTOR
+		SMAD_pathway
+		Tyrosine-kinase_pathway
+	regulatory_pathways +a:RegulatoryPathway
+		ADAM_pathway
+		AKAP_pathway deabbr:"A-kinase anchoring protein"
+	metabolism_pathways
+		Cytric_acid_cycle eq:Krebs_cycle

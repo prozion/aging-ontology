@@ -32,6 +32,8 @@ chemistry a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/a
 		FunctionalGroup
 		FunctionalMolecule
 			Antioxidant
+		Monomer
+		Oligomer
 		OrganicCompound
 			Alcohol
 			Alkaloid

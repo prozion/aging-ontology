@@ -1,0 +1,25 @@
+individuals +a:ProteinGroup +hierarchy-inverse-relation:skos/broader
+	α-β_hydrolase name:"Alpha/beta hydrolase" a:Hydrolase
+	α-D-phosphohexomutase f:Transferase
+	Akt eq:Protein_kinase_B f:Kinase
+	Alkaline_phosphatase f:Phosphatase
+	APC deabbr:"Amino acid-polyamine-organocation superfamily" f:TransmembraneTransporter
+	CREB f:TranscriptionFactor
+	Cytochrome f:Oxydoreductase
+	Cytokine_receptor f:CytokineReceptor
+		TNF_receptor
+		TGF-β_receptor
+		Chemokine_receptor
+	FOX f:TranscriptionFactor
+	HDAC deabbr:"Histone deacetylase" f:Deacetylase
+	Immunoglobulin f:Receptor
+	LAMP deabbr:"Lysosome-associated membrane glycoprotein"
+	MFS deabbr:"Major facilitator superfamily" f:TransmembraneTransporter
+	p27 name:"Cyclin-dependent kinase inhibitor 1B" f:EnzymeInhibitor
+	RAS f:GTPase
+	Sp-KLF f:TranscriptionFactor
+		Sp
+		KLF deabbr:"Krüppel-like family of transcription factors"
+	SMAD receptor:TGF-β_receptor
+	TNF f:Signal
+	

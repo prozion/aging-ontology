@@ -2,38 +2,105 @@ classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 	FunctionalUnit d:"Functions performed by chemical substances inside and around the cell"
 		Transporter
 			TransmembraneTransporter
-				Antiporter
+				; Antiporter
+				; Symporter
 				IonChannel
-			IntercellularConnector
+				SoluteCarrier
+				LipidTransmembraneTransporter
+			IntracellularTransporter
+				AxonalTransporter
+					AxonalCargo
+				MembraneToMembraneTransporter
+			IntercellularJunction
 				GapJunction
 			IonBinder
+			SubstanceTransporter
+				VitaminTransporter
+				SteroidTransporter
 		Regulator
 			MetabolismRegulator
+				Antioxidant
+					Catalase
+					SuperoxideDismutase
 				Catalyzer
 					Enzyme eq-class:CataliticProtein rdfs/seeAlso:https://iubmb.qmul.ac.uk/enzyme/rules.html
 						Oxydoreductase
 						Transferase
 							Kinase
+								ProteinKinase
+							Acetyltransferase
 						Hydrolase
+							Lipase
+								Phospholipase
+							Phosphatase
+							ATPase
+							GTPase
 						Lyase
+							AdenylylCyclase
+							AldehydeLyase
+							Deacetylase
+							Decarboxylase
+							Dehalogenase
+							Dehydratase
+								CarbonicAnhydrase
+							GuanylateCyclase
 						Isomerase
+							Epimerase
+							Racemase
 						Ligase
-						; ATPase
-						; Oxidase
+			ProteinRegulator
 				ProteinModificator
 					Acetilyzer
+					Chaperone
 					Deacetilyzer
+					EnzymeInhibitor
+					Ligand
 					Ubiquitinator
+						UbiquitinLigase
+				AllostericActivator
 			GeneRegulator
 				TranscriptionRegulator
 					HistoneModificator
 					TranscriptionFactor
+						TranscriptionActivator
+						TranscriptionalRepressor
+					RNAProcessor
+				ChromatinRemodeler
+			ComplementRegulator
+				ComplementActivator
+			InflammationRegulator
+				InflammasomeUnit
 			TranslationRegulator
-		Defender
+				RibosomalUnit
+			TransmissionRegulator			
 		Builder
+			Planner
+				AxonGuide
 			Constructor
+					Polymerase
+				MacromoleculeConstructor
+					DNAConstructor
+						DNAPolymerase subclass-of:Polymerase
+					ProteinConstructor
+						SignalSynthase
+					RNAConstructor
+						RNAPolymerase subclass-of:Polymerase
+						RNAStabilizer
+				MitochondrionConstructor
+					CristaeBuilder
+				CytoskeletonConstructor
+					ActinFilamentsBuilder
+				CellAttacher
 			Destructor
+				Protease eq-class:Peptidase
+					Carboxypeptidase
+			Repairer
+				DNARepairer
+					TranslesionSynthesisUnit
+			IntercellularConnector
+				HeterocellularConnector d:"Junction between cells of different type"
 		Motor
+			CellMotor
 			CytoskeletalMotor
 				CytoplasmicMotor
 				AxonemalMotor
@@ -41,14 +108,28 @@ classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 			RotaryMotor
 			NucleicAcidMotor
 			EnzymaticMotor subclass-of:Enzyme
-		SignalUnit
-			Autoantigen
+		Signal
+			Antigen
+				Autoantigen
+			GrowthFactor
+			Neurotransmitter
 		StructuralUnit
 			CytoskeletalUnit
-				AxonemalUnit
+				Filament
+					AxonemalUnit
+				CentrosomalUnit
+			NuclearUnit
+				NuclearLamina
+				ChromosomalUnit
+					Histone
 			Joint
 				IntercellularJoint
 				MembraneCytoskeletalJoint
 		Receptor
+			CytokineReceptor
+			MoleculeDetector
+				OlfactoryReceptor subclass-of:GPCRReceptor
+				LipopolysaccharideReceptor
+			PatternRecognitionReceptor
 		StorageUnit
 			ProteinPrecursor

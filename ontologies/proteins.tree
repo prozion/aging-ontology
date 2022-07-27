@@ -9,6 +9,7 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 		biopax ns:http://www.biopax.org/release/biopax-level3.owl#
 		tabtree ns:https://purl.org/tabtree/core#
 		g ns:https://purl.org/agingontology/genes#
+		c ns:https://purl.org/agingontology/cell#
 		ch ns:https://purl.org/agingontology/chemistry#
 	classes +a:owl/Class +hierarchy-inverse-relation:subclass-of
 		Protein subclass-of:ch/Macromolecule d:"distinct polypeptide corresponded to a distinct gene, proteins build of domain made from differen genes sholud be of ProteinComplex type"
@@ -19,12 +20,17 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 			ViralProtein
 			BacterialProtein
 				CommensalBacteriaProtein
+		Protein
+			UbiquitinLikeProtein 
+		ProteinGroup
+			ProteinSuperfamily
+			ProteinFamily
 		ProteinPart d:"part of Protein molecule, not "
 			Cofactor eq-class:ProstheticGroup
 		FunctionalUnit d:"protein, protein complex or other molecules that have some certain functionality within organism as a system"
 			SingleRNA
-			SingleProtein
-			ProteinComplex
+			SingleProtein subclass-of:ch/Monomer
+			ProteinComplex subclass-of:ch/Oligomer
 				MonoProteinComplex
 				QuasiMonoProteinComplex d:"when the complex constitutes of hundreds and thousands proteins of just few kinds, which combined together"
 				HeteroProteinComplex
@@ -33,8 +39,6 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 			IntegralMembraneProtein
 				TransmembraneProtein
 					IntercellularMembraneProtein subclass-of:CellMembraneProtein
-		ProteinFamily
-			ProteinSuperfamily
 		ProteinWithLocation
 			ExtracellularProtein
 			IntracellularProtein
@@ -62,7 +66,10 @@ proteins a:owl/Ontology dc/title:"Biochemical substances" ns:https://purl.org/ag
 				γ-Tubulin
 				δ-Tubulin
 				ζ-Tubulin
+		ReceptorProtein
+			G_protein
 	properties +a:rdf/Property +hierarchy-inverse-relation:subproperty-of
+		f subproperty-of:rdf/type
 		isozyme domain:Enzyme range:Enzyme
 		partOfComplex domain:Protein range:ProteinComplex
 		consistsOf domain:ProteinComplex range:owl/Class
