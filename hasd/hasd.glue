@@ -1,5 +1,0 @@
-[hasd_scheme.tree]
-	individuals
-		HASDDiagram a:Diagram +a:HASDNode hierarchy-relation:hasElement
-			[hasd_individuals.tree]
-		[hasd_individuals_classification.tree]

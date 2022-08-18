@@ -30,6 +30,13 @@ individuals +a:Cell +hierarchy-inverse-relation:diff-from
 							Dendritic_cell
 					Lymphoid_precursor
 						T_cell
+							T-killer
+							T-helper
+								Th1
+								Th2
+								Th17
+								Tfh
+								Treg
 						Nk_cell
 						B_cell
 				Endothelial_stem_cell
