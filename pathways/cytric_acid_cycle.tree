@@ -1,0 +1,29 @@
+namespaces
+	rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+	rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+	owl ns:http://www.w3.org/2002/07/owl#
+	dc ns:http://purl.org/dc/elements/1.1/
+	skos ns:http://www.w3.org/2004/02/skos/core#
+	ch ns:https://purl.org/agingontology/chemistry#
+	pd ns:https://purl.org/sbgn/pd#
+classes +hierarchy-inverse-relation:subclass-of
+	H2O eq:ch/H2O
+	CO2 eq:ch/CO2
+	HCO3- eq:ch/HCO3-
+	Pyruvate
+properties
+individuals
+	reactions +a:pd/Process
+		_1 pd/substrate:Pyruvate,CoA-SH,NAD+ pd/product:Acetyl-CoA,CO2,NADH,H+ pd/catalyzedBy:Piruvate_dehydrogenase
+		_2 pd/substrate:Pyruvate,HCO3-,ATP pd/product:Oxaloacetate,ADP,Pi pd/catalyzedBy:Piruvate_carboxylase
+		citric_acid_cycle
+			cac_1 pd/substrate:Citrate pd/product:H2O,cis-Aconitate pd/catalyzedBy:Aconitase
+			cac_2 pd/substrate:H2O,cis-Aconitate pd/product:D-Isocitrate pd/catalyzedBy:Aconitase
+			; Aconitase catalyze:_1,_2
+			cac_3 pd/substrate:D-Isocitrate,NAD+ pd/product:α-Ketoglutarate,NADH,H+,CO2 pd/catalyzedBy:Isocytrate_dehydrogenase
+			cac_4 pd/substrate:α-Ketoglutarate,NAD+,CoA-SH pd/product:Succinyl-CoA,NADH,H+,CO2 pd/catalyzedBy:α-Ketoglutarate_dehydrogenase
+			cac_5 pd/substrate:Succinyl-CoA,GDP,Pi pd/product:Succinate,CoA-SH,GTP pd/catalyzedBy:Succinyl-CoA_synthetase
+			cac_6 pd/substrate:Succinate,Q pd/product:Fumarate,QH2 pd/catalyzedBy:Succinic_dehydrogenase
+			cac_7 pd/substrate:Fumarate,H2O pd/product:Malate pd/catalyzedBy:Fumarase
+			cac_8 pd/substrate:Malate,NAD+ pd/product:Oxaloacetate,NADH,H+ pd/catalyzedBy:Malate_dehydrogenase
+			cac_9 pd/substrate:Oxaloacetate,Acetyl-CoA,H2O pd/product:Citrate,CoA-SH pd/catalyzedBy:Citrate_synthase

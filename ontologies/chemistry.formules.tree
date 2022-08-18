@@ -3,7 +3,9 @@ individuals
 	Cholesterol formula:'(-[C1-CHHH]-CHH-CHH-[CH-OHCHH]-CHH-C2-)(-C1-C3H-C4H-CHH-CH=C2-)(-C3H-CHH-CHH-[C5H-CHHH]-C6H-C4H-)(-C5H-C7H-CHH-CHH-C6H-)[C7H-[CH-CHHH]-CHH-CHH-CHH-[CH-CHHH]-CHHH]'
 	simple_molecules
 		Phosphate formula:'O=P-OOO'
-		Water formula:'HOH'
+		Water alt-id:H2O formula:'HOH'
+		CO2 formula:'O=C=O'
+		HCO3- formula:'O=-[C-OH]-=O'
 	other_molecules
 		Glycerol formula:'OHCHH-OHCH-OHCHH'
 		Triglyceride formula:'<Glycerol>--3-<FattyAcid>'
