@@ -1,0 +1,31 @@
+;; alternative notation for reactions, created a bit earlier than that, based on SBGN PD (see cytric_acid_cycle.tree). It seems more readable, doesn't it?
+atp_generation include-namespace:metabolites.tree
+	glycolisis
+		1-> in:Glucose out:Glucose-6-phosphate cat:Hexokinase
+		2-> in:Glucose-6-phosphate out:Fructose-6-phosphate
+		3-> in:Fructose-6-phosphate out:Fructose-1-6-biphosphate
+		4-> in:Fructose-1-6-biphosphate out:Glyceraldehyde-3-phosphate:2,Dihydroxyacetone_phosphate
+		5-> in:Glyceraldehyde-3-phosphate out:1-3-Biphosphoglycerate
+		6-> in:1-3-Biphosphoglycerate out:3-Phosphoglycerate
+		7-> in:3-Phosphoglycerate out:2-Phosphoglycerate
+		8-> in:2-Phosphoglycerate out:Phosphoglycerate
+		9-> in:Phosphoglycerate out:Pyruvate
+	pyruvate_processing
+		10-> in:Pyruvate,CoA-SH,NAD+ out:Acetyl-CoA,CO2,NADH,H+ cat:Pyruvate_dehydrogenase
+		11-> in:Pyruvate,HCO3-,ATP out:Oxaloacetate,ADP,Pi cat:Pyruvate_carboxylase
+	citric_acid_cycle syn:krebs_cycle 
+		с1-> in:Oxaloacetate,Acetyl-CoA,H2O out:Citrate,CoA-SH cat:Citrate_synthase
+		с2-> in:Citrate out:Cis-Aconitate,H2O cat:Aconitase
+		с3-> in:Cis_Aconitate,H2O out:D-Isocitrate cat:Aconitase
+		с4-> in:D-Isocitrate,NAD+ out:α-Ketoglutarate,NADH,H+,CO2 cat:Isocitrate_dehydrogenase
+		с5-> in:α-Ketoglutarate,NAD+,CoA-SH out:Succinyl-CoA,NADH,H+,CO2 cat:α-Ketoglutarate_dehydrogenase
+		с6-> in:Succinyl-CoA,GDP,Pi out:Succinate,CoA-SH,GTP cat:Succinyl-CoA_synthetase
+		с7-> in:Succinate,CoQ out:Fumarate,CoQ-H2 cat:Succinic_dehydrogenase
+		с8-> in:Fumarate,H2O out:Malate cat:Fumarase
+		с9-> in:Malate,NAD+ out:Oxaloacetate,NADH,H+ cat:Malate_dehydrogenase
+	electron_transport_chain
+		complex_1
+			e1-> in:NADH,H+,CoQ,H+in out:NAD+,CoQ-H2,H+out
+		complex_2
+		complex_3
+		

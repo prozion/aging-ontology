@@ -1,0 +1,11 @@
+metabolites
+	energy_currency
+		ATP name:"Adenosine triphosphate"
+		ADP
+		GTP name:"Guanosine triphosphate"
+		GDP
+		NAD+ name:"Nicotinamide adenine dinucleotide"
+		NADH
+		FAD name:"Flavin adenine dinucleotide"
+		FADH
+		Pi name:"Inorganic phosphate"
